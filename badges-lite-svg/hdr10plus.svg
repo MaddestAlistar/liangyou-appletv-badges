@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="80" viewBox="0 0 240 80">
+<rect x="2.5" y="2.5" width="235" height="75" rx="16" fill="#050607" stroke="#AD85FF" stroke-width="2.4"/>
+<rect x="6" y="6" width="228" height="68" rx="13" fill="none" stroke="#FFFFFF" stroke-opacity=".18"/>
+<circle cx="16" cy="15" r="8" fill="none" stroke="#AD85FF" stroke-width="1.4"/><path d="M711 483V403H285V483ZM711 578H285V652H711ZM162 -98C191 -82 239 -72 520 -6C514 20 508 71 508 105L285 57V298H403C498 105 651 -19 887 -75C902 -42 937 8 964 34C880 50 806 75 742 108C797 141 857 180 908 219L808 296C765 257 701 210 642 174C598 210 562 251 533 298H834V757H579C570 790 557 829 542 859L418 833C427 810 436 783 443 757H160V105C160 51 122 12 97 -7C117 -26 151 -72 162 -98Z" transform="translate(10.6 20.4) scale(.011 -.011)" fill="#AD85FF"/><circle cx="45" cy="40" r="22" fill="#0D1014" stroke="#AD85FF" stroke-width="2"/><path d="M31 48V33h4v15zm6-3V30h4v18zm6 2V31h4v16zm6-5V28h4v14zm6 2V32h4v12z" fill="#FFF"/>
+<path d="M77 16v48" stroke="#AD85FF" stroke-opacity=".42" stroke-width="1.4"/>
+<text x="88" y="45" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="900" fill="#FFFFFF">HDR10+</text></svg>

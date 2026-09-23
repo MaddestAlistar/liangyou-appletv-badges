@@ -1,17 +1,20 @@
 # 良友科技学院 · Apple TV Badges
 
-当前主版本：**v7 图标重设计版**
+当前提供两套兼容版本，规则一致，主要区别是图片渲染方式。
 
-- 22 个徽章全部重做左侧图标，不再大量重复
-- Dolby Vision / Dolby Atmos 使用双 D 核心识别图形，并统一金色边框
-- 4K / 1080P / 720P / REMUX / Blu-ray / WEB-DL 都有独立图标
-- HDR10+ / HDR10 / HLG 根据各自显示技术重做
-- TrueHD / DTS:X / DTS-HD / AAC / FLAC 根据音频特点重做
-- HEVC / AVC / AV1 / VP9 根据编解码器特点重做
-- 5.1 / 7.1 改成多扬声器环绕布局
+## 1. 简化 SVG 兼容版
+- 去掉复杂滤镜、模糊和高级 SVG 特性
+- 保留矢量清晰度
+- 适配 **EplayerX / Forward / Nuvio / RovePlayer**
+- 导入地址：
+  https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges-lite-svg.json
 
-推荐导入：
-https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges-v7.json
+## 2. PNG 高兼容版
+- 使用同一套简化 SVG 图形服务器端栅格化为 PNG
+- 更适合预览组件对 SVG 支持不完整的情况
+- 适配 **EplayerX / Forward / Nuvio / RovePlayer**
+- 导入地址：
+  https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges-png.json
 
-主地址：
-https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges.json
+## 说明
+如果 EplayerX 的资源徽章预览页出现空白，优先测试 PNG 高兼容版。两套版本的匹配规则、徽章数量和视觉结构保持一致。
