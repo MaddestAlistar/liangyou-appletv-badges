@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="108" viewBox="0 0 360 108">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#171C24"/>
+      <stop offset=".38" stop-color="#05070A"/>
+      <stop offset=".78" stop-color="#030405"/>
+      <stop offset="1" stop-color="#11151B"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFE16A"/>
+      <stop offset=".36" stop-color="#F2A900"/>
+      <stop offset=".65" stop-color="#FFFFFF"/>
+      <stop offset=".78" stop-color="#F2A900"/>
+      <stop offset="1" stop-color="#FFE16A"/>
+    </linearGradient>
+    <linearGradient id="iconFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".25" stop-color="#FFE16A"/>
+      <stop offset=".65" stop-color="#F2A900"/>
+      <stop offset="1" stop-color="#0B0D12"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF1A8"/>
+      <stop offset=".3" stop-color="#FFD45E"/>
+      <stop offset=".72" stop-color="#B56A00"/>
+      <stop offset="1" stop-color="#FFF1A8"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.2"/>
+    </filter>
+  </defs>
+  <rect x="3" y="3" width="354" height="102" rx="22" fill="url(#bg)" stroke="#000000" stroke-width="3"/>
+  <rect x="6" y="6" width="348" height="96" rx="19" fill="none" stroke="url(#edge)" stroke-width="3.6" filter="url(#glow)"/>
+  <rect x="10" y="10" width="340" height="88" rx="16" fill="none" stroke="#FFFFFF" stroke-opacity=".24" stroke-width="1.2"/>
+  <path d="M18 17H330C250 21 173 34 111 62C79 77 45 82 18 82Z" fill="#FFFFFF" opacity=".035"/>
+  <circle cx="24" cy="23" r="11" fill="#080A0D" stroke="#FFE16A" stroke-width="2"/>
+  <text x="24" y="28" text-anchor="middle" font-family="Noto Sans CJK SC,Arial,sans-serif" font-size="13" font-weight="900" fill="#FFE16A">良</text>
+  <g filter="url(#glow)"><circle cx="69" cy="55" r="35" fill="#05070A" stroke="#F2A900" stroke-width="2.2"/>
+  <circle cx="69" cy="55" r="31" fill="url(#iconFill)" opacity=".34"/>
+  <circle cx="69" cy="55" r="32" fill="none" stroke="#FFE16A" stroke-opacity=".58" stroke-width="2" filter="url(#glow)"/><ellipse cx="69" cy="65" rx="39" ry="12" fill="none" stroke="#008DFF" stroke-width="3"/><ellipse cx="69" cy="65" rx="31" ry="8" fill="none" stroke="#69D4FF" stroke-width="2"/><rect x="46" y="33" width="46" height="34" rx="5" fill="url(#gold)" stroke="#FFECA0" stroke-width="2"/><path d="M50 39v22h10c6 0 11-5 11-11s-5-11-11-11zm38 0H78c-6 0-11 5-11 11s5 11 11 11h10z" fill="#4B3000"/></g>
+  <path d="M112 21v66" stroke="#FFE16A" stroke-opacity=".55" stroke-width="1.8"/>
+  <text x="128" y="59" font-family="Noto Sans CJK SC,Arial,sans-serif" font-size="26" font-weight="900" fill="#FFFFFF">DOLBY ATMOS</text>
+  <text x="128" y="76" font-family="Noto Sans CJK SC,Arial,sans-serif" font-size="13.5" font-weight="800" letter-spacing=".7" fill="#FFE16A">杜比全景声</text>
+  </svg>
