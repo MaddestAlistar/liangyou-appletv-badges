@@ -18,3 +18,13 @@
 
 ## 说明
 如果 EplayerX 的资源徽章预览页出现空白，优先测试 PNG 高兼容版。两套版本的匹配规则、徽章数量和视觉结构保持一致。
+
+## 播放器兼容建议
+
+- **RovePlayer**：优先使用 PNG 代理版  
+  https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges-png.json
+
+- **EplayerX**：优先使用 GitHub 原生直链版  
+  https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges-eplayerx.json
+
+- 同时适配 **Forward / Nuvio / RovePlayer / EplayerX**。EplayerX 对第三方图片代理兼容性可能更严格，因此单独提供直链版。
