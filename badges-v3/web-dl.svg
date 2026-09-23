@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="96" viewBox="0 0 320 96">
+<defs>
+  <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#C9E3FF" stop-opacity=".95"/>
+    <stop offset=".52" stop-color="#FFFFFF" stop-opacity=".50"/>
+    <stop offset="1" stop-color="#C9E3FF" stop-opacity=".95"/>
+  </linearGradient>
+  <filter id="glow" x="-20%" y="-30%" width="140%" height="160%">
+    <feGaussianBlur stdDeviation="2.2" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<rect x="3" y="3" width="314" height="90" rx="19" fill="none" stroke="url(#edge)" stroke-width="2.6"/>
+<rect x="7" y="7" width="306" height="82" rx="16" fill="none" stroke="#FFFFFF" stroke-opacity=".16" stroke-width="1"/>
+<circle cx="22" cy="20" r="11" fill="none" stroke="#C9E3FF" stroke-width="1.8" opacity=".9"/>
+<text x="22" y="25" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="800" fill="#C9E3FF">良</text>
+<g filter="url(#glow)"><g transform="translate(40 25)" fill="none" stroke="#C9E3FF" stroke-width="3">
+      <circle cx="21" cy="21" r="19"/><path d="M2 21h38M21 2c-7 6-10 12-10 19s3 13 10 19M21 2c7 6 10 12 10 19s-3 13-10 19"/>
+    </g></g>
+<path d="M88 22v52" stroke="#C9E3FF" stroke-opacity=".38" stroke-width="1.5"/>
+<text x="98" y="47" font-family="Arial,Helvetica,sans-serif" font-size="32" font-weight="800" fill="#FFFFFF">WEB-DL</text>
+<text x="99" y="70" font-family="Arial,Helvetica,sans-serif" font-size="12.5" font-weight="700" letter-spacing="1.2" fill="#C9E3FF">SOURCE</text>
+</svg>

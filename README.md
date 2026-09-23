@@ -1,25 +1,17 @@
-# 良友科技学院 · Apple TV Style Badges
+# 良友科技学院 · Apple TV Badges
 
-为 Nuvio / Forward 类播放器制作的 Apple TV / tvOS 风格徽章。
+当前主版本：**v3 放大加框版**
 
-## 直接导入 JSON
+- 所有徽章整体放大，减少内部留白
+- 所有徽章增加透明霓虹细框
+- 左上角加入「良」标识
+- 4K 徽章改为「良友4K」
+- 保持透明底，针对 EplayerX / Forward / Nuvio 兼容
 
-`https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges.json`
+## 推荐导入地址
 
-## 风格
-- SVG 矢量图，电视端缩放更清晰
-- 深色玻璃胶囊、细描边、低饱和光效
-- REMUX：蓝银金属玻璃风
-- Dolby Vision：紫色玻璃风
-- Dolby Atmos：冰蓝玻璃风
-- Atmos 与 TrueHD 分组，可同时显示
+https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges-v3.json
 
-## 包含
-4K / 1080P / 720P  
-REMUX / BLU-RAY / WEB-DL  
-Dolby Vision / HDR10+ / HDR10 / HLG  
-Dolby Atmos / TrueHD / DTS:X / DTS-HD MA / AAC / FLAC  
-HEVC / AVC / AV1 / VP9  
-7.1 / 5.1
+## 固定主地址
 
-品牌：良友科技学院
+https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges.json
