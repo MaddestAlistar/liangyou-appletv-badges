@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="96" viewBox="0 0 320 96">
+<defs>
+  <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#CDEAFF" stop-opacity=".95"/>
+    <stop offset=".52" stop-color="#FFFFFF" stop-opacity=".50"/>
+    <stop offset="1" stop-color="#CDEAFF" stop-opacity=".95"/>
+  </linearGradient>
+  <filter id="glow" x="-20%" y="-30%" width="140%" height="160%">
+    <feGaussianBlur stdDeviation="2" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<rect x="3" y="3" width="314" height="90" rx="19" fill="none" stroke="url(#edge)" stroke-width="2.6"/>
+<rect x="7" y="7" width="306" height="82" rx="16" fill="none" stroke="#FFFFFF" stroke-opacity=".16" stroke-width="1"/>
+<circle cx="22" cy="20" r="11" fill="none" stroke="#CDEAFF" stroke-width="1.8" opacity=".9"/>
+<text x="22" y="25" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="800" fill="#CDEAFF">良</text>
+<g filter="url(#glow)" transform="translate(40 26)" fill="none" stroke="#CDEAFF" stroke-linecap="round">
+  <rect x="0" y="0" width="42" height="34" rx="8" stroke-width="2.1"/>
+  <path d="M6 28c8-15 22-15 30 0" stroke-width="3.2"/>
+  <path d="M12 28c5-9 13-9 18 0" stroke-width="2.7"/>
+  <path d="M18 28c2-4 5-4 7 0" stroke-width="2.4"/>
+</g>
+<path d="M88 22v52" stroke="#CDEAFF" stroke-opacity=".38" stroke-width="1.5"/>
+<text x="98" y="47" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="800" fill="#FFFFFF">DOLBY ATMOS</text>
+<text x="99" y="70" font-family="Noto Sans CJK SC,PingFang SC,Microsoft YaHei,Arial,sans-serif" font-size="14" font-weight="700" letter-spacing=".4" fill="#CDEAFF">杜比全景声</text>
+</svg>
