@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="136" viewBox="0 0 420 136">
+  <rect width="420" height="136" fill="none"/>
+  <rect x="27" y="49" width="61" height="38" rx="8" fill="none" stroke="#F4C568" stroke-width="4"/><text x="57.5" y="74" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="800" fill="#F4C568">HDR</text>
+  <path d="M101 37v62" stroke="#F4C568" stroke-width="2" opacity=".45"/>
+  <text x="118" y="69" font-family="Arial,Helvetica,sans-serif" font-size="40" font-weight="800" fill="#F7F9FC">HDR10</text>
+  <text x="119" y="94" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="600" letter-spacing="1.5" fill="#F4C568" opacity=".95">HDR</text>
+</svg>

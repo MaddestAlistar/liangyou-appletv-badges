@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="136" viewBox="0 0 420 136">
+  <rect width="420" height="136" fill="none"/>
+  <text x="18" y="81" font-family="Arial,Helvetica,sans-serif" font-size="40" font-weight="900" fill="#EFC65D">4K</text>
+  <path d="M101 37v62" stroke="#EFC65D" stroke-width="2" opacity=".45"/>
+  <text x="118" y="69" font-family="Arial,Helvetica,sans-serif" font-size="40" font-weight="800" fill="#F7F9FC">4K</text>
+  <text x="119" y="94" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="600" letter-spacing="1.5" fill="#EFC65D" opacity=".95">ULTRA HD</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="136" viewBox="0 0 420 136">
+  <rect width="420" height="136" fill="none"/>
+  <text x="22" y="82" font-family="Arial,Helvetica,sans-serif" font-size="46" font-weight="900" fill="#CBE6FF">R</text>
+    <path d="M60 54h28M60 68h36M60 82h26" stroke="#CBE6FF" stroke-width="5" stroke-linecap="round"/>
+  <path d="M101 37v62" stroke="#CBE6FF" stroke-width="2" opacity=".45"/>
+  <text x="118" y="69" font-family="Arial,Helvetica,sans-serif" font-size="40" font-weight="800" fill="#F7F9FC">REMUX</text>
+  <text x="119" y="94" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="600" letter-spacing="1.5" fill="#CBE6FF" opacity=".95">MASTER</text>
+</svg>

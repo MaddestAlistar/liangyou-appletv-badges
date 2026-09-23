@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="136" viewBox="0 0 420 136">
+  <rect width="420" height="136" fill="none"/>
+  <circle cx="57" cy="68" r="27" fill="none" stroke="#C6E1FF" stroke-width="4"/><path d="M30 68h54M57 41c-9 8-13 17-13 27s4 19 13 27M57 41c9 8 13 17 13 27s-4 19-13 27" fill="none" stroke="#C6E1FF" stroke-width="3"/>
+  <path d="M101 37v62" stroke="#C6E1FF" stroke-width="2" opacity=".45"/>
+  <text x="118" y="69" font-family="Arial,Helvetica,sans-serif" font-size="40" font-weight="800" fill="#F7F9FC">WEB-DL</text>
+  <text x="119" y="94" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="600" letter-spacing="1.5" fill="#C6E1FF" opacity=".95">SOURCE</text>
+</svg>

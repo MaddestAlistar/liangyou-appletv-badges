@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="136" viewBox="0 0 420 136">
+  <rect width="420" height="136" fill="none"/>
+  <path d="M27 61h12l16-13v40L39 75H27z" fill="#CDEAFF"/><path d="M62 58c7 6 7 14 0 20M69 51c13 11 13 23 0 34" fill="none" stroke="#CDEAFF" stroke-width="4" stroke-linecap="round"/>
+  <path d="M101 37v62" stroke="#CDEAFF" stroke-width="2" opacity=".45"/>
+  <text x="118" y="69" font-family="Arial,Helvetica,sans-serif" font-size="40" font-weight="800" fill="#F7F9FC">7.1</text>
+  <text x="119" y="94" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="600" letter-spacing="1.5" fill="#CDEAFF" opacity=".95">CHANNELS</text>
+</svg>

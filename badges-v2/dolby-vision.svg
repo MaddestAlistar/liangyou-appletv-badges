@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="136" viewBox="0 0 420 136">
+  <rect width="420" height="136" fill="none"/>
+  <path d="M24 43h18c19 0 29 11 29 25S61 93 42 93H24V43zm10 9v32h8c12 0 19-6 19-16s-7-16-19-16h-8z" fill="#C3A1FF"/>
+    <path d="M82 43h18v50H82c-19 0-29-11-29-25s10-25 29-25zm10 9H82c-12 0-19 6-19 16s7 16 19 16h10V52z" fill="#C3A1FF"/>
+  <path d="M101 37v62" stroke="#C3A1FF" stroke-width="2" opacity=".45"/>
+  <text x="118" y="69" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="800" fill="#F7F9FC">DOLBY VISION</text>
+  <text x="119" y="94" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="600" letter-spacing="1.5" fill="#C3A1FF" opacity=".95">HDR</text>
+</svg>
