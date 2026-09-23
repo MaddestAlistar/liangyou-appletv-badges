@@ -1,0 +1,90 @@
+name: Build native PNG badges
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'badges-lite-svg/**'
+      - '.github/workflows/build-native-png.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install renderer
+        run: |
+          python -m pip install --upgrade pip
+          pip install cairosvg pillow
+
+      - name: Render direct PNG files
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import cairosvg, json
+
+          src = Path('badges-lite-svg')
+          out = Path('badges-png-native')
+          out.mkdir(exist_ok=True)
+
+          for svg in sorted(src.glob('*.svg')):
+              png = out / (svg.stem + '.png')
+              cairosvg.svg2png(
+                  url=str(svg),
+                  write_to=str(png),
+                  output_width=960,
+                  output_height=320,
+              )
+
+          p = Path('badges-png.json')
+          data = json.loads(p.read_text(encoding='utf-8'))
+          raw = 'https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges-png-native'
+          for item in data.get('filters', []):
+              old = item.get('imageURL', '')
+              # derive asset name from the encoded source or prior direct URL
+              import re, urllib.parse
+              decoded = urllib.parse.unquote(old)
+              m = re.search(r'/([^/?]+)\.svg', decoded)
+              if not m:
+                  m = re.search(r'/([^/?]+)\.png', decoded)
+              if m:
+                  item['imageURL'] = f"{raw}/{m.group(1)}.png"
+          p.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          PY
+
+      - name: Update README compatibility note
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('README.md')
+          text = p.read_text(encoding='utf-8') if p.exists() else '# 良友科技学院 · Apple TV Badges\n'
+          note = '''
+## PNG 高兼容版说明
+- `badges-png.json` 已改为直接读取 GitHub Raw 上的原生 PNG 文件，不再经过第三方图片代理。
+- 适配 **EplayerX / Forward / Nuvio / RovePlayer**。
+- 如果 EplayerX 的 SVG 预览为空白，优先使用 PNG 版。
+'''
+          if '## PNG 高兼容版说明' in text:
+              text = text.split('## PNG 高兼容版说明')[0].rstrip() + '\n\n' + note.lstrip()
+          else:
+              text = text.rstrip() + '\n\n' + note.lstrip()
+          p.write_text(text, encoding='utf-8')
+          PY
+
+      - name: Commit generated PNGs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add badges-png-native badges-png.json README.md
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Build native PNG badges for EplayerX compatibility"
+            git push
+          fi
