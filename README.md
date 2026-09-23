@@ -1,25 +1,24 @@
 # 良友科技学院 · Apple TV Badges
 
-## 当前推荐：Premium 原生 PNG 版
+现在保留两套正式地址：
 
-这一版重点解决 **EplayerX 能显示但效果偏白、偏淡、看不清** 的问题：
+## Badge LiangYou Ver.all
+复杂完整版，保留完整的霓虹边框、独立图标和高细节设计。
 
-- 黑色玻璃质感底
-- 高亮霓虹边框
-- 图标明显放大
-- 主文字加粗提高远距离辨识度
-- Dolby Vision / Dolby Atmos 使用高识别度双 D 图标
-- 4K / REMUX / Blu-ray / WEB-DL / HDR / 音频 / 编码器全部使用各自独立图标
-- PNG 直接托管在 GitHub Raw，不经过第三方图片代理
-- 适配 **EplayerX / RovePlayer / Forward / Nuvio**
+- 适配：**CapyPlayer / RovePlayer / Forward / Nuvio**
+- 文件：`Badge LiangYou Ver.all.json`
+- 地址：
+  https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.all.json
 
-### EplayerX / RovePlayer 推荐地址
+## Badge LiangYou Ver.E
+针对 **EplayerX** 单独优化的简化兼容版。
 
-https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges-premium.json
+- 使用 GitHub Raw 直接 SVG
+- 去掉滤镜、渐变、阴影、复杂透明层
+- 缩短每个徽章的横向比例，让 EplayerX 缩放后文字和图标更大
+- 只保留高对比图标 + 单行大字
+- 文件：`Badge LiangYou Ver.E.json`
+- 地址：
+  https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.E.json
 
-### 旧版测试地址
-
-- EplayerX 直链测试版：
-  https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges-eplayerx.json
-- RovePlayer PNG 代理版：
-  https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges-png.json
+> 如果主要使用 EplayerX，优先选 Ver.E；CapyPlayer / RovePlayer 优先选 Ver.all。

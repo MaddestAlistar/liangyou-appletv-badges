@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="155" height="80" viewBox="0 0 155 80">
+  <rect x="1" y="1" width="153" height="78" rx="14" fill="#000000" fill-opacity="0.01" stroke="#FFAA46" stroke-opacity="0.72" stroke-width="2"/>
+  <circle cx="36" cy="40" r="25" fill="none" stroke="#FFAA46" stroke-width="3"/><ellipse cx="36" cy="40" rx="15" ry="5" fill="none" stroke="#FFAA46" stroke-width="3" transform="rotate(-20 36 40)"/><ellipse cx="36" cy="40" rx="15" ry="5" fill="none" stroke="#FFAA46" stroke-width="2" transform="rotate(20 36 40)"/>
+  <line x1="70" y1="16" x2="70" y2="64" stroke="#FFAA46" stroke-opacity="0.55" stroke-width="2"/>
+  <text x="84" y="50" font-family="Arial,Helvetica,sans-serif" font-size="29" font-weight="900" fill="#FFFFFF">DTS:X</text>
+</svg>
