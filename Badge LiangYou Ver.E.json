@@ -1,11 +1,11 @@
 {
   "filters": [
     {
-      "id": "verE-4k",
+      "id": "verE-v3-4k",
       "groupId": "resolution",
       "name": "良友4K",
       "pattern": "(?i)\\b(4k|2160p|uhd|ultra[ ._-]?hd)\\b",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/refs/heads/main/Badge-LiangYou-Ver.E/4k.svg",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges-v3/4k.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
@@ -14,11 +14,11 @@
       "type": "filter"
     },
     {
-      "id": "verE-1080p",
+      "id": "verE-v3-1080p",
       "groupId": "resolution",
       "name": "1080P",
       "pattern": "(?i)\\b(1080p|1080i|fhd|full[ ._-]?hd)\\b",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/refs/heads/main/Badge-LiangYou-Ver.E/1080p.svg",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges-v3/1080p.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
@@ -27,11 +27,11 @@
       "type": "filter"
     },
     {
-      "id": "verE-720p",
+      "id": "verE-v3-720p",
       "groupId": "resolution",
       "name": "720P",
       "pattern": "(?i)\\b720p\\b",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/refs/heads/main/Badge-LiangYou-Ver.E/720p.svg",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges-v3/720p.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
@@ -40,11 +40,11 @@
       "type": "filter"
     },
     {
-      "id": "verE-remux",
+      "id": "verE-v3-remux",
       "groupId": "source",
       "name": "REMUX",
       "pattern": "(?i)\\b(?:bd|uhd)?remux\\b",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/refs/heads/main/Badge-LiangYou-Ver.E/remux.svg",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges-v3/remux.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
@@ -53,11 +53,11 @@
       "type": "filter"
     },
     {
-      "id": "verE-bluray",
+      "id": "verE-v3-bluray",
       "groupId": "source",
       "name": "BLU-RAY",
       "pattern": "(?i)^(?=.*(?:blu[ ._-]?ray|bluray|bdrip))(?!.*\\b(?:bd|uhd)?remux\\b)",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/refs/heads/main/Badge-LiangYou-Ver.E/bluray.svg",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges-v3/bluray.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
@@ -66,11 +66,11 @@
       "type": "filter"
     },
     {
-      "id": "verE-webdl",
+      "id": "verE-v3-webdl",
       "groupId": "source",
       "name": "WEB-DL",
       "pattern": "(?i)\\bweb[-_. ]?dl\\b",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/refs/heads/main/Badge-LiangYou-Ver.E/web-dl.svg",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges-v3/web-dl.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
@@ -79,11 +79,11 @@
       "type": "filter"
     },
     {
-      "id": "verE-dv",
+      "id": "verE-v3-dv",
       "groupId": "video-tech",
       "name": "Dolby Vision",
       "pattern": "(?i)\\b(dolby.?vision|dovi|dv)\\b",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/refs/heads/main/Badge-LiangYou-Ver.E/dolby-vision.svg",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges-v3/dolby-vision.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
@@ -92,11 +92,11 @@
       "type": "filter"
     },
     {
-      "id": "verE-hdr10plus",
+      "id": "verE-v3-hdr10plus",
       "groupId": "video-tech",
       "name": "HDR10+",
       "pattern": "(?i)\\bhdr10[\\s._-]?(?:\\+|plus|p)\\b",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/refs/heads/main/Badge-LiangYou-Ver.E/hdr10plus.svg",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges-v3/hdr10plus.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
@@ -105,11 +105,11 @@
       "type": "filter"
     },
     {
-      "id": "verE-hdr10",
+      "id": "verE-v3-hdr10",
       "groupId": "video-tech",
       "name": "HDR10",
       "pattern": "(?i)\\bhdr10\\b(?!\\s*(?:\\+|plus|p))",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/refs/heads/main/Badge-LiangYou-Ver.E/hdr10.svg",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges-v3/hdr10.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
@@ -118,11 +118,11 @@
       "type": "filter"
     },
     {
-      "id": "verE-hlg",
+      "id": "verE-v3-hlg",
       "groupId": "video-tech",
       "name": "HLG",
       "pattern": "(?i)\\bhlg\\b",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/refs/heads/main/Badge-LiangYou-Ver.E/hlg.svg",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges-v3/hlg.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
@@ -131,11 +131,11 @@
       "type": "filter"
     },
     {
-      "id": "verE-atmos",
+      "id": "verE-v3-atmos",
       "groupId": "audio-object",
       "name": "Dolby Atmos",
       "pattern": "(?i)\\b(?:dolby[ ._-]?)?atmos\\b",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/refs/heads/main/Badge-LiangYou-Ver.E/atmos.svg",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges-v3/atmos.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
@@ -144,11 +144,11 @@
       "type": "filter"
     },
     {
-      "id": "verE-truehd",
+      "id": "verE-v3-truehd",
       "groupId": "audio-tech",
       "name": "TrueHD",
       "pattern": "(?i)\\btrue[ ._-]?hd\\b",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/refs/heads/main/Badge-LiangYou-Ver.E/truehd.svg",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges-v3/truehd.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
@@ -157,11 +157,11 @@
       "type": "filter"
     },
     {
-      "id": "verE-dtsx",
+      "id": "verE-v3-dtsx",
       "groupId": "audio-tech",
       "name": "DTS:X",
       "pattern": "(?i)\\bdts[-_.: ]?x\\b",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/refs/heads/main/Badge-LiangYou-Ver.E/dtsx.svg",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges-v3/dtsx.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
@@ -170,11 +170,11 @@
       "type": "filter"
     },
     {
-      "id": "verE-dtshd",
+      "id": "verE-v3-dtshd",
       "groupId": "audio-tech",
       "name": "DTS-HD MA",
       "pattern": "(?i)\\bdts[ ._-]?hd(?:[ ._-]?ma)?\\b",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/refs/heads/main/Badge-LiangYou-Ver.E/dtshd.svg",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges-v3/dtshd.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
@@ -183,11 +183,11 @@
       "type": "filter"
     },
     {
-      "id": "verE-flac",
+      "id": "verE-v3-flac",
       "groupId": "audio-tech",
       "name": "FLAC",
       "pattern": "(?i)\\bflac\\b",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/refs/heads/main/Badge-LiangYou-Ver.E/flac.svg",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges-v3/flac.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
@@ -196,11 +196,11 @@
       "type": "filter"
     },
     {
-      "id": "verE-aac",
+      "id": "verE-v3-aac",
       "groupId": "audio-tech",
       "name": "AAC",
       "pattern": "(?i)\\baac\\b",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/refs/heads/main/Badge-LiangYou-Ver.E/aac.svg",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges-v3/aac.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
@@ -209,11 +209,11 @@
       "type": "filter"
     },
     {
-      "id": "verE-hevc",
+      "id": "verE-v3-hevc",
       "groupId": "video-codec",
       "name": "HEVC",
       "pattern": "(?i)\\b(hevc|x265|h[ ._-]?265)\\b",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/refs/heads/main/Badge-LiangYou-Ver.E/hevc.svg",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges-v3/hevc.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
@@ -222,11 +222,11 @@
       "type": "filter"
     },
     {
-      "id": "verE-av1",
+      "id": "verE-v3-av1",
       "groupId": "video-codec",
       "name": "AV1",
       "pattern": "(?i)\\bav1\\b",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/refs/heads/main/Badge-LiangYou-Ver.E/av1.svg",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges-v3/av1.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
@@ -235,11 +235,11 @@
       "type": "filter"
     },
     {
-      "id": "verE-vp9",
+      "id": "verE-v3-vp9",
       "groupId": "video-codec",
       "name": "VP9",
       "pattern": "(?i)\\bvp9\\b",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/refs/heads/main/Badge-LiangYou-Ver.E/vp9.svg",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges-v3/vp9.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
@@ -248,11 +248,11 @@
       "type": "filter"
     },
     {
-      "id": "verE-avc",
+      "id": "verE-v3-avc",
       "groupId": "video-codec",
       "name": "AVC",
       "pattern": "(?i)\\b(avc|x264|h[ ._-]?264)\\b",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/refs/heads/main/Badge-LiangYou-Ver.E/avc.svg",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges-v3/avc.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
@@ -261,11 +261,11 @@
       "type": "filter"
     },
     {
-      "id": "verE-71",
+      "id": "verE-v3-71",
       "groupId": "channels",
       "name": "7.1",
       "pattern": "(?i)(?<![0-9])7[ .]1(?![0-9])",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/refs/heads/main/Badge-LiangYou-Ver.E/71.svg",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges-v3/71.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
@@ -274,11 +274,11 @@
       "type": "filter"
     },
     {
-      "id": "verE-51",
+      "id": "verE-v3-51",
       "groupId": "channels",
       "name": "5.1",
       "pattern": "(?i)^(?=.*(?<![0-9])5[ .]1(?![0-9]))(?!.*(?<![0-9])7[ .]1(?![0-9]))",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/refs/heads/main/Badge-LiangYou-Ver.E/51.svg",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/badges-v3/51.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
