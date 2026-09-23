@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="80" viewBox="0 0 240 80"><defs>
+  <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F1C65A"/><stop offset=".45" stop-color="#FFFFFF" stop-opacity=".72"/><stop offset="1" stop-color="#F1C65A"/></linearGradient>
+  <linearGradient id="shine" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF" stop-opacity=".34"/><stop offset=".45" stop-color="#FFFFFF" stop-opacity=".05"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+  <radialGradient id="orb" cx="36%" cy="28%" r="75%"><stop stop-color="#FFFFFF" stop-opacity=".24"/><stop offset=".38" stop-color="#FFFFFF" stop-opacity=".05"/><stop offset="1" stop-color="#000000" stop-opacity=".18"/></radialGradient>
+  <filter id="glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="1.8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect x="2.5" y="2.5" width="235" height="75" rx="16" fill="#040506" stroke="url(#edge)" stroke-width="2.8"/>
+  <rect x="6" y="6" width="228" height="68" rx="13" fill="none" stroke="#FFFFFF" stroke-opacity=".17"/>
+  <path d="M11 10h170c-65 5-110 14-156 29" stroke="url(#shine)" stroke-width="4" fill="none" opacity=".25"/>
+  <circle cx="17" cy="16" r="9" fill="#050505" stroke="#F1C65A" stroke-width="1.5"/>
+  <path d="M711 483V403H285V483ZM711 578H285V652H711ZM162 -98C191 -82 239 -72 520 -6C514 20 508 71 508 105L285 57V298H403C498 105 651 -19 887 -75C902 -42 937 8 964 34C880 50 806 75 742 108C797 141 857 180 908 219L808 296C765 257 701 210 642 174C598 210 562 251 533 298H834V757H579C570 790 557 829 542 859L418 833C427 810 436 783 443 757H160V105C160 51 122 12 97 -7C117 -26 151 -72 162 -98Z" transform="translate(11.2 21.2) scale(.012 -.012)" fill="#F1C65A"/>
+  <g filter="url(#glow)"><circle cx="45" cy="40" r="23.5" fill="#0A0D12" stroke="#F1C65A" stroke-width="2.2"/><circle cx="45" cy="40" r="22.5" fill="url(#orb)"/><rect x="28" y="29" width="34" height="22" rx="5" fill="none" stroke="#F7E29A" stroke-width="2.7"/><text x="45" y="44" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11.5" font-weight="900" fill="#F7E29A">HDR</text></g>
+  <path d="M77 16v48" stroke="#F1C65A" stroke-opacity=".38" stroke-width="1.5"/>
+  <text x="88" y="45.5" font-family="Arial,Helvetica,sans-serif" font-size="29" font-weight="900" fill="#FFFFFF">HDR10</text>
+  </svg>
