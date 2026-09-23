@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="136" viewBox="0 0 420 136">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#202631"/><stop offset=".48" stop-color="#0C1119"/><stop offset="1" stop-color="#111722"/></linearGradient>
+  <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#C0DEFF"/><stop offset=".45" stop-color="#6AA8FF"/><stop offset="1" stop-color="#27384A"/></linearGradient>
+  <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFFFFF"/><stop offset=".45" stop-color="#E9EDF3"/><stop offset="1" stop-color="#9BA8BA"/></linearGradient>
+  <filter id="glow" x="-30%" y="-50%" width="160%" height="200%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <clipPath id="clip"><rect x="5" y="5" width="410" height="126" rx="31"/></clipPath>
+</defs>
+<rect x="5" y="5" width="410" height="126" rx="31" fill="url(#bg)" stroke="url(#edge)" stroke-width="2.4"/>
+<g clip-path="url(#clip)">
+  <ellipse cx="210" cy="16" rx="175" ry="36" fill="#FFFFFF" opacity=".055"/>
+  <path d="M18 112 Q210 77 402 112" fill="none" stroke="#6AA8FF" stroke-width="2" opacity=".45" filter="url(#glow)"/>
+  <rect x="18" y="15" width="384" height="2" rx="1" fill="#FFFFFF" opacity=".10"/>
+</g>
+<g filter="url(#glow)"><circle cx="54" cy="68" r="16" fill="none" stroke="#C0DEFF" stroke-width="4"/><circle cx="54" cy="68" r="5" fill="#C0DEFF"/></g>
+<text x="92" y="67" font-family="SF Pro Display,Inter,Arial,sans-serif" font-size="42" font-weight="800" letter-spacing=".5" fill="url(#metal)">HLG</text>
+<text x="92" y="93" font-family="SF Pro Display,Inter,Arial,sans-serif" font-size="17" font-weight="600" letter-spacing="3" fill="#BFC8D6">HDR</text>
+<text x="386" y="31" text-anchor="end" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#FFFFFF" opacity=".28">LY</text>
+</svg>
