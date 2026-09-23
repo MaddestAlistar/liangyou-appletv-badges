@@ -3,27 +3,24 @@
 现在保留两套正式地址：
 
 ## Badge LiangYou Ver.all
-复杂完整版，保留完整的高细节设计。
+复杂完整版，保持现有版本不变。
 
 - 适配：**CapyPlayer / RovePlayer / Forward / Nuvio / Rex**
 - 文件：`Badge LiangYou Ver.all.json`
 - 地址：
   https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.all.json
 
-## Badge LiangYou Ver.EP
-基于之前实测显示效果较好的 **v3 经典样式**，针对 EplayerX 做兼容优化。
+## Badge LiangYou Ver.EPX
+EplayerX 专用兼容版，基于之前可正常显示的 320×96 结构轻量优化。
 
-- 320×96 比例
-- 双层细框
-- 左上角「良」标识
-- 大图标 + 主标题 + 小副标题
-- Dolby Vision 左侧图标重新收窄并左移，避免挡住标题
-- Dolby Atmos 左侧图标重新收窄并左移，避免挡住标题
-- Dolby Vision 底部副标题改为：**杜比视界**
-- Dolby Atmos 底部副标题改为：**杜比全景声**
+- 保持双层细框和左上角「良」标识
+- 左侧图标按各格式特点重新设计，但不使用复杂滤镜
+- Dolby Vision 与 Dolby Atmos 统一使用紫色边框
+- Dolby Vision 副标题：**杜比视界**
+- Dolby Atmos 副标题：**杜比全景声**
 - 适配：**EplayerX / Forward / RovePlayer / CapyPlayer / Rex**
-- 文件：`Badge LiangYou Ver.EP.json`
+- 文件：`Badge LiangYou Ver.EPX.json`
 - 地址：
-  https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.EP.json
+  https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.EPX.json
 
-> EplayerX 优先使用 Ver.EP；CapyPlayer / RovePlayer 可优先使用 Ver.all。
+> EplayerX 优先使用 Ver.EPX；CapyPlayer / RovePlayer 可优先使用 Ver.all。
