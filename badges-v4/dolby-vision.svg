@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="80" viewBox="0 0 240 80">
+<defs>
+  <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#C7A6FF"/>
+    <stop offset=".45" stop-color="#FFFFFF" stop-opacity=".55"/>
+    <stop offset="1" stop-color="#C7A6FF"/>
+  </linearGradient>
+  <filter id="g" x="-20%" y="-20%" width="140%" height="140%">
+    <feGaussianBlur stdDeviation="1.5" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<rect x="2.5" y="2.5" width="235" height="75" rx="16" fill="none" stroke="url(#edge)" stroke-width="2.8"/>
+<rect x="6" y="6" width="228" height="68" rx="13" fill="none" stroke="#FFFFFF" stroke-opacity=".17" stroke-width="1"/>
+<circle cx="17" cy="16" r="9" fill="none" stroke="#C7A6FF" stroke-width="1.6"/>
+<text x="17" y="20" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10.5" font-weight="800" fill="#C7A6FF">良</text>
+<g filter="url(#g)"><g transform="translate(18 22)" fill="#C7A6FF">
+      <path d="M0 0h12c12 0 19 6 19 15s-7 15-19 15H0z"/>
+      <path d="M36 0h12v30H36c-12 0-19-6-19-15S24 0 36 0z"/>
+    </g></g>
+<path d="M64 16v48" stroke="#C7A6FF" stroke-opacity=".4" stroke-width="1.5"/>
+<text x="72" y="49" font-family="Arial,Helvetica,sans-serif" font-size="29" font-weight="900" fill="#FFFFFF">DOLBY VISION</text>
+
+</svg>
