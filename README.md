@@ -42,19 +42,21 @@ Ver.EPX 与 Ver.all 已同步增强媒体信息匹配，徽章外观不变。
 
 ## 显示优先级
 
-两个正式版本已同步重排 `filters` 顺序，优先让更重要的徽章靠前：
+两个正式版本已改为按分组优先级控制显示顺序，避免 WEB-DL 因为属于 Source 组而长期排在第二位。
 
-1. 分辨率：良友4K / 1080P / 720P
-2. REMUX
-3. Dolby Vision
-4. Dolby Atmos
-5. TrueHD
-6. HDR10+ / HDR10 / HLG
-7. DTS:X / DTS-HD
-8. 7.1 / 5.1
-9. HEVC / AV1 / AVC / VP9
-10. Blu-ray
-11. WEB-DL
-12. FLAC / AAC
+当前分组顺序：
 
-其中 **WEB-DL 已明显后移**；4K、REMUX、Dolby Vision、Dolby Atmos、TrueHD 优先靠前。
+1. Resolution：良友4K / 1080P / 720P
+2. Master Source：REMUX
+3. Video Tech：Dolby Vision / HDR10+ / HDR10 / HLG
+4. Immersive Audio：Dolby Atmos
+5. Audio Tech：TrueHD / DTS:X / DTS-HD / FLAC / AAC
+6. Source：Blu-ray / WEB-DL
+7. Channels：7.1 / 5.1
+8. Video Codec：HEVC / AV1 / AVC / VP9
+
+这样一部典型 4K 影片更容易按接近下面的顺序显示：
+
+**良友4K → REMUX → Dolby Vision → Dolby Atmos → TrueHD → WEB-DL → 7.1/5.1 → HEVC**
+
+其中 REMUX 已从 Source 组独立出来，WEB-DL 保留在普通 Source 组并整体后移。
