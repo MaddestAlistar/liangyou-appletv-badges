@@ -153,3 +153,40 @@ https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Ba
 
 新地址：
 https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.EPX5.json
+
+## EPX6 全网规则研究优化
+
+对照并吸收以下公开 badge/formatter 项目的思路：
+- EplayerX 官方更新中给出的 Elite-Badges 参考格式
+- 6otho/Epx-Badge
+- 9mousaa/BetterFormatter
+- l3okuGmail/badges
+- sweatycab/nuvio-minimalist-badges
+- danielsdian/ColorfulAndConcise
+- Nuvio Wiki 的 Stream Badges 指南
+
+### 研究结论
+公开实现普遍把 badge 匹配建立在“stream title / description / formatter 输出文本”上。Minimalist Badges 甚至通过 formatter 写入不可见 Unicode 标记来提高 DV/HDR 识别准确率，说明当上游字符串缺少媒体字段时，仅靠 badge JSON 无法百分之百还原完整媒体信息。
+
+### EPX6 的改动
+- 使用更扁平、局部的正则，减少依赖长串 `^...lookahead`，提高资料卡传入多行文本时的兼容性。
+- Dolby Vision 兼容 Dolby Vision / DolbyVision / DoVi / DV / dvhe / dvh1 / “杜比视界”，并兼容 Minimalist 的不可见 DV 标记 U+2063。
+- HDR10+ 兼容 Minimalist 的不可见 HDR10+ 标记 U+2064。
+- Dolby Atmos 兼容 Atmos / Dolby Atmos / JOC / EAC3 JOC / DDP JOC / “杜比全景声”。
+- 4K 增加 3840×xxxx / 4096×xxxx 与“超高清”识别。
+- DTS-HD MA 增加 DTS XLL 识别；DTS-HD / DTS:X / DTS 保持分开。
+- HEVC 兼容 HEVC / H.265 / H265 / x265 / hvc1 / hev1 / Main 10。
+- 5.1 / 7.1 增加 “声道” 中文场景。
+- WEB-DL 增加常见流媒体平台别名。
+- 图片继续使用统一 320×96 的 EPX-v6 画布资源，降低不同卡片渲染时的视觉尺寸差异。
+- 保留优先级：良友4K → REMUX → Dolby Vision → Dolby Atmos → TrueHD → DTS-HD → HDR → 声道 → HEVC → Source/普通音频。
+
+### 地址
+主地址：
+https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.EPX.json
+
+EPX6 测试地址：
+https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.EPX6.json
+
+### 已知边界
+如果某个 Emby 服务器的资源卡只把 MediaSource.Name / 简化标题传给 EplayerX，而播放页拿到了完整 MediaStreams，那么资料卡和播放页仍可能不同。这属于上游 matcher 输入数据差异，badge JSON 只能提高“已有文本”的识别率，不能生成未传入的 HEVC / DTS-HD / Atmos 等字段。
