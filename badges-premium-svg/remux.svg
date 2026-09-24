@@ -38,11 +38,11 @@
   <rect x="10" y="10" width="340" height="88" rx="16" fill="none" stroke="#FFFFFF" stroke-opacity=".24" stroke-width="1.2"/>
   <path d="M18 17H330C250 21 173 34 111 62C79 77 45 82 18 82Z" fill="#FFFFFF" opacity=".035"/>
   <circle cx="24" cy="23" r="11" fill="#080A0D" stroke="#CBE8FF" stroke-width="2"/>
-  <text x="24" y="28" text-anchor="middle" font-family="Noto Sans CJK SC,Arial,sans-serif" font-size="13" font-weight="900" fill="#CBE8FF">良</text>
+  <text x="24" y="28" text-anchor="middle" font-family="Noto Sans CJK SC,Arial,sans-serif" font-size="14.5" font-weight="900" fill="#CBE8FF">良</text>
   <g filter="url(#glow)"><circle cx="69" cy="55" r="35" fill="#05070A" stroke="#73B6FF" stroke-width="2.2"/>
   <circle cx="69" cy="55" r="31" fill="url(#iconFill)" opacity=".34"/>
   <circle cx="69" cy="55" r="32" fill="none" stroke="#CBE8FF" stroke-opacity=".58" stroke-width="2" filter="url(#glow)"/><rect x="44" y="35" width="50" height="40" rx="4" fill="#111A27" stroke="#CBE8FF" stroke-width="3"/><path d="M48 40h7v5h-7zm13 0h7v5h-7zm13 0h7v5h-7zm13 0h3v5h-3M48 66h7v5h-7zm13 0h7v5h-7zm13 0h7v5h-7z" fill="#CBE8FF"/><path d="M61 47l21 10-21 10z" fill="#FFFFFF"/></g>
   <path d="M112 21v66" stroke="#CBE8FF" stroke-opacity=".55" stroke-width="1.8"/>
-  <text x="128" y="67" font-family="Noto Sans CJK SC,Arial,sans-serif" font-size="41" font-weight="900" fill="#FFFFFF">REMUX</text>
+  <text x="124" y="67" font-family="Noto Sans CJK SC,Arial,sans-serif" font-size="43.9" font-weight="900" fill="#FFFFFF">REMUX</text>
   
   </svg>
