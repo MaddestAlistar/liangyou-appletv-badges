@@ -1,10 +1,10 @@
 {
   "filters": [
     {
-      "id": "epx5-4k",
+      "id": "epx6-4k",
       "groupId": "resolution",
       "name": "良友4K",
-      "pattern": "(?i)(?:\\b(?:4k|uhd|ultra[\\s._-]*hd|2160[pi]?)\\b|(?:3840|4096)\\s*[x×*]\\s*\\d{3,4})",
+      "pattern": "(?i)(?:\\b(?:4k|uhd|ultra[\\s._-]*hd|2160[pi]?)\\b|(?:3840|4096)\\s*[x×*]\\s*(?:2160|1716|1600|[12]\\d{3})|超高清)",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge-LiangYou-Ver.EPX-v6/4k.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -14,10 +14,10 @@
       "type": "filter"
     },
     {
-      "id": "epx5-1080p",
+      "id": "epx6-1080p",
       "groupId": "resolution",
       "name": "1080P",
-      "pattern": "(?i)^(?!.*(?:\\b(?:4k|uhd|2160[pi]?)\\b|(?:3840|4096)\\s*[x×*])).*(?:\\b(?:1080[pi]?|fhd|full[\\s._-]*hd)\\b|1920\\s*[x×*]\\s*\\d{3,4})",
+      "pattern": "(?i)(?:\\b(?:1080[pi]?|fhd|full[\\s._-]*hd)\\b|1920\\s*[x×*]\\s*(?:1080|[89]\\d{2}))",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge-LiangYou-Ver.EPX-v6/1080p.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -27,10 +27,10 @@
       "type": "filter"
     },
     {
-      "id": "epx5-720p",
+      "id": "epx6-720p",
       "groupId": "resolution",
       "name": "720P",
-      "pattern": "(?i)^(?!.*(?:\\b(?:4k|uhd|2160[pi]?|1080[pi]?|fhd)\\b|(?:3840|4096|1920)\\s*[x×*])).*(?:\\b720[pi]?\\b|1280\\s*[x×*]\\s*\\d{3,4})",
+      "pattern": "(?i)(?:\\b720[pi]?\\b|1280\\s*[x×*]\\s*720)",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge-LiangYou-Ver.EPX-v6/720p.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -40,7 +40,7 @@
       "type": "filter"
     },
     {
-      "id": "epx5-remux",
+      "id": "epx6-remux",
       "groupId": "source",
       "name": "REMUX",
       "pattern": "(?i)\\b(?:(?:bd|uhd|blu[\\s._-]?ray)[\\s._-]?)?remux\\b",
@@ -53,10 +53,10 @@
       "type": "filter"
     },
     {
-      "id": "epx5-dv",
+      "id": "epx6-dv",
       "groupId": "video-tech",
       "name": "Dolby Vision",
-      "pattern": "(?i)\\b(?:dolby[\\s._-]*vision|dolbyvision|dovi|dv|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1)\\b",
+      "pattern": "(?i)(?:\\b(?:dolby[\\s._-]*vision|dolbyvision|dovi|dv|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1)\\b|杜比视界|\\u2063)",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge-LiangYou-Ver.EPX-v6/dolby-vision.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -66,10 +66,10 @@
       "type": "filter"
     },
     {
-      "id": "epx5-atmos",
+      "id": "epx6-atmos",
       "groupId": "audio-tech",
       "name": "Dolby Atmos",
-      "pattern": "(?i)\\b(?:dolby[\\s._-]*atmos|atmos|joc|e-?ac-?3[\\s._-]*joc|eac3[\\s._-]*joc|ddp[\\s._-]*joc)\\b",
+      "pattern": "(?i)(?:\\b(?:dolby[\\s._-]*atmos|atmos|joc|e-?ac-?3[\\s._-]*joc|eac3[\\s._-]*joc|ddp[\\s._-]*joc)\\b|杜比全景声|全景声)",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge-LiangYou-Ver.EPX-v6/atmos.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -79,7 +79,7 @@
       "type": "filter"
     },
     {
-      "id": "epx5-truehd",
+      "id": "epx6-truehd",
       "groupId": "audio-tech",
       "name": "TrueHD",
       "pattern": "(?i)\\b(?:truehd|true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)\\b",
@@ -92,10 +92,10 @@
       "type": "filter"
     },
     {
-      "id": "epx5-dtshd",
+      "id": "epx6-dtshd",
       "groupId": "audio-tech",
       "name": "DTS-HD MA",
-      "pattern": "(?i)\\b(?:dts[\\s._-]*hd[\\s._-]*(?:ma|master(?:[\\s._-]*audio)?)|dtshd[\\s._-]*ma|dts[\\s._-]*ma)\\b",
+      "pattern": "(?i)\\b(?:dts[\\s._-]*hd[\\s._-]*(?:ma|master(?:[\\s._-]*audio)?)|dtshd[\\s._-]*ma|dts[\\s._-]*ma|dts[\\s._-]*xll)\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge-LiangYou-Ver.EPX-v6/dtshd.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -105,10 +105,10 @@
       "type": "filter"
     },
     {
-      "id": "epx5-dtshd",
+      "id": "epx6-dtshd",
       "groupId": "audio-tech",
       "name": "DTS-HD",
-      "pattern": "(?i)\\b(?:dts[\\s._-]*hd|dtshd)\\b(?![\\s._-]*(?:ma|master)|ma)",
+      "pattern": "(?i)\\b(?:dts[\\s._-]*hd|dtshd)\\b(?![\\s._-]*(?:ma|master|xll))",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge-LiangYou-Ver.EPX-v6/dtshd-core.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -118,10 +118,10 @@
       "type": "filter"
     },
     {
-      "id": "epx5-dtsx",
+      "id": "epx6-dtsx",
       "groupId": "audio-tech",
       "name": "DTS:X",
-      "pattern": "(?i)\\b(?:dts[:\\s._-]*x)\\b",
+      "pattern": "(?i)\\bdts[:\\s._-]*x\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge-LiangYou-Ver.EPX-v6/dtsx.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -131,10 +131,10 @@
       "type": "filter"
     },
     {
-      "id": "epx5-dts",
+      "id": "epx6-dts",
       "groupId": "audio-tech",
       "name": "DTS",
-      "pattern": "(?i)\\bdts\\b(?![\\s._:-]*(?:x|hd))",
+      "pattern": "(?i)\\bdts\\b(?![\\s._:-]*(?:x|hd|ma|xll))",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge-LiangYou-Ver.EPX-v6/dts.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -144,10 +144,10 @@
       "type": "filter"
     },
     {
-      "id": "epx5-hdr10plus",
+      "id": "epx6-hdr10plus",
       "groupId": "video-tech",
       "name": "HDR10+",
-      "pattern": "(?i)\\b(?:hdr10\\+|hdr10[\\s._-]*plus|hdr[\\s._-]*10[\\s._-]*\\+)\\b",
+      "pattern": "(?i)(?:\\b(?:hdr10\\+|hdr10[\\s._-]*plus|hdr[\\s._-]*10[\\s._-]*\\+)\\b|\\u2064)",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge-LiangYou-Ver.EPX-v6/hdr10plus.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -157,7 +157,7 @@
       "type": "filter"
     },
     {
-      "id": "epx5-hdr10",
+      "id": "epx6-hdr10",
       "groupId": "video-tech",
       "name": "HDR10",
       "pattern": "(?i)\\b(?:hdr10|hdr[\\s._-]*10)\\b(?![\\s._-]*(?:\\+|plus))",
@@ -170,10 +170,10 @@
       "type": "filter"
     },
     {
-      "id": "epx5-hlg",
+      "id": "epx6-hlg",
       "groupId": "video-tech",
       "name": "HLG",
-      "pattern": "(?i)\\b(?:hlg|hybrid[ ._-]?log[ ._-]?gamma)\\b",
+      "pattern": "(?i)\\b(?:hlg|hybrid[\\s._-]*log[\\s._-]*gamma)\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge-LiangYou-Ver.EPX-v6/hlg.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -183,10 +183,10 @@
       "type": "filter"
     },
     {
-      "id": "epx5-51",
+      "id": "epx6-51",
       "groupId": "audio-channels",
       "name": "5.1",
-      "pattern": "(?i)^(?!.*(?:\\b(?:ddp|dd\\+|e-?ac-?3|ac-?3|truehd|atmos|dts(?:[\\s._-]?hd(?:[\\s._-]?ma)?)?|aac|flac)[\\s._-]*7[ ._-]?1\\b|\\b7[ ._-]?1[\\s._-]*(?:ch|channels?|audio|surround)\\b|(?:^|[^0-9A-Za-z])7[.]1(?![0-9]))).*(?:\\b(?:ddp|dd\\+|e-?ac-?3|ac-?3|truehd|atmos|dts(?:[\\s._-]?hd(?:[\\s._-]?ma)?)?|aac|flac)[\\s._-]*5[ ._-]?1\\b|\\b5[ ._-]?1[\\s._-]*(?:ch|channels?|audio|surround)\\b|(?:^|[^0-9A-Za-z])5[.]1(?![0-9]))",
+      "pattern": "(?i)(?:\\b(?:ddp|dd\\+|e-?ac-?3|ac-?3|truehd|atmos|dts(?:[\\s._-]?hd(?:[\\s._-]?ma)?)?|aac|flac)[\\s._-]*5[ ._-]?1\\b|\\b5[ ._-]?1[\\s._-]*(?:ch|channels?|audio|surround|声道)\\b|(?:^|[^A-Za-z0-9])5[.]1(?:$|[^0-9]))",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge-LiangYou-Ver.EPX-v6/51.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -196,10 +196,10 @@
       "type": "filter"
     },
     {
-      "id": "epx5-71",
+      "id": "epx6-71",
       "groupId": "audio-channels",
       "name": "7.1",
-      "pattern": "(?i)(?:\\b(?:ddp|dd\\+|e-?ac-?3|ac-?3|truehd|atmos|dts(?:[\\s._-]?hd(?:[\\s._-]?ma)?)?|aac|flac)[\\s._-]*7[ ._-]?1\\b|\\b7[ ._-]?1[\\s._-]*(?:ch|channels?|audio|surround)\\b|(?:^|[^0-9A-Za-z])7[.]1(?![0-9]))",
+      "pattern": "(?i)(?:\\b(?:ddp|dd\\+|e-?ac-?3|ac-?3|truehd|atmos|dts(?:[\\s._-]?hd(?:[\\s._-]?ma)?)?|aac|flac)[\\s._-]*7[ ._-]?1\\b|\\b7[ ._-]?1[\\s._-]*(?:ch|channels?|audio|surround|声道)\\b|(?:^|[^A-Za-z0-9])7[.]1(?:$|[^0-9]))",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge-LiangYou-Ver.EPX-v6/71.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -209,7 +209,7 @@
       "type": "filter"
     },
     {
-      "id": "epx5-hevc",
+      "id": "epx6-hevc",
       "groupId": "video-codec",
       "name": "HEVC",
       "pattern": "(?i)\\b(?:hevc|h[\\s._-]?265|h265|x265|hvc1|hev1|main[\\s._-]?10|main10)\\b",
@@ -222,7 +222,7 @@
       "type": "filter"
     },
     {
-      "id": "epx5-av1",
+      "id": "epx6-av1",
       "groupId": "video-codec",
       "name": "AV1",
       "pattern": "(?i)\\b(?:av1|av01)\\b",
@@ -235,10 +235,10 @@
       "type": "filter"
     },
     {
-      "id": "epx5-avc",
+      "id": "epx6-avc",
       "groupId": "video-codec",
       "name": "AVC",
-      "pattern": "(?i)\\b(?:avc|h[\\s._-]?264|h264|x264|avc1)\\b",
+      "pattern": "(?i)\\b(?:avc|h[\\s._-]?264|h264|x264|avc1|mpeg[\\s._-]?4)\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge-LiangYou-Ver.EPX-v6/avc.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -248,7 +248,7 @@
       "type": "filter"
     },
     {
-      "id": "epx5-vp9",
+      "id": "epx6-vp9",
       "groupId": "video-codec",
       "name": "VP9",
       "pattern": "(?i)\\b(?:vp9|vp09)\\b",
@@ -261,10 +261,10 @@
       "type": "filter"
     },
     {
-      "id": "epx5-bluray",
+      "id": "epx6-bluray",
       "groupId": "source",
       "name": "BLU-RAY",
-      "pattern": "(?i)^(?=.*\\b(?:blu[ ._-]?ray|bluray|bdrip|bdmv|bd25|bd50)\\b)(?!.*\\b(?:(?:bd|uhd|blu[ ._-]?ray)[ ._-]?)?remux\\b)",
+      "pattern": "(?i)\\b(?:blu[\\s._-]?ray|bluray|bdrip|bdmv|bd25|bd50|bdmux)\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge-LiangYou-Ver.EPX-v6/bluray.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -274,10 +274,10 @@
       "type": "filter"
     },
     {
-      "id": "epx5-webdl",
+      "id": "epx6-webdl",
       "groupId": "source",
       "name": "WEB-DL",
-      "pattern": "(?i)\\b(?:web[-_. ]?dl|webdl|webrip|web[-_. ]?rip|amzn|amazon|nf|netflix|dsnp|disney\\+?|atvp|apple[\\s._-]*tv\\+?)\\b",
+      "pattern": "(?i)\\b(?:web[\\s._-]?(?:dl|download)|webdl|webrip|web[\\s._-]?rip|amzn|amazon|nf|netflix|dsnp|disney\\+?|atvp|apple[\\s._-]*tv\\+?|hmax|hbomax|hulu)\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge-LiangYou-Ver.EPX-v6/web-dl.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -287,10 +287,10 @@
       "type": "filter"
     },
     {
-      "id": "epx5-flac",
+      "id": "epx6-flac",
       "groupId": "audio-tech",
       "name": "FLAC",
-      "pattern": "(?i)^(?!.*\\b(?:truehd|atmos|dts[:\\s._-]?x|dts[\\s._-]*hd)\\b).*\\bflac\\b",
+      "pattern": "(?i)\\bflac\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge-LiangYou-Ver.EPX-v6/flac.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -300,10 +300,10 @@
       "type": "filter"
     },
     {
-      "id": "epx5-aac",
+      "id": "epx6-aac",
       "groupId": "audio-tech",
       "name": "AAC",
-      "pattern": "(?i)^(?!.*\\b(?:truehd|atmos|dts[:\\s._-]?x|dts[\\s._-]*hd|flac)\\b).*\\b(?:aac|aac_latm)\\b",
+      "pattern": "(?i)\\b(?:aac|aac_latm)\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge-LiangYou-Ver.EPX-v6/aac.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
