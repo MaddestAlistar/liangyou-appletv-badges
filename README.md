@@ -60,3 +60,15 @@ Ver.EPX 与 Ver.all 已同步增强媒体信息匹配，徽章外观不变。
 **良友4K → REMUX → Dolby Vision → Dolby Atmos → TrueHD → WEB-DL → 7.1/5.1 → HEVC**
 
 其中 REMUX 已从 Source 组独立出来，WEB-DL 保留在普通 Source 组并整体后移。
+
+## EplayerX 播放页兼容优化
+
+参考 6otho/Epx-Badge 的 EplayerX 分组方式，Ver.EPX 已尽量改回 EplayerX 常见标准分组，减少“详情页能显示、进入播放页却不显示”的情况：
+
+- Dolby Atmos：改入 `audio-tech`
+- 5.1 / 7.1：改入 `audio-channels`
+- REMUX / Blu-ray / WEB-DL：统一使用 `source`
+- Dolby Vision / HDR：继续使用 `video-tech`
+- `tagStyle` 统一为 `filled`
+
+同时，Ver.EPX 与 Ver.all 的徽章主标题和副标题都会适度放大；Ver.all 的 PNG 由 premium SVG 自动重新渲染。
