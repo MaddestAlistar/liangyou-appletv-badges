@@ -9,7 +9,7 @@
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
-      "tagStyle": "filled and bordered",
+      "tagStyle": "filled",
       "isEnabled": true,
       "type": "filter"
     },
@@ -22,7 +22,7 @@
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
-      "tagStyle": "filled and bordered",
+      "tagStyle": "filled",
       "isEnabled": true,
       "type": "filter"
     },
@@ -35,20 +35,20 @@
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
-      "tagStyle": "filled and bordered",
+      "tagStyle": "filled",
       "isEnabled": true,
       "type": "filter"
     },
     {
       "id": "epx-remux",
-      "groupId": "master-source",
+      "groupId": "source",
       "name": "REMUX",
       "pattern": "(?i)\\b(?:(?:bd|uhd|blu[ ._-]?ray)[ ._-]?)?remux\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge-LiangYou-Ver.EPX/remux.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
-      "tagStyle": "filled and bordered",
+      "tagStyle": "filled",
       "isEnabled": true,
       "type": "filter"
     },
@@ -61,20 +61,20 @@
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
-      "tagStyle": "filled and bordered",
+      "tagStyle": "filled",
       "isEnabled": true,
       "type": "filter"
     },
     {
       "id": "epx-atmos",
-      "groupId": "audio-object",
+      "groupId": "audio-tech",
       "name": "Dolby Atmos",
       "pattern": "(?i)(?:\\b(?:dolby[ ._-]?)?atmos\\b|\\bjoc\\b)",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge-LiangYou-Ver.EPX/atmos.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
-      "tagStyle": "filled and bordered",
+      "tagStyle": "filled",
       "isEnabled": true,
       "type": "filter"
     },
@@ -87,7 +87,7 @@
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
-      "tagStyle": "filled and bordered",
+      "tagStyle": "filled",
       "isEnabled": true,
       "type": "filter"
     },
@@ -100,7 +100,7 @@
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
-      "tagStyle": "filled and bordered",
+      "tagStyle": "filled",
       "isEnabled": true,
       "type": "filter"
     },
@@ -113,7 +113,7 @@
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
-      "tagStyle": "filled and bordered",
+      "tagStyle": "filled",
       "isEnabled": true,
       "type": "filter"
     },
@@ -126,7 +126,7 @@
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
-      "tagStyle": "filled and bordered",
+      "tagStyle": "filled",
       "isEnabled": true,
       "type": "filter"
     },
@@ -139,7 +139,7 @@
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
-      "tagStyle": "filled and bordered",
+      "tagStyle": "filled",
       "isEnabled": true,
       "type": "filter"
     },
@@ -152,33 +152,33 @@
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
-      "tagStyle": "filled and bordered",
+      "tagStyle": "filled",
       "isEnabled": true,
       "type": "filter"
     },
     {
       "id": "epx-71",
-      "groupId": "channels",
+      "groupId": "audio-channels",
       "name": "7.1",
       "pattern": "(?i)(?:\\b7[ .]1(?:[ ._-]?(?:ch|channels?))?\\b|\\b8[ ._-]?(?:ch|channels?)\\b)",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge-LiangYou-Ver.EPX/71.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
-      "tagStyle": "filled and bordered",
+      "tagStyle": "filled",
       "isEnabled": true,
       "type": "filter"
     },
     {
       "id": "epx-51",
-      "groupId": "channels",
+      "groupId": "audio-channels",
       "name": "5.1",
       "pattern": "(?i)^(?=.*(?:\\b5[ .]1(?:[ ._-]?(?:ch|channels?))?\\b|\\b6[ ._-]?(?:ch|channels?)\\b))(?!.*(?:\\b7[ .]1(?:[ ._-]?(?:ch|channels?))?\\b|\\b8[ ._-]?(?:ch|channels?)\\b))",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge-LiangYou-Ver.EPX/51.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
-      "tagStyle": "filled and bordered",
+      "tagStyle": "filled",
       "isEnabled": true,
       "type": "filter"
     },
@@ -191,7 +191,7 @@
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
-      "tagStyle": "filled and bordered",
+      "tagStyle": "filled",
       "isEnabled": true,
       "type": "filter"
     },
@@ -204,7 +204,7 @@
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
-      "tagStyle": "filled and bordered",
+      "tagStyle": "filled",
       "isEnabled": true,
       "type": "filter"
     },
@@ -217,7 +217,7 @@
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
-      "tagStyle": "filled and bordered",
+      "tagStyle": "filled",
       "isEnabled": true,
       "type": "filter"
     },
@@ -230,7 +230,7 @@
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
-      "tagStyle": "filled and bordered",
+      "tagStyle": "filled",
       "isEnabled": true,
       "type": "filter"
     },
@@ -243,7 +243,7 @@
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
-      "tagStyle": "filled and bordered",
+      "tagStyle": "filled",
       "isEnabled": true,
       "type": "filter"
     },
@@ -256,7 +256,7 @@
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
-      "tagStyle": "filled and bordered",
+      "tagStyle": "filled",
       "isEnabled": true,
       "type": "filter"
     },
@@ -269,7 +269,7 @@
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
-      "tagStyle": "filled and bordered",
+      "tagStyle": "filled",
       "isEnabled": true,
       "type": "filter"
     },
@@ -282,7 +282,7 @@
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
-      "tagStyle": "filled and bordered",
+      "tagStyle": "filled",
       "isEnabled": true,
       "type": "filter"
     }
@@ -296,22 +296,8 @@
       "isExpanded": true
     },
     {
-      "id": "master-source",
-      "name": "Master Source",
-      "color": "#00000000",
-      "borderColor": "#00000000",
-      "isExpanded": true
-    },
-    {
       "id": "video-tech",
       "name": "Video Tech",
-      "color": "#00000000",
-      "borderColor": "#00000000",
-      "isExpanded": true
-    },
-    {
-      "id": "audio-object",
-      "name": "Immersive Audio",
       "color": "#00000000",
       "borderColor": "#00000000",
       "isExpanded": true
@@ -331,8 +317,8 @@
       "isExpanded": true
     },
     {
-      "id": "channels",
-      "name": "Channels",
+      "id": "audio-channels",
+      "name": "Audio Channels",
       "color": "#00000000",
       "borderColor": "#00000000",
       "isExpanded": true
