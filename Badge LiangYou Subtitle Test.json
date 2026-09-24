@@ -1,0 +1,52 @@
+{
+  "filters": [
+    {
+      "id": "subtest-pgs",
+      "groupId": "subtitle-format",
+      "name": "PGS",
+      "pattern": "(?i)(?:\\b(?:pgs|pgssub|hdmv[\\s._-]*pgs|hdmv_pgs_subtitle|s_hdmv[/._-]*pgs|presentation[\\s._-]*graphic(?:[\\s._-]*stream)?)\\b|图形字幕|蓝光字幕)",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge-LiangYou-Ver.EPX-v7/pgs.svg",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "textColor": "#00000000",
+      "tagStyle": "filled",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "subtest-ass",
+      "groupId": "subtitle-format",
+      "name": "ASS",
+      "pattern": "(?i)(?:\\b(?:ass|ssa|s_text[/._-]*(?:ass|ssa)|advanced[\\s._-]*substation[\\s._-]*alpha|substation[\\s._-]*alpha)\\b|特效字幕|样式字幕)",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge-LiangYou-Ver.EPX-v7/ass.svg",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "textColor": "#00000000",
+      "tagStyle": "filled",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "subtest-srt",
+      "groupId": "subtitle-format",
+      "name": "SRT",
+      "pattern": "(?i)(?:\\b(?:srt|subrip|s_text[/._-]*utf-?8|utf-?8[\\s._-]*subtitle)\\b|文本字幕|外挂字幕)",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge-LiangYou-Ver.EPX-v7/srt.svg",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "textColor": "#00000000",
+      "tagStyle": "filled",
+      "isEnabled": true,
+      "type": "filter"
+    }
+  ],
+  "groups": [
+    {
+      "id": "subtitle-format",
+      "name": "Subtitle Format",
+      "color": "#00000000",
+      "borderColor": "#00000000",
+      "isExpanded": true
+    }
+  ]
+}
