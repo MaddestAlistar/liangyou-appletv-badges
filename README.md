@@ -114,3 +114,18 @@ Ver.EPX 与 Ver.all 已同步增强媒体信息匹配，徽章外观不变。
 - Dolby Atmos 收紧为 `Atmos / Dolby Atmos / JOC`，不再把普通 EAC3 / DDP 直接当 Atmos。
 - 分组 ID 恢复为 EplayerX 参考配置常用的标准组：resolution / source / video-tech / video-codec / audio-tech / audio-channels。
 - 6otho 与 l3oku 的公开配置都默认关闭 HEVC / AVC，BetterFormatter 也没有 codec 徽章；因此如果 EPX2 中 HEVC 仍只在资源卡显示、播放页不显示，基本可判断为 EplayerX 播放页没有提供 codec 文本，而不是 JSON 正则问题。
+
+## EPX3 识别规则校正
+
+对照 6otho/Epx-Badge、9mousaa/BetterFormatter 与 l3okuGmail/badges 后，进一步调整 EplayerX 播放页识别：
+
+- 4K：补充 2160p / UHD / Ultra HD / 3840×xxxx / 4096×xxxx。
+- HEVC：兼容 HEVC / H.265 / H265 / x265 / hvc1 / hev1 / Main 10，并把 HEVC/AV1/AVC/VP9 从 video-codec 组移入 video-tech，尝试绕过播放页对 video-codec 组的忽略。
+- DTS-HD：保留 DTS-HD MA，并新增独立的普通 DTS-HD 规则与专用徽章，避免只有 “DTS-HD” 时不显示。
+- Dolby Vision：兼容 Dolby Vision / DolbyVision / DoVi / DV / dvhe / dvh1。
+- Dolby Atmos：兼容 Atmos / Dolby Atmos / JOC / E-AC-3 JOC / EAC3 JOC / DDP JOC；不把普通 EAC3 / DDP 直接当 Atmos。
+- TrueHD：兼容 TrueHD / True HD / Dolby TrueHD / MLP FBA。
+- 显示顺序调整为：分辨率 → REMUX → Dolby Vision → Dolby Atmos → TrueHD → DTS-HD → HDR → 声道 → HEVC/其他编码 → Blu-ray / WEB-DL。
+
+新测试地址：
+https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.EPX3.json
