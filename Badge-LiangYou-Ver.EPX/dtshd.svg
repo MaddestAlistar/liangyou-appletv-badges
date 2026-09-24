@@ -12,6 +12,6 @@
   <text x="20" y="22.5" text-anchor="middle" font-family="Noto Sans CJK SC,PingFang SC,Arial,sans-serif" font-size="10.5" font-weight="800" fill="#F2AF4A">良</text>
 <circle cx="61" cy="49" r="26" fill="none" stroke="#F2AF4A" stroke-width="2.1" stroke-opacity=".75"/><ellipse cx="61" cy="38" rx="18" ry="5" fill="none" stroke="#F2AF4A" stroke-width="3"/><ellipse cx="61" cy="48" rx="18" ry="5" fill="none" stroke="#F2AF4A" stroke-width="3"/><ellipse cx="61" cy="58" rx="18" ry="5" fill="none" stroke="#F2AF4A" stroke-width="3"/>
 <path d="M106 20v56" stroke="#F2AF4A" stroke-opacity=".45" stroke-width="1.5"/>
-<text x="120" y="47" font-family="Noto Sans CJK SC,PingFang SC,Arial,Helvetica,sans-serif" font-size="28" font-weight="850" fill="#FFFFFF">DTS-HD</text>
-<text x="120" y="69" font-family="Noto Sans CJK SC,PingFang SC,Microsoft YaHei,Arial,sans-serif" font-size="10.8" font-weight="750" letter-spacing=".45" fill="#F2AF4A">MASTER AUDIO</text>
+<text x="120" y="47" font-family="Noto Sans CJK SC,PingFang SC,Arial,Helvetica,sans-serif" font-size="30.5" font-weight="850" fill="#FFFFFF">DTS-HD</text>
+<text x="120" y="69" font-family="Noto Sans CJK SC,PingFang SC,Microsoft YaHei,Arial,sans-serif" font-size="12.1" font-weight="750" letter-spacing=".45" fill="#F2AF4A">MASTER AUDIO</text>
 </svg>

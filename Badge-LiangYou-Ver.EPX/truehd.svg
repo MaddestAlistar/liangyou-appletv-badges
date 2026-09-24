@@ -12,6 +12,6 @@
   <text x="20" y="22.5" text-anchor="middle" font-family="Noto Sans CJK SC,PingFang SC,Arial,sans-serif" font-size="10.5" font-weight="800" fill="#C8B2FF">良</text>
 <circle cx="61" cy="49" r="26" fill="none" stroke="#C8B2FF" stroke-width="2.1" stroke-opacity=".75"/><ellipse cx="61" cy="38" rx="17" ry="5.5" fill="#C8B2FF"/><ellipse cx="61" cy="48" rx="17" ry="5.5" fill="#C8B2FF" fill-opacity=".82"/><ellipse cx="61" cy="58" rx="17" ry="5.5" fill="#C8B2FF" fill-opacity=".64"/>
 <path d="M106 20v56" stroke="#C8B2FF" stroke-opacity=".45" stroke-width="1.5"/>
-<text x="120" y="47" font-family="Noto Sans CJK SC,PingFang SC,Arial,Helvetica,sans-serif" font-size="29" font-weight="850" fill="#FFFFFF">TRUEHD</text>
-<text x="120" y="69" font-family="Noto Sans CJK SC,PingFang SC,Microsoft YaHei,Arial,sans-serif" font-size="11.5" font-weight="750" letter-spacing=".45" fill="#C8B2FF">LOSSLESS</text>
+<text x="120" y="47" font-family="Noto Sans CJK SC,PingFang SC,Arial,Helvetica,sans-serif" font-size="31.6" font-weight="850" fill="#FFFFFF">TRUEHD</text>
+<text x="120" y="69" font-family="Noto Sans CJK SC,PingFang SC,Microsoft YaHei,Arial,sans-serif" font-size="12.9" font-weight="750" letter-spacing=".45" fill="#C8B2FF">LOSSLESS</text>
 </svg>
