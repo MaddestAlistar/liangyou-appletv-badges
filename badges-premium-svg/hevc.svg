@@ -43,6 +43,6 @@
   <circle cx="69" cy="55" r="31" fill="url(#iconFill)" opacity=".34"/>
   <circle cx="69" cy="55" r="32" fill="none" stroke="#8BE0FF" stroke-opacity=".58" stroke-width="2" filter="url(#glow)"/><rect x="44" y="35" width="50" height="40" rx="6" fill="#15304B" stroke="#8BE0FF" stroke-width="3"/><path d="M49 29v6M59 29v6M69 29v6M79 29v6M89 29v6M49 75v6M59 75v6M69 75v6M79 75v6M89 75v6M38 41h6M38 51h6M38 61h6M94 41h6M94 51h6M94 61h6" stroke="#8BE0FF" stroke-width="2.4"/><text x="69" y="61" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="900" fill="#FFFFFF">HEVC</text></g>
   <path d="M112 21v66" stroke="#8BE0FF" stroke-opacity=".55" stroke-width="1.8"/>
-  <text x="128" y="67" font-family="Noto Sans CJK SC,Arial,sans-serif" font-size="40" font-weight="900" fill="#FFFFFF">HEVC</text>
+  <text x="128" y="67" font-family="Noto Sans CJK SC,Arial,sans-serif" font-size="42" font-weight="900" fill="#FFFFFF">HEVC</text>
   
   </svg>
