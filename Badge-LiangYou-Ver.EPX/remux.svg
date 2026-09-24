@@ -12,6 +12,6 @@
   <text x="20" y="22.5" text-anchor="middle" font-family="Noto Sans CJK SC,PingFang SC,Arial,sans-serif" font-size="10.5" font-weight="800" fill="#BFDFFF">良</text>
 <circle cx="61" cy="49" r="26" fill="none" stroke="#BFDFFF" stroke-width="2.1" stroke-opacity=".75"/><circle cx="54" cy="47" r="17" fill="none" stroke="#BFDFFF" stroke-width="3"/><circle cx="54" cy="47" r="4" fill="#BFDFFF"/><path d="M61 58l21 4v8l-23-5" fill="none" stroke="#BFDFFF" stroke-width="3"/><path d="M67 60v7M74 61v7" stroke="#BFDFFF" stroke-width="2"/>
 <path d="M106 20v56" stroke="#BFDFFF" stroke-opacity=".45" stroke-width="1.5"/>
-<text x="120" y="47" font-family="Noto Sans CJK SC,PingFang SC,Arial,Helvetica,sans-serif" font-size="31" font-weight="850" fill="#FFFFFF">REMUX</text>
-<text x="120" y="69" font-family="Noto Sans CJK SC,PingFang SC,Microsoft YaHei,Arial,sans-serif" font-size="11.5" font-weight="750" letter-spacing=".45" fill="#BFDFFF">MASTER</text>
+<text x="120" y="47" font-family="Noto Sans CJK SC,PingFang SC,Arial,Helvetica,sans-serif" font-size="33.8" font-weight="850" fill="#FFFFFF">REMUX</text>
+<text x="120" y="69" font-family="Noto Sans CJK SC,PingFang SC,Microsoft YaHei,Arial,sans-serif" font-size="12.9" font-weight="750" letter-spacing=".45" fill="#BFDFFF">MASTER</text>
 </svg>

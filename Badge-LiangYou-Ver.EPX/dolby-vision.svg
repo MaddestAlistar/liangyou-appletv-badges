@@ -12,6 +12,6 @@
   <text x="20" y="22.5" text-anchor="middle" font-family="Noto Sans CJK SC,PingFang SC,Arial,sans-serif" font-size="10.5" font-weight="800" fill="#C58AFF">良</text>
 <rect x="38" y="34" width="46" height="30" rx="3" fill="none" stroke="#C58AFF" stroke-width="2.6"/><path d="M42 39v20h8c6 0 10-4.5 10-10s-4-10-10-10zm38 0h-8c-6 0-10 4.5-10 10s4 10 10 10h8z" fill="#C58AFF"/>
 <path d="M106 20v56" stroke="#C58AFF" stroke-opacity=".45" stroke-width="1.5"/>
-<text x="120" y="47" font-family="Noto Sans CJK SC,PingFang SC,Arial,Helvetica,sans-serif" font-size="26" font-weight="850" fill="#FFFFFF">DOLBY VISION</text>
-<text x="120" y="69" font-family="Noto Sans CJK SC,PingFang SC,Microsoft YaHei,Arial,sans-serif" font-size="13" font-weight="750" letter-spacing=".45" fill="#C58AFF">杜比视界</text>
+<text x="120" y="47" font-family="Noto Sans CJK SC,PingFang SC,Arial,Helvetica,sans-serif" font-size="28" font-weight="850" fill="#FFFFFF">DOLBY VISION</text>
+<text x="120" y="69" font-family="Noto Sans CJK SC,PingFang SC,Microsoft YaHei,Arial,sans-serif" font-size="14.6" font-weight="750" letter-spacing=".45" fill="#C58AFF">杜比视界</text>
 </svg>

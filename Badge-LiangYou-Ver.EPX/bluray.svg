@@ -12,6 +12,6 @@
   <text x="20" y="22.5" text-anchor="middle" font-family="Noto Sans CJK SC,PingFang SC,Arial,sans-serif" font-size="10.5" font-weight="800" fill="#69BFFF">良</text>
 <circle cx="61" cy="49" r="26" fill="none" stroke="#69BFFF" stroke-width="2.1" stroke-opacity=".75"/><circle cx="61" cy="49" r="18" fill="none" stroke="#69BFFF" stroke-width="4"/><circle cx="61" cy="49" r="4.5" fill="#69BFFF"/>
 <path d="M106 20v56" stroke="#69BFFF" stroke-opacity=".45" stroke-width="1.5"/>
-<text x="120" y="47" font-family="Noto Sans CJK SC,PingFang SC,Arial,Helvetica,sans-serif" font-size="29" font-weight="850" fill="#FFFFFF">BLU-RAY</text>
-<text x="120" y="69" font-family="Noto Sans CJK SC,PingFang SC,Microsoft YaHei,Arial,sans-serif" font-size="11.5" font-weight="750" letter-spacing=".45" fill="#69BFFF">SOURCE</text>
+<text x="120" y="47" font-family="Noto Sans CJK SC,PingFang SC,Arial,Helvetica,sans-serif" font-size="31.6" font-weight="850" fill="#FFFFFF">BLU-RAY</text>
+<text x="120" y="69" font-family="Noto Sans CJK SC,PingFang SC,Microsoft YaHei,Arial,sans-serif" font-size="12.9" font-weight="750" letter-spacing=".45" fill="#69BFFF">SOURCE</text>
 </svg>
