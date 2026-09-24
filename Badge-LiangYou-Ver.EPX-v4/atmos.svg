@@ -13,5 +13,5 @@
 <g transform="translate(-8 0)"><rect x="38" y="34" width="46" height="30" rx="3" fill="none" stroke="#C58AFF" stroke-width="2.6"/><path d="M42 39v20h8c6 0 10-4.5 10-10s-4-10-10-10zm38 0h-8c-6 0-10 4.5-10 10s4 10 10 10h8z" fill="#C58AFF"/></g>
 <path d="M94 20v56" stroke="#C58AFF" stroke-opacity=".45" stroke-width="1.5"/>
 <text x="101" y="47" font-family="Noto Sans CJK SC,PingFang SC,Arial,Helvetica,sans-serif" font-size="31" font-weight="850" fill="#FFFFFF">DOLBY ATMOS</text>
-<text x="109" y="70.5" font-family="Noto Sans CJK SC,PingFang SC,Microsoft YaHei,Arial,sans-serif" font-size="18" font-weight="750" letter-spacing=".45" fill="#C58AFF">杜比全景声</text>
+<text x="101" y="72" font-family="Noto Sans CJK SC,PingFang SC,Microsoft YaHei,Arial,sans-serif" font-size="20" font-weight="750" letter-spacing=".45" fill="#C58AFF">杜比全景声</text>
 </svg>
