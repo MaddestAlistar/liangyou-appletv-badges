@@ -102,3 +102,15 @@ Ver.EPX 与 Ver.all 已同步增强媒体信息匹配，徽章外观不变。
 - 良友4K 下方 `ULTRA HD` 向右微调，使视觉对齐更自然。
 - 已重新渲染 PNG 并切到新的固定提交资源，避免旧 PNG 缓存。
 - 同步收紧 5.1 / 7.1、DTS-HD MA、HEVC / AVC 与 4K 的匹配规则。
+
+## EPX2 播放页兼容校正
+
+对照 6otho/Epx-Badge、9mousaa/BetterFormatter、l3okuGmail/badges 后，对 EplayerX 播放页规则再次收紧：
+
+- 新增 `Badge LiangYou Ver.EPX2.json`，用于绕过 EplayerX 对旧 JSON 地址的缓存。
+- 5.1 / 7.1 不再用过宽的纯数字规则，避免把 `L5.1 / L7.1` 这类视频 Profile / Level 数字误判成声道。
+- 7.1 不再用 `8ch` 推断，只有明确的 7.1 音频上下文才显示。
+- HEVC 保留 `HEVC / H.265 / x265 / hvc1 / hev1`，并增加不含 AV1/VP9 时对 `Main 10` 的兼容回退。
+- Dolby Atmos 收紧为 `Atmos / Dolby Atmos / JOC`，不再把普通 EAC3 / DDP 直接当 Atmos。
+- 分组 ID 恢复为 EplayerX 参考配置常用的标准组：resolution / source / video-tech / video-codec / audio-tech / audio-channels。
+- 6otho 与 l3oku 的公开配置都默认关闭 HEVC / AVC，BetterFormatter 也没有 codec 徽章；因此如果 EPX2 中 HEVC 仍只在资源卡显示、播放页不显示，基本可判断为 EplayerX 播放页没有提供 codec 文本，而不是 JSON 正则问题。
