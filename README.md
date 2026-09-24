@@ -24,3 +24,18 @@ EplayerX 专用兼容版，基于之前可正常显示的 320×96 结构轻量�
   https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.EPX.json
 
 > EplayerX 优先使用 Ver.EPX；CapyPlayer / RovePlayer 可优先使用 Ver.all。
+
+## 匹配规则优化
+
+Ver.EPX 与 Ver.all 已同步增强媒体信息匹配，徽章外观不变。
+
+- Dolby Atmos：新增 `JOC / E-AC-3 JOC / EAC3 JOC` 场景识别
+- Dolby Vision：新增 `dvhe / dvh1` 等常见标识
+- HDR10+：兼容 `HDR10+ / HDR10Plus / HDR10P`
+- HEVC：新增 `hvc1 / hev1`
+- AVC：新增 `avc1`
+- AV1 / VP9：新增 `av01 / vp09`
+- 5.1 / 7.1：新增 `6ch / 6 channels / 8ch / 8 channels`
+- REMUX / Blu-ray / WEB-DL / 分辨率：扩展常见命名和分辨率写法
+
+为减少误判，普通 `EAC3 / DD+` 不会直接当作 Atmos；只有明确出现 Atmos 或 JOC 时才显示 Dolby Atmos。
