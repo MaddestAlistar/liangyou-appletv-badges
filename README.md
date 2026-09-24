@@ -72,3 +72,14 @@ Ver.EPX 与 Ver.all 已同步增强媒体信息匹配，徽章外观不变。
 - `tagStyle` 统一为 `filled`
 
 同时，Ver.EPX 与 Ver.all 的徽章主标题和副标题都会适度放大；Ver.all 的 PNG 由 premium SVG 自动重新渲染。
+
+## EPX 播放页专项修复
+
+针对 EplayerX 出现“详情页有徽章、进入播放页缺徽章”的情况，Ver.EPX 现采用兼容优先策略：
+
+- Dolby Atmos：除 `Atmos / JOC` 外，播放页仅暴露 `EAC3 / E-AC-3 / DDP / DD+` 时也允许显示 Atmos 徽章，以提高播放页命中率。注意：少量普通 Dolby Digital Plus 资源可能因此被识别成 Atmos。
+- 7.1：取消 `8ch / 8 channels` 推断，只在明确出现 `7.1` 时显示，避免部分 5.1 资源在播放页被误判成 7.1。
+- 5.1：支持明确 `5.1` 以及 `6ch / 6 channels`。
+- WEB-DL：增加 `WEBRip / AMZN / Netflix / Disney+ / ATVP` 等常见 WEB 来源标识，提高播放页命中率。
+- Ver.EPX 改用新的 `Badge-LiangYou-Ver.EPX-v2` 图片目录，绕过旧 SVG 缓存。
+- Ver.EPX 与 Ver.all 的主标题、副标题均再次放大；Ver.all 已重新渲染 PNG，并使用固定提交地址避免旧图片缓存。
