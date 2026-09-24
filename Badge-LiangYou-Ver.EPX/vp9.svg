@@ -12,6 +12,6 @@
   <text x="20" y="22.5" text-anchor="middle" font-family="Noto Sans CJK SC,PingFang SC,Arial,sans-serif" font-size="10.5" font-weight="800" fill="#58DBD9">良</text>
 <circle cx="61" cy="49" r="26" fill="none" stroke="#58DBD9" stroke-width="2.1" stroke-opacity=".75"/><path d="M45 33l33 16-33 16z" fill="none" stroke="#58DBD9" stroke-width="3"/><path d="M52 40l19 9-19 9z" fill="#58DBD9" fill-opacity=".75"/>
 <path d="M106 20v56" stroke="#58DBD9" stroke-opacity=".45" stroke-width="1.5"/>
-<text x="120" y="47" font-family="Noto Sans CJK SC,PingFang SC,Arial,Helvetica,sans-serif" font-size="34" font-weight="850" fill="#FFFFFF">VP9</text>
-<text x="120" y="69" font-family="Noto Sans CJK SC,PingFang SC,Microsoft YaHei,Arial,sans-serif" font-size="10.8" font-weight="750" letter-spacing=".45" fill="#58DBD9">VIDEO CODEC</text>
+<text x="120" y="47" font-family="Noto Sans CJK SC,PingFang SC,Arial,Helvetica,sans-serif" font-size="37.1" font-weight="850" fill="#FFFFFF">VP9</text>
+<text x="120" y="69" font-family="Noto Sans CJK SC,PingFang SC,Microsoft YaHei,Arial,sans-serif" font-size="12.1" font-weight="750" letter-spacing=".45" fill="#58DBD9">VIDEO CODEC</text>
 </svg>
