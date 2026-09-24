@@ -38,11 +38,11 @@
   <rect x="10" y="10" width="340" height="88" rx="16" fill="none" stroke="#FFFFFF" stroke-opacity=".24" stroke-width="1.2"/>
   <path d="M18 17H330C250 21 173 34 111 62C79 77 45 82 18 82Z" fill="#FFFFFF" opacity=".035"/>
   <circle cx="24" cy="23" r="11" fill="#080A0D" stroke="#78D7FF" stroke-width="2"/>
-  <text x="24" y="28" text-anchor="middle" font-family="Noto Sans CJK SC,Arial,sans-serif" font-size="13" font-weight="900" fill="#78D7FF">良</text>
+  <text x="24" y="28" text-anchor="middle" font-family="Noto Sans CJK SC,Arial,sans-serif" font-size="14.5" font-weight="900" fill="#78D7FF">良</text>
   <g filter="url(#glow)"><circle cx="69" cy="55" r="35" fill="#05070A" stroke="#087DFF" stroke-width="2.2"/>
   <circle cx="69" cy="55" r="31" fill="url(#iconFill)" opacity=".34"/>
   <circle cx="69" cy="55" r="32" fill="none" stroke="#78D7FF" stroke-opacity=".58" stroke-width="2" filter="url(#glow)"/><rect x="44" y="37" width="11" height="22" rx="3" fill="#4EC7FF" stroke="#B6EEFF" stroke-width="2"/><rect x="83" y="37" width="11" height="22" rx="3" fill="#4EC7FF" stroke="#B6EEFF" stroke-width="2"/><rect x="60" y="30" width="18" height="13" rx="3" fill="#4EC7FF" stroke="#B6EEFF" stroke-width="2"/><rect x="57" y="60" width="24" height="15" rx="3" fill="#4EC7FF" stroke="#B6EEFF" stroke-width="2"/><ellipse cx="69" cy="55" rx="30" ry="13" fill="none" stroke="#128BFF" stroke-width="2"/></g>
   <path d="M112 21v66" stroke="#78D7FF" stroke-opacity=".55" stroke-width="1.8"/>
-  <text x="128" y="59" font-family="Noto Sans CJK SC,Arial,sans-serif" font-size="42" font-weight="900" fill="#FFFFFF">7.1</text>
-  <text x="128" y="76" font-family="Noto Sans CJK SC,Arial,sans-serif" font-size="15.1" font-weight="800" letter-spacing=".7" fill="#78D7FF">SURROUND AUDIO</text>
+  <text x="124" y="59" font-family="Noto Sans CJK SC,Arial,sans-serif" font-size="44" font-weight="900" fill="#FFFFFF">7.1</text>
+  <text x="124" y="76" font-family="Noto Sans CJK SC,Arial,sans-serif" font-size="16.8" font-weight="800" letter-spacing=".7" fill="#78D7FF">SURROUND AUDIO</text>
   </svg>
