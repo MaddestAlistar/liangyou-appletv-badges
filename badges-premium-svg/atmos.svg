@@ -44,5 +44,5 @@
   <circle cx="69" cy="55" r="32" fill="none" stroke="#FFE16A" stroke-opacity=".58" stroke-width="2" filter="url(#glow)"/><ellipse cx="69" cy="65" rx="39" ry="12" fill="none" stroke="#008DFF" stroke-width="3"/><ellipse cx="69" cy="65" rx="31" ry="8" fill="none" stroke="#69D4FF" stroke-width="2"/><rect x="46" y="33" width="46" height="34" rx="5" fill="url(#gold)" stroke="#FFECA0" stroke-width="2"/><path d="M50 39v22h10c6 0 11-5 11-11s-5-11-11-11zm38 0H78c-6 0-11 5-11 11s5 11 11 11h10z" fill="#4B3000"/></g>
   <path d="M107 21v66" stroke="#FFE16A" stroke-opacity=".55" stroke-width="1.8"/>
   <text x="118" y="59" font-family="Noto Sans CJK SC,Arial,sans-serif" font-size="31.5" font-weight="900" fill="#FFFFFF">DOLBY ATMOS</text>
-  <text x="118" y="78" font-family="Noto Sans CJK SC,Arial,sans-serif" font-size="19" font-weight="800" letter-spacing=".7" fill="#FFE16A">杜比全景声</text>
+  <text x="118" y="80" font-family="Noto Sans CJK SC,Arial,sans-serif" font-size="21" font-weight="800" letter-spacing=".7" fill="#FFE16A">杜比全景声</text>
   </svg>
