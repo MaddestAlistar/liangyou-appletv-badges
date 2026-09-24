@@ -129,3 +129,27 @@ Ver.EPX 与 Ver.all 已同步增强媒体信息匹配，徽章外观不变。
 
 新测试地址：
 https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.EPX3.json
+
+## EPX5 资源卡一致性优化
+
+针对 EplayerX 不同 Emby 服务器“资料卡徽章大小不一致、资料卡与播放页匹配结果不完全一致”的问题，做了两类处理：
+
+### 1. SVG 画布统一
+- 已确认 EPX 徽章原始文件均为 320×96 / viewBox 0 0 320 96。
+- 新建 `Badge-LiangYou-Ver.EPX-v6` 资源目录。
+- 所有 SVG 增加固定 `preserveAspectRatio="xMidYMid meet"`、`overflow="hidden"` 和完整 320×96 透明画布。
+- 目的：减少不同 SVG 渲染器按可见内容边界计算尺寸时造成的视觉大小差异。
+
+### 2. 资源卡匹配去重
+参考 6otho/Epx-Badge、9mousaa/BetterFormatter、l3okuGmail/badges 的规则，减少同一资料卡同时命中过多低优先级徽章：
+- 4K / 1080P / 720P 改为高分辨率优先，避免同一资源卡同时命中多个分辨率。
+- 5.1 / 7.1 改为互斥，7.1 存在时不再额外显示 5.1。
+- DTS-HD MA / DTS-HD / DTS 保持互斥。
+- AAC / FLAC 在 TrueHD / Atmos / DTS-HD 等高优先级音频存在时不再抢占资料卡空间。
+- 保持标准 EplayerX 分组：resolution / source / video-tech / video-codec / audio-tech / audio-channels。
+
+### 结论
+如果同一个徽章在不同服务器资料卡中仍呈现不同整体缩放，而播放页正常，说明差异来自 EplayerX 资源卡根据可用宽度、匹配徽章数量或服务器返回的 MediaSource 文本做自适应布局；badge JSON 无法强制资源卡容器固定尺寸。EPX5 已尽量通过统一 SVG 画布和减少重复匹配来降低这种差异。
+
+新地址：
+https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.EPX5.json
