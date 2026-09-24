@@ -83,3 +83,22 @@ Ver.EPX 与 Ver.all 已同步增强媒体信息匹配，徽章外观不变。
 - WEB-DL：增加 `WEBRip / AMZN / Netflix / Disney+ / ATVP` 等常见 WEB 来源标识，提高播放页命中率。
 - Ver.EPX 改用新的 `Badge-LiangYou-Ver.EPX-v2` 图片目录，绕过旧 SVG 缓存。
 - Ver.EPX 与 Ver.all 的主标题、副标题均再次放大；Ver.all 已重新渲染 PNG，并使用固定提交地址避免旧图片缓存。
+
+## 2026-09-24 EPX v5 / Ver.all 细调
+
+### Badge LiangYou Ver.EPX
+- 切换到 `Badge-LiangYou-Ver.EPX-v5`，用于绕过旧 SVG 缓存。
+- Dolby Vision / Dolby Atmos：左侧图标进一步左移，分隔线和文字区同步左移，减少右侧顶框。
+- 所有已有第二行副标题由 20 提高到 22。
+- 参考 6otho/Epx-Badge 的 EplayerX 写法，减少复杂正则和 lookbehind。
+- HEVC / AVC 等 codec 匹配改成更接近 EplayerX 参考源的格式。
+- HEVC 等视频编码提前参与匹配，降低播放界面因徽章数量限制而被后置丢弃的概率。
+- 5.1 / 7.1 改为更严格、互不依赖 8ch 推断的规则，5.1 规则优先。
+- DTS-HD MA 改为只在明确出现 MA / Master Audio 时匹配，避免普通 DTS-HD 被误标为 MA。
+- 4K 增加对 1080P / 720P 的排除，降低多分辨率文本导致的误判。
+
+### Badge LiangYou Ver.all
+- 复杂版已有第二行副标题由 21 提高到 23。
+- 良友4K 下方 `ULTRA HD` 向右微调，使视觉对齐更自然。
+- 已重新渲染 PNG 并切到新的固定提交资源，避免旧 PNG 缓存。
+- 同步收紧 5.1 / 7.1、DTS-HD MA、HEVC / AVC 与 4K 的匹配规则。
