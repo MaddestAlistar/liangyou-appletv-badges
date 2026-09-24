@@ -39,3 +39,22 @@ Ver.EPX 与 Ver.all 已同步增强媒体信息匹配，徽章外观不变。
 - REMUX / Blu-ray / WEB-DL / 分辨率：扩展常见命名和分辨率写法
 
 为减少误判，普通 `EAC3 / DD+` 不会直接当作 Atmos；只有明确出现 Atmos 或 JOC 时才显示 Dolby Atmos。
+
+## 显示优先级
+
+两个正式版本已同步重排 `filters` 顺序，优先让更重要的徽章靠前：
+
+1. 分辨率：良友4K / 1080P / 720P
+2. REMUX
+3. Dolby Vision
+4. Dolby Atmos
+5. TrueHD
+6. HDR10+ / HDR10 / HLG
+7. DTS:X / DTS-HD
+8. 7.1 / 5.1
+9. HEVC / AV1 / AVC / VP9
+10. Blu-ray
+11. WEB-DL
+12. FLAC / AAC
+
+其中 **WEB-DL 已明显后移**；4K、REMUX、Dolby Vision、Dolby Atmos、TrueHD 优先靠前。
