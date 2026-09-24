@@ -43,6 +43,6 @@
   <circle cx="69" cy="55" r="31" fill="url(#iconFill)" opacity=".34"/>
   <circle cx="69" cy="55" r="32" fill="none" stroke="#FFBF4C" stroke-opacity=".58" stroke-width="2" filter="url(#glow)"/><ellipse cx="69" cy="39" rx="24" ry="7" fill="#FF9A00"/><ellipse cx="69" cy="48" rx="24" ry="7" fill="#FFB41B"/><ellipse cx="69" cy="57" rx="24" ry="7" fill="#FF8F00"/><ellipse cx="69" cy="66" rx="24" ry="7" fill="#FF6F00"/></g>
   <path d="M112 21v66" stroke="#FFBF4C" stroke-opacity=".55" stroke-width="1.8"/>
-  <text x="128" y="67" font-family="Noto Sans CJK SC,Arial,sans-serif" font-size="38" font-weight="900" fill="#FFFFFF">DTS-HD</text>
+  <text x="128" y="67" font-family="Noto Sans CJK SC,Arial,sans-serif" font-size="41" font-weight="900" fill="#FFFFFF">DTS-HD</text>
   
   </svg>
