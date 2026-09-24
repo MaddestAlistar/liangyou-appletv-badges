@@ -39,10 +39,10 @@
   <path d="M18 17H330C250 21 173 34 111 62C79 77 45 82 18 82Z" fill="#FFFFFF" opacity=".035"/>
   <circle cx="24" cy="23" r="11" fill="#080A0D" stroke="#FFE16A" stroke-width="2"/>
   <text x="24" y="28" text-anchor="middle" font-family="Noto Sans CJK SC,Arial,sans-serif" font-size="14.5" font-weight="900" fill="#FFE16A">良</text>
-  <g filter="url(#glow)"><circle cx="69" cy="55" r="35" fill="#05070A" stroke="#F2A900" stroke-width="2.2"/>
+  <g filter="url(#glow)" transform="translate(-4 0)"><circle cx="69" cy="55" r="35" fill="#05070A" stroke="#F2A900" stroke-width="2.2"/>
   <circle cx="69" cy="55" r="31" fill="url(#iconFill)" opacity=".34"/>
   <circle cx="69" cy="55" r="32" fill="none" stroke="#FFE16A" stroke-opacity=".58" stroke-width="2" filter="url(#glow)"/><ellipse cx="69" cy="65" rx="39" ry="12" fill="none" stroke="#008DFF" stroke-width="3"/><ellipse cx="69" cy="65" rx="31" ry="8" fill="none" stroke="#69D4FF" stroke-width="2"/><rect x="46" y="33" width="46" height="34" rx="5" fill="url(#gold)" stroke="#FFECA0" stroke-width="2"/><path d="M50 39v22h10c6 0 11-5 11-11s-5-11-11-11zm38 0H78c-6 0-11 5-11 11s5 11 11 11h10z" fill="#4B3000"/></g>
-  <path d="M112 21v66" stroke="#FFE16A" stroke-opacity=".55" stroke-width="1.8"/>
-  <text x="124" y="59" font-family="Noto Sans CJK SC,Arial,sans-serif" font-size="30.3" font-weight="900" fill="#FFFFFF">DOLBY ATMOS</text>
-  <text x="124" y="76" font-family="Noto Sans CJK SC,Arial,sans-serif" font-size="16.8" font-weight="800" letter-spacing=".7" fill="#FFE16A">杜比全景声</text>
+  <path d="M107 21v66" stroke="#FFE16A" stroke-opacity=".55" stroke-width="1.8"/>
+  <text x="118" y="59" font-family="Noto Sans CJK SC,Arial,sans-serif" font-size="31.5" font-weight="900" fill="#FFFFFF">DOLBY ATMOS</text>
+  <text x="118" y="78" font-family="Noto Sans CJK SC,Arial,sans-serif" font-size="19" font-weight="800" letter-spacing=".7" fill="#FFE16A">杜比全景声</text>
   </svg>

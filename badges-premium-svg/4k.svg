@@ -44,5 +44,5 @@
   <circle cx="69" cy="55" r="32" fill="none" stroke="#FFF17A" stroke-opacity=".58" stroke-width="2" filter="url(#glow)"/><rect x="43" y="35" width="52" height="42" rx="7" fill="url(#gold)" stroke="#FFF0A0" stroke-width="2"/><text x="69" y="65" text-anchor="middle" font-family="Arial,sans-serif" font-size="30" font-weight="900" fill="#17100A">4K</text></g>
   <path d="M112 21v66" stroke="#FFF17A" stroke-opacity=".55" stroke-width="1.8"/>
   <text x="124" y="59" font-family="Noto Sans CJK SC,Arial,sans-serif" font-size="43.9" font-weight="900" fill="#FFFFFF">良友4K</text>
-  <text x="124" y="76" font-family="Noto Sans CJK SC,Arial,sans-serif" font-size="16.8" font-weight="800" letter-spacing=".7" fill="#FFF17A">ULTRA HD</text>
+  <text x="124" y="78" font-family="Noto Sans CJK SC,Arial,sans-serif" font-size="19" font-weight="800" letter-spacing=".7" fill="#FFF17A">ULTRA HD</text>
   </svg>
