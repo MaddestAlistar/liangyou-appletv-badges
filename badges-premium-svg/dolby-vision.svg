@@ -43,6 +43,6 @@
   <circle cx="69" cy="55" r="31" fill="url(#iconFill)" opacity=".34"/>
   <circle cx="69" cy="55" r="32" fill="none" stroke="#FFE16A" stroke-opacity=".58" stroke-width="2" filter="url(#glow)"/><rect x="43" y="35" width="52" height="40" rx="5" fill="url(#gold)" stroke="#FFECA0" stroke-width="2"/><path d="M48 41v28h11c8 0 14-6 14-14s-6-14-14-14zm42 0H79c-8 0-14 6-14 14s6 14 14 14h11z" fill="#4B3000"/></g>
   <path d="M112 21v66" stroke="#FFE16A" stroke-opacity=".55" stroke-width="1.8"/>
-  <text x="128" y="59" font-family="Noto Sans CJK SC,Arial,sans-serif" font-size="27" font-weight="900" fill="#FFFFFF">DOLBY VISION</text>
-  <text x="128" y="76" font-family="Noto Sans CJK SC,Arial,sans-serif" font-size="13.5" font-weight="800" letter-spacing=".7" fill="#FFE16A">杜比视界</text>
+  <text x="128" y="59" font-family="Noto Sans CJK SC,Arial,sans-serif" font-size="29.2" font-weight="900" fill="#FFFFFF">DOLBY VISION</text>
+  <text x="128" y="76" font-family="Noto Sans CJK SC,Arial,sans-serif" font-size="15.1" font-weight="800" letter-spacing=".7" fill="#FFE16A">杜比视界</text>
   </svg>

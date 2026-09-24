@@ -43,6 +43,6 @@
   <circle cx="69" cy="55" r="31" fill="url(#iconFill)" opacity=".34"/>
   <circle cx="69" cy="55" r="32" fill="none" stroke="#C995FF" stroke-opacity=".58" stroke-width="2" filter="url(#glow)"/><path d="M42 70V43h8v27zm11-7V36h8v27zm11 4V39h8v28zm11-9V31h8v27zm11 4V37h8v25z" fill="#FFFFFF"/><path d="M42 70V43h8v27z" fill="#FF365C"/><path d="M53 63V36h8v27z" fill="#FF8F2E"/><path d="M64 67V39h8v28z" fill="#FFD13C"/><path d="M75 58V31h8v27z" fill="#38D46B"/><path d="M86 62V37h8v25z" fill="#268CFF"/></g>
   <path d="M112 21v66" stroke="#C995FF" stroke-opacity=".55" stroke-width="1.8"/>
-  <text x="128" y="67" font-family="Noto Sans CJK SC,Arial,sans-serif" font-size="40" font-weight="900" fill="#FFFFFF">HDR10+</text>
+  <text x="128" y="67" font-family="Noto Sans CJK SC,Arial,sans-serif" font-size="42" font-weight="900" fill="#FFFFFF">HDR10+</text>
   
   </svg>
