@@ -1,4 +1,4 @@
-"""LiangYou v9. Rules describe one media source's input text, not playback capability.
+"""Historical V9 metadata/rules. The CLI writes the current shared V11 packs.
 
 Java Pattern and ICU syntax. No custom JSON fields with unverified client support.
 Whole-input anchors and [\\s\\S] make exclusions work across line breaks.
@@ -209,7 +209,7 @@ def make_config(version,ext=None,combos=True,strict=True):
         filters.append(dict(id='ly9-'+s,groupId=group,name=display,pattern=pattern,imageURL=f'{BASE}/{version}/{ext}/{s}.{ext}',tagColor='#00000000',borderColor='#00000000',textColor='#00000000',tagStyle='filled',isEnabled=True,type='filter'))
     return dict(filters=filters,groups=[dict(id=i,name=n,color='#00000000',borderColor='#00000000',isExpanded=True) for i,n in GROUPS])
 
-def write_configs():
+def write_legacy_configs():
     for filename,ver,ext,combos,strict in [
         ('Badge LiangYou Ver.EPX.json','epx','svg',True,True),('Badge LiangYou Ver.all.json','all','png',True,True),
         ('Badge LiangYou Ver.EPX9.json','epx','svg',True,True),('Badge LiangYou Ver.all9.json','all','png',True,True),
@@ -219,6 +219,11 @@ def write_configs():
     diagnostic={'filters':[dict(id='ly9-size-test',groupId='resolution',name='良友尺寸诊断',pattern=r'(?s)\A[\s\S]*',imageURL=f'{BASE}/epx/png/size-test.png',tagColor='#00000000',borderColor='#00000000',textColor='#00000000',tagStyle='filled',isEnabled=True,type='filter')], 'groups':[dict(id='resolution',name='Resolution',color='#00000000',borderColor='#00000000',isExpanded=True)]}
     (ROOT/'Badge LiangYou Diagnostic.json').write_text(json.dumps(diagnostic,ensure_ascii=False,indent=2)+'\n')
 
+def write_configs():
+    from portable_badges import write_configs as write_current
+    return write_current()
+
+
 if __name__=='__main__':
-    write_configs()
-    print({v:len(catalogue(v)) for v in ['epx','all']})
+    from portable_badges import main
+    main()

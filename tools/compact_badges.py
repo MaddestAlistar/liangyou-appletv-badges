@@ -1,4 +1,4 @@
-"""Current complex pack: compact, native SVG/PNG badges and compatible JSON.
+"""V10 asset renderer and historical rule snapshot; config writes use V11.
 
 The input fixture is the deployed all9 at commit 3b7745e, including playback
 fallbacks. Do not reconstruct this pack from the older v9 catalogue generator.
@@ -316,12 +316,8 @@ def build():
 
 
 def write_configs():
-    config, assets = build()
-    text = json.dumps(config, ensure_ascii=False, indent=2) + '\n'
-    for filename in CONFIGS: (ROOT / filename).write_text(text)
-    (ROOT / 'tools/compact_badge_catalogue.json').write_text(
-        json.dumps(assets, ensure_ascii=False, indent=2) + '\n')
-    return config, assets
+    from portable_badges import write_configs as write_current, ASSETS as assets
+    return write_current()['all'], assets
 
 
 def render_assets(font):

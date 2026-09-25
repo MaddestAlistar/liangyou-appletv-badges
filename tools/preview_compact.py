@@ -2,7 +2,7 @@
 from pathlib import Path
 import argparse
 from PIL import Image, ImageDraw, ImageFont
-import compact_badges as c
+import portable_badges as c
 
 
 def local_image(url):
@@ -11,7 +11,7 @@ def local_image(url):
 
 
 def render(font_path):
-    config, assets = c.build()
+    config, assets = c.build(), c.ASSETS
     filters = {f['id'][5:]: f for f in config['filters']}
     font = lambda n: ImageFont.truetype(font_path, n)
 
@@ -40,7 +40,7 @@ def render(font_path):
             'audio-chinese-english', 'audio-chinese-japanese', 'audio-chinese-korean', 'audio-english-japanese',
             'audio-english-korean', 'audio-japanese-korean', 'audio-chinese-english-japanese', 'audio-chinese-english-japanese-korean']),
     ]
-    im, d = canvas(1660, '良友徽章 · 复杂版组合', '保留原有风格 · 组合优先 · 技术信息与音轨靠后')
+    im, d = canvas(1660, '良友徽章 · V11 复杂版组合', '保留原有风格 · 组合优先 · 声道先于编码 · 音轨语言靠后')
     y = 215
     for title, slugs in sections:
         d.text((64, y), title, font=font(28), fill='#E2ECF7')
@@ -50,11 +50,11 @@ def render(font_path):
     d.line((64, y, 1536, y), fill='#28394D')
     y += 25
     d.text((64, y), '排列示例  ·  原有 10 枚 → 组合后 6 枚', font=font(26), fill='#E2ECF7')
-    slugs = ['4k', 'combo-uhd-remux-truehd', 'combo-dv-atmos', 'combo-hevc-10bit', '71', 'audio-chinese-english']
+    slugs = ['4k', 'combo-uhd-remux-truehd', 'combo-dv-atmos', '71', 'combo-hevc-10bit', 'audio-chinese-english']
     for i, slug in enumerate(slugs): badge(im, slug, 64 + i * 248, y + 60, 238)
     d.text((64, 1601), '良哥看未来', font=font(21), fill='#92A8C1')
     d.text((1310, 1601), '2026.09.25', font=font(21), fill='#92A8C1')
-    out = c.ROOT / 'previews/Complex-Compact-v10.png'
+    out = c.ROOT / 'previews/Complex-Portable-v11.png'
     im.save(out, optimize=True)
 
     # All new assets, including every three-language combination and fallbacks.
@@ -68,9 +68,32 @@ def render(font_path):
     im.paste('#F5F6F8', (0, 240, 1280, 480))
     d = ImageDraw.Draw(im)
     for y, color in [(20, '#CAD7E8'), (260, '#15253B')]:
-        d.text((24, y), '良友 4K → 片源 → 杜比 → 编码位深 → 声道 → 音轨', font=font(22), fill=color)
+        d.text((24, y), '良友 4K → 片源 → 杜比 → 声道 → 编码位深 → 音轨', font=font(22), fill=color)
         for i, slug in enumerate(slugs): badge(im, slug, 24 + i * 207, y + 65, 196)
-    im.save(c.ROOT / 'previews/Complex-Compact-Themes-v10.png', optimize=True)
+    im.save(c.ROOT / 'previews/Complex-Portable-Themes-v11.png', optimize=True)
+
+    # Render actual matched assets for both packs, not a claimed device capture.
+    import re
+    im, d = canvas(1250, '复杂版 × EplayerX · V11', '同一输入的规则模拟 · 使用仓库真实徽章 · 非播放器实机截图')
+    samples = [
+        ('完整资料卡 / 合并播放字段', '2160p UHD BluRay REMUX DV TrueHD Atmos 7.1 HEVC 10bit 中文音轨 英语音轨'),
+        ('低信息播放字段', 'WEB-DL'),
+        ('普通 DD+ 不推断 Atmos', '1080p WEB-DL DDP5.1 HEVC 10bit'),
+    ]
+    for j, (label, text) in enumerate(samples):
+        y = 215 + j * 335
+        d.text((64, y), label, font=font(27), fill='#E2ECF7')
+        for col, (version, title) in enumerate([('all', '复杂版'), ('epx', 'EplayerX')]):
+            x = 64 + col * 766
+            d.rounded_rectangle((x, y + 45, x + 704, y + 303), radius=20, fill='#1B2533')
+            d.text((x + 18, y + 54), title, font=font(20), fill='#9EBAD2')
+            data = c.build(version, png=version == 'epx')
+            found = [f for f in data['filters'] if re.search(f['pattern'], text)]
+            for k, f in enumerate(found):
+                with Image.open(local_image(f['imageURL'])) as src:
+                    b = src.convert('RGBA').resize((212, 64), Image.Resampling.LANCZOS)
+                    im.paste(b, (x + 18 + k % 3 * 224, y + 90 + k // 3 * 64), b)
+    im.save(c.ROOT / 'previews/Portable-Comparison-v11.png', optimize=True)
     return out
 
 

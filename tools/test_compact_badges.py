@@ -1,4 +1,4 @@
-"""Regression checks against the JSON actually delivered to players."""
+"""Historical V10 corpus. The CLI validates the current V11 delivery."""
 import itertools
 import json
 import re
@@ -179,4 +179,6 @@ def run():
     print(json.dumps(report, ensure_ascii=False, indent=2))
 
 
-if __name__ == '__main__': run()
+if __name__ == '__main__':
+    from test_portable_badges import run as run_current
+    run_current()

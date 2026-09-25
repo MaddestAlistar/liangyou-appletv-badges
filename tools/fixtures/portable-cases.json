@@ -1,0 +1,1290 @@
+[
+  {
+    "text": "Movie.2160p.UHD.BluRay.REMUX.DV.TrueHD.Atmos.7.1.HEVC.10bit 中文音轨 英语音轨",
+    "expected": "4k combo-uhd-remux-truehd combo-dv-atmos combo-hevc-10bit 71 audio-chinese-english"
+  },
+  {
+    "text": "Movie.1080p.BluRay.DTS-HD.MA.5.1.H264.8bit",
+    "expected": "1080p combo-bluray-dtshd combo-avc-8bit 51"
+  },
+  {
+    "text": "Movie.2160p.WEB-DL.DV.DDP5.1.H265.10bit Audio: chi,eng",
+    "expected": "4k web-dl combo-dv-atmos 51 combo-hevc-10bit audio-chinese-english"
+  },
+  {
+    "text": "Movie.720p.WEBRip.AAC2.0.H264.8bit",
+    "expected": "720p combo-webrip-aac combo-avc-8bit 20"
+  },
+  {
+    "text": "Movie.480p.DVDRip.XviD.MP3.8bit",
+    "expected": "480p combo-dvdrip-mp3 combo-xvid-8bit"
+  },
+  {
+    "text": "UHD Blu-ray REMUX TrueHD",
+    "expected": "4k combo-uhd-remux-truehd hevc"
+  },
+  {
+    "text": "UHD Blu-ray TrueHD",
+    "expected": "4k combo-uhd-bluray-truehd hevc"
+  },
+  {
+    "text": "REMUX TrueHD",
+    "expected": "combo-remux-truehd"
+  },
+  {
+    "text": "BluRay DTS-HD HRA",
+    "expected": "combo-bluray-dtshd-core"
+  },
+  {
+    "text": "BluRay DTS-HD MA",
+    "expected": "combo-bluray-dtshd"
+  },
+  {
+    "text": "BluRay DTS:X",
+    "expected": "combo-bluray-dtsx"
+  },
+  {
+    "text": "BluRay DTS",
+    "expected": "combo-bluray-dts"
+  },
+  {
+    "text": "BluRay LPCM",
+    "expected": "combo-bluray-pcm"
+  },
+  {
+    "text": "BluRay FLAC",
+    "expected": "combo-bluray-flac"
+  },
+  {
+    "text": "WEB-DL E-AC-3",
+    "expected": "combo-web-dl-ddplus"
+  },
+  {
+    "text": "WEB-DL DD+",
+    "expected": "combo-web-dl-ddplus"
+  },
+  {
+    "text": "WEB-DL AC-3",
+    "expected": "combo-web-dl-dd"
+  },
+  {
+    "text": "WEBRip OPUS",
+    "expected": "combo-webrip-opus"
+  },
+  {
+    "text": "HDTV AAC",
+    "expected": "combo-hdtv-aac"
+  },
+  {
+    "text": "DVDRip MP3",
+    "expected": "combo-dvdrip-mp3"
+  },
+  {
+    "text": "WEB-DL TrueHD",
+    "expected": "web-dl truehd"
+  },
+  {
+    "text": "REMUX",
+    "expected": "remux"
+  },
+  {
+    "text": "UHD Blu-ray REMUX",
+    "expected": "4k uhd-remux hevc"
+  },
+  {
+    "text": "BluRay",
+    "expected": "bluray"
+  },
+  {
+    "text": "WEB-DL",
+    "expected": "web-dl"
+  },
+  {
+    "text": "TrueHD",
+    "expected": "truehd"
+  },
+  {
+    "text": "TrueHD 7.1",
+    "expected": "truehd 71"
+  },
+  {
+    "text": "Dolby Vision Atmos",
+    "expected": "combo-dv-atmos hevc"
+  },
+  {
+    "text": "Atmos",
+    "expected": "atmos"
+  },
+  {
+    "text": "Dolby Vision",
+    "expected": "dolby-vision hevc"
+  },
+  {
+    "text": "DV TrueHD 5.1",
+    "expected": "dolby-vision truehd 51 hevc"
+  },
+  {
+    "text": "DTS-HD MA",
+    "expected": "dtshd"
+  },
+  {
+    "text": "DTS-HD HRA",
+    "expected": "dtshd-core"
+  },
+  {
+    "text": "dca profile: DTS-HD MA",
+    "expected": "dtshd"
+  },
+  {
+    "text": "dca profile: HRA",
+    "expected": "dtshd-core"
+  },
+  {
+    "text": "dca profile: X",
+    "expected": "dtsx"
+  },
+  {
+    "text": "dca",
+    "expected": "dts"
+  },
+  {
+    "text": "PCM_S24LE",
+    "expected": "pcm"
+  },
+  {
+    "text": "A_PCM/INT/LIT",
+    "expected": "pcm"
+  },
+  {
+    "text": "Sample_Format=fltp",
+    "expected": ""
+  },
+  {
+    "text": "Audio Codec: AAC Sample_Format=fltp",
+    "expected": "aac"
+  },
+  {
+    "text": "Audio Codec: EAC3 Sample_Format=fltp",
+    "expected": "ddplus"
+  },
+  {
+    "text": "BluRay AAC Sample_Format=fltp",
+    "expected": "combo-bluray-aac"
+  },
+  {
+    "text": "HEVC 10bit",
+    "expected": "combo-hevc-10bit"
+  },
+  {
+    "text": "HEVC H.265 x265 10bit",
+    "expected": "combo-hevc-10bit"
+  },
+  {
+    "text": "H.264 AVC 8bit",
+    "expected": "combo-avc-8bit"
+  },
+  {
+    "text": "AV1 Main10 10bit",
+    "expected": "combo-av1-10bit"
+  },
+  {
+    "text": "VP9 10bit",
+    "expected": "combo-vp9-10bit"
+  },
+  {
+    "text": "VC-1 8bit",
+    "expected": "combo-vc1-8bit"
+  },
+  {
+    "text": "MPEG-2 8bit",
+    "expected": "combo-mpeg2-8bit"
+  },
+  {
+    "text": "DivX 8bit",
+    "expected": "combo-divx-8bit"
+  },
+  {
+    "text": "HEVC 10bit 8bit",
+    "expected": "combo-hevc-10bit"
+  },
+  {
+    "text": "HEVC",
+    "expected": "hevc"
+  },
+  {
+    "text": "AVC",
+    "expected": "avc"
+  },
+  {
+    "text": "Main10",
+    "expected": "hevc"
+  },
+  {
+    "text": "10bit",
+    "expected": "10bit"
+  },
+  {
+    "text": "8bit",
+    "expected": "8bit"
+  },
+  {
+    "text": "HEVC Video BitDepth=10",
+    "expected": "combo-hevc-10bit"
+  },
+  {
+    "text": "AVC Video BitDepth=8",
+    "expected": "combo-avc-8bit"
+  },
+  {
+    "text": "HEVC Audio BitDepth=24",
+    "expected": "hevc"
+  },
+  {
+    "text": "PCM_S16LE",
+    "expected": "pcm"
+  },
+  {
+    "text": "L5.1",
+    "expected": ""
+  },
+  {
+    "text": "Level 5.1",
+    "expected": ""
+  },
+  {
+    "text": "Profile 5.1",
+    "expected": ""
+  },
+  {
+    "text": "HEVC Level 5.1 AAC 2.0",
+    "expected": "aac hevc 20"
+  },
+  {
+    "text": "AAC2.0",
+    "expected": "aac 20"
+  },
+  {
+    "text": "DDP5.1",
+    "expected": "ddplus 51"
+  },
+  {
+    "text": "Stereo Audio",
+    "expected": "20"
+  },
+  {
+    "text": "Mono Audio",
+    "expected": "10"
+  },
+  {
+    "text": "Audio Channels: 2",
+    "expected": "20"
+  },
+  {
+    "text": "Audio Channels: 1",
+    "expected": "10"
+  },
+  {
+    "text": "8ch",
+    "expected": ""
+  },
+  {
+    "text": "6ch",
+    "expected": ""
+  },
+  {
+    "text": "Version 2.0",
+    "expected": ""
+  },
+  {
+    "text": "60fps 120fps",
+    "expected": "120fps"
+  },
+  {
+    "text": "中文字幕 英文字幕",
+    "expected": ""
+  },
+  {
+    "text": "English subtitles Japanese subtitles",
+    "expected": ""
+  },
+  {
+    "text": "Audio: eng; subtitles: jpn",
+    "expected": "english"
+  },
+  {
+    "text": "Audio Language: jpn\nSubtitle Language: eng",
+    "expected": "japanese"
+  },
+  {
+    "text": "Audio: chi,eng",
+    "expected": "audio-chinese-english"
+  },
+  {
+    "text": "音轨：中文、英语",
+    "expected": "audio-chinese-english"
+  },
+  {
+    "text": "中英音轨",
+    "expected": "audio-chinese-english"
+  },
+  {
+    "text": "中英日音轨",
+    "expected": "audio-chinese-english-japanese"
+  },
+  {
+    "text": "中英日韩音轨",
+    "expected": "audio-chinese-english-japanese-korean"
+  },
+  {
+    "text": "中文音轨+英语音轨+日语音轨",
+    "expected": "audio-chinese-english-japanese"
+  },
+  {
+    "text": "Audio: und",
+    "expected": ""
+  },
+  {
+    "text": "Audio: eng\n中文配音",
+    "expected": "audio-chinese-english"
+  },
+  {
+    "text": "eng",
+    "expected": "english"
+  },
+  {
+    "text": "chi",
+    "expected": "chinese"
+  },
+  {
+    "text": "HEVC 10bit",
+    "expected": "combo-hevc-10bit"
+  },
+  {
+    "text": "H.265 10bit",
+    "expected": "combo-hevc-10bit"
+  },
+  {
+    "text": "H265 10bit",
+    "expected": "combo-hevc-10bit"
+  },
+  {
+    "text": "x265 10bit",
+    "expected": "combo-hevc-10bit"
+  },
+  {
+    "text": "hvc1 10bit",
+    "expected": "combo-hevc-10bit"
+  },
+  {
+    "text": "hev1 10bit",
+    "expected": "combo-hevc-10bit"
+  },
+  {
+    "text": "HEVC 10-bit",
+    "expected": "combo-hevc-10bit"
+  },
+  {
+    "text": "HEVC 10 bits",
+    "expected": "combo-hevc-10bit"
+  },
+  {
+    "text": "HEVC p010",
+    "expected": "combo-hevc-10bit"
+  },
+  {
+    "text": "HEVC p010le",
+    "expected": "combo-hevc-10bit"
+  },
+  {
+    "text": "HEVC yuv420p10le",
+    "expected": "combo-hevc-10bit"
+  },
+  {
+    "text": "HEVC yuv422p10le",
+    "expected": "combo-hevc-10bit"
+  },
+  {
+    "text": "chinese audio",
+    "expected": "chinese"
+  },
+  {
+    "text": "english audio",
+    "expected": "english"
+  },
+  {
+    "text": "japanese audio",
+    "expected": "japanese"
+  },
+  {
+    "text": "korean audio",
+    "expected": "korean"
+  },
+  {
+    "text": "chinese audio english audio",
+    "expected": "audio-chinese-english"
+  },
+  {
+    "text": "chinese audio japanese audio",
+    "expected": "audio-chinese-japanese"
+  },
+  {
+    "text": "chinese audio korean audio",
+    "expected": "audio-chinese-korean"
+  },
+  {
+    "text": "english audio japanese audio",
+    "expected": "audio-english-japanese"
+  },
+  {
+    "text": "english audio korean audio",
+    "expected": "audio-english-korean"
+  },
+  {
+    "text": "japanese audio korean audio",
+    "expected": "audio-japanese-korean"
+  },
+  {
+    "text": "chinese audio english audio japanese audio",
+    "expected": "audio-chinese-english-japanese"
+  },
+  {
+    "text": "chinese audio english audio korean audio",
+    "expected": "audio-chinese-english-korean"
+  },
+  {
+    "text": "chinese audio japanese audio korean audio",
+    "expected": "audio-chinese-japanese-korean"
+  },
+  {
+    "text": "english audio japanese audio korean audio",
+    "expected": "audio-english-japanese-korean"
+  },
+  {
+    "text": "chinese audio english audio japanese audio korean audio",
+    "expected": "audio-chinese-english-japanese-korean"
+  },
+  {
+    "text": "1080p BluRay DTS-HD MA H264 8bit",
+    "expected": "1080p combo-bluray-dtshd combo-avc-8bit"
+  },
+  {
+    "text": "1080p\nBluRay\nDTS-HD MA\nH264\n8bit",
+    "expected": "1080p combo-bluray-dtshd combo-avc-8bit"
+  },
+  {
+    "text": "1080p\r\nBluRay\r\nDTS-HD MA\r\nH264\r\n8bit",
+    "expected": "1080p combo-bluray-dtshd combo-avc-8bit"
+  },
+  {
+    "text": "1080p_BluRay_DTS-HD MA_H264_8bit",
+    "expected": "1080p combo-bluray-dtshd combo-avc-8bit"
+  },
+  {
+    "text": "1080p.BluRay.DTS-HD MA.H264.8bit",
+    "expected": "1080p combo-bluray-dtshd combo-avc-8bit"
+  },
+  {
+    "text": "4K",
+    "expected": "4k"
+  },
+  {
+    "text": "HDR",
+    "expected": "hdr"
+  },
+  {
+    "text": "SDR",
+    "expected": "sdr"
+  },
+  {
+    "text": "5.1",
+    "expected": "51"
+  },
+  {
+    "text": "7.1",
+    "expected": "71"
+  },
+  {
+    "text": "BluRay Remux",
+    "expected": "remux bluray"
+  },
+  {
+    "text": "WEB-DL HDR 5.1",
+    "expected": "web-dl hdr 51"
+  },
+  {
+    "text": "BluRay Remux SDR",
+    "expected": "remux bluray sdr"
+  },
+  {
+    "text": "BluRay HDR10 IMAX",
+    "expected": "bluray hdr10 imax"
+  },
+  {
+    "text": "2160p UHD BluRay REMUX DV DTS",
+    "expected": "4k combo-uhd-remux-dts dolby-vision hevc"
+  },
+  {
+    "text": "4K DDP5.1",
+    "expected": "4k ddplus 51"
+  },
+  {
+    "text": "DDP7.1",
+    "expected": "ddplus 71"
+  },
+  {
+    "text": "DV DDP5.1",
+    "expected": "combo-dv-atmos 51 hevc"
+  },
+  {
+    "text": "DV DDP7.1",
+    "expected": "combo-dv-atmos 71 hevc"
+  },
+  {
+    "text": "DV EAC3 5.1",
+    "expected": "combo-dv-atmos 51 hevc"
+  },
+  {
+    "text": "DV EAC3 2.0",
+    "expected": "dolby-vision ddplus 20 hevc"
+  },
+  {
+    "text": "4K DV TrueHD7.1",
+    "expected": "4k dolby-vision truehd 71 hevc"
+  },
+  {
+    "text": "WEB-DL EAC3 JOC 5.1",
+    "expected": "web-dl atmos 51"
+  },
+  {
+    "text": "WEB-DL DDP5.1 Atmos",
+    "expected": "web-dl atmos 51"
+  },
+  {
+    "text": "BluRay REMUX TrueHD Atmos",
+    "expected": "combo-remux-truehd bluray atmos"
+  },
+  {
+    "text": "DV DD+ HEVC Level 5.1",
+    "expected": "dolby-vision ddplus hevc"
+  },
+  {
+    "text": "DV DD+ HEVC Profile = 5.1",
+    "expected": "dolby-vision ddplus hevc"
+  },
+  {
+    "text": "HEVC Level = 5.1",
+    "expected": "hevc"
+  },
+  {
+    "text": "HEVC Level   5.1 AAC2.0",
+    "expected": "aac 20 hevc"
+  },
+  {
+    "text": "HEVC Level 5.1 TrueHD5.1",
+    "expected": "truehd 51 hevc"
+  },
+  {
+    "text": "channels=1",
+    "expected": "10"
+  },
+  {
+    "text": "channels=2",
+    "expected": "20"
+  },
+  {
+    "text": "1ch",
+    "expected": "10"
+  },
+  {
+    "text": "2ch",
+    "expected": "20"
+  },
+  {
+    "text": "{\"channels\":2}",
+    "expected": "20"
+  },
+  {
+    "text": "channel_count=2",
+    "expected": "20"
+  },
+  {
+    "text": "channels=12",
+    "expected": ""
+  },
+  {
+    "text": "channels=20",
+    "expected": ""
+  },
+  {
+    "text": "channels=2.1",
+    "expected": ""
+  },
+  {
+    "text": "dca profile=ma",
+    "expected": "dtshd"
+  },
+  {
+    "text": "dca profile=xll",
+    "expected": "dtshd"
+  },
+  {
+    "text": "dca profile=hra",
+    "expected": "dtshd-core"
+  },
+  {
+    "text": "dca profile=x",
+    "expected": "dtsx"
+  },
+  {
+    "text": "{\"codec\":\"dca\", \"profile\":\"ma\"}",
+    "expected": "dtshd"
+  },
+  {
+    "text": "dca DTS-HD MA DTS",
+    "expected": "dtshd"
+  },
+  {
+    "text": "DTS:X DTS-HD MA DTS-HD DTS",
+    "expected": "dtsx"
+  },
+  {
+    "text": "4K DTS REMUX",
+    "expected": "4k combo-remux-dts hevc"
+  },
+  {
+    "text": "4K DTS DV",
+    "expected": "4k dolby-vision dts hevc"
+  },
+  {
+    "text": "AV1 Main10",
+    "expected": "av1"
+  },
+  {
+    "text": "UHD BluRay H264",
+    "expected": "4k uhd-bluray avc"
+  },
+  {
+    "text": "DVDRip",
+    "expected": "dvdrip"
+  },
+  {
+    "text": "BluRay WEB-DL",
+    "expected": "bluray"
+  },
+  {
+    "text": "UHD Blu-ray Blu-ray WEB-DL",
+    "expected": "4k uhd-bluray hevc"
+  },
+  {
+    "text": "WEB-DL WEBRip",
+    "expected": "web-dl"
+  },
+  {
+    "text": "WEB-Rip NF",
+    "expected": "webrip netflix"
+  },
+  {
+    "text": "NF WEBRip",
+    "expected": "webrip netflix"
+  },
+  {
+    "text": "WEB Rip",
+    "expected": "webrip"
+  },
+  {
+    "text": "WEB",
+    "expected": "web-dl"
+  },
+  {
+    "text": "Mad.Max.2015.1080p.BluRay",
+    "expected": "1080p bluray"
+  },
+  {
+    "text": "Show.NF.1080p.WEB-DL",
+    "expected": "1080p web-dl netflix"
+  },
+  {
+    "text": "Dolby Vision HDR10+ HDR10 HLG SDR",
+    "expected": "dolby-vision hevc"
+  },
+  {
+    "text": "HDR10+ HDR10 HLG HDR SDR",
+    "expected": "hdr10plus"
+  },
+  {
+    "text": "HLG HDR SDR",
+    "expected": "hlg"
+  },
+  {
+    "text": "IMAX Enhanced IMAX",
+    "expected": "imax-enhanced"
+  },
+  {
+    "text": "WEB-DL TrueHD AAC",
+    "expected": "web-dl truehd"
+  },
+  {
+    "text": "BluRay FLAC AAC",
+    "expected": "combo-bluray-flac"
+  },
+  {
+    "text": "WEB-DL DV DDP5.1 AAC",
+    "expected": "web-dl combo-dv-atmos 51 hevc"
+  },
+  {
+    "text": "BluRay REMUX MP3",
+    "expected": "remux bluray mp3"
+  },
+  {
+    "text": "BluRay REMUX AAC",
+    "expected": "remux bluray aac"
+  },
+  {
+    "text": "HDTV FLAC",
+    "expected": "hdtv flac"
+  },
+  {
+    "text": "Audio: English; Subtitle Language: Japanese",
+    "expected": "english"
+  },
+  {
+    "text": "字幕：中英双语",
+    "expected": ""
+  },
+  {
+    "text": "Audio: Japanese\nSubtitles: English Chinese",
+    "expected": "japanese"
+  },
+  {
+    "text": "AVC 10bit",
+    "expected": "combo-avc-10bit"
+  },
+  {
+    "text": "XviD 10bit",
+    "expected": "xvid 10bit"
+  },
+  {
+    "text": "Video Codec: HEVC\nAudio BitDepth=24",
+    "expected": "hevc"
+  },
+  {
+    "text": "Video: 3840x2160\nSource: UHD Blu-ray REMUX\nDynamic Range: Dolby Vision\nAudio Codec: TrueHD Atmos\nAudio Channels: 7.1\nVideo Codec: H.265\nVideo BitDepth: 10\nAudio Languages: chi,eng",
+    "expected": "4k combo-uhd-remux-truehd combo-dv-atmos 71 combo-hevc-10bit audio-chinese-english"
+  },
+  {
+    "text": "WD",
+    "expected": "web-dl"
+  },
+  {
+    "text": "NF",
+    "expected": "web-dl"
+  },
+  {
+    "text": "AMZN",
+    "expected": "web-dl"
+  },
+  {
+    "text": "DSNP",
+    "expected": "web-dl"
+  },
+  {
+    "text": "ATVP",
+    "expected": "web-dl"
+  },
+  {
+    "text": "pcm_f32le",
+    "expected": "pcm"
+  },
+  {
+    "text": "pcm_s24le",
+    "expected": "pcm"
+  },
+  {
+    "text": "PCM_F64BE",
+    "expected": "pcm"
+  },
+  {
+    "text": "A_PCM/INT/LIT",
+    "expected": "pcm"
+  },
+  {
+    "text": "A_PCM/INT/BIG",
+    "expected": "pcm"
+  },
+  {
+    "text": "A_PCM/FLOAT/IEEE",
+    "expected": "pcm"
+  },
+  {
+    "text": "sowt",
+    "expected": "pcm"
+  },
+  {
+    "text": "twos",
+    "expected": "pcm"
+  },
+  {
+    "text": "lpcm",
+    "expected": "pcm"
+  },
+  {
+    "text": "pcm_bluray",
+    "expected": "pcm"
+  },
+  {
+    "text": "pcm_alaw",
+    "expected": "pcm"
+  },
+  {
+    "text": "sample_fmt=fltp",
+    "expected": ""
+  },
+  {
+    "text": "AAC sample_fmt=fltp",
+    "expected": "aac"
+  },
+  {
+    "text": "sample_fmt=s16",
+    "expected": ""
+  },
+  {
+    "text": "AAC sample_fmt=s16",
+    "expected": "aac"
+  },
+  {
+    "text": "sample_fmt=s16p",
+    "expected": ""
+  },
+  {
+    "text": "AAC sample_fmt=s16p",
+    "expected": "aac"
+  },
+  {
+    "text": "sample_fmt=s32",
+    "expected": ""
+  },
+  {
+    "text": "AAC sample_fmt=s32",
+    "expected": "aac"
+  },
+  {
+    "text": "sample_fmt=f32",
+    "expected": ""
+  },
+  {
+    "text": "AAC sample_fmt=f32",
+    "expected": "aac"
+  },
+  {
+    "text": "sample_fmt=dblp",
+    "expected": ""
+  },
+  {
+    "text": "AAC sample_fmt=dblp",
+    "expected": "aac"
+  },
+  {
+    "text": "WEB-DL eac3",
+    "expected": "combo-web-dl-ddplus"
+  },
+  {
+    "text": "WEB-DL ec3",
+    "expected": "combo-web-dl-ddplus"
+  },
+  {
+    "text": "WEB-DL E-AC-3",
+    "expected": "combo-web-dl-ddplus"
+  },
+  {
+    "text": "WEB-DL DD+",
+    "expected": "combo-web-dl-ddplus"
+  },
+  {
+    "text": "WEB-DL DDP",
+    "expected": "combo-web-dl-ddplus"
+  },
+  {
+    "text": "UHD BluRay REMUX TrueHD",
+    "expected": "4k hevc combo-uhd-remux-truehd"
+  },
+  {
+    "text": "UHD BluRay REMUX DTS:X",
+    "expected": "4k hevc combo-uhd-remux-dtsx"
+  },
+  {
+    "text": "UHD BluRay REMUX DTS-HD MA",
+    "expected": "4k hevc combo-uhd-remux-dtshd"
+  },
+  {
+    "text": "UHD BluRay REMUX DTS-HD HRA",
+    "expected": "4k hevc combo-uhd-remux-dtshd-core"
+  },
+  {
+    "text": "UHD BluRay REMUX PCM",
+    "expected": "4k hevc combo-uhd-remux-pcm"
+  },
+  {
+    "text": "UHD BluRay REMUX FLAC",
+    "expected": "4k hevc uhd-remux flac"
+  },
+  {
+    "text": "UHD BluRay REMUX DD+",
+    "expected": "4k hevc combo-uhd-remux-ddplus"
+  },
+  {
+    "text": "UHD BluRay REMUX DTS",
+    "expected": "4k hevc combo-uhd-remux-dts"
+  },
+  {
+    "text": "UHD BluRay REMUX AC3",
+    "expected": "4k hevc combo-uhd-remux-dd"
+  },
+  {
+    "text": "UHD BluRay REMUX Opus",
+    "expected": "4k hevc uhd-remux opus"
+  },
+  {
+    "text": "UHD BluRay REMUX AAC",
+    "expected": "4k hevc uhd-remux aac"
+  },
+  {
+    "text": "UHD BluRay REMUX MP3",
+    "expected": "4k hevc uhd-remux mp3"
+  },
+  {
+    "text": "REMUX TrueHD",
+    "expected": "combo-remux-truehd"
+  },
+  {
+    "text": "REMUX DTS:X",
+    "expected": "combo-remux-dtsx"
+  },
+  {
+    "text": "REMUX DTS-HD MA",
+    "expected": "combo-remux-dtshd"
+  },
+  {
+    "text": "REMUX DTS-HD HRA",
+    "expected": "combo-remux-dtshd-core"
+  },
+  {
+    "text": "REMUX PCM",
+    "expected": "combo-remux-pcm"
+  },
+  {
+    "text": "REMUX FLAC",
+    "expected": "remux flac"
+  },
+  {
+    "text": "REMUX DD+",
+    "expected": "combo-remux-ddplus"
+  },
+  {
+    "text": "REMUX DTS",
+    "expected": "combo-remux-dts"
+  },
+  {
+    "text": "REMUX AC3",
+    "expected": "combo-remux-dd"
+  },
+  {
+    "text": "REMUX Opus",
+    "expected": "remux opus"
+  },
+  {
+    "text": "REMUX AAC",
+    "expected": "remux aac"
+  },
+  {
+    "text": "REMUX MP3",
+    "expected": "remux mp3"
+  },
+  {
+    "text": "UHD BluRay TrueHD",
+    "expected": "4k hevc combo-uhd-bluray-truehd"
+  },
+  {
+    "text": "UHD BluRay DTS:X",
+    "expected": "4k hevc combo-uhd-bluray-dtsx"
+  },
+  {
+    "text": "UHD BluRay DTS-HD MA",
+    "expected": "4k hevc combo-uhd-bluray-dtshd"
+  },
+  {
+    "text": "UHD BluRay DTS-HD HRA",
+    "expected": "4k hevc combo-uhd-bluray-dtshd-core"
+  },
+  {
+    "text": "UHD BluRay PCM",
+    "expected": "4k hevc combo-uhd-bluray-pcm"
+  },
+  {
+    "text": "UHD BluRay FLAC",
+    "expected": "4k hevc uhd-bluray flac"
+  },
+  {
+    "text": "UHD BluRay DD+",
+    "expected": "4k hevc combo-uhd-bluray-ddplus"
+  },
+  {
+    "text": "UHD BluRay DTS",
+    "expected": "4k hevc combo-uhd-bluray-dts"
+  },
+  {
+    "text": "UHD BluRay AC3",
+    "expected": "4k hevc combo-uhd-bluray-dd"
+  },
+  {
+    "text": "UHD BluRay Opus",
+    "expected": "4k hevc uhd-bluray opus"
+  },
+  {
+    "text": "UHD BluRay AAC",
+    "expected": "4k hevc uhd-bluray aac"
+  },
+  {
+    "text": "UHD BluRay MP3",
+    "expected": "4k hevc uhd-bluray mp3"
+  },
+  {
+    "text": "BluRay TrueHD",
+    "expected": "combo-bluray-truehd"
+  },
+  {
+    "text": "BluRay DTS:X",
+    "expected": "combo-bluray-dtsx"
+  },
+  {
+    "text": "BluRay DTS-HD MA",
+    "expected": "combo-bluray-dtshd"
+  },
+  {
+    "text": "BluRay DTS-HD HRA",
+    "expected": "combo-bluray-dtshd-core"
+  },
+  {
+    "text": "BluRay PCM",
+    "expected": "combo-bluray-pcm"
+  },
+  {
+    "text": "BluRay FLAC",
+    "expected": "combo-bluray-flac"
+  },
+  {
+    "text": "BluRay DD+",
+    "expected": "combo-bluray-ddplus"
+  },
+  {
+    "text": "BluRay DTS",
+    "expected": "combo-bluray-dts"
+  },
+  {
+    "text": "BluRay AC3",
+    "expected": "combo-bluray-dd"
+  },
+  {
+    "text": "BluRay Opus",
+    "expected": "bluray opus"
+  },
+  {
+    "text": "BluRay AAC",
+    "expected": "combo-bluray-aac"
+  },
+  {
+    "text": "BluRay MP3",
+    "expected": "bluray mp3"
+  },
+  {
+    "text": "WEB-DL TrueHD",
+    "expected": "web-dl truehd"
+  },
+  {
+    "text": "WEB-DL DTS:X",
+    "expected": "web-dl dtsx"
+  },
+  {
+    "text": "WEB-DL DTS-HD MA",
+    "expected": "web-dl dtshd"
+  },
+  {
+    "text": "WEB-DL DTS-HD HRA",
+    "expected": "web-dl dtshd-core"
+  },
+  {
+    "text": "WEB-DL PCM",
+    "expected": "combo-web-dl-pcm"
+  },
+  {
+    "text": "WEB-DL FLAC",
+    "expected": "combo-web-dl-flac"
+  },
+  {
+    "text": "WEB-DL DD+",
+    "expected": "combo-web-dl-ddplus"
+  },
+  {
+    "text": "WEB-DL DTS",
+    "expected": "web-dl dts"
+  },
+  {
+    "text": "WEB-DL AC3",
+    "expected": "combo-web-dl-dd"
+  },
+  {
+    "text": "WEB-DL Opus",
+    "expected": "combo-web-dl-opus"
+  },
+  {
+    "text": "WEB-DL AAC",
+    "expected": "combo-web-dl-aac"
+  },
+  {
+    "text": "WEB-DL MP3",
+    "expected": "web-dl mp3"
+  },
+  {
+    "text": "WEBRip TrueHD",
+    "expected": "webrip truehd"
+  },
+  {
+    "text": "WEBRip DTS:X",
+    "expected": "webrip dtsx"
+  },
+  {
+    "text": "WEBRip DTS-HD MA",
+    "expected": "webrip dtshd"
+  },
+  {
+    "text": "WEBRip DTS-HD HRA",
+    "expected": "webrip dtshd-core"
+  },
+  {
+    "text": "WEBRip PCM",
+    "expected": "combo-webrip-pcm"
+  },
+  {
+    "text": "WEBRip FLAC",
+    "expected": "combo-webrip-flac"
+  },
+  {
+    "text": "WEBRip DD+",
+    "expected": "combo-webrip-ddplus"
+  },
+  {
+    "text": "WEBRip DTS",
+    "expected": "webrip dts"
+  },
+  {
+    "text": "WEBRip AC3",
+    "expected": "combo-webrip-dd"
+  },
+  {
+    "text": "WEBRip Opus",
+    "expected": "combo-webrip-opus"
+  },
+  {
+    "text": "WEBRip AAC",
+    "expected": "combo-webrip-aac"
+  },
+  {
+    "text": "WEBRip MP3",
+    "expected": "webrip mp3"
+  },
+  {
+    "text": "HDTV TrueHD",
+    "expected": "hdtv truehd"
+  },
+  {
+    "text": "HDTV DTS:X",
+    "expected": "hdtv dtsx"
+  },
+  {
+    "text": "HDTV DTS-HD MA",
+    "expected": "hdtv dtshd"
+  },
+  {
+    "text": "HDTV DTS-HD HRA",
+    "expected": "hdtv dtshd-core"
+  },
+  {
+    "text": "HDTV PCM",
+    "expected": "hdtv pcm"
+  },
+  {
+    "text": "HDTV FLAC",
+    "expected": "hdtv flac"
+  },
+  {
+    "text": "HDTV DD+",
+    "expected": "combo-hdtv-ddplus"
+  },
+  {
+    "text": "HDTV DTS",
+    "expected": "combo-hdtv-dts"
+  },
+  {
+    "text": "HDTV AC3",
+    "expected": "combo-hdtv-dd"
+  },
+  {
+    "text": "HDTV Opus",
+    "expected": "hdtv opus"
+  },
+  {
+    "text": "HDTV AAC",
+    "expected": "combo-hdtv-aac"
+  },
+  {
+    "text": "HDTV MP3",
+    "expected": "combo-hdtv-mp3"
+  },
+  {
+    "text": "DVDRip TrueHD",
+    "expected": "dvdrip truehd"
+  },
+  {
+    "text": "DVDRip DTS:X",
+    "expected": "dvdrip dtsx"
+  },
+  {
+    "text": "DVDRip DTS-HD MA",
+    "expected": "dvdrip dtshd"
+  },
+  {
+    "text": "DVDRip DTS-HD HRA",
+    "expected": "dvdrip dtshd-core"
+  },
+  {
+    "text": "DVDRip PCM",
+    "expected": "dvdrip pcm"
+  },
+  {
+    "text": "DVDRip FLAC",
+    "expected": "dvdrip flac"
+  },
+  {
+    "text": "DVDRip DD+",
+    "expected": "dvdrip ddplus"
+  },
+  {
+    "text": "DVDRip DTS",
+    "expected": "combo-dvdrip-dts"
+  },
+  {
+    "text": "DVDRip AC3",
+    "expected": "combo-dvdrip-dd"
+  },
+  {
+    "text": "DVDRip Opus",
+    "expected": "dvdrip opus"
+  },
+  {
+    "text": "DVDRip AAC",
+    "expected": "combo-dvdrip-aac"
+  },
+  {
+    "text": "DVDRip MP3",
+    "expected": "combo-dvdrip-mp3"
+  }
+]

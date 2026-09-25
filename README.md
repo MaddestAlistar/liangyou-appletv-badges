@@ -1,71 +1,82 @@
 # 良友徽章 · LiangYou Media Badges
 
-复杂版组合包 · 2026-09-25 · 良哥看未来
+V11 · 2026-09-25 · 良哥看未来
 
-沿用双层发光边框、圆形图标和「良」字角标。将片源与音频格式、视频编码与位深、音轨语言合并显示，让播放界面少占位置。
+复杂版沿用原来的发光边框、图标和「良」字角标，片源与音频、编码与位深、音轨语言合并显示。EplayerX 保留简洁造型。两版共用识别逻辑，**良友 4K 最前，7.1／5.1 等声道在 HEVC 前面**。
 
-## 导入复杂版
+## 导入地址
 
-| 地址 | 用途 |
-| --- | --- |
-| [复杂版 all10](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.all10.json) | 推荐新导入地址，避免旧配置缓存 |
-| [复杂版正式地址 all](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.all.json) | 已同步相同内容 |
-| [原 all9 地址](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.all9.json) | 已同步相同内容 |
-
-**替换原复杂版配置后重新加载，三条地址任选一条。** 多套配置同时启用会重复显示。包内共 155 条候选规则，根据资源信息选择显示，并不是同时显示 155 枚。
-
-## 组合预览
-
-![复杂版组合徽章](previews/Complex-Compact-v10.png)
-
-[全部新增图形](previews/Complex-Compact-Catalogue-v10.png) · [深浅背景预览](previews/Complex-Compact-Themes-v10.png)
-
-新增 **78 枚组合徽章**：55 枚片源与音频、12 枚编码与位深、11 枚音轨语言组合；另有 3 枚配套单项图形。SVG 为 320×96，导入用 PNG 为 960×288，文字转为矢量轮廓，保持原徽章比例。
-
-## 显示顺序
-
-**良友 4K／其他分辨率 → 片源与音频组合 → 杜比与画面 → 剩余音频格式 → 版本标识 → 平台来源 → 编码与位深／帧率 → 声道 → 音轨语言。**
-
-JSON 的规则数组和分组数组都按这个顺序排列，良友 4K 为第一条。播放器仍可能自行限制显示数量或调整排序。
-
-| 类型 | 组合示例 | 回退方式 |
+| 版本 | 新导入地址 | 内容 |
 | --- | --- | --- |
-| 片源与音频 | UHD Blu-ray + REMUX + TrueHD → **UHD REMUX / TRUEHD · 蓝光** | 缺音频信息时显示片源单项 |
-| 片源与音频 | Blu-ray + DTS-HD MA；WEB-DL + DD+；WEBRip + AAC；HDTV + DD；DVDRip + MP3 | 少见、未提供专用组合的搭配保留两个单项 |
-| 编码与位深 | **HEVC · H.265 / 10 BIT**；AVC · H.264 / 8 BIT；AV1 / 10 BIT | 缺位深时只显示编码，不猜测 8bit/10bit |
-| 音轨语言 | **中英音轨、中日音轨、中韩音轨、英日音轨、英韩音轨、日韩音轨** | 只有一种已知语言时显示对应单项 |
-| 多语言音轨 | 4 种三语言组合、1 种中英日韩组合 | 三／四语言不会再拆成多枚双语组合 |
+| 复杂版 | [all11.json](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.all11.json) | 155 条候选规则，PNG，含组合徽章 |
+| EplayerX | [EPX11.json](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.EPX11.json) | 41 条候选规则，SVG，简洁造型 |
+| EplayerX PNG 备用 | [EPX.PNG.json](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.EPX.PNG.json) | 与 EplayerX 相同规则，完整 PNG 图片 |
+| 复杂版单项备用 | [all.Single.json](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.all.Single.json) | 76 条规则，保留 DV+Atmos，其余以单项显示 |
 
-HEVC 与 H.265 是同一种编码，AVC 与 H.264 也是同一种编码，别名只占一枚。颜色是本套展示风格，不代表编码或片源的绝对画质排名。
+替换原徽章包并重新加载，使用所选版本的一条地址即可。新地址便于绕过旧配置缓存；同时启用多个包可能重复显示。
 
-同一候选文本内，组合命中后排除对应单项，片源类别和音频格式各选择一个优先项。杜比视界与全景声仍使用原来的 DV+ATMOS 组合，中文保持「杜比视界+全景声」。TrueHD 作为片源组合的一部分，或在缺少片源时保留原金色单项。
+旧地址也已同步：复杂版 `all`、`all9`、`all10`、`all.Relaxed` 与 `all11` 完全相同；EplayerX 的 `EPX`、`EPX9`、`EPX10.themefix`、`EPX.Relaxed` 与 `EPX11` 完全相同。编号地址在本仓库是兼容入口；历史快照请使用 Git 提交链接。
 
-典型完整输入 `2160p UHD BluRay REMUX DV TrueHD Atmos 7.1 HEVC 10bit 中文音轨 英语音轨`：原有效 all9 显示 10 枚，现在为 **良友4K、UHD REMUX/TrueHD、DV+ATMOS、HEVC/H.265 10bit、7.1、中英音轨**，共 6 枚。
+## 顺序与预览
 
-## 识别与兼容性
+**良友 4K／其他分辨率 → REMUX 原盘组 → 普通片源 → 杜比与画面 → 剩余音频格式 → 版本与平台 → 7.1／6.1／5.1／Stereo／Mono → 编码与位深／帧率 → 音轨语言。**
 
-基于最近实际使用的 all9（提交 `3b7745e`）制作，保留其低信息播放页回退策略与常见 dca/profile、PCM、Mono/Stereo 别名。主地址同步这一版本，避免主地址与 all9 内容不同。
+规则数组与分组数组均采用这个顺序；播放器最终排版及显示数量由客户端决定。
 
-- 音轨语言支持 `中文音轨`、`English audio`、`Audio: chi,eng`、`音轨：中文、英语`、`中英音轨` 等；明确字幕文本不参与语言组合。只有字幕或未知语言时，不虚构音轨。
-- 音频解码的 `sample_fmt=fltp` 不能覆盖已知 AAC／DD+ 等编码；在完全没有编码信息时仍保留原 PCM 采样格式回退。
-- 编码边界支持下划线文件名；DVDRip 中的 DV 不再触发 HEVC 的 Dolby Vision 回退。
-- 识别 `DDP5.1`、`AAC2.0` 等紧邻写法，并排除 `Level 5.1`、`Profile 5.1` 对声道的干扰。
-- 原 all9 的启发式识别继续保留：某些 DV／DD+／高规格 TrueHD 信息会推断 Atmos，部分 4K DTS 高规格信息会推断 DTS-HD MA，Main10／DV／UHD 蓝光／4K REMUX 可回退到 HEVC。这些是展示策略，不是服务器提供的确证，也不证明实际输出格式；TrueHD 本身不等于 Atmos。
+![两版实际规则模拟](previews/Portable-Comparison-v11.png)
 
-**跨字段合并仍由播放器决定。** 如果播放器分别匹配「完整文件名」「TrueHD 单独字段」再合并结果，仍可能出现组合与单项并存。JSON 正则无法撤销另一条独立输入的命中，也无法拼接播放器没有传来的字段。此配置保留单项回退，避免为了全局去重而让低信息播放页全部不显示。
+[复杂版组合总览](previews/Complex-Portable-v11.png) · [全部组合图形](previews/Complex-Compact-Catalogue-v10.png) · [深浅背景](previews/Complex-Portable-Themes-v11.png)
 
-多音轨信息被混合传入时，组合表示资源中已知的优先格式和语言，不表示这些语言都采用同一种编码，也不等同于当前选中的音轨。本次验证未连接私人服务器或在播放器设备上运行。
+复杂版保留 55 枚片源与音频组合、12 枚编码与位深组合、11 枚多语言音轨组合，以及 3 枚配套单项图形。SVG 为 320×96，PNG 为 960×288，文字已转轮廓。候选规则不会全部同时显示。
+
+完整输入 `2160p UHD BluRay REMUX DV TrueHD Atmos 7.1 HEVC 10bit 中文音轨 英语音轨` 显示：
+
+**良友4K → UHD REMUX / TrueHD → DV+Atmos → 7.1 → HEVC·H.265 / 10bit → 中英音轨**，共 6 枚。
+
+HEVC 与 H.265、AVC 与 H.264 各合为同一种编码。没有位深信息时保留编码单项；不凭空补 8bit 或 10bit。稀少、没有专用组合图形的片源与音频搭配保留两个单项。
+
+## 本次排查与同步
+
+V10 复杂版存在大量 `\A`／`\Z` 锚点，ECMAScript 模式下会失效；EplayerX 主地址仍是旧的严格上下文版，会漏掉独立播放字段。V11 移除这些锚点、恢复低信息单项回退，并同步全部在用入口。复杂版最长规则从 **76,292** 字符缩短到 **4,927**，主 JSON 从约 **1.56 MB** 降到 **0.40 MB**。
+
+这复现了能造成大量徽章不显示的兼容性问题；截图本身未提供播放器真实匹配输入，不能据此确认设备端只有这一种原因。测试保留已有 `(?i)` 配置前缀，在 Node 中将其映射为 `i` 标志；未声称配置可未经导入器处理就直接交给 JavaScript `RegExp`。
+
+| 项目 | V11 两版处理 |
+| --- | --- |
+| REMUX | 独立 `master-source` 高优先级组，排在普通片源前 |
+| UHD Blu-ray／Blu-ray／WEB-DL | 同一输入内按优先级互斥，REMUX 与蓝光来源可以同时表达；复杂版的 UHD REMUX 徽章已经合并二者，避免再补一枚相同来源 |
+| Atmos | 明确 Atmos／JOC 优先；按使用需求保留 **DV + DD+ 5.1／7.1** 的兼容推断，普通 DDP5.1、4K DDP5.1、单独 DDP7.1 不推断 Atmos |
+| DD+ | Atmos 命中时让位，包括含 DD+ 的片源组合；片源本身仍保留 |
+| DTS | 两版识别 `dca`、`profile=ma/xll/hra/x`；**取消仅凭 4K／DV／UHD／REMUX 推断 DTS-HD MA**，缺具体 profile 时保留 DTS |
+| PCM | 识别 `A_PCM/…`、`pcm_f32le`、`pcm_s24le`、`sowt` 等明确编码；**取消仅凭解码 `sample_fmt=fltp/s16/…` 推断 PCM** |
+| Mono／Stereo／环绕声道 | 支持 `1ch`、`2ch`、`channels=1/2` 等；声道排在编码前，排除视频 `Level/Profile 5.1`，不把 `channels=20` 当 2.0 |
+| WEB-DL | 支持 WD、NF、AMZN、DSNP、ATVP 等来源缩写回退；明确 WEBRip 优先于平台缩写回退，明确 WEB-DL 仍优先于 WEBRip |
+
+同时修正了 `pcm_bluray` 编码 ID 被误当作蓝光来源、`WEB-Rip` 被误当作 WEB-DL 等边界情况。EplayerX PNG 备用包补齐 41 张与当前 SVG 对应的图片。
+
+保留的兼容推断仍有边界：DV + DD+ 5.1／7.1 不等于服务器确认了 Atmos；Main10／DV／UHD 蓝光／4K REMUX 在没有相冲突编码时可回退 HEVC；平台缩写可回退 WEB-DL。这些展示策略不证明播放设备实际输出格式，也不是画质排名。
+
+## 资料卡与播放字段
+
+单独传入 `4K`、`HEVC`、`WEB-DL`、`BluRay Remux`、`HDR`、`SDR`、`5.1` 等都有对应回退；完整文件名和具有同样事实的合并播放字段得到一致结果。
+
+复杂版音轨语言支持 `中文音轨`、`English audio`、`Audio: chi,eng`、`音轨：中文、英语`、`中英音轨` 等；双／三／四语言各只显示对应的一枚组合，不把明确字幕语言当音轨。EplayerX 保持现有精简图形集，公共标签使用相同规则。
+
+**跨字段合并由播放器决定。** 若客户端分别匹配完整文件名、独立编码、独立语言字段，再将结果取并集，组合与单项仍可能共存。JSON 不能撤销另一条输入的命中，也不能取得播放器没有传入的字段。测试保留了这个反例，没有以禁用单项回退的方式隐藏它。
+
+多音轨被混合传入时，徽章表示资源中已知的优先格式与语言，不等同于当前选中的音轨。未连接私人服务器或在播放器设备上运行。
 
 ## 构建与验证
 
 ```sh
-python tools/compact_badges.py --render --font /path/to/NotoSansCJKsc-Bold.otf
+python tools/portable_badges.py
+python tools/portable_badges.py --render-epx-png  # 重新生成 EplayerX PNG，需要 Inkscape
+python tools/test_portable_badges.py
 python tools/preview_compact.py --font /path/to/NotoSansCJKsc-Bold.otf
-python tools/test_compact_badges.py
 ```
 
-生成器仅写入三个复杂版地址、新图形和图形清单。依赖 Python、Pillow、fontTools、lxml、Inkscape、Noto Sans CJK SC Bold；验证使用 ICU 和 Python 正则。测试直接读取交付 JSON，覆盖组合互斥、单项回退、别名、字幕排除、声道、顺序、所有图片解码和长文本性能，并保留跨字段仍可能重复的实际反例。
+322 个场景 × 4 个交付变体 × 3 个引擎，共 **3,864 次完整结果对比**通过。Python re、ICU、Node ECMAScript 覆盖独立字段、组合回退、来源／音频互斥、排序、别名、误判反例和长文本；239 个不同图片 URL 对应的本地资源全部存在并通过解码／SVG 检查。验证是配置级测试，不是实机认证。
 
-[验证结果](reports/compact-validation-v10.json) · [原 all9 规则快照](tools/fixtures/complex-before-compact.json)
+规则构建只依赖 Python；测试还需 Node、ICU、Pillow、lxml；预览需字体与 Pillow。`compact_badges.py` 和 `badge_rules.py` 的默认配置写入入口已转向 V11，避免旧构建命令重新覆盖修复。V10 图形仍由 `compact_badges.py --render --font …` 维护；历史 V9 渲染器与测试只用于旧图形／旧规则研究。
 
-`tools/badge_rules.py`、`render_badges.py` 的默认批量构建属于历史 V9 流程，会覆盖旧版本配置；当前复杂版请使用上面的 `compact_badges.py` 命令。历史背景、旧版本地址与 EplayerX 文档见 [V9 历史说明](reports/README-v9-historical.md)。
+[V11 验证报告](reports/portable-validation-v11.json) · [兼容性复盘](reports/COMPATIBILITY-v11.md) · [V10 历史说明](reports/README-v10-historical.md) · [V9 历史说明](reports/README-v9-historical.md)
