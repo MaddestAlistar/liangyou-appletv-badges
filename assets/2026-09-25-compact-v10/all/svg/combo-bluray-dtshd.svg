@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="96" viewBox="0 0 320 96" preserveAspectRatio="xMidYMid meet" overflow="hidden">
+  <rect x="0" y="0" width="320" height="96" fill="#000000" fill-opacity="0.004"/><defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#171C24"/>
+      <stop offset=".38" stop-color="#05070A"/>
+      <stop offset=".78" stop-color="#030405"/>
+      <stop offset="1" stop-color="#11151B"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#D0ACFF"/>
+      <stop offset=".36" stop-color="#8748DD"/>
+      <stop offset=".65" stop-color="#FFFFFF"/>
+      <stop offset=".78" stop-color="#8748DD"/>
+      <stop offset="1" stop-color="#D0ACFF"/>
+    </linearGradient>
+    <linearGradient id="iconFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".25" stop-color="#D0ACFF"/>
+      <stop offset=".65" stop-color="#8748DD"/>
+      <stop offset="1" stop-color="#0B0D12"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF1A8"/>
+      <stop offset=".3" stop-color="#FFD45E"/>
+      <stop offset=".72" stop-color="#B56A00"/>
+      <stop offset="1" stop-color="#FFF1A8"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.2"/>
+    </filter>
+  </defs>
+  <g transform="scale(0.8888888889)"><rect x="2" y="2" width="356" height="104" rx="20" fill="#0A1019" stroke="#070B12" stroke-width="1.5"/><rect x="3" y="3" width="354" height="102" rx="22" fill="url(#bg)" stroke="#000000" stroke-width="3"/>
+  <rect x="6" y="6" width="348" height="96" rx="19" fill="none" stroke="url(#edge)" stroke-width="3.6" filter="url(#glow)"/>
+  <rect x="10" y="10" width="340" height="88" rx="16" fill="none" stroke="#FFFFFF" stroke-opacity=".24" stroke-width="1.2"/>
+  <path d="M18 17H330C250 21 173 34 111 62C79 77 45 82 18 82Z" fill="#FFFFFF" opacity=".035"/>
+  <circle cx="24" cy="23" r="11" fill="#080A0D" stroke="#D0ACFF" stroke-width="2"/>
+  <g aria-label="良" fill="#D0ACFF" transform="translate(16.7500 28.0000) scale(0.0145000 -0.0145000)"><path d="M711 483V403H285V483ZM711 578H285V652H711ZM162 -98C191 -82 239 -72 520 -6C514 20 508 71 508 105L285 57V298H403C498 105 651 -19 887 -75C902 -42 937 8 964 34C880 50 806 75 742 108C797 141 857 180 908 219L808 296C765 257 701 210 642 174C598 210 562 251 533 298H834V757H579C570 790 557 829 542 859L418 833C427 810 436 783 443 757H160V105C160 51 122 12 97 -7C117 -26 151 -72 162 -98Z" transform="translate(0.0000 0)"/></g><g filter="url(#glow)"><circle cx="69" cy="55" r="35" fill="#05070A" stroke="#8748DD" stroke-width="2.2"/><circle cx="69" cy="55" r="31" fill="url(#iconFill)" opacity=".34"/><circle cx="69" cy="55" r="32" fill="none" stroke="#D0ACFF" stroke-opacity=".58" stroke-width="2"/><g transform="translate(41 27) scale(.94)"><circle cx="30" cy="30" r="23" fill="none" stroke="#D0ACFF" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="30" cy="30" r="6" fill="none" stroke="#D0ACFF" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 10c-7 5-10 10-10 18M43 50c7-5 10-10 10-18" fill="none" stroke="#D0ACFF" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/></g></g><path d="M112 21v66" stroke="#D0ACFF" stroke-opacity=".55" stroke-width="1.8"/><g aria-label="BLU-RAY" fill="#FFFFFF" transform="translate(124.0000 55.0000) scale(0.0360000 -0.0360000)"><path d="M91 0H355C518 0 641 69 641 218C641 317 583 374 503 393V397C566 420 604 489 604 558C604 696 488 741 336 741H91ZM239 439V627H327C416 627 460 601 460 536C460 477 420 439 326 439ZM239 114V330H342C444 330 497 299 497 227C497 150 442 114 342 114Z" transform="translate(0.0000 0)"/><path d="M91 0H540V124H239V741H91Z" transform="translate(681.0000 0)"/><path d="M376 -14C556 -14 661 88 661 333V741H519V320C519 166 462 114 376 114C289 114 235 166 235 320V741H88V333C88 88 194 -14 376 -14Z" transform="translate(1259.0000 0)"/><path d="M49 233H322V339H49Z" transform="translate(2007.0000 0)"/><path d="M239 397V623H335C430 623 482 596 482 516C482 437 430 397 335 397ZM494 0H659L486 303C571 336 627 405 627 516C627 686 504 741 348 741H91V0H239V280H342Z" transform="translate(2377.0000 0)"/><path d="M-4 0H146L198 190H437L489 0H645L408 741H233ZM230 305 252 386C274 463 295 547 315 628H319C341 549 361 463 384 386L406 305Z" transform="translate(3059.0000 0)"/><path d="M217 0H364V271L587 741H433L359 560C337 505 316 453 293 396H289C266 453 246 505 225 560L151 741H-6L217 271Z" transform="translate(3700.0000 0)"/></g><g aria-label="DTS-HD MA" fill="#D0ACFF" transform="translate(124.0000 82.0000) scale(0.0220000 -0.0220000)"><path d="M91 0H302C521 0 660 124 660 374C660 623 521 741 294 741H91ZM239 120V622H284C423 622 509 554 509 374C509 194 423 120 284 120Z" transform="translate(0.0000 0)"/><path d="M238 0H386V617H595V741H30V617H238Z" transform="translate(714.0000 0)"/><path d="M312 -14C483 -14 584 89 584 210C584 317 525 375 435 412L338 451C275 477 223 496 223 549C223 598 263 627 328 627C390 627 439 604 486 566L561 658C501 719 415 754 328 754C179 754 72 660 72 540C72 432 148 372 223 342L321 299C387 271 433 254 433 199C433 147 392 114 315 114C250 114 179 147 127 196L42 94C114 24 213 -14 312 -14Z" transform="translate(1339.0000 0)"/><path d="M49 233H322V339H49Z" transform="translate(1963.0000 0)"/><path d="M91 0H239V320H519V0H666V741H519V448H239V741H91Z" transform="translate(2333.0000 0)"/><path d="M91 0H302C521 0 660 124 660 374C660 623 521 741 294 741H91ZM239 120V622H284C423 622 509 554 509 374C509 194 423 120 284 120Z" transform="translate(3090.0000 0)"/><path d="M91 0H224V309C224 380 212 482 205 552H209L268 378L383 67H468L582 378L642 552H647C639 482 628 380 628 309V0H763V741H599L475 393C460 348 447 299 431 252H426C411 299 397 348 381 393L255 741H91Z" transform="translate(4031.0000 0)"/><path d="M-4 0H146L198 190H437L489 0H645L408 741H233ZM230 305 252 386C274 463 295 547 315 628H319C341 549 361 463 384 386L406 305Z" transform="translate(4884.0000 0)"/></g></g></svg>

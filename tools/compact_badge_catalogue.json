@@ -1,0 +1,918 @@
+[
+  {
+    "slug": "combo-uhd-remux-truehd",
+    "title": "UHD REMUX",
+    "subtitle": "TRUEHD · 蓝光",
+    "category": "source-audio",
+    "icon": "disc",
+    "color": "gold",
+    "family": "source-audio",
+    "source": "uhd-remux",
+    "audio": "truehd"
+  },
+  {
+    "slug": "combo-uhd-remux-dtsx",
+    "title": "UHD REMUX",
+    "subtitle": "DTS:X · 蓝光",
+    "category": "source-audio",
+    "icon": "disc",
+    "color": "gold",
+    "family": "source-audio",
+    "source": "uhd-remux",
+    "audio": "dtsx"
+  },
+  {
+    "slug": "combo-uhd-remux-dtshd",
+    "title": "UHD REMUX",
+    "subtitle": "DTS-HD MA · 蓝光",
+    "category": "source-audio",
+    "icon": "disc",
+    "color": "gold",
+    "family": "source-audio",
+    "source": "uhd-remux",
+    "audio": "dtshd"
+  },
+  {
+    "slug": "combo-uhd-remux-dtshd-core",
+    "title": "UHD REMUX",
+    "subtitle": "DTS-HD · 蓝光",
+    "category": "source-audio",
+    "icon": "disc",
+    "color": "gold",
+    "family": "source-audio",
+    "source": "uhd-remux",
+    "audio": "dtshd-core"
+  },
+  {
+    "slug": "combo-uhd-remux-pcm",
+    "title": "UHD REMUX",
+    "subtitle": "PCM / LPCM · 蓝光",
+    "category": "source-audio",
+    "icon": "disc",
+    "color": "gold",
+    "family": "source-audio",
+    "source": "uhd-remux",
+    "audio": "pcm"
+  },
+  {
+    "slug": "combo-uhd-remux-ddplus",
+    "title": "UHD REMUX",
+    "subtitle": "DD+ · 蓝光",
+    "category": "source-audio",
+    "icon": "disc",
+    "color": "gold",
+    "family": "source-audio",
+    "source": "uhd-remux",
+    "audio": "ddplus"
+  },
+  {
+    "slug": "combo-uhd-remux-dts",
+    "title": "UHD REMUX",
+    "subtitle": "DTS · 蓝光",
+    "category": "source-audio",
+    "icon": "disc",
+    "color": "gold",
+    "family": "source-audio",
+    "source": "uhd-remux",
+    "audio": "dts"
+  },
+  {
+    "slug": "combo-uhd-remux-dd",
+    "title": "UHD REMUX",
+    "subtitle": "DD / AC-3 · 蓝光",
+    "category": "source-audio",
+    "icon": "disc",
+    "color": "gold",
+    "family": "source-audio",
+    "source": "uhd-remux",
+    "audio": "dd"
+  },
+  {
+    "slug": "uhd-remux",
+    "title": "UHD REMUX",
+    "subtitle": "BLU-RAY · REMUX",
+    "category": "source-audio",
+    "icon": "disc",
+    "color": "gold",
+    "family": "source",
+    "source": "uhd-remux"
+  },
+  {
+    "slug": "combo-remux-truehd",
+    "title": "REMUX",
+    "subtitle": "TRUEHD",
+    "category": "source-audio",
+    "icon": "film",
+    "color": "gold",
+    "family": "source-audio",
+    "source": "remux",
+    "audio": "truehd"
+  },
+  {
+    "slug": "combo-remux-dtsx",
+    "title": "REMUX",
+    "subtitle": "DTS:X",
+    "category": "source-audio",
+    "icon": "film",
+    "color": "gold",
+    "family": "source-audio",
+    "source": "remux",
+    "audio": "dtsx"
+  },
+  {
+    "slug": "combo-remux-dtshd",
+    "title": "REMUX",
+    "subtitle": "DTS-HD MA",
+    "category": "source-audio",
+    "icon": "film",
+    "color": "gold",
+    "family": "source-audio",
+    "source": "remux",
+    "audio": "dtshd"
+  },
+  {
+    "slug": "combo-remux-dtshd-core",
+    "title": "REMUX",
+    "subtitle": "DTS-HD",
+    "category": "source-audio",
+    "icon": "film",
+    "color": "gold",
+    "family": "source-audio",
+    "source": "remux",
+    "audio": "dtshd-core"
+  },
+  {
+    "slug": "combo-remux-pcm",
+    "title": "REMUX",
+    "subtitle": "PCM / LPCM",
+    "category": "source-audio",
+    "icon": "film",
+    "color": "gold",
+    "family": "source-audio",
+    "source": "remux",
+    "audio": "pcm"
+  },
+  {
+    "slug": "combo-remux-ddplus",
+    "title": "REMUX",
+    "subtitle": "DD+",
+    "category": "source-audio",
+    "icon": "film",
+    "color": "gold",
+    "family": "source-audio",
+    "source": "remux",
+    "audio": "ddplus"
+  },
+  {
+    "slug": "combo-remux-dts",
+    "title": "REMUX",
+    "subtitle": "DTS",
+    "category": "source-audio",
+    "icon": "film",
+    "color": "gold",
+    "family": "source-audio",
+    "source": "remux",
+    "audio": "dts"
+  },
+  {
+    "slug": "combo-remux-dd",
+    "title": "REMUX",
+    "subtitle": "DD / AC-3",
+    "category": "source-audio",
+    "icon": "film",
+    "color": "gold",
+    "family": "source-audio",
+    "source": "remux",
+    "audio": "dd"
+  },
+  {
+    "slug": "combo-uhd-bluray-truehd",
+    "title": "UHD BLU-RAY",
+    "subtitle": "TRUEHD",
+    "category": "source-audio",
+    "icon": "disc",
+    "color": "gold",
+    "family": "source-audio",
+    "source": "uhd-bluray",
+    "audio": "truehd"
+  },
+  {
+    "slug": "combo-uhd-bluray-dtsx",
+    "title": "UHD BLU-RAY",
+    "subtitle": "DTS:X",
+    "category": "source-audio",
+    "icon": "disc",
+    "color": "gold",
+    "family": "source-audio",
+    "source": "uhd-bluray",
+    "audio": "dtsx"
+  },
+  {
+    "slug": "combo-uhd-bluray-dtshd",
+    "title": "UHD BLU-RAY",
+    "subtitle": "DTS-HD MA",
+    "category": "source-audio",
+    "icon": "disc",
+    "color": "gold",
+    "family": "source-audio",
+    "source": "uhd-bluray",
+    "audio": "dtshd"
+  },
+  {
+    "slug": "combo-uhd-bluray-dtshd-core",
+    "title": "UHD BLU-RAY",
+    "subtitle": "DTS-HD",
+    "category": "source-audio",
+    "icon": "disc",
+    "color": "gold",
+    "family": "source-audio",
+    "source": "uhd-bluray",
+    "audio": "dtshd-core"
+  },
+  {
+    "slug": "combo-uhd-bluray-pcm",
+    "title": "UHD BLU-RAY",
+    "subtitle": "PCM / LPCM",
+    "category": "source-audio",
+    "icon": "disc",
+    "color": "gold",
+    "family": "source-audio",
+    "source": "uhd-bluray",
+    "audio": "pcm"
+  },
+  {
+    "slug": "combo-uhd-bluray-ddplus",
+    "title": "UHD BLU-RAY",
+    "subtitle": "DD+",
+    "category": "source-audio",
+    "icon": "disc",
+    "color": "gold",
+    "family": "source-audio",
+    "source": "uhd-bluray",
+    "audio": "ddplus"
+  },
+  {
+    "slug": "combo-uhd-bluray-dts",
+    "title": "UHD BLU-RAY",
+    "subtitle": "DTS",
+    "category": "source-audio",
+    "icon": "disc",
+    "color": "gold",
+    "family": "source-audio",
+    "source": "uhd-bluray",
+    "audio": "dts"
+  },
+  {
+    "slug": "combo-uhd-bluray-dd",
+    "title": "UHD BLU-RAY",
+    "subtitle": "DD / AC-3",
+    "category": "source-audio",
+    "icon": "disc",
+    "color": "gold",
+    "family": "source-audio",
+    "source": "uhd-bluray",
+    "audio": "dd"
+  },
+  {
+    "slug": "combo-bluray-truehd",
+    "title": "BLU-RAY",
+    "subtitle": "TRUEHD",
+    "category": "source-audio",
+    "icon": "disc",
+    "color": "purple",
+    "family": "source-audio",
+    "source": "bluray",
+    "audio": "truehd"
+  },
+  {
+    "slug": "combo-bluray-dtsx",
+    "title": "BLU-RAY",
+    "subtitle": "DTS:X",
+    "category": "source-audio",
+    "icon": "disc",
+    "color": "purple",
+    "family": "source-audio",
+    "source": "bluray",
+    "audio": "dtsx"
+  },
+  {
+    "slug": "combo-bluray-dtshd",
+    "title": "BLU-RAY",
+    "subtitle": "DTS-HD MA",
+    "category": "source-audio",
+    "icon": "disc",
+    "color": "purple",
+    "family": "source-audio",
+    "source": "bluray",
+    "audio": "dtshd"
+  },
+  {
+    "slug": "combo-bluray-dtshd-core",
+    "title": "BLU-RAY",
+    "subtitle": "DTS-HD",
+    "category": "source-audio",
+    "icon": "disc",
+    "color": "purple",
+    "family": "source-audio",
+    "source": "bluray",
+    "audio": "dtshd-core"
+  },
+  {
+    "slug": "combo-bluray-pcm",
+    "title": "BLU-RAY",
+    "subtitle": "PCM / LPCM",
+    "category": "source-audio",
+    "icon": "disc",
+    "color": "purple",
+    "family": "source-audio",
+    "source": "bluray",
+    "audio": "pcm"
+  },
+  {
+    "slug": "combo-bluray-ddplus",
+    "title": "BLU-RAY",
+    "subtitle": "DD+",
+    "category": "source-audio",
+    "icon": "disc",
+    "color": "purple",
+    "family": "source-audio",
+    "source": "bluray",
+    "audio": "ddplus"
+  },
+  {
+    "slug": "combo-bluray-dts",
+    "title": "BLU-RAY",
+    "subtitle": "DTS",
+    "category": "source-audio",
+    "icon": "disc",
+    "color": "purple",
+    "family": "source-audio",
+    "source": "bluray",
+    "audio": "dts"
+  },
+  {
+    "slug": "combo-bluray-dd",
+    "title": "BLU-RAY",
+    "subtitle": "DD / AC-3",
+    "category": "source-audio",
+    "icon": "disc",
+    "color": "purple",
+    "family": "source-audio",
+    "source": "bluray",
+    "audio": "dd"
+  },
+  {
+    "slug": "combo-bluray-flac",
+    "title": "BLU-RAY",
+    "subtitle": "FLAC",
+    "category": "source-audio",
+    "icon": "disc",
+    "color": "purple",
+    "family": "source-audio",
+    "source": "bluray",
+    "audio": "flac"
+  },
+  {
+    "slug": "combo-bluray-aac",
+    "title": "BLU-RAY",
+    "subtitle": "AAC",
+    "category": "source-audio",
+    "icon": "disc",
+    "color": "purple",
+    "family": "source-audio",
+    "source": "bluray",
+    "audio": "aac"
+  },
+  {
+    "slug": "combo-web-dl-ddplus",
+    "title": "WEB-DL",
+    "subtitle": "DD+",
+    "category": "source-audio",
+    "icon": "web",
+    "color": "purple",
+    "family": "source-audio",
+    "source": "web-dl",
+    "audio": "ddplus"
+  },
+  {
+    "slug": "combo-web-dl-dd",
+    "title": "WEB-DL",
+    "subtitle": "DD / AC-3",
+    "category": "source-audio",
+    "icon": "web",
+    "color": "purple",
+    "family": "source-audio",
+    "source": "web-dl",
+    "audio": "dd"
+  },
+  {
+    "slug": "combo-web-dl-pcm",
+    "title": "WEB-DL",
+    "subtitle": "PCM / LPCM",
+    "category": "source-audio",
+    "icon": "web",
+    "color": "purple",
+    "family": "source-audio",
+    "source": "web-dl",
+    "audio": "pcm"
+  },
+  {
+    "slug": "combo-web-dl-flac",
+    "title": "WEB-DL",
+    "subtitle": "FLAC",
+    "category": "source-audio",
+    "icon": "web",
+    "color": "purple",
+    "family": "source-audio",
+    "source": "web-dl",
+    "audio": "flac"
+  },
+  {
+    "slug": "combo-web-dl-opus",
+    "title": "WEB-DL",
+    "subtitle": "OPUS",
+    "category": "source-audio",
+    "icon": "web",
+    "color": "purple",
+    "family": "source-audio",
+    "source": "web-dl",
+    "audio": "opus"
+  },
+  {
+    "slug": "combo-web-dl-aac",
+    "title": "WEB-DL",
+    "subtitle": "AAC",
+    "category": "source-audio",
+    "icon": "web",
+    "color": "purple",
+    "family": "source-audio",
+    "source": "web-dl",
+    "audio": "aac"
+  },
+  {
+    "slug": "combo-webrip-ddplus",
+    "title": "WEBRip",
+    "subtitle": "DD+",
+    "category": "source-audio",
+    "icon": "web",
+    "color": "blue",
+    "family": "source-audio",
+    "source": "webrip",
+    "audio": "ddplus"
+  },
+  {
+    "slug": "combo-webrip-dd",
+    "title": "WEBRip",
+    "subtitle": "DD / AC-3",
+    "category": "source-audio",
+    "icon": "web",
+    "color": "blue",
+    "family": "source-audio",
+    "source": "webrip",
+    "audio": "dd"
+  },
+  {
+    "slug": "combo-webrip-pcm",
+    "title": "WEBRip",
+    "subtitle": "PCM / LPCM",
+    "category": "source-audio",
+    "icon": "web",
+    "color": "blue",
+    "family": "source-audio",
+    "source": "webrip",
+    "audio": "pcm"
+  },
+  {
+    "slug": "combo-webrip-flac",
+    "title": "WEBRip",
+    "subtitle": "FLAC",
+    "category": "source-audio",
+    "icon": "web",
+    "color": "blue",
+    "family": "source-audio",
+    "source": "webrip",
+    "audio": "flac"
+  },
+  {
+    "slug": "combo-webrip-opus",
+    "title": "WEBRip",
+    "subtitle": "OPUS",
+    "category": "source-audio",
+    "icon": "web",
+    "color": "blue",
+    "family": "source-audio",
+    "source": "webrip",
+    "audio": "opus"
+  },
+  {
+    "slug": "combo-webrip-aac",
+    "title": "WEBRip",
+    "subtitle": "AAC",
+    "category": "source-audio",
+    "icon": "web",
+    "color": "blue",
+    "family": "source-audio",
+    "source": "webrip",
+    "audio": "aac"
+  },
+  {
+    "slug": "combo-hdtv-ddplus",
+    "title": "HDTV",
+    "subtitle": "DD+",
+    "category": "source-audio",
+    "icon": "tv",
+    "color": "blue",
+    "family": "source-audio",
+    "source": "hdtv",
+    "audio": "ddplus"
+  },
+  {
+    "slug": "combo-hdtv-dts",
+    "title": "HDTV",
+    "subtitle": "DTS",
+    "category": "source-audio",
+    "icon": "tv",
+    "color": "blue",
+    "family": "source-audio",
+    "source": "hdtv",
+    "audio": "dts"
+  },
+  {
+    "slug": "combo-hdtv-dd",
+    "title": "HDTV",
+    "subtitle": "DD / AC-3",
+    "category": "source-audio",
+    "icon": "tv",
+    "color": "blue",
+    "family": "source-audio",
+    "source": "hdtv",
+    "audio": "dd"
+  },
+  {
+    "slug": "combo-hdtv-aac",
+    "title": "HDTV",
+    "subtitle": "AAC",
+    "category": "source-audio",
+    "icon": "tv",
+    "color": "blue",
+    "family": "source-audio",
+    "source": "hdtv",
+    "audio": "aac"
+  },
+  {
+    "slug": "combo-hdtv-mp3",
+    "title": "HDTV",
+    "subtitle": "MP3",
+    "category": "source-audio",
+    "icon": "tv",
+    "color": "blue",
+    "family": "source-audio",
+    "source": "hdtv",
+    "audio": "mp3"
+  },
+  {
+    "slug": "combo-dvdrip-dts",
+    "title": "DVDRip",
+    "subtitle": "DTS",
+    "category": "source-audio",
+    "icon": "disc",
+    "color": "blue",
+    "family": "source-audio",
+    "source": "dvdrip",
+    "audio": "dts"
+  },
+  {
+    "slug": "combo-dvdrip-dd",
+    "title": "DVDRip",
+    "subtitle": "DD / AC-3",
+    "category": "source-audio",
+    "icon": "disc",
+    "color": "blue",
+    "family": "source-audio",
+    "source": "dvdrip",
+    "audio": "dd"
+  },
+  {
+    "slug": "combo-dvdrip-aac",
+    "title": "DVDRip",
+    "subtitle": "AAC",
+    "category": "source-audio",
+    "icon": "disc",
+    "color": "blue",
+    "family": "source-audio",
+    "source": "dvdrip",
+    "audio": "aac"
+  },
+  {
+    "slug": "combo-dvdrip-mp3",
+    "title": "DVDRip",
+    "subtitle": "MP3",
+    "category": "source-audio",
+    "icon": "disc",
+    "color": "blue",
+    "family": "source-audio",
+    "source": "dvdrip",
+    "audio": "mp3"
+  },
+  {
+    "slug": "combo-av1-10bit",
+    "title": "AV1",
+    "subtitle": "10 BIT",
+    "category": "video-codec",
+    "icon": "chip",
+    "color": "gold",
+    "family": "codec-depth",
+    "codec": "av1",
+    "depth": "10bit"
+  },
+  {
+    "slug": "combo-av1-8bit",
+    "title": "AV1",
+    "subtitle": "8 BIT",
+    "category": "video-codec",
+    "icon": "chip",
+    "color": "gold",
+    "family": "codec-depth",
+    "codec": "av1",
+    "depth": "8bit"
+  },
+  {
+    "slug": "combo-hevc-10bit",
+    "title": "HEVC · H.265",
+    "subtitle": "10 BIT",
+    "category": "video-codec",
+    "icon": "chip",
+    "color": "purple",
+    "family": "codec-depth",
+    "codec": "hevc",
+    "depth": "10bit"
+  },
+  {
+    "slug": "combo-hevc-8bit",
+    "title": "HEVC · H.265",
+    "subtitle": "8 BIT",
+    "category": "video-codec",
+    "icon": "chip",
+    "color": "purple",
+    "family": "codec-depth",
+    "codec": "hevc",
+    "depth": "8bit"
+  },
+  {
+    "slug": "hevc",
+    "title": "HEVC · H.265",
+    "subtitle": "VIDEO CODEC",
+    "category": "video-codec",
+    "icon": "chip",
+    "color": "purple",
+    "family": "codec",
+    "codec": "hevc"
+  },
+  {
+    "slug": "combo-vp9-10bit",
+    "title": "VP9",
+    "subtitle": "10 BIT",
+    "category": "video-codec",
+    "icon": "chip",
+    "color": "purple",
+    "family": "codec-depth",
+    "codec": "vp9",
+    "depth": "10bit"
+  },
+  {
+    "slug": "combo-vp9-8bit",
+    "title": "VP9",
+    "subtitle": "8 BIT",
+    "category": "video-codec",
+    "icon": "chip",
+    "color": "purple",
+    "family": "codec-depth",
+    "codec": "vp9",
+    "depth": "8bit"
+  },
+  {
+    "slug": "combo-avc-10bit",
+    "title": "AVC · H.264",
+    "subtitle": "10 BIT",
+    "category": "video-codec",
+    "icon": "chip",
+    "color": "blue",
+    "family": "codec-depth",
+    "codec": "avc",
+    "depth": "10bit"
+  },
+  {
+    "slug": "combo-avc-8bit",
+    "title": "AVC · H.264",
+    "subtitle": "8 BIT",
+    "category": "video-codec",
+    "icon": "chip",
+    "color": "blue",
+    "family": "codec-depth",
+    "codec": "avc",
+    "depth": "8bit"
+  },
+  {
+    "slug": "avc",
+    "title": "AVC · H.264",
+    "subtitle": "VIDEO CODEC",
+    "category": "video-codec",
+    "icon": "chip",
+    "color": "blue",
+    "family": "codec",
+    "codec": "avc"
+  },
+  {
+    "slug": "combo-vc1-8bit",
+    "title": "VC-1",
+    "subtitle": "8 BIT",
+    "category": "video-codec",
+    "icon": "chip",
+    "color": "blue",
+    "family": "codec-depth",
+    "codec": "vc1",
+    "depth": "8bit"
+  },
+  {
+    "slug": "combo-mpeg2-8bit",
+    "title": "MPEG-2",
+    "subtitle": "8 BIT",
+    "category": "video-codec",
+    "icon": "chip",
+    "color": "blue",
+    "family": "codec-depth",
+    "codec": "mpeg2",
+    "depth": "8bit"
+  },
+  {
+    "slug": "combo-divx-8bit",
+    "title": "DivX",
+    "subtitle": "8 BIT",
+    "category": "video-codec",
+    "icon": "chip",
+    "color": "blue",
+    "family": "codec-depth",
+    "codec": "divx",
+    "depth": "8bit"
+  },
+  {
+    "slug": "combo-xvid-8bit",
+    "title": "XviD",
+    "subtitle": "8 BIT",
+    "category": "video-codec",
+    "icon": "chip",
+    "color": "blue",
+    "family": "codec-depth",
+    "codec": "xvid",
+    "depth": "8bit"
+  },
+  {
+    "slug": "audio-chinese-english-japanese-korean",
+    "title": "中英日韩音轨",
+    "subtitle": "ZH + EN + JA + KO",
+    "category": "audio-language",
+    "icon": "language",
+    "color": "blue",
+    "family": "language",
+    "languages": [
+      "chinese",
+      "english",
+      "japanese",
+      "korean"
+    ]
+  },
+  {
+    "slug": "audio-chinese-english-japanese",
+    "title": "中英日音轨",
+    "subtitle": "ZH + EN + JA",
+    "category": "audio-language",
+    "icon": "language",
+    "color": "blue",
+    "family": "language",
+    "languages": [
+      "chinese",
+      "english",
+      "japanese"
+    ]
+  },
+  {
+    "slug": "audio-chinese-english-korean",
+    "title": "中英韩音轨",
+    "subtitle": "ZH + EN + KO",
+    "category": "audio-language",
+    "icon": "language",
+    "color": "blue",
+    "family": "language",
+    "languages": [
+      "chinese",
+      "english",
+      "korean"
+    ]
+  },
+  {
+    "slug": "audio-chinese-japanese-korean",
+    "title": "中日韩音轨",
+    "subtitle": "ZH + JA + KO",
+    "category": "audio-language",
+    "icon": "language",
+    "color": "blue",
+    "family": "language",
+    "languages": [
+      "chinese",
+      "japanese",
+      "korean"
+    ]
+  },
+  {
+    "slug": "audio-english-japanese-korean",
+    "title": "英日韩音轨",
+    "subtitle": "EN + JA + KO",
+    "category": "audio-language",
+    "icon": "language",
+    "color": "blue",
+    "family": "language",
+    "languages": [
+      "english",
+      "japanese",
+      "korean"
+    ]
+  },
+  {
+    "slug": "audio-chinese-english",
+    "title": "中英音轨",
+    "subtitle": "ZH + EN",
+    "category": "audio-language",
+    "icon": "language",
+    "color": "blue",
+    "family": "language",
+    "languages": [
+      "chinese",
+      "english"
+    ]
+  },
+  {
+    "slug": "audio-chinese-japanese",
+    "title": "中日音轨",
+    "subtitle": "ZH + JA",
+    "category": "audio-language",
+    "icon": "language",
+    "color": "blue",
+    "family": "language",
+    "languages": [
+      "chinese",
+      "japanese"
+    ]
+  },
+  {
+    "slug": "audio-chinese-korean",
+    "title": "中韩音轨",
+    "subtitle": "ZH + KO",
+    "category": "audio-language",
+    "icon": "language",
+    "color": "blue",
+    "family": "language",
+    "languages": [
+      "chinese",
+      "korean"
+    ]
+  },
+  {
+    "slug": "audio-english-japanese",
+    "title": "英日音轨",
+    "subtitle": "EN + JA",
+    "category": "audio-language",
+    "icon": "language",
+    "color": "blue",
+    "family": "language",
+    "languages": [
+      "english",
+      "japanese"
+    ]
+  },
+  {
+    "slug": "audio-english-korean",
+    "title": "英韩音轨",
+    "subtitle": "EN + KO",
+    "category": "audio-language",
+    "icon": "language",
+    "color": "blue",
+    "family": "language",
+    "languages": [
+      "english",
+      "korean"
+    ]
+  },
+  {
+    "slug": "audio-japanese-korean",
+    "title": "日韩音轨",
+    "subtitle": "JA + KO",
+    "category": "audio-language",
+    "icon": "language",
+    "color": "blue",
+    "family": "language",
+    "languages": [
+      "japanese",
+      "korean"
+    ]
+  }
+]

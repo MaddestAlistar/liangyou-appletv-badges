@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "cases": 121,
+  "engines": [
+    "Python re",
+    "ICU"
+  ],
+  "assertions": 242,
+  "filters": 155,
+  "new_assets": 81,
+  "elapsed_seconds": 6.316,
+  "noise_seconds": 1.278,
+  "group_and_filter_order_verified": true,
+  "aliases_identical": true,
+  "all_pngs_decoded": true,
+  "all_new_svg_text_outlined": true,
+  "split_candidate_union_example": [
+    "4k",
+    "audio-chinese-english",
+    "chinese",
+    "combo-hevc-10bit",
+    "combo-uhd-remux-truehd",
+    "english",
+    "hevc",
+    "truehd"
+  ],
+  "global_exclusion_guaranteed": false,
+  "device_tested": false
+}
