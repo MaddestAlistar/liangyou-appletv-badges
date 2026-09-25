@@ -144,10 +144,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9c7e-ddplus",
+      "id": "ly9c8e-ddplus",
       "groupId": "audio-tech",
       "name": "DD+",
-      "pattern": "(?i)^(?![\\s\\S]*(?:dolby[\\s._-]*atmos|joc|(?:e-?ac-?3|ec-?3|ddp|dd\\+|true[\\s._-]*hd|dolby[\\s._-]*truehd)[\\s._+:-]*(?:joc|atmos)|(?:joc|atmos)[\\s._+:-]*(?:e-?ac-?3|ec-?3|ddp|dd\\+|true[\\s._-]*hd|dolby[\\s._-]*truehd)|atmos[\\s._+:-]*(?:5[ ._-]?1|7[ ._-]?1)|(?:5[ ._-]?1|7[ ._-]?1)[\\s._+:-]*atmos|杜比全景声|全景声))(?![\\s\\S]*(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba))(?=[\\s\\S]*\\b(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3|eac3|ddp|dd\\+)\\b)[\\s\\S]+$",
+      "pattern": "(?i)^(?![\\s\\S]*(?:dolby[\\s._-]*atmos|joc|(?:e-?ac-?3|ec-?3|ddp|dd\\+|true[\\s._-]*hd|dolby[\\s._-]*truehd)[\\s._+:-]*(?:joc|atmos)|(?:joc|atmos)[\\s._+:-]*(?:e-?ac-?3|ec-?3|ddp|dd\\+|true[\\s._-]*hd|dolby[\\s._-]*truehd)|atmos[\\s._+:-]*(?:5[ ._-]?1|7[ ._-]?1)|(?:5[ ._-]?1|7[ ._-]?1)[\\s._+:-]*atmos|杜比全景声|全景声))(?!(?=[\\s\\S]*(?:dolby[\\s._-]*vision|dolbyvision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?|杜比视界|\\u2063))(?=[\\s\\S]*(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba))(?=[\\s\\S]*(?:7[ ._-]?1(?:[\\s._-]*(?:ch(?:annels?)?|audio|surround|声道))?))(?=[\\s\\S]*(?:\\b(?:4k|2160[pi]?|uhd|ultra[\\s._-]*hd|remux)\\b|(?:3840|4096)\\s*[x×*]\\s*\\d{3,4})))(?=[\\s\\S]*\\b(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3|eac3|ddp|dd\\+)\\b)[\\s\\S]+$",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-24-v8/epx/svg/ddplus.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -157,10 +157,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9c7e-dd",
+      "id": "ly9c8e-dd",
       "groupId": "audio-tech",
       "name": "DD",
-      "pattern": "(?i)^(?![\\s\\S]*(?:dolby[\\s._-]*vision|dolbyvision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?|杜比视界|\\u2063))(?![\\s\\S]*(?:dolby[\\s._-]*atmos|joc|(?:e-?ac-?3|ec-?3|ddp|dd\\+|true[\\s._-]*hd|dolby[\\s._-]*truehd)[\\s._+:-]*(?:joc|atmos)|(?:joc|atmos)[\\s._+:-]*(?:e-?ac-?3|ec-?3|ddp|dd\\+|true[\\s._-]*hd|dolby[\\s._-]*truehd)|atmos[\\s._+:-]*(?:5[ ._-]?1|7[ ._-]?1)|(?:5[ ._-]?1|7[ ._-]?1)[\\s._+:-]*atmos|杜比全景声|全景声))(?![\\s\\S]*(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba))(?![\\s\\S]*\\b(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3|eac3|ddp|dd\\+)\\b)(?=[\\s\\S]*\\b(?:dolby[\\s._-]*digital(?![\\s._-]*plus)|ac[\\s._-]*3|ac3)\\b)[\\s\\S]+$",
+      "pattern": "(?i)^(?![\\s\\S]*(?:dolby[\\s._-]*atmos|joc|(?:e-?ac-?3|ec-?3|ddp|dd\\+|true[\\s._-]*hd|dolby[\\s._-]*truehd)[\\s._+:-]*(?:joc|atmos)|(?:joc|atmos)[\\s._+:-]*(?:e-?ac-?3|ec-?3|ddp|dd\\+|true[\\s._-]*hd|dolby[\\s._-]*truehd)|atmos[\\s._+:-]*(?:5[ ._-]?1|7[ ._-]?1)|(?:5[ ._-]?1|7[ ._-]?1)[\\s._+:-]*atmos|杜比全景声|全景声))(?!(?=[\\s\\S]*(?:dolby[\\s._-]*vision|dolbyvision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?|杜比视界|\\u2063))(?=[\\s\\S]*(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba))(?=[\\s\\S]*(?:7[ ._-]?1(?:[\\s._-]*(?:ch(?:annels?)?|audio|surround|声道))?))(?=[\\s\\S]*(?:\\b(?:4k|2160[pi]?|uhd|ultra[\\s._-]*hd|remux)\\b|(?:3840|4096)\\s*[x×*]\\s*\\d{3,4})))(?![\\s\\S]*\\b(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3|eac3|ddp|dd\\+)\\b)(?=[\\s\\S]*\\b(?:dolby[\\s._-]*digital(?![\\s._-]*plus)|ac[\\s._-]*3|ac3)\\b)[\\s\\S]+$",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-24-v8/epx/svg/dd.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
