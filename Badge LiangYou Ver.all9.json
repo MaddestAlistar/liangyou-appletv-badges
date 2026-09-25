@@ -27,10 +27,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9fix-07-dv-atmos",
+      "id": "ly9r2-dv-atmos",
       "groupId": "video-tech",
       "name": "DV+ATMOS · 杜比视界+全景声",
-      "pattern": "(?i)^(?=[\\s\\S]*(?:dolby[\\s._-]*vision|dolbyvision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?|杜比视界|\\u2063))(?=[\\s\\S]*(?:dolby[\\s._-]*atmos|atmos|joc|e-?ac-?3[\\s._-]*joc|eac3[\\s._-]*joc|ddp[\\s._-]*joc|杜比全景声|全景声))[\\s\\S]+$",
+      "pattern": "(?i)\\A(?=[\\s\\S]*(?:dolby[\\s._-]*vision|dolbyvision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?|杜比视界|\\u2063))(?=[\\s\\S]*(?:dolby[\\s._-]*atmos|atmos|joc|e-?ac-?3[\\s._-]*joc|eac3[\\s._-]*joc|ddp[\\s._-]*joc|杜比全景声|全景声))[\\s\\S]+",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/combo-dv-atmos.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -40,10 +40,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9fix-08-dolby-vision",
+      "id": "ly9r2-dolby-vision",
       "groupId": "video-tech",
       "name": "DOLBY VISION",
-      "pattern": "(?i)^(?![\\s\\S]*(?:dolby[\\s._-]*atmos|atmos|joc|e-?ac-?3[\\s._-]*joc|eac3[\\s._-]*joc|ddp[\\s._-]*joc|杜比全景声|全景声))(?=[\\s\\S]*(?:dolby[\\s._-]*vision|dolbyvision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?|杜比视界|\\u2063))[\\s\\S]+$",
+      "pattern": "(?i)\\A(?=[\\s\\S]*(?:dolby[\\s._-]*vision|dolbyvision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?|杜比视界|\\u2063))(?![\\s\\S]*(?:dolby[\\s._-]*atmos|atmos|joc|e-?ac-?3[\\s._-]*joc|eac3[\\s._-]*joc|ddp[\\s._-]*joc|杜比全景声|全景声))[\\s\\S]+",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/dolby-vision.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -53,10 +53,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9fix-09-dolby-atmos",
+      "id": "ly9r2-dolby-atmos",
       "groupId": "audio-tech",
       "name": "DOLBY ATMOS",
-      "pattern": "(?i)^(?![\\s\\S]*(?:dolby[\\s._-]*vision|dolbyvision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?|杜比视界|\\u2063))(?=[\\s\\S]*(?:dolby[\\s._-]*atmos|atmos|joc|e-?ac-?3[\\s._-]*joc|eac3[\\s._-]*joc|ddp[\\s._-]*joc|杜比全景声|全景声))[\\s\\S]+$",
+      "pattern": "(?i)\\A(?=[\\s\\S]*(?:dolby[\\s._-]*atmos|atmos|joc|e-?ac-?3[\\s._-]*joc|eac3[\\s._-]*joc|ddp[\\s._-]*joc|杜比全景声|全景声))(?![\\s\\S]*(?:dolby[\\s._-]*vision|dolbyvision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?|杜比视界|\\u2063))[\\s\\S]+",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/atmos.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -66,10 +66,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9fix-10-truehd",
+      "id": "ly9r2-truehd",
       "groupId": "audio-tech",
       "name": "TRUEHD",
-      "pattern": "(?i)\\b(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)\\b",
+      "pattern": "(?i)(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/truehd.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -170,10 +170,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9fix-14-dd",
+      "id": "ly9r2-ddplus",
       "groupId": "audio-tech",
       "name": "DD+",
-      "pattern": "(?i)^(?![\\s\\S]*(?:dolby[\\s._-]*atmos|atmos|joc|e-?ac-?3[\\s._-]*joc|eac3[\\s._-]*joc|ddp[\\s._-]*joc|杜比全景声|全景声))(?=[\\s\\S]*\\b(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3|eac3|ddp|dd\\+)\\b)[\\s\\S]+$",
+      "pattern": "(?i)\\A(?![\\s\\S]*(?:dolby[\\s._-]*atmos|atmos|joc|e-?ac-?3[\\s._-]*joc|eac3[\\s._-]*joc|ddp[\\s._-]*joc|杜比全景声|全景声))(?![\\s\\S]*(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba))(?=[\\s\\S]*\\b(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3|eac3|ddp|dd\\+)\\b)[\\s\\S]+",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/ddplus.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -183,10 +183,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9fix-15-dd",
+      "id": "ly9r2-dd",
       "groupId": "audio-tech",
       "name": "DD",
-      "pattern": "(?i)\\b(?:dolby[\\s._-]*digital(?![\\s._-]*plus)|ac[\\s._-]*3|ac3)\\b",
+      "pattern": "(?i)\\A(?![\\s\\S]*(?:dolby[\\s._-]*vision|dolbyvision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?|杜比视界|\\u2063))(?![\\s\\S]*(?:dolby[\\s._-]*atmos|atmos|joc|e-?ac-?3[\\s._-]*joc|eac3[\\s._-]*joc|ddp[\\s._-]*joc|杜比全景声|全景声))(?![\\s\\S]*(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba))(?![\\s\\S]*\\b(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3|eac3|ddp|dd\\+)\\b)(?=[\\s\\S]*\\b(?:dolby[\\s._-]*digital(?![\\s._-]*plus)|ac[\\s._-]*3|ac3)\\b)[\\s\\S]+",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/dd.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
