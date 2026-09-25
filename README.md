@@ -1,96 +1,89 @@
 # 良友徽章 · LiangYou Media Badges
 
-V8 · 2026-09-24 · 良哥看未来
+V9 · 2026-09-25 · 良哥看未来
 
-延续原有「良」字标识、双层边框和两套图标风格，补齐常见媒体格式，修正规则误判，新增条件组合徽章。两个原有正式订阅地址继续有效。
+保留双层边框和「良」字风格；修正浅色背景可读性，合并重复组合，并收紧默认匹配上下文。
 
-## 导入地址
+## 导入
 
-| 版本 | 内容 | 订阅 |
+| 版本 | 启用徽章 | 正式地址 | 绕过旧配置缓存的新地址 |
+| --- | --- | --- | --- |
+| EplayerX · SVG | 47 枚，含 7 枚组合 | [EPX](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.EPX.json) | [EPX9](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.EPX9.json) |
+| 复杂版 · PNG | 85 枚，含 7 枚组合 | [all](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.all.json) | [all9](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.all9.json) |
+
+**替换旧徽章包，重新加载；不要与 V8 或另一套完整配置叠加导入。** V8 的 Profile 组合仍可能留在客户端已保存的旧规则中，单纯刷新图片无法删除它们。历史 EPX8 / all8 地址保留旧版本用于回退。
+
+主配置采用严格匹配：同一候选文本必须同时含有「分辨率或视频编码」和「音频格式」。这能过滤孤立的 `TrueHD`、`DV P7`、`UHD Blu-ray` 等字段，减少它们与完整组合叠加。**信息不全的资源可能少显示、甚至没有徽章；严格匹配不能保证跨候选字段全局互斥。**
+
+备用配置（任选一套替换，不要同时启用）：
+
+- [EPX PNG](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.EPX.PNG.json)：同样式、同严格规则，换用 PNG 解码。
+- 宽松匹配：[EPX.Relaxed](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.EPX.Relaxed.json) / [all.Relaxed](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.all.Relaxed.json)。不要求完整上下文，适用于更新后徽章过少的客户端；分字段合并时更容易重复。
+- [复杂版仅单项](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.all.Single.json)：78 枚，关闭组合，保留严格上下文和分类优先级。
+- [尺寸诊断](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Diagnostic.json)：临时显示一张固定图片，比较不同卡片容器的缩放。
+
+## 深浅背景预览
+
+![深浅背景](previews/Themes-v9.png)
+
+[EplayerX 全套](previews/EPX-v9.png) · [复杂版全套](previews/ALL-v9.png) · [组合全套](previews/Combos-v9.png)
+
+EPX 的透明底白字已改为深色实体底；复杂版保留原深色渐变，并补充深色外轮廓。文字区域不会再透出白色页面背景。所有 SVG 为 320×96，PNG 为 960×288，文字仍为矢量轮廓。若客户端额外给整张图片加透明度、模板着色或缩放，需要在客户端排查；图片无法关闭这些 UI 效果。
+
+配色沿用金／紫／蓝／橘：高阶项目、杜比单项及版本标识为金色，次级紫色，常规蓝色，组合与特殊项目橘色。颜色和下面的优先级是本套展示策略，不是所有格式的绝对画质排名。
+
+## 组合与分类优先级
+
+同一输入内，组合先于单项排列；命中最高优先级组合后不显示较低组合及单独音频格式。具有 DV 的组合还排除独立 DV / Profile / HDR 徽章。
+
+| 组合优先级 | 所需标签 | 第二行 |
 | --- | --- | --- |
-| EplayerX | 47 枚，轻量 SVG，含 7 枚组合 | [Ver.EPX.json](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.EPX.json) |
-| 复杂版 | 97 枚，PNG，含 19 枚组合及 DV Profile 细分 | [Ver.all.json](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.all.json) |
+| 1 | DV + Atmos + TrueHD | 杜比视界+全景声 |
+| 2 | DV + Atmos + DD+，无 TrueHD | 杜比视界+全景声 |
+| 3 | DV + Atmos，未明确上述编码 | 杜比视界+全景声 |
+| 4 | DV + TrueHD，无 Atmos | 杜比视界 · 无损音频 |
+| 5 | Atmos + TrueHD，无 DV | 杜比全景声 · TRUEHD |
+| 6 | Atmos + DD+，无 DV / TrueHD | 杜比全景声 · E-AC-3 |
+| 7 | DTS:X + DTS-HD MA，未命中以上组合 | 沉浸音频 · MASTER AUDIO |
 
-替换旧配置后重新加载。若客户端缓存旧 JSON，可用内容完全相同的新地址：[EPX8](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.EPX8.json) / [all8](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.all8.json)。同一套配置只保留一份，避免多次导入造成重复。
+DV + Atmos 系列的中文统一为 **杜比视界+全景声**，TrueHD / DD+ 移到第一行。P5 / P7 / P8 不再各复制一组组合，避免「P7 组合 + 通用组合」并排；单独 DV 仍可在复杂版细分 Profile。复杂版从 97 枚合并为 85 枚，常规格式没有删减。
 
-兼容选项：
+其他分类在同一输入内只选优先项，例如：
 
-- [EPX PNG 版](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.EPX.PNG.json)：规则、图案与 EPX 一致，仅改用 PNG，可排查 SVG 解码差异。
-- [复杂版仅单项](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.all.Single.json)：78 枚，无组合；适用于组合与单项在客户端中同时出现的情况。
-- [尺寸诊断](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Diagnostic.json)：只有一张固定测试图，临时替换正式配置后比较不同服务器的资料卡；完成后切回正式版。
+- 片源：REMUX → UHD Blu-ray → Blu-ray → WEB-DL → WEBRip → HDTV → DVDRip。
+- 画面：DV → HDR10+ → HDR10 → HLG → HDR → SDR。
+- 分辨率：4K → 1080P → 720P → 576P → 480P。
+- 声道：7.1 → 6.1 → 5.1 → 2.0 → 1.0。
+- 位深、IMAX、帧率及视频编码也执行分类优先；版本标识和明确音轨语言可以保留多个。
 
-EplayerX、CapyPlayer、RovePlayer、Forward、Nuvio、Rex 的具体版本和界面行为需实机验证。规则测试通过不等于已完成所有客户端兼容认证。
+徽章表示输入中的标签，不证明当前选中音轨、实际输出格式或原盘完整性。多音轨、多媒体版本被混在同一字符串中时，展示的优先项不等于当前播放轨道。组合顺序已放到 JSON 数组前面，客户端仍可能自行按分组、数量上限或 UI 逻辑排序。
 
-## 预览
+## 为什么仍不能承诺所有播放器只显示最高一枚
 
-[EplayerX 完整预览](previews/EPX-v8.png) · [复杂版完整预览](previews/ALL-v8.png)
+部分播放器分别匹配文件名、媒体字段，再把命中结果合并。一个完整文件名可能命中 `Atmos + TrueHD`，另一个包含 DV 的完整候选又命中 `DV + Atmos + TrueHD`；后者不能通过自己的正则撤销前者。
 
-![组合徽章预览](previews/Combos-v8.png)
+V9 已测试这种剩余反例，未将它隐藏或写成“全部去重成功”。真正的全局互斥需要播放器先整理同一个 MediaSource 的信息，或在汇总后执行选择逻辑。仓库提供 [选择器参考实现](tools/select_badges.py)，**仅供客户端集成；导入 JSON 不会自动运行它**。
 
-## 补充与配色
+[本次截图问题与兼容性说明](reports/COMPATIBILITY-v9.md) · [V8 历史核查](reports/COMPATIBILITY-v8.md)
 
-两套均增加 WEBRip、UHD Blu-ray、HDTV、SDR、通用 HDR、IMAX / IMAX Enhanced、10 / 8 bit、DD+ / EAC3、DD / AC3、PCM / LPCM、OPUS、1.0 / 2.0 / 6.1。复杂版另外增加 DV P5 / P7 / P8、3D、480P / 576P、DVDRip、XviD / DivX / MPEG-2 / VC-1、MP3、50 / 60 / 120 fps、9 个平台、10 个版本标识和 4 种音轨语言。
+## 已有识别能力与校正
 
-| 边框 | 用途 | 示例 |
-| --- | --- | --- |
-| 金色 | 各分类的高阶项目、全部杜比单项、版本标识 | 4K、REMUX、UHD Blu-ray、DV、Atmos、TrueHD、DD+、DD、HDR10+、DTS:X、DTS-HD MA、FLAC、PCM、7.1、Director's Cut |
-| 紫色 | 次级项目 | 1080P、Blu-ray、WEB-DL、HDR10、HLG、HEVC、5.1、6.1 |
-| 蓝色 | 常规项目 | 720P、WEBRip、HDTV、SDR、AVC、AAC、语言、平台 |
-| 橘色 | 组合及特殊项目 | DV + Atmos、DTS:X + HD MA、3D |
+两套均有 WEBRip / UHD Blu-ray / HDTV / SDR / HDR、IMAX / IMAX Enhanced、10 / 8 bit、DD+ / EAC3、DD / AC3、PCM / LPCM、OPUS、1.0 / 2.0 / 6.1 等。复杂版另有 DV Profile、3D、480P / 576P、DVDRip、老编码、MP3、高帧率、平台、版本标识及音轨语言。
 
-颜色是本套徽章的展示分级，不代表所有场景下的画质或听感排名。杜比组合使用橘色作为组合标识；杜比单项使用金色。杜比视界与全景声的双 D 图形已改为明亮填色。
-
-暂未启用 CAM、SeaDex、True-Hue：当前缺少目标库可靠的来源标签样本；不能从片名、编码或画面观感推断这些标签。语言只识别明确的音轨语境，不将字幕标成配音；平台只按来源标签识别，不表示当前版权归属。
-
-## 组合与去重
-
-同一段输入文本内，组合与被其包含的单项互斥，兼容换行和标签顺序变化。
-
-| 同一输入中的信息 | 显示组合 | 隐藏的单项 |
-| --- | --- | --- |
-| DV + Atmos + TrueHD | DV + ATMOS / TRUEHD | DV、Atmos、TrueHD |
-| DV + Atmos + DD+，无 TrueHD | DV + ATMOS / DD+ | DV、Atmos、DD+ |
-| DV + Atmos，未明确上述编码 | DV + ATMOS | DV、Atmos |
-| DV + TrueHD，无 Atmos | DV + TRUEHD | DV、TrueHD |
-| Atmos + TrueHD，无 DV | ATMOS + TRUEHD | Atmos、TrueHD |
-| Atmos + DD+，无 DV / TrueHD | ATMOS + DD+ | Atmos、DD+ |
-| DTS:X + DTS-HD MA | DTS:X + HD MA | DTS:X、DTS-HD MA |
-
-复杂版中，明确且不冲突的 DV P5 / P7 / P8 会进入对应组合；Profile 缺失或冲突时回退到通用 DV。组合不隐藏无关音频格式。例如 `DV Atmos TrueHD EAC3` 显示三项组合，并保留额外的 DD+。
-
-**JSON 只能处理每次传入的字符串。** NuvioTV 的已核对实现会分别匹配多个字段，再匹配合并字符串，最后取并集；因此可能同时保留组合和单项。这里的负向条件不能控制跨字段合并结果。遇到这种情况可使用「复杂版仅单项」。EplayerX 匹配器未取得公开实现，不能承诺其资料卡和播放页始终遵循同一种匹配流程。
-
-组合表示同一资源输入里同时出现这些标签，不保证 Atmos 属于哪一条音轨，也不代表当前选中音轨或实际播放输出。若输入混合了多个媒体版本或音轨，需客户端先按当前 MediaSource / 音轨整理信息。
-
-## 这次修正
-
-- 修复 EPX 重复的 DTS-HD ID；区分 DTS、普通 DTS-HD、明确 MA / XLL 的 DTS-HD MA。普通 DTS-HD 使用「HD AUDIO」，不直接假定为 HRA 或 MA。
-- WEBRip 与 WEB-DL 分开，平台名不再自动视为 WEB-DL。
-- 修复 HDR10+ 的加号边界；兼容空格、下划线和多行信息。
-- 普通 EAC3 / DD+ 不冒充 Atmos；明确 Atmos / JOC 才触发全景声。
-- Main10 不单独推断 HEVC；普通 MPEG4 不单独推断 AVC。
-- 避免 L5.1、Level 5.1、Profile 5.1 被当作声道；不从 6ch / 8ch 推断具体布局。
-- SDR、DV Profile、位深和语言均需要明确信息；不把缺失信息当作否定证据。
-- 同一输入内控制分辨率、HDR10+ / HDR10、IMAX Enhanced / IMAX、声道及 DTS 家族重复。
-- 使用参考配置中常见的标准分组，不依赖未经确认的自定义排他属性。
-
-## 显示大小与资料卡 / 播放页
-
-原 EPX 已经是 320 × 96，尺寸差异不能简单归因于原图大小。本次所有 SVG 均统一为 320 × 96、固定比例和画布边界；所有 PNG 均为 960 × 288；文字转为矢量路径，避免字体替换改变宽度；新图片目录可避开旧资源缓存。
-
-这些处理能减少资源本身的差异，但不能强制客户端的卡片容器高度、行数、缩放或徽章数量上限。资料卡与播放页传入字段不同，也仍可能显示不同。排查步骤和已确认的客户端限制见 [兼容性说明](reports/COMPATIBILITY-v8.md)。
+延续 V8 的纠错：普通 EAC3 不等于 Atmos；Main10 不单独推断 HEVC；MPEG4 不单独推断 AVC；HDR10+ 加号边界正确；不将 L5.1 / Level 5.1 当作声道；不从 6ch / 8ch 推断布局；没有 HDR 标签不自动判为 SDR。CAM、SeaDex、True-Hue 仍未启用。
 
 ## 构建与验证
-
-源规则在 `tools/badge_rules.py`；新增图案目录在 `tools/new_badge_catalogue.json`；SVG / PNG 和预览已一并提供。历史图片和旧版实验 JSON 保留，正式地址指向 V8。
 
 ```sh
 python tools/badge_rules.py
 python tools/render_badges.py --font /path/to/NotoSansCJKsc-Bold.otf
+python tools/preview_themes.py --font /path/to/NotoSansCJKsc-Bold.otf
 python tools/test_badges.py
 python tools/check_assets.py
 ```
 
-生成图片需要 Python 3.12+、Pillow、fontTools、lxml、Inkscape 和 Noto Sans CJK SC Bold；匹配测试还需要 ICU 与支持源文件运行的 JDK 17+。脚本不修改历史图片目录，也不调用 Emby 接口。
+图片生成需要 Python 3.12+、Pillow、fontTools、lxml、Inkscape 和 Noto Sans CJK SC Bold；匹配测试需要 ICU 和 JDK 17+。
 
-474 个场景分别通过 Python、ICU 74、Java 17 Pattern，共 1,422 次结果断言。另检查全部图片尺寸、矢量文字、配置图片路径，并复现跨字段并集导致组合与单项共存的限制。[规则测试记录](reports/validation.json) · [图片检查记录](reports/assets-validation.json)。这些是自动验证，尚未取得用户设备上的实机测试结果。
+536 个场景在 Python、ICU 74、Java 17 中完成 1,608 次断言，涵盖宽松和正式严格规则。另有 4 个字段集合测试（包括仍会重复的反例和低信息不显示的代价），以及 133 份 SVG / 133 份 PNG 的尺寸、透明度和深浅背景合成验证。测试并非 EplayerX / CapyPlayer 实机认证，也没有访问用户服务器。
+
+[规则验证](reports/validation-v9.json) · [图片验证](reports/assets-validation-v9.json)

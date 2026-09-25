@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "svg_count": 133,
+  "png_count": 133,
+  "svg_canvas": "320x96",
+  "png_canvas": "960x288",
+  "external_image_or_font_dependencies": false,
+  "text_region_alpha": 255,
+  "text_region_same_on_light_and_dark": true,
+  "configs": 9,
+  "local_image_references_checked": 522
+}

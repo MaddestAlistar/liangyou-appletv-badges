@@ -1,4 +1,4 @@
-"""LiangYou v8. Rules describe one media source's input text, not playback capability.
+"""LiangYou v9. Rules describe one media source's input text, not playback capability.
 
 Java Pattern and ICU syntax. No custom JSON fields with unverified client support.
 Whole-input anchors and [\\s\\S] make exclusions work across line breaks.
@@ -9,7 +9,7 @@ import json
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
-VERSION='2026-09-24-v8'
+VERSION='2026-09-25-v9'
 BASE=f'https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/{VERSION}'
 SEP=r'[\s._-]*'
 
@@ -98,14 +98,39 @@ for slug,rx,ch in [('chinese',r'chi|zho|zh(?:[-_]cn)?|chinese','中文|国语|�
 
 # Slug, required media facts, exclusions, label, subtitle.
 COMBOS=[
- ('combo-dv-atmos-truehd',('dolby-vision','atmos','truehd'),(), 'DV + ATMOS','TRUEHD'),
- ('combo-dv-atmos-ddplus',('dolby-vision','atmos','ddplus'),('truehd',),'DV + ATMOS','DD+ / E-AC-3'),
- ('combo-dv-atmos',('dolby-vision','atmos'),('truehd','ddplus'),'DV + ATMOS','杜比视界 · 全景声'),
+ ('combo-dv-atmos-truehd',('dolby-vision','atmos','truehd'),(), 'DV+ATMOS+TrueHD','杜比视界+全景声'),
+ ('combo-dv-atmos-ddplus',('dolby-vision','atmos','ddplus'),('truehd',),'DV+ATMOS+DD+','杜比视界+全景声'),
+ ('combo-dv-atmos',('dolby-vision','atmos'),('truehd','ddplus'),'DV+ATMOS','杜比视界+全景声'),
  ('combo-dv-truehd',('dolby-vision','truehd'),('atmos',),'DV + TRUEHD','杜比视界 · 无损音频'),
  ('combo-atmos-truehd',('atmos','truehd'),('dolby-vision',),'ATMOS + TRUEHD','杜比全景声 · TRUEHD'),
  ('combo-atmos-ddplus',('atmos','ddplus'),('dolby-vision','truehd'),'ATMOS + DD+','杜比全景声 · E-AC-3'),
  ('combo-dtsx-dtshd',('dtsx','dtshd'),(),'DTS:X + HD MA','沉浸音频 · MASTER AUDIO'),
 ]
+
+# Display priority, not a universal quality ranking. One choice per family in a
+# complete input. A client that unions independent candidates still needs a
+# post-match selection stage; do not invent unsupported JSON fields for it.
+P['uhd-bluray']=condition(P['4k'],P['bluray'])
+PRIORITIES={
+ 'resolution':['4k','1080p','720p','576p','480p'],
+ 'source':['remux','uhd-bluray','bluray','web-dl','webrip','hdtv','dvdrip'],
+ 'range':['dolby-vision','hdr10plus','hdr10','hlg','hdr','sdr'],
+ 'audio':['atmos','truehd','dtsx','dtshd','dtshd-core','flac','pcm','ddplus','dts','dd','opus','aac','mp3'],
+ 'channels':['71','61','51','20','10'],
+ 'codec':['av1','hevc','vp9','avc','vc1','mpeg2','divx','xvid'],
+ 'depth':['10bit','8bit'], 'imax':['imax-enhanced','imax'],
+ 'fps':['120fps','60fps','50fps'],
+}
+VIDEO_DESCRIPTOR=anyof(tok(r'2160[pi]?|4k|uhd|ultra[\s._-]*hd|1080[pi]?|fhd|full[\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\d{3,4}\s*[x×*]\s*\d{3,4}|hevc|h[\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\s._-]*(?:2(?:video)?|4[\s._-]*avc|h[\s._-]*part[\s._-]*2)|vc[\s._-]*1|wmv3|xvid|divx'),r'超高清')
+AUDIO_DESCRIPTOR=anyof(atok(r'(?:dolby[\s._-]*)?(?:atmos|true[\s._-]*hd|digital(?:[\s._-]*plus)?)|joc|mlp[\s._-]*fba|e?[\s._-]*ac[\s._-]*3|ddp|dd\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\d+(?:le|be)?)?|opus|mp3'),r'杜比全景声|全景声')
+CONTEXT=condition(VIDEO_DESCRIPTOR,AUDIO_DESCRIPTOR)
+
+def combo_presence(spec):
+    return condition(*(P[s] for s in spec[1]),exclude=tuple(P[s] for s in spec[2]))
+
+COMBO_ANY=anyof(condition(P['dolby-vision'],anyof(P['atmos'],P['truehd'])),
+               condition(P['atmos'],anyof(P['truehd'],P['ddplus'])),
+               condition(P['dtsx'],P['dtshd']))
 
 OLD=[
  ('4k','良友4K','ULTRA HD','resolution','tv'),('1080p','1080P','FULL HD','resolution','tv'),('720p','720P','HD','resolution','tv'),
@@ -129,41 +154,19 @@ def metadata():
 
 def combo_specs(version):
     specs=[]
-    for slug,req,exc,title,sub in COMBOS:
-        if version=='all' and 'dolby-vision' in req:
-            for profile in [5,7,8]:
-                p=f'dv-p{profile}'
-                other=tuple(f'dv-p{x}' for x in [5,7,8] if x!=profile)
-                specs.append(dict(slug=f'{slug}-p{profile}',required=req+(p,),excluded=exc+other,title=title.replace('DV',f'DV P{profile}',1),subtitle=sub,category='combo',icon='dolby',color='orange',epx=False))
-            # Ambiguous multiple profile tags fall back to generic DV, not an invented profile.
-            prof_unambiguous=anyof(*(condition(P[f'dv-p{x}'],exclude=tuple(P[f'dv-p{y}'] for y in [5,7,8] if y!=x)) for x in [5,7,8]))
-            specs.append(dict(slug=slug,required=req,excluded=exc,extra_excluded=(prof_unambiguous,),title=title,subtitle=sub,category='combo',icon='dolby',color='orange',epx=True))
-        else:
-            specs.append(dict(slug=slug,required=req,excluded=exc,title=title,subtitle=sub,category='combo',icon='wave' if 'dtsx' in slug else 'dolby',color='orange',epx=True))
+    # P5/P7/P8 variants share the same combination. Keep profile-specific badges
+    # only for standalone DV, avoiding profile+generic combo duplicates by design.
+    for index,(slug,req,exc,title,sub) in enumerate(COMBOS):
+        specs.append(dict(slug=slug,required=req,excluded=exc,
+            extra_excluded=tuple(combo_presence(c) for c in COMBOS[:index]),
+            title=title,subtitle=sub,category='combo',
+            icon='wave' if 'dtsx' in slug else 'dolby',color='orange',epx=True))
     return specs
 
 def single_rule(slug,version,combos=True):
     req=[P[slug]]; exc=[]
-    res=['4k','1080p','720p','576p','480p']
-    if slug in res:exc.extend(P[s] for s in res[:res.index(slug)])
-    if slug=='uhd-bluray':req=[P['4k'],P['bluray']];exc=[P['remux']]
-    if slug=='bluray':exc=[P['remux'],P['4k']]
-    if slug in ['web-dl','webrip','hdtv','dvdrip']:
-        exc.extend([P['remux'],P['bluray']])
-        if slug=='web-dl':exc.append(P['webrip'])
-        if slug in ['hdtv','dvdrip']:exc.append(WEB)
-    if slug=='hdr10':exc.append(P['hdr10plus'])
-    if slug=='hdr':exc.extend(P[s] for s in ['hdr10plus','hdr10','hlg','dolby-vision'])
-    if slug=='sdr':exc.extend(P[s] for s in ['hdr10plus','hdr10','hlg','dolby-vision','hdr'])
-    if slug=='imax':exc.append(P['imax-enhanced'])
-    if slug=='8bit':exc.append(P['10bit'])
-    if slug=='dtshd-core':exc.append(P['dtshd'])
-    if slug=='dts':exc.extend(P[s] for s in ['dtshd','dtshd-core','dtsx'])
-    # Never label EAC3 as Atmos. DD doesn't match DD+ in the first place.
-    if slug=='dd':exc.append(P['ddplus'])
-    if slug in ['10','20','51','61','71']:
-        order=['71','61','51','20','10'];exc.extend(P[s] for s in order[:order.index(slug)])
-    if slug in ['50fps','60fps']:exc.extend(P[s] for s in (['60fps','120fps'] if slug=='50fps' else ['120fps']))
+    for family in PRIORITIES.values():
+        if slug in family:exc.extend(P[s] for s in family[:family.index(slug)])
     if slug.startswith('dv-p'):
         exc.extend(P[f'dv-p{x}'] for x in [5,7,8] if f'dv-p{x}'!=slug)
     if slug=='dolby-vision' and version=='all':
@@ -171,57 +174,51 @@ def single_rule(slug,version,combos=True):
             exc.append(condition(P[f'dv-p{x}'],exclude=tuple(P[f'dv-p{y}'] for y in [5,7,8] if y!=x)))
     if combos:
         if slug=='dolby-vision' or slug.startswith('dv-p'):exc.append(anyof(P['atmos'],P['truehd']))
-        if slug=='truehd':exc.append(anyof(P['dolby-vision'],P['atmos']))
-        if slug=='atmos':exc.append(anyof(P['dolby-vision'],P['truehd'],P['ddplus']))
-        if slug=='ddplus':exc.append(condition(P['atmos'],exclude=(P['truehd'],)))
-        if slug=='dtsx':exc.append(P['dtshd'])
-        if slug=='dtshd':exc.append(P['dtsx'])
+        if slug in PRIORITIES['audio']:exc.append(COMBO_ANY)
     return whole(*req,exclude=exc)
 
 def catalogue(version,combos=True):
     data=metadata()
     if version=='epx':data={s:b for s,b in data.items() if b['epx']}
     # Defines priority in clients that preserve array order. Regex handles overlap separately.
-    first=['4k','1080p','720p','576p','480p','remux','uhd-bluray']
+    first=[]
     items=[data.pop(s) for s in first if s in data]
     if combos:
         for b in combo_specs(version):
             b['pattern']=whole(*(P[s] for s in b['required']),exclude=tuple(P[s] for s in b['excluded'])+tuple(b.get('extra_excluded',())))
             items.append(b)
-    rest=['dv-p7','dv-p8','dv-p5','dolby-vision','atmos','truehd','dtsx','dtshd','dtshd-core','ddplus','dd','hdr10plus','hdr10','hlg','hdr','sdr','imax-enhanced','imax','71','61','51','20','10','10bit','8bit','av1','hevc','avc','vp9','flac','pcm','opus','aac','mp3','dts','bluray','web-dl','webrip','hdtv','dvdrip']
+    rest=['4k','1080p','720p','576p','480p','remux','uhd-bluray','dv-p7','dv-p8','dv-p5','dolby-vision','atmos','truehd','dtsx','dtshd','dtshd-core','ddplus','dd','hdr10plus','hdr10','hlg','hdr','sdr','imax-enhanced','imax','71','61','51','20','10','10bit','8bit','av1','hevc','avc','vp9','flac','pcm','opus','aac','mp3','dts','bluray','web-dl','webrip','hdtv','dvdrip']
     items.extend(data.pop(s) for s in rest if s in data)
     items.extend(data.values())
     for b in items:
         if 'pattern' not in b:b['pattern']=single_rule(b['slug'],version,combos)
     return items
 
-GROUPS=[('resolution','Resolution'),('video-tech','Video Tech'),('audio-tech','Audio Tech'),('source','Source'),('audio-channels','Audio Channels'),('video-codec','Video Codec')]
+GROUPS=[('video-tech','Video Tech'),('audio-tech','Audio Tech'),('resolution','Resolution'),('source','Source'),('audio-channels','Audio Channels'),('video-codec','Video Codec')]
 MAP={'resolution':'resolution','source':'source','video':'video-tech','audio':'audio-tech','channels':'audio-channels','codec':'video-codec','combo':'video-tech','platform':'source','edition':'source','language':'audio-tech'}
 
-def make_config(version,ext=None,combos=True):
+def make_config(version,ext=None,combos=True,strict=True):
     ext=ext or ('svg' if version=='epx' else 'png')
     filters=[]
     for b in catalogue(version,combos):
         s=b['slug']; group=MAP[b['category']]
         if b['category']=='combo' and 'dv-' not in s:group='audio-tech'
         display=b['title']+' · '+b['subtitle'] if b['category']=='combo' or s.startswith('dv-p') or s in ['dtshd','dtshd-core','imax-enhanced'] else b['title']
-        filters.append(dict(id='ly8-'+s,groupId=group,name=display,pattern=b['pattern'],imageURL=f'{BASE}/{version}/{ext}/{s}.{ext}',tagColor='#00000000',borderColor='#00000000',textColor='#00000000',tagStyle='filled',isEnabled=True,type='filter'))
+        pattern=b['pattern']
+        if strict:pattern='(?i)'+CONTEXT.removesuffix(r'[\s\S]+')+pattern.removeprefix(r'(?i)\A')
+        filters.append(dict(id='ly9-'+s,groupId=group,name=display,pattern=pattern,imageURL=f'{BASE}/{version}/{ext}/{s}.{ext}',tagColor='#00000000',borderColor='#00000000',textColor='#00000000',tagStyle='filled',isEnabled=True,type='filter'))
     return dict(filters=filters,groups=[dict(id=i,name=n,color='#00000000',borderColor='#00000000',isExpanded=True) for i,n in GROUPS])
 
 def write_configs():
-    for filename,ver,ext,combos in [
-        ('Badge LiangYou Ver.EPX.json','epx','svg',True),('Badge LiangYou Ver.all.json','all','png',True),
-        ('Badge LiangYou Ver.EPX8.json','epx','svg',True),('Badge LiangYou Ver.all8.json','all','png',True),
-        ('Badge LiangYou Ver.EPX.PNG.json','epx','png',True),('Badge LiangYou Ver.all.Single.json','all','png',False)]:
-        (ROOT/filename).write_text(json.dumps(make_config(ver,ext,combos),ensure_ascii=False,indent=2)+'\n')
-    diagnostic={'filters':[dict(id='ly8-size-test',groupId='resolution',name='良友尺寸诊断',pattern=r'(?s)\A[\s\S]*',imageURL=f'{BASE}/epx/png/size-test.png',tagColor='#00000000',borderColor='#00000000',textColor='#00000000',tagStyle='filled',isEnabled=True,type='filter')], 'groups':[dict(id='resolution',name='Resolution',color='#00000000',borderColor='#00000000',isExpanded=True)]}
+    for filename,ver,ext,combos,strict in [
+        ('Badge LiangYou Ver.EPX.json','epx','svg',True,True),('Badge LiangYou Ver.all.json','all','png',True,True),
+        ('Badge LiangYou Ver.EPX9.json','epx','svg',True,True),('Badge LiangYou Ver.all9.json','all','png',True,True),
+        ('Badge LiangYou Ver.EPX.PNG.json','epx','png',True,True),('Badge LiangYou Ver.all.Single.json','all','png',False,True),
+        ('Badge LiangYou Ver.EPX.Relaxed.json','epx','svg',True,False),('Badge LiangYou Ver.all.Relaxed.json','all','png',True,False)]:
+        (ROOT/filename).write_text(json.dumps(make_config(ver,ext,combos,strict),ensure_ascii=False,indent=2)+'\n')
+    diagnostic={'filters':[dict(id='ly9-size-test',groupId='resolution',name='良友尺寸诊断',pattern=r'(?s)\A[\s\S]*',imageURL=f'{BASE}/epx/png/size-test.png',tagColor='#00000000',borderColor='#00000000',textColor='#00000000',tagStyle='filled',isEnabled=True,type='filter')], 'groups':[dict(id='resolution',name='Resolution',color='#00000000',borderColor='#00000000',isExpanded=True)]}
     (ROOT/'Badge LiangYou Diagnostic.json').write_text(json.dumps(diagnostic,ensure_ascii=False,indent=2)+'\n')
 
 if __name__=='__main__':
-    # UHD Blu-ray is a conjunction rather than a simple token.
-    P['uhd-bluray']=P['bluray']
     write_configs()
     print({v:len(catalogue(v)) for v in ['epx','all']})
-
-# Also define it for imports by the renderer and test runner.
-P['uhd-bluray']=P['bluray']

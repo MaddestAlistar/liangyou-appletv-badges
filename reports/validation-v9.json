@@ -1,0 +1,66 @@
+{
+  "configs": {
+    "epx": 47,
+    "all": 85,
+    "epx-strict": 47,
+    "all-strict": 85
+  },
+  "cases": 536,
+  "engines": [
+    "Python re",
+    "ICU 74",
+    "Java 17 Pattern"
+  ],
+  "assertions": 1608,
+  "passed": true,
+  "elapsed_seconds": 1.794,
+  "noise_10000_char_seconds": 0.211,
+  "candidate_union_tests": [
+    {
+      "name": "screenshot_like_split_fields",
+      "fields": [
+        "2160p HEVC",
+        "REMUX",
+        "UHD Blu-ray",
+        "DV P7",
+        "TrueHD Atmos",
+        "7.1"
+      ],
+      "union": "combo-dv-atmos-truehd 4k remux hevc 71",
+      "selected": "combo-dv-atmos-truehd 4k remux hevc 71"
+    },
+    {
+      "name": "profile_in_separate_field",
+      "fields": [
+        "Movie.2160p.REMUX.HEVC.DV.Atmos.TrueHD.7.1",
+        "DV P7",
+        "TrueHD",
+        "UHD Blu-ray"
+      ],
+      "union": "combo-dv-atmos-truehd 4k remux hevc 71",
+      "selected": "combo-dv-atmos-truehd 4k remux hevc 71"
+    },
+    {
+      "name": "remaining_complete_candidate_limit",
+      "fields": [
+        "Movie.2160p.BluRay.HEVC.HDR10.TrueHD.Atmos.7.1",
+        "REMUX DV P7"
+      ],
+      "union": "combo-atmos-truehd combo-dv-atmos-truehd 4k uhd-bluray remux hevc hdr10 71",
+      "selected": "combo-dv-atmos-truehd 4k remux hevc 71"
+    },
+    {
+      "name": "insufficient_metadata_tradeoff",
+      "fields": [
+        "Dolby Vision",
+        "Atmos",
+        "TrueHD"
+      ],
+      "union": "",
+      "selected": ""
+    }
+  ],
+  "global_exclusion_guaranteed_by_json": false,
+  "selector_requires_client_integration": true,
+  "device_tested": false
+}

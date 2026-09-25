@@ -114,6 +114,14 @@ def make_svg(b,version):
             root.append(el(pathtext(b['title'],124,55,36,'#FFFFFF',maxwidth=219)))
             root.append(el(pathtext(b['subtitle'],124,82,22,light,maxwidth=218)))
     else:root=new_svg(b,version)
+    # EPX used unfilled frames: its white text disappeared on light surfaces.
+    # Fill the native rounded frame, leaving only the outside corners transparent.
+    if version=='epx':
+        frame=next(n for n in root.findall('{'+NS+'}rect') if n.get('width')=='314')
+        frame.set('fill','#101722');frame.set('fill-opacity','1')
+    # Both variants get a dark keyline underneath the decorative colored edge.
+    # The full version already has an opaque gradient; preserve it.
+    root.insert(1,el(f'<rect xmlns="{NS}" x="2" y="2" width="{316 if version=="epx" else 356}" height="{92 if version=="epx" else 104}" rx="20" fill="#0A1019" stroke="#070B12" stroke-width="1.5"/>'))
     width=320 if version=='epx' else 360
     outline_text(root,width)
     # No font substitution, external resources or variable visible canvas extents.
@@ -167,9 +175,9 @@ def preview(version,combos_only=False):
     im=Image.new('RGB',(w,h),'#0A101B');d=ImageDraw.Draw(im)
     font=lambda n:ImageFont.truetype(str(FONTFILE),n)
     d.text((pad,30),'LIANGYOU  /  MEDIA BADGES',font=font(21),fill='#8DCFFA')
-    title='良友徽章 · '+('EplayerX' if version=='epx' else '复杂版')+(' · 组合示例' if combos_only else ' · V8')
+    title='良友徽章 · '+('EplayerX' if version=='epx' else '复杂版')+(' · 组合示例' if combos_only else ' · V9')
     d.text((pad,69),title,font=font(47),fill='#F5F7FC')
-    desc='同文本组合优先 · 对应单项互斥 · 明亮杜比图标' if combos_only else f'{len(data)} 枚徽章 · 统一画布 · 矢量文字 · 条件组合'
+    desc='同文本组合优先 · 严格上下文 · 深色实体底' if combos_only else f'{len(data)} 枚徽章 · 组合合并 · 深浅背景兼容'
     d.text((pad,144),desc,font=font(23),fill='#A5B2C5')
     for x,c,label in [(pad,'#F4C65D','金色：重点 / 杜比'),(pad+380,'#C28AFF','紫色：次级'),(pad+685,'#7ACDFA','蓝色：常规'),(pad+990,'#FFAA58','橘色：组合 / 特殊')]:
         d.ellipse((x,199,x+12,211),fill=c);d.text((x+23,187),label,font=font(21),fill='#A5B2C5')
@@ -180,9 +188,9 @@ def preview(version,combos_only=False):
             img=Image.open(ASSETS/version/'png'/(b['slug']+'.png')).convert('RGBA').resize((bw,bh),Image.Resampling.LANCZOS)
             im.paste(img,(pad+(i%4)*(bw+gap),y+(i//4)*step),img)
         y+=((len(items)+3)//4)*step+24
-    d.line((pad,h-85,w-pad,h-85),fill='#2B3545');d.text((pad,h-66),'良哥看未来 · 2026.09.24',font=font(20),fill='#92A4BC')
-    d.text((w-545,h-66),'配色为展示分级，实际显示取决于匹配输入',font=font(17),fill='#92A4BC')
-    out=ROOT/'previews'/('Combos-v8.png' if combos_only else ('EPX-v8.png' if version=='epx' else 'ALL-v8.png'))
+    d.line((pad,h-85,w-pad,h-85),fill='#2B3545');d.text((pad,h-66),'良哥看未来 · 2026.09.25',font=font(20),fill='#92A4BC')
+    d.text((w-545,h-66),'跨字段全局互斥仍取决于播放器实现',font=font(17),fill='#92A4BC')
+    out=ROOT/'previews'/('Combos-v9.png' if combos_only else ('EPX-v9.png' if version=='epx' else 'ALL-v9.png'))
     out.parent.mkdir(exist_ok=True);im.save(out,optimize=True)
     return out
 
