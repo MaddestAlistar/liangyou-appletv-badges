@@ -1,192 +1,96 @@
-# 良友科技学院 · Apple TV Badges
+# 良友徽章 · LiangYou Media Badges
 
-现在保留两套正式地址：
+V8 · 2026-09-24 · 良哥看未来
 
-## Badge LiangYou Ver.all
-复杂完整版，保持现有版本不变。
+延续原有「良」字标识、双层边框和两套图标风格，补齐常见媒体格式，修正规则误判，新增条件组合徽章。两个原有正式订阅地址继续有效。
 
-- 适配：**CapyPlayer / RovePlayer / Forward / Nuvio / Rex**
-- 文件：`Badge LiangYou Ver.all.json`
-- 地址：
-  https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.all.json
+## 导入地址
 
-## Badge LiangYou Ver.EPX
-EplayerX 专用兼容版，基于之前可正常显示的 320×96 结构轻量优化。
+| 版本 | 内容 | 订阅 |
+| --- | --- | --- |
+| EplayerX | 47 枚，轻量 SVG，含 7 枚组合 | [Ver.EPX.json](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.EPX.json) |
+| 复杂版 | 97 枚，PNG，含 19 枚组合及 DV Profile 细分 | [Ver.all.json](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.all.json) |
 
-- 保持双层细框和左上角「良」标识
-- 左侧图标按各格式特点重新设计，但不使用复杂滤镜
-- Dolby Vision 与 Dolby Atmos 统一使用紫色边框
-- Dolby Vision 副标题：**杜比视界**
-- Dolby Atmos 副标题：**杜比全景声**
-- 适配：**EplayerX / Forward / RovePlayer / CapyPlayer / Rex**
-- 文件：`Badge LiangYou Ver.EPX.json`
-- 地址：
-  https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.EPX.json
+替换旧配置后重新加载。若客户端缓存旧 JSON，可用内容完全相同的新地址：[EPX8](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.EPX8.json) / [all8](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.all8.json)。同一套配置只保留一份，避免多次导入造成重复。
 
-> EplayerX 优先使用 Ver.EPX；CapyPlayer / RovePlayer 可优先使用 Ver.all。
+兼容选项：
 
-## 匹配规则优化
+- [EPX PNG 版](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.EPX.PNG.json)：规则、图案与 EPX 一致，仅改用 PNG，可排查 SVG 解码差异。
+- [复杂版仅单项](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.all.Single.json)：78 枚，无组合；适用于组合与单项在客户端中同时出现的情况。
+- [尺寸诊断](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Diagnostic.json)：只有一张固定测试图，临时替换正式配置后比较不同服务器的资料卡；完成后切回正式版。
 
-Ver.EPX 与 Ver.all 已同步增强媒体信息匹配，徽章外观不变。
+EplayerX、CapyPlayer、RovePlayer、Forward、Nuvio、Rex 的具体版本和界面行为需实机验证。规则测试通过不等于已完成所有客户端兼容认证。
 
-- Dolby Atmos：新增 `JOC / E-AC-3 JOC / EAC3 JOC` 场景识别
-- Dolby Vision：新增 `dvhe / dvh1` 等常见标识
-- HDR10+：兼容 `HDR10+ / HDR10Plus / HDR10P`
-- HEVC：新增 `hvc1 / hev1`
-- AVC：新增 `avc1`
-- AV1 / VP9：新增 `av01 / vp09`
-- 5.1 / 7.1：新增 `6ch / 6 channels / 8ch / 8 channels`
-- REMUX / Blu-ray / WEB-DL / 分辨率：扩展常见命名和分辨率写法
+## 预览
 
-为减少误判，普通 `EAC3 / DD+` 不会直接当作 Atmos；只有明确出现 Atmos 或 JOC 时才显示 Dolby Atmos。
+[EplayerX 完整预览](previews/EPX-v8.png) · [复杂版完整预览](previews/ALL-v8.png)
 
-## 显示优先级
+![组合徽章预览](previews/Combos-v8.png)
 
-两个正式版本已改为按分组优先级控制显示顺序，避免 WEB-DL 因为属于 Source 组而长期排在第二位。
+## 补充与配色
 
-当前分组顺序：
+两套均增加 WEBRip、UHD Blu-ray、HDTV、SDR、通用 HDR、IMAX / IMAX Enhanced、10 / 8 bit、DD+ / EAC3、DD / AC3、PCM / LPCM、OPUS、1.0 / 2.0 / 6.1。复杂版另外增加 DV P5 / P7 / P8、3D、480P / 576P、DVDRip、XviD / DivX / MPEG-2 / VC-1、MP3、50 / 60 / 120 fps、9 个平台、10 个版本标识和 4 种音轨语言。
 
-1. Resolution：良友4K / 1080P / 720P
-2. Master Source：REMUX
-3. Video Tech：Dolby Vision / HDR10+ / HDR10 / HLG
-4. Immersive Audio：Dolby Atmos
-5. Audio Tech：TrueHD / DTS:X / DTS-HD / FLAC / AAC
-6. Source：Blu-ray / WEB-DL
-7. Channels：7.1 / 5.1
-8. Video Codec：HEVC / AV1 / AVC / VP9
+| 边框 | 用途 | 示例 |
+| --- | --- | --- |
+| 金色 | 各分类的高阶项目、全部杜比单项、版本标识 | 4K、REMUX、UHD Blu-ray、DV、Atmos、TrueHD、DD+、DD、HDR10+、DTS:X、DTS-HD MA、FLAC、PCM、7.1、Director's Cut |
+| 紫色 | 次级项目 | 1080P、Blu-ray、WEB-DL、HDR10、HLG、HEVC、5.1、6.1 |
+| 蓝色 | 常规项目 | 720P、WEBRip、HDTV、SDR、AVC、AAC、语言、平台 |
+| 橘色 | 组合及特殊项目 | DV + Atmos、DTS:X + HD MA、3D |
 
-这样一部典型 4K 影片更容易按接近下面的顺序显示：
+颜色是本套徽章的展示分级，不代表所有场景下的画质或听感排名。杜比组合使用橘色作为组合标识；杜比单项使用金色。杜比视界与全景声的双 D 图形已改为明亮填色。
 
-**良友4K → REMUX → Dolby Vision → Dolby Atmos → TrueHD → WEB-DL → 7.1/5.1 → HEVC**
+暂未启用 CAM、SeaDex、True-Hue：当前缺少目标库可靠的来源标签样本；不能从片名、编码或画面观感推断这些标签。语言只识别明确的音轨语境，不将字幕标成配音；平台只按来源标签识别，不表示当前版权归属。
 
-其中 REMUX 已从 Source 组独立出来，WEB-DL 保留在普通 Source 组并整体后移。
+## 组合与去重
 
-## EplayerX 播放页兼容优化
+同一段输入文本内，组合与被其包含的单项互斥，兼容换行和标签顺序变化。
 
-参考 6otho/Epx-Badge 的 EplayerX 分组方式，Ver.EPX 已尽量改回 EplayerX 常见标准分组，减少“详情页能显示、进入播放页却不显示”的情况：
+| 同一输入中的信息 | 显示组合 | 隐藏的单项 |
+| --- | --- | --- |
+| DV + Atmos + TrueHD | DV + ATMOS / TRUEHD | DV、Atmos、TrueHD |
+| DV + Atmos + DD+，无 TrueHD | DV + ATMOS / DD+ | DV、Atmos、DD+ |
+| DV + Atmos，未明确上述编码 | DV + ATMOS | DV、Atmos |
+| DV + TrueHD，无 Atmos | DV + TRUEHD | DV、TrueHD |
+| Atmos + TrueHD，无 DV | ATMOS + TRUEHD | Atmos、TrueHD |
+| Atmos + DD+，无 DV / TrueHD | ATMOS + DD+ | Atmos、DD+ |
+| DTS:X + DTS-HD MA | DTS:X + HD MA | DTS:X、DTS-HD MA |
 
-- Dolby Atmos：改入 `audio-tech`
-- 5.1 / 7.1：改入 `audio-channels`
-- REMUX / Blu-ray / WEB-DL：统一使用 `source`
-- Dolby Vision / HDR：继续使用 `video-tech`
-- `tagStyle` 统一为 `filled`
+复杂版中，明确且不冲突的 DV P5 / P7 / P8 会进入对应组合；Profile 缺失或冲突时回退到通用 DV。组合不隐藏无关音频格式。例如 `DV Atmos TrueHD EAC3` 显示三项组合，并保留额外的 DD+。
 
-同时，Ver.EPX 与 Ver.all 的徽章主标题和副标题都会适度放大；Ver.all 的 PNG 由 premium SVG 自动重新渲染。
+**JSON 只能处理每次传入的字符串。** NuvioTV 的已核对实现会分别匹配多个字段，再匹配合并字符串，最后取并集；因此可能同时保留组合和单项。这里的负向条件不能控制跨字段合并结果。遇到这种情况可使用「复杂版仅单项」。EplayerX 匹配器未取得公开实现，不能承诺其资料卡和播放页始终遵循同一种匹配流程。
 
-## EPX 播放页专项修复
+组合表示同一资源输入里同时出现这些标签，不保证 Atmos 属于哪一条音轨，也不代表当前选中音轨或实际播放输出。若输入混合了多个媒体版本或音轨，需客户端先按当前 MediaSource / 音轨整理信息。
 
-针对 EplayerX 出现“详情页有徽章、进入播放页缺徽章”的情况，Ver.EPX 现采用兼容优先策略：
+## 这次修正
 
-- Dolby Atmos：除 `Atmos / JOC` 外，播放页仅暴露 `EAC3 / E-AC-3 / DDP / DD+` 时也允许显示 Atmos 徽章，以提高播放页命中率。注意：少量普通 Dolby Digital Plus 资源可能因此被识别成 Atmos。
-- 7.1：取消 `8ch / 8 channels` 推断，只在明确出现 `7.1` 时显示，避免部分 5.1 资源在播放页被误判成 7.1。
-- 5.1：支持明确 `5.1` 以及 `6ch / 6 channels`。
-- WEB-DL：增加 `WEBRip / AMZN / Netflix / Disney+ / ATVP` 等常见 WEB 来源标识，提高播放页命中率。
-- Ver.EPX 改用新的 `Badge-LiangYou-Ver.EPX-v2` 图片目录，绕过旧 SVG 缓存。
-- Ver.EPX 与 Ver.all 的主标题、副标题均再次放大；Ver.all 已重新渲染 PNG，并使用固定提交地址避免旧图片缓存。
+- 修复 EPX 重复的 DTS-HD ID；区分 DTS、普通 DTS-HD、明确 MA / XLL 的 DTS-HD MA。普通 DTS-HD 使用「HD AUDIO」，不直接假定为 HRA 或 MA。
+- WEBRip 与 WEB-DL 分开，平台名不再自动视为 WEB-DL。
+- 修复 HDR10+ 的加号边界；兼容空格、下划线和多行信息。
+- 普通 EAC3 / DD+ 不冒充 Atmos；明确 Atmos / JOC 才触发全景声。
+- Main10 不单独推断 HEVC；普通 MPEG4 不单独推断 AVC。
+- 避免 L5.1、Level 5.1、Profile 5.1 被当作声道；不从 6ch / 8ch 推断具体布局。
+- SDR、DV Profile、位深和语言均需要明确信息；不把缺失信息当作否定证据。
+- 同一输入内控制分辨率、HDR10+ / HDR10、IMAX Enhanced / IMAX、声道及 DTS 家族重复。
+- 使用参考配置中常见的标准分组，不依赖未经确认的自定义排他属性。
 
-## 2026-09-24 EPX v5 / Ver.all 细调
+## 显示大小与资料卡 / 播放页
 
-### Badge LiangYou Ver.EPX
-- 切换到 `Badge-LiangYou-Ver.EPX-v5`，用于绕过旧 SVG 缓存。
-- Dolby Vision / Dolby Atmos：左侧图标进一步左移，分隔线和文字区同步左移，减少右侧顶框。
-- 所有已有第二行副标题由 20 提高到 22。
-- 参考 6otho/Epx-Badge 的 EplayerX 写法，减少复杂正则和 lookbehind。
-- HEVC / AVC 等 codec 匹配改成更接近 EplayerX 参考源的格式。
-- HEVC 等视频编码提前参与匹配，降低播放界面因徽章数量限制而被后置丢弃的概率。
-- 5.1 / 7.1 改为更严格、互不依赖 8ch 推断的规则，5.1 规则优先。
-- DTS-HD MA 改为只在明确出现 MA / Master Audio 时匹配，避免普通 DTS-HD 被误标为 MA。
-- 4K 增加对 1080P / 720P 的排除，降低多分辨率文本导致的误判。
+原 EPX 已经是 320 × 96，尺寸差异不能简单归因于原图大小。本次所有 SVG 均统一为 320 × 96、固定比例和画布边界；所有 PNG 均为 960 × 288；文字转为矢量路径，避免字体替换改变宽度；新图片目录可避开旧资源缓存。
 
-### Badge LiangYou Ver.all
-- 复杂版已有第二行副标题由 21 提高到 23。
-- 良友4K 下方 `ULTRA HD` 向右微调，使视觉对齐更自然。
-- 已重新渲染 PNG 并切到新的固定提交资源，避免旧 PNG 缓存。
-- 同步收紧 5.1 / 7.1、DTS-HD MA、HEVC / AVC 与 4K 的匹配规则。
+这些处理能减少资源本身的差异，但不能强制客户端的卡片容器高度、行数、缩放或徽章数量上限。资料卡与播放页传入字段不同，也仍可能显示不同。排查步骤和已确认的客户端限制见 [兼容性说明](reports/COMPATIBILITY-v8.md)。
 
-## EPX2 播放页兼容校正
+## 构建与验证
 
-对照 6otho/Epx-Badge、9mousaa/BetterFormatter、l3okuGmail/badges 后，对 EplayerX 播放页规则再次收紧：
+源规则在 `tools/badge_rules.py`；新增图案目录在 `tools/new_badge_catalogue.json`；SVG / PNG 和预览已一并提供。历史图片和旧版实验 JSON 保留，正式地址指向 V8。
 
-- 新增 `Badge LiangYou Ver.EPX2.json`，用于绕过 EplayerX 对旧 JSON 地址的缓存。
-- 5.1 / 7.1 不再用过宽的纯数字规则，避免把 `L5.1 / L7.1` 这类视频 Profile / Level 数字误判成声道。
-- 7.1 不再用 `8ch` 推断，只有明确的 7.1 音频上下文才显示。
-- HEVC 保留 `HEVC / H.265 / x265 / hvc1 / hev1`，并增加不含 AV1/VP9 时对 `Main 10` 的兼容回退。
-- Dolby Atmos 收紧为 `Atmos / Dolby Atmos / JOC`，不再把普通 EAC3 / DDP 直接当 Atmos。
-- 分组 ID 恢复为 EplayerX 参考配置常用的标准组：resolution / source / video-tech / video-codec / audio-tech / audio-channels。
-- 6otho 与 l3oku 的公开配置都默认关闭 HEVC / AVC，BetterFormatter 也没有 codec 徽章；因此如果 EPX2 中 HEVC 仍只在资源卡显示、播放页不显示，基本可判断为 EplayerX 播放页没有提供 codec 文本，而不是 JSON 正则问题。
+```sh
+python tools/badge_rules.py
+python tools/render_badges.py --font /path/to/NotoSansCJKsc-Bold.otf
+python tools/test_badges.py
+python tools/check_assets.py
+```
 
-## EPX3 识别规则校正
+生成图片需要 Python 3.12+、Pillow、fontTools、lxml、Inkscape 和 Noto Sans CJK SC Bold；匹配测试还需要 ICU 与支持源文件运行的 JDK 17+。脚本不修改历史图片目录，也不调用 Emby 接口。
 
-对照 6otho/Epx-Badge、9mousaa/BetterFormatter 与 l3okuGmail/badges 后，进一步调整 EplayerX 播放页识别：
-
-- 4K：补充 2160p / UHD / Ultra HD / 3840×xxxx / 4096×xxxx。
-- HEVC：兼容 HEVC / H.265 / H265 / x265 / hvc1 / hev1 / Main 10，并把 HEVC/AV1/AVC/VP9 从 video-codec 组移入 video-tech，尝试绕过播放页对 video-codec 组的忽略。
-- DTS-HD：保留 DTS-HD MA，并新增独立的普通 DTS-HD 规则与专用徽章，避免只有 “DTS-HD” 时不显示。
-- Dolby Vision：兼容 Dolby Vision / DolbyVision / DoVi / DV / dvhe / dvh1。
-- Dolby Atmos：兼容 Atmos / Dolby Atmos / JOC / E-AC-3 JOC / EAC3 JOC / DDP JOC；不把普通 EAC3 / DDP 直接当 Atmos。
-- TrueHD：兼容 TrueHD / True HD / Dolby TrueHD / MLP FBA。
-- 显示顺序调整为：分辨率 → REMUX → Dolby Vision → Dolby Atmos → TrueHD → DTS-HD → HDR → 声道 → HEVC/其他编码 → Blu-ray / WEB-DL。
-
-新测试地址：
-https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.EPX3.json
-
-## EPX5 资源卡一致性优化
-
-针对 EplayerX 不同 Emby 服务器“资料卡徽章大小不一致、资料卡与播放页匹配结果不完全一致”的问题，做了两类处理：
-
-### 1. SVG 画布统一
-- 已确认 EPX 徽章原始文件均为 320×96 / viewBox 0 0 320 96。
-- 新建 `Badge-LiangYou-Ver.EPX-v6` 资源目录。
-- 所有 SVG 增加固定 `preserveAspectRatio="xMidYMid meet"`、`overflow="hidden"` 和完整 320×96 透明画布。
-- 目的：减少不同 SVG 渲染器按可见内容边界计算尺寸时造成的视觉大小差异。
-
-### 2. 资源卡匹配去重
-参考 6otho/Epx-Badge、9mousaa/BetterFormatter、l3okuGmail/badges 的规则，减少同一资料卡同时命中过多低优先级徽章：
-- 4K / 1080P / 720P 改为高分辨率优先，避免同一资源卡同时命中多个分辨率。
-- 5.1 / 7.1 改为互斥，7.1 存在时不再额外显示 5.1。
-- DTS-HD MA / DTS-HD / DTS 保持互斥。
-- AAC / FLAC 在 TrueHD / Atmos / DTS-HD 等高优先级音频存在时不再抢占资料卡空间。
-- 保持标准 EplayerX 分组：resolution / source / video-tech / video-codec / audio-tech / audio-channels。
-
-### 结论
-如果同一个徽章在不同服务器资料卡中仍呈现不同整体缩放，而播放页正常，说明差异来自 EplayerX 资源卡根据可用宽度、匹配徽章数量或服务器返回的 MediaSource 文本做自适应布局；badge JSON 无法强制资源卡容器固定尺寸。EPX5 已尽量通过统一 SVG 画布和减少重复匹配来降低这种差异。
-
-新地址：
-https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.EPX5.json
-
-## EPX6 全网规则研究优化
-
-对照并吸收以下公开 badge/formatter 项目的思路：
-- EplayerX 官方更新中给出的 Elite-Badges 参考格式
-- 6otho/Epx-Badge
-- 9mousaa/BetterFormatter
-- l3okuGmail/badges
-- sweatycab/nuvio-minimalist-badges
-- danielsdian/ColorfulAndConcise
-- Nuvio Wiki 的 Stream Badges 指南
-
-### 研究结论
-公开实现普遍把 badge 匹配建立在“stream title / description / formatter 输出文本”上。Minimalist Badges 甚至通过 formatter 写入不可见 Unicode 标记来提高 DV/HDR 识别准确率，说明当上游字符串缺少媒体字段时，仅靠 badge JSON 无法百分之百还原完整媒体信息。
-
-### EPX6 的改动
-- 使用更扁平、局部的正则，减少依赖长串 `^...lookahead`，提高资料卡传入多行文本时的兼容性。
-- Dolby Vision 兼容 Dolby Vision / DolbyVision / DoVi / DV / dvhe / dvh1 / “杜比视界”，并兼容 Minimalist 的不可见 DV 标记 U+2063。
-- HDR10+ 兼容 Minimalist 的不可见 HDR10+ 标记 U+2064。
-- Dolby Atmos 兼容 Atmos / Dolby Atmos / JOC / EAC3 JOC / DDP JOC / “杜比全景声”。
-- 4K 增加 3840×xxxx / 4096×xxxx 与“超高清”识别。
-- DTS-HD MA 增加 DTS XLL 识别；DTS-HD / DTS:X / DTS 保持分开。
-- HEVC 兼容 HEVC / H.265 / H265 / x265 / hvc1 / hev1 / Main 10。
-- 5.1 / 7.1 增加 “声道” 中文场景。
-- WEB-DL 增加常见流媒体平台别名。
-- 图片继续使用统一 320×96 的 EPX-v6 画布资源，降低不同卡片渲染时的视觉尺寸差异。
-- 保留优先级：良友4K → REMUX → Dolby Vision → Dolby Atmos → TrueHD → DTS-HD → HDR → 声道 → HEVC → Source/普通音频。
-
-### 地址
-主地址：
-https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.EPX.json
-
-EPX6 测试地址：
-https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.EPX6.json
-
-### 已知边界
-如果某个 Emby 服务器的资源卡只把 MediaSource.Name / 简化标题传给 EplayerX，而播放页拿到了完整 MediaStreams，那么资料卡和播放页仍可能不同。这属于上游 matcher 输入数据差异，badge JSON 只能提高“已有文本”的识别率，不能生成未传入的 HEVC / DTS-HD / Atmos 等字段。
+474 个场景分别通过 Python、ICU 74、Java 17 Pattern，共 1,422 次结果断言。另检查全部图片尺寸、矢量文字、配置图片路径，并复现跨字段并集导致组合与单项共存的限制。[规则测试记录](reports/validation.json) · [图片检查记录](reports/assets-validation.json)。这些是自动验证，尚未取得用户设备上的实机测试结果。

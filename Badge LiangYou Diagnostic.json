@@ -1,0 +1,26 @@
+{
+  "filters": [
+    {
+      "id": "ly8-size-test",
+      "groupId": "resolution",
+      "name": "良友尺寸诊断",
+      "pattern": "(?s)\\A[\\s\\S]*",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-24-v8/epx/png/size-test.png",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "textColor": "#00000000",
+      "tagStyle": "filled",
+      "isEnabled": true,
+      "type": "filter"
+    }
+  ],
+  "groups": [
+    {
+      "id": "resolution",
+      "name": "Resolution",
+      "color": "#00000000",
+      "borderColor": "#00000000",
+      "isExpanded": true
+    }
+  ]
+}

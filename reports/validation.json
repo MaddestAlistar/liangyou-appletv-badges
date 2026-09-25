@@ -1,0 +1,31 @@
+{
+  "configs": {
+    "epx": 47,
+    "all": 97
+  },
+  "cases": 474,
+  "engines": [
+    "Python re",
+    "ICU 74",
+    "Java 17 Pattern"
+  ],
+  "assertions": 1422,
+  "passed": true,
+  "elapsed_seconds": 1.85,
+  "noise_10000_char_seconds": 0.144,
+  "candidate_union_limitation": {
+    "input_fields": [
+      "DV",
+      "Atmos",
+      "TrueHD"
+    ],
+    "result": [
+      "atmos",
+      "combo-dv-atmos-truehd",
+      "dolby-vision",
+      "truehd"
+    ],
+    "global_exclusion_possible_in_this_matcher": false
+  },
+  "device_tested": false
+}

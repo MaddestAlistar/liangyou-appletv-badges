@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "svg_count": 145,
+  "png_count": 145,
+  "svg_canvas": "320x96",
+  "png_canvas": "960x288",
+  "external_image_or_font_dependencies": false,
+  "configs": 7,
+  "local_image_references_checked": 414
+}

@@ -1,0 +1,450 @@
+[
+  {
+    "slug": "webrip",
+    "title": "WEBRip",
+    "subtitle": "WEB SOURCE",
+    "category": "source",
+    "icon": "web",
+    "epx": true
+  },
+  {
+    "slug": "uhd-bluray",
+    "title": "UHD BLU-RAY",
+    "subtitle": "4K DISC SOURCE",
+    "category": "source",
+    "icon": "disc",
+    "epx": true
+  },
+  {
+    "slug": "hdtv",
+    "title": "HDTV",
+    "subtitle": "TV SOURCE",
+    "category": "source",
+    "icon": "tv",
+    "epx": true
+  },
+  {
+    "slug": "sdr",
+    "title": "SDR",
+    "subtitle": "STANDARD RANGE",
+    "category": "video",
+    "icon": "sun",
+    "epx": true
+  },
+  {
+    "slug": "hdr",
+    "title": "HDR",
+    "subtitle": "HDR FORMAT",
+    "category": "video",
+    "icon": "sun",
+    "epx": true
+  },
+  {
+    "slug": "imax",
+    "title": "IMAX",
+    "subtitle": "CINEMA FORMAT",
+    "category": "video",
+    "icon": "screen",
+    "epx": true
+  },
+  {
+    "slug": "imax-enhanced",
+    "title": "IMAX",
+    "subtitle": "ENHANCED",
+    "category": "video",
+    "icon": "screen",
+    "epx": true
+  },
+  {
+    "slug": "10bit",
+    "title": "10 BIT",
+    "subtitle": "COLOR DEPTH",
+    "category": "video",
+    "icon": "depth",
+    "epx": true
+  },
+  {
+    "slug": "8bit",
+    "title": "8 BIT",
+    "subtitle": "COLOR DEPTH",
+    "category": "video",
+    "icon": "depth",
+    "epx": true
+  },
+  {
+    "slug": "ddplus",
+    "title": "DD+",
+    "subtitle": "DOLBY DIGITAL PLUS",
+    "category": "audio",
+    "icon": "dolby",
+    "epx": true
+  },
+  {
+    "slug": "dd",
+    "title": "DD",
+    "subtitle": "DOLBY DIGITAL",
+    "category": "audio",
+    "icon": "dolby",
+    "epx": true
+  },
+  {
+    "slug": "opus",
+    "title": "OPUS",
+    "subtitle": "AUDIO CODEC",
+    "category": "audio",
+    "icon": "wave",
+    "epx": true
+  },
+  {
+    "slug": "pcm",
+    "title": "PCM",
+    "subtitle": "LPCM / PCM",
+    "category": "audio",
+    "icon": "wave",
+    "epx": true
+  },
+  {
+    "slug": "10",
+    "title": "1.0",
+    "subtitle": "MONO AUDIO",
+    "category": "channels",
+    "icon": "speaker",
+    "epx": true
+  },
+  {
+    "slug": "20",
+    "title": "2.0",
+    "subtitle": "STEREO AUDIO",
+    "category": "channels",
+    "icon": "speaker",
+    "epx": true
+  },
+  {
+    "slug": "61",
+    "title": "6.1",
+    "subtitle": "SURROUND AUDIO",
+    "category": "channels",
+    "icon": "speaker",
+    "epx": true
+  },
+  {
+    "slug": "dv-p5",
+    "title": "DOLBY VISION",
+    "subtitle": "PROFILE 5",
+    "category": "video",
+    "icon": "dolby",
+    "epx": false
+  },
+  {
+    "slug": "dv-p7",
+    "title": "DOLBY VISION",
+    "subtitle": "PROFILE 7",
+    "category": "video",
+    "icon": "dolby",
+    "epx": false
+  },
+  {
+    "slug": "dv-p8",
+    "title": "DOLBY VISION",
+    "subtitle": "PROFILE 8",
+    "category": "video",
+    "icon": "dolby",
+    "epx": false
+  },
+  {
+    "slug": "3d",
+    "title": "3D",
+    "subtitle": "STEREOSCOPIC",
+    "category": "video",
+    "icon": "glasses",
+    "epx": false
+  },
+  {
+    "slug": "dvdrip",
+    "title": "DVDRip",
+    "subtitle": "DVD SOURCE",
+    "category": "source",
+    "icon": "disc",
+    "epx": false
+  },
+  {
+    "slug": "480p",
+    "title": "480P",
+    "subtitle": "STANDARD DEFINITION",
+    "category": "resolution",
+    "icon": "tv",
+    "epx": false
+  },
+  {
+    "slug": "576p",
+    "title": "576P",
+    "subtitle": "STANDARD DEFINITION",
+    "category": "resolution",
+    "icon": "tv",
+    "epx": false
+  },
+  {
+    "slug": "xvid",
+    "title": "XviD",
+    "subtitle": "VIDEO CODEC",
+    "category": "codec",
+    "icon": "chip",
+    "epx": false
+  },
+  {
+    "slug": "divx",
+    "title": "DivX",
+    "subtitle": "VIDEO CODEC",
+    "category": "codec",
+    "icon": "chip",
+    "epx": false
+  },
+  {
+    "slug": "mpeg2",
+    "title": "MPEG-2",
+    "subtitle": "VIDEO CODEC",
+    "category": "codec",
+    "icon": "chip",
+    "epx": false
+  },
+  {
+    "slug": "vc1",
+    "title": "VC-1",
+    "subtitle": "VIDEO CODEC",
+    "category": "codec",
+    "icon": "chip",
+    "epx": false
+  },
+  {
+    "slug": "mp3",
+    "title": "MP3",
+    "subtitle": "AUDIO CODEC",
+    "category": "audio",
+    "icon": "wave",
+    "epx": false
+  },
+  {
+    "slug": "dts",
+    "title": "DTS",
+    "subtitle": "CORE AUDIO",
+    "category": "audio",
+    "icon": "wave",
+    "epx": false
+  },
+  {
+    "slug": "dtshd-core",
+    "title": "DTS-HD",
+    "subtitle": "HIGH RES AUDIO",
+    "category": "audio",
+    "icon": "wave",
+    "epx": false
+  },
+  {
+    "slug": "50fps",
+    "title": "50 FPS",
+    "subtitle": "HIGH FRAME RATE",
+    "category": "video",
+    "icon": "motion",
+    "epx": false
+  },
+  {
+    "slug": "60fps",
+    "title": "60 FPS",
+    "subtitle": "HIGH FRAME RATE",
+    "category": "video",
+    "icon": "motion",
+    "epx": false
+  },
+  {
+    "slug": "120fps",
+    "title": "120 FPS",
+    "subtitle": "HIGH FRAME RATE",
+    "category": "video",
+    "icon": "motion",
+    "epx": false
+  },
+  {
+    "slug": "netflix",
+    "title": "NETFLIX",
+    "subtitle": "STREAMING SOURCE",
+    "category": "platform",
+    "icon": "platform:NF",
+    "epx": false
+  },
+  {
+    "slug": "prime-video",
+    "title": "PRIME VIDEO",
+    "subtitle": "STREAMING SOURCE",
+    "category": "platform",
+    "icon": "platform:PV",
+    "epx": false
+  },
+  {
+    "slug": "apple-tv",
+    "title": "Apple TV+",
+    "subtitle": "STREAMING SOURCE",
+    "category": "platform",
+    "icon": "platform:TV+",
+    "epx": false
+  },
+  {
+    "slug": "disney-plus",
+    "title": "Disney+",
+    "subtitle": "STREAMING SOURCE",
+    "category": "platform",
+    "icon": "platform:D+",
+    "epx": false
+  },
+  {
+    "slug": "max",
+    "title": "MAX",
+    "subtitle": "STREAMING SOURCE",
+    "category": "platform",
+    "icon": "platform:MAX",
+    "epx": false
+  },
+  {
+    "slug": "hulu",
+    "title": "hulu",
+    "subtitle": "STREAMING SOURCE",
+    "category": "platform",
+    "icon": "platform:H",
+    "epx": false
+  },
+  {
+    "slug": "peacock",
+    "title": "Peacock",
+    "subtitle": "STREAMING SOURCE",
+    "category": "platform",
+    "icon": "platform:P",
+    "epx": false
+  },
+  {
+    "slug": "paramount-plus",
+    "title": "Paramount+",
+    "subtitle": "STREAMING SOURCE",
+    "category": "platform",
+    "icon": "platform:P+",
+    "epx": false
+  },
+  {
+    "slug": "crunchyroll",
+    "title": "Crunchyroll",
+    "subtitle": "STREAMING SOURCE",
+    "category": "platform",
+    "icon": "platform:CR",
+    "epx": false
+  },
+  {
+    "slug": "directors-cut",
+    "title": "DIRECTOR'S CUT",
+    "subtitle": "导演剪辑版",
+    "category": "edition",
+    "icon": "scissors",
+    "epx": false
+  },
+  {
+    "slug": "extended",
+    "title": "EXTENDED",
+    "subtitle": "加长版",
+    "category": "edition",
+    "icon": "extend",
+    "epx": false
+  },
+  {
+    "slug": "remastered",
+    "title": "REMASTERED",
+    "subtitle": "修复版",
+    "category": "edition",
+    "icon": "sparkles",
+    "epx": false
+  },
+  {
+    "slug": "open-matte",
+    "title": "OPEN MATTE",
+    "subtitle": "开放画幅",
+    "category": "edition",
+    "icon": "screen",
+    "epx": false
+  },
+  {
+    "slug": "repack",
+    "title": "REPACK",
+    "subtitle": "重新发布",
+    "category": "edition",
+    "icon": "repeat",
+    "epx": false
+  },
+  {
+    "slug": "proper",
+    "title": "PROPER",
+    "subtitle": "纠正版",
+    "category": "edition",
+    "icon": "check",
+    "epx": false
+  },
+  {
+    "slug": "criterion",
+    "title": "CRITERION",
+    "subtitle": "标准收藏版",
+    "category": "edition",
+    "icon": "criterion",
+    "epx": false
+  },
+  {
+    "slug": "hybrid",
+    "title": "HYBRID",
+    "subtitle": "混合制作",
+    "category": "edition",
+    "icon": "link",
+    "epx": false
+  },
+  {
+    "slug": "black-white",
+    "title": "BLACK & WHITE",
+    "subtitle": "黑白版本",
+    "category": "edition",
+    "icon": "bw",
+    "epx": false
+  },
+  {
+    "slug": "theatrical",
+    "title": "THEATRICAL",
+    "subtitle": "院线剪辑版",
+    "category": "edition",
+    "icon": "film",
+    "epx": false
+  },
+  {
+    "slug": "chinese",
+    "title": "中文音轨",
+    "subtitle": "CHINESE",
+    "category": "language",
+    "icon": "language",
+    "epx": false
+  },
+  {
+    "slug": "english",
+    "title": "英语音轨",
+    "subtitle": "ENGLISH",
+    "category": "language",
+    "icon": "language",
+    "epx": false
+  },
+  {
+    "slug": "japanese",
+    "title": "日语音轨",
+    "subtitle": "JAPANESE",
+    "category": "language",
+    "icon": "language",
+    "epx": false
+  },
+  {
+    "slug": "korean",
+    "title": "韩语音轨",
+    "subtitle": "KOREAN",
+    "category": "language",
+    "icon": "language",
+    "epx": false
+  }
+]
