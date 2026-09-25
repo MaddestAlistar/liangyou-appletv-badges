@@ -27,10 +27,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9r4-dv-atmos",
+      "id": "ly9r5e-dv-atmos",
       "groupId": "video-tech",
       "name": "DV+ATMOS · 杜比视界+全景声",
-      "pattern": "(?i)(?:(?:dolby[\\s._-]*vision|dolbyvision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?|杜比视界|\\u2063)[\\s\\S]{0,800}(?:dolby[\\s._-]*atmos|joc|(?:e-?ac-?3|ec-?3|ddp|dd\\+|true[\\s._-]*hd|dolby[\\s._-]*truehd)[\\s._+:-]*(?:joc|atmos)|(?:joc|atmos)[\\s._+:-]*(?:e-?ac-?3|ec-?3|ddp|dd\\+|true[\\s._-]*hd|dolby[\\s._-]*truehd)|atmos[\\s._+:-]*(?:5[ ._-]?1|7[ ._-]?1)|(?:5[ ._-]?1|7[ ._-]?1)[\\s._+:-]*atmos|杜比全景声|全景声)|(?:dolby[\\s._-]*atmos|joc|(?:e-?ac-?3|ec-?3|ddp|dd\\+|true[\\s._-]*hd|dolby[\\s._-]*truehd)[\\s._+:-]*(?:joc|atmos)|(?:joc|atmos)[\\s._+:-]*(?:e-?ac-?3|ec-?3|ddp|dd\\+|true[\\s._-]*hd|dolby[\\s._-]*truehd)|atmos[\\s._+:-]*(?:5[ ._-]?1|7[ ._-]?1)|(?:5[ ._-]?1|7[ ._-]?1)[\\s._+:-]*atmos|杜比全景声|全景声)[\\s\\S]{0,800}(?:dolby[\\s._-]*vision|dolbyvision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?|杜比视界|\\u2063))",
+      "pattern": "(?i)(?:(?:(?:dolby[\\s._-]*vision|dolbyvision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?|杜比视界|\\u2063)[\\s\\S]{0,1200}(?:dolby[\\s._-]*atmos|joc|(?:e-?ac-?3|ec-?3|ddp|dd\\+|true[\\s._-]*hd|dolby[\\s._-]*truehd)[\\s._+:-]*(?:joc|atmos)|(?:joc|atmos)[\\s._+:-]*(?:e-?ac-?3|ec-?3|ddp|dd\\+|true[\\s._-]*hd|dolby[\\s._-]*truehd)|atmos[\\s._+:-]*(?:5[ ._-]?1|7[ ._-]?1)|(?:5[ ._-]?1|7[ ._-]?1)[\\s._+:-]*atmos|杜比全景声|全景声)|(?:dolby[\\s._-]*atmos|joc|(?:e-?ac-?3|ec-?3|ddp|dd\\+|true[\\s._-]*hd|dolby[\\s._-]*truehd)[\\s._+:-]*(?:joc|atmos)|(?:joc|atmos)[\\s._+:-]*(?:e-?ac-?3|ec-?3|ddp|dd\\+|true[\\s._-]*hd|dolby[\\s._-]*truehd)|atmos[\\s._+:-]*(?:5[ ._-]?1|7[ ._-]?1)|(?:5[ ._-]?1|7[ ._-]?1)[\\s._+:-]*atmos|杜比全景声|全景声)[\\s\\S]{0,1200}(?:dolby[\\s._-]*vision|dolbyvision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?|杜比视界|\\u2063))|^(?=[\\s\\S]*(?:dolby[\\s._-]*vision|dolbyvision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?|杜比视界|\\u2063))(?=[\\s\\S]*(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba))(?=[\\s\\S]*(?:7[ ._-]?1|8[\\s._-]?(?:ch|channels?)))(?=[\\s\\S]*(?:\\b(?:4k|2160[pi]?|uhd|ultra[\\s._-]*hd|remux)\\b|(?:3840|4096)\\s*[x×*]\\s*\\d{3,4}))[\\s\\S]+$)",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-24-v8/epx/svg/combo-dv-atmos.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -40,10 +40,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9r4-dolby-vision",
+      "id": "ly9r5e-dolby-vision",
       "groupId": "video-tech",
       "name": "DOLBY VISION",
-      "pattern": "(?i)^(?![\\s\\S]*(?:dolby[\\s._-]*atmos|joc|(?:e-?ac-?3|ec-?3|ddp|dd\\+|true[\\s._-]*hd|dolby[\\s._-]*truehd)[\\s._+:-]*(?:joc|atmos)|(?:joc|atmos)[\\s._+:-]*(?:e-?ac-?3|ec-?3|ddp|dd\\+|true[\\s._-]*hd|dolby[\\s._-]*truehd)|atmos[\\s._+:-]*(?:5[ ._-]?1|7[ ._-]?1)|(?:5[ ._-]?1|7[ ._-]?1)[\\s._+:-]*atmos|杜比全景声|全景声))(?=[\\s\\S]*(?:dolby[\\s._-]*vision|dolbyvision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?|杜比视界|\\u2063))[\\s\\S]+$",
+      "pattern": "(?i)^(?=[\\s\\S]*(?:dolby[\\s._-]*vision|dolbyvision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?|杜比视界|\\u2063))(?![\\s\\S]*(?:dolby[\\s._-]*atmos|joc|(?:e-?ac-?3|ec-?3|ddp|dd\\+|true[\\s._-]*hd|dolby[\\s._-]*truehd)[\\s._+:-]*(?:joc|atmos)|(?:joc|atmos)[\\s._+:-]*(?:e-?ac-?3|ec-?3|ddp|dd\\+|true[\\s._-]*hd|dolby[\\s._-]*truehd)|atmos[\\s._+:-]*(?:5[ ._-]?1|7[ ._-]?1)|(?:5[ ._-]?1|7[ ._-]?1)[\\s._+:-]*atmos|杜比全景声|全景声))(?!(?=[\\s\\S]*(?:dolby[\\s._-]*vision|dolbyvision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?|杜比视界|\\u2063))(?=[\\s\\S]*(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba))(?=[\\s\\S]*(?:7[ ._-]?1|8[\\s._-]?(?:ch|channels?)))(?=[\\s\\S]*(?:\\b(?:4k|2160[pi]?|uhd|ultra[\\s._-]*hd|remux)\\b|(?:3840|4096)\\s*[x×*]\\s*\\d{3,4})))[\\s\\S]+$",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-24-v8/epx/svg/dolby-vision.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -53,7 +53,7 @@
       "type": "filter"
     },
     {
-      "id": "ly9r4-dolby-atmos",
+      "id": "ly9r5e-dolby-atmos",
       "groupId": "audio-tech",
       "name": "DOLBY ATMOS",
       "pattern": "(?i)^(?![\\s\\S]*(?:dolby[\\s._-]*vision|dolbyvision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?|杜比视界|\\u2063))(?=[\\s\\S]*(?:dolby[\\s._-]*atmos|joc|(?:e-?ac-?3|ec-?3|ddp|dd\\+|true[\\s._-]*hd|dolby[\\s._-]*truehd)[\\s._+:-]*(?:joc|atmos)|(?:joc|atmos)[\\s._+:-]*(?:e-?ac-?3|ec-?3|ddp|dd\\+|true[\\s._-]*hd|dolby[\\s._-]*truehd)|atmos[\\s._+:-]*(?:5[ ._-]?1|7[ ._-]?1)|(?:5[ ._-]?1|7[ ._-]?1)[\\s._+:-]*atmos|杜比全景声|全景声))[\\s\\S]+$",
@@ -66,7 +66,7 @@
       "type": "filter"
     },
     {
-      "id": "ly9r4-truehd",
+      "id": "ly9r5e-truehd",
       "groupId": "audio-tech",
       "name": "TRUEHD",
       "pattern": "(?i)(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)",
@@ -144,7 +144,7 @@
       "type": "filter"
     },
     {
-      "id": "ly9r4-ddplus",
+      "id": "ly9r5e-ddplus",
       "groupId": "audio-tech",
       "name": "DD+",
       "pattern": "(?i)^(?![\\s\\S]*(?:dolby[\\s._-]*atmos|joc|(?:e-?ac-?3|ec-?3|ddp|dd\\+|true[\\s._-]*hd|dolby[\\s._-]*truehd)[\\s._+:-]*(?:joc|atmos)|(?:joc|atmos)[\\s._+:-]*(?:e-?ac-?3|ec-?3|ddp|dd\\+|true[\\s._-]*hd|dolby[\\s._-]*truehd)|atmos[\\s._+:-]*(?:5[ ._-]?1|7[ ._-]?1)|(?:5[ ._-]?1|7[ ._-]?1)[\\s._+:-]*atmos|杜比全景声|全景声))(?![\\s\\S]*(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba))(?=[\\s\\S]*\\b(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3|eac3|ddp|dd\\+)\\b)[\\s\\S]+$",
@@ -157,7 +157,7 @@
       "type": "filter"
     },
     {
-      "id": "ly9r4-dd",
+      "id": "ly9r5e-dd",
       "groupId": "audio-tech",
       "name": "DD",
       "pattern": "(?i)^(?![\\s\\S]*(?:dolby[\\s._-]*vision|dolbyvision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?|杜比视界|\\u2063))(?![\\s\\S]*(?:dolby[\\s._-]*atmos|joc|(?:e-?ac-?3|ec-?3|ddp|dd\\+|true[\\s._-]*hd|dolby[\\s._-]*truehd)[\\s._+:-]*(?:joc|atmos)|(?:joc|atmos)[\\s._+:-]*(?:e-?ac-?3|ec-?3|ddp|dd\\+|true[\\s._-]*hd|dolby[\\s._-]*truehd)|atmos[\\s._+:-]*(?:5[ ._-]?1|7[ ._-]?1)|(?:5[ ._-]?1|7[ ._-]?1)[\\s._+:-]*atmos|杜比全景声|全景声))(?![\\s\\S]*(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba))(?![\\s\\S]*\\b(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3|eac3|ddp|dd\\+)\\b)(?=[\\s\\S]*\\b(?:dolby[\\s._-]*digital(?![\\s._-]*plus)|ac[\\s._-]*3|ac3)\\b)[\\s\\S]+$",
