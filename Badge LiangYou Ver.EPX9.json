@@ -27,10 +27,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9r2-dv-atmos",
+      "id": "ly9r3-dv-atmos",
       "groupId": "video-tech",
       "name": "DV+ATMOS · 杜比视界+全景声",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:dolby[\\s._-]*vision|dolbyvision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?|杜比视界|\\u2063))(?=[\\s\\S]*(?:dolby[\\s._-]*atmos|atmos|joc|e-?ac-?3[\\s._-]*joc|eac3[\\s._-]*joc|ddp[\\s._-]*joc|杜比全景声|全景声))[\\s\\S]+",
+      "pattern": "(?i)(?:(?:dolby[\\s._-]*vision|dolbyvision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?|杜比视界|\\u2063)[\\s\\S]*(?:dolby[\\s._-]*atmos|atmos|joc|(?:e-?ac-?3|ec-?3|ddp|dd\\+)[\\s._+:-]*(?:joc|atmos)|(?:joc|atmos)[\\s._+:-]*(?:e-?ac-?3|ec-?3|ddp|dd\\+)|杜比全景声|全景声)|(?:dolby[\\s._-]*atmos|atmos|joc|(?:e-?ac-?3|ec-?3|ddp|dd\\+)[\\s._+:-]*(?:joc|atmos)|(?:joc|atmos)[\\s._+:-]*(?:e-?ac-?3|ec-?3|ddp|dd\\+)|杜比全景声|全景声)[\\s\\S]*(?:dolby[\\s._-]*vision|dolbyvision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?|杜比视界|\\u2063))",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-24-v8/epx/svg/combo-dv-atmos.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -40,10 +40,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9r2-dolby-vision",
+      "id": "ly9r3-dolby-vision",
       "groupId": "video-tech",
       "name": "DOLBY VISION",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:dolby[\\s._-]*vision|dolbyvision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?|杜比视界|\\u2063))(?![\\s\\S]*(?:dolby[\\s._-]*atmos|atmos|joc|e-?ac-?3[\\s._-]*joc|eac3[\\s._-]*joc|ddp[\\s._-]*joc|杜比全景声|全景声))[\\s\\S]+",
+      "pattern": "(?i)^(?![\\s\\S]*(?:dolby[\\s._-]*atmos|atmos|joc|(?:e-?ac-?3|ec-?3|ddp|dd\\+)[\\s._+:-]*(?:joc|atmos)|(?:joc|atmos)[\\s._+:-]*(?:e-?ac-?3|ec-?3|ddp|dd\\+)|杜比全景声|全景声))(?=[\\s\\S]*(?:dolby[\\s._-]*vision|dolbyvision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?|杜比视界|\\u2063))[\\s\\S]+$",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-24-v8/epx/svg/dolby-vision.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -53,10 +53,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9r2-dolby-atmos",
+      "id": "ly9r3-dolby-atmos",
       "groupId": "audio-tech",
       "name": "DOLBY ATMOS",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:dolby[\\s._-]*atmos|atmos|joc|e-?ac-?3[\\s._-]*joc|eac3[\\s._-]*joc|ddp[\\s._-]*joc|杜比全景声|全景声))(?![\\s\\S]*(?:dolby[\\s._-]*vision|dolbyvision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?|杜比视界|\\u2063))[\\s\\S]+",
+      "pattern": "(?i)^(?![\\s\\S]*(?:dolby[\\s._-]*vision|dolbyvision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?|杜比视界|\\u2063))(?=[\\s\\S]*(?:dolby[\\s._-]*atmos|atmos|joc|(?:e-?ac-?3|ec-?3|ddp|dd\\+)[\\s._+:-]*(?:joc|atmos)|(?:joc|atmos)[\\s._+:-]*(?:e-?ac-?3|ec-?3|ddp|dd\\+)|杜比全景声|全景声))[\\s\\S]+$",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-24-v8/epx/svg/atmos.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -352,10 +352,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9fix-28-hevc",
+      "id": "ly9r3-hevc",
       "groupId": "video-codec",
       "name": "HEVC",
-      "pattern": "(?i)\\b(?:hevc|h[\\s._-]*265|h265|x265|hvc1|hev1|main[\\s._-]*10|main10)\\b",
+      "pattern": "(?i)(?:\\b(?:hevc|h[\\s._-]*265|h265|x265|hvc1|hev1|mpeg[\\s._-]*h[\\s._-]*part[\\s._-]*2)\\b|^(?![\\s\\S]*\\b(?:av1|av01|vp9|vp09|avc|h[\\s._-]*264|h264|x264|avc1)\\b)(?=[\\s\\S]*(?:main[\\s._-]*10|main10|(?:dolby[\\s._-]*vision|dolbyvision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?|杜比视界|\\u2063)|(?:uhd[\\s._-]*(?:blu[\\s._-]*ray|bd)|ultra[\\s._-]*hd[\\s._-]*(?:blu[\\s._-]*ray|bd)|bd(?:66|100))|(?:\\b(?:4k|2160[pi]?|uhd)\\b[\\s\\S]{0,500}\\bremux\\b|\\bremux\\b[\\s\\S]{0,500}\\b(?:4k|2160[pi]?|uhd)\\b)))[\\s\\S]+$)",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-24-v8/epx/svg/hevc.svg",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
