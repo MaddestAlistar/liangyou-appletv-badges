@@ -1,101 +1,10 @@
 {
   "filters": [
     {
-      "id": "ly9-combo-dv-atmos-truehd",
-      "groupId": "video-tech",
-      "name": "DV+ATMOS+TrueHD · 杜比视界+全景声",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))[\\s\\S]+",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/combo-dv-atmos-truehd.png",
-      "tagColor": "#00000000",
-      "borderColor": "#00000000",
-      "textColor": "#00000000",
-      "tagStyle": "filled",
-      "isEnabled": true,
-      "type": "filter"
-    },
-    {
-      "id": "ly9-combo-dv-atmos-ddplus",
-      "groupId": "video-tech",
-      "name": "DV+ATMOS+DD+ · 杜比视界+全景声",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:ddp|dd\\+)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))[\\s\\S]+))[\\s\\S]+",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/combo-dv-atmos-ddplus.png",
-      "tagColor": "#00000000",
-      "borderColor": "#00000000",
-      "textColor": "#00000000",
-      "tagStyle": "filled",
-      "isEnabled": true,
-      "type": "filter"
-    },
-    {
-      "id": "ly9-combo-dv-atmos",
-      "groupId": "video-tech",
-      "name": "DV+ATMOS · 杜比视界+全景声",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:ddp|dd\\+)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))(?![\\s\\S]*(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))[\\s\\S]+))(?![\\s\\S]*(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:ddp|dd\\+)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))[\\s\\S]+))[\\s\\S]+",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/combo-dv-atmos.png",
-      "tagColor": "#00000000",
-      "borderColor": "#00000000",
-      "textColor": "#00000000",
-      "tagStyle": "filled",
-      "isEnabled": true,
-      "type": "filter"
-    },
-    {
-      "id": "ly9-combo-dv-truehd",
-      "groupId": "video-tech",
-      "name": "DV + TRUEHD · 杜比视界 · 无损音频",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?![\\s\\S]*(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))[\\s\\S]+))(?![\\s\\S]*(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:ddp|dd\\+)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))[\\s\\S]+))(?![\\s\\S]*(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:ddp|dd\\+)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))[\\s\\S]+))[\\s\\S]+",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/combo-dv-truehd.png",
-      "tagColor": "#00000000",
-      "borderColor": "#00000000",
-      "textColor": "#00000000",
-      "tagStyle": "filled",
-      "isEnabled": true,
-      "type": "filter"
-    },
-    {
-      "id": "ly9-combo-atmos-truehd",
-      "groupId": "audio-tech",
-      "name": "ATMOS + TRUEHD · 杜比全景声 · TRUEHD",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?![\\s\\S]*(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))[\\s\\S]+))(?![\\s\\S]*(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:ddp|dd\\+)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))[\\s\\S]+))(?![\\s\\S]*(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:ddp|dd\\+)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))[\\s\\S]+))(?![\\s\\S]*(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))[\\s\\S]+))[\\s\\S]+",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/combo-atmos-truehd.png",
-      "tagColor": "#00000000",
-      "borderColor": "#00000000",
-      "textColor": "#00000000",
-      "tagStyle": "filled",
-      "isEnabled": true,
-      "type": "filter"
-    },
-    {
-      "id": "ly9-combo-atmos-ddplus",
-      "groupId": "audio-tech",
-      "name": "ATMOS + DD+ · 杜比全景声 · E-AC-3",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:ddp|dd\\+)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))[\\s\\S]+))(?![\\s\\S]*(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:ddp|dd\\+)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))[\\s\\S]+))(?![\\s\\S]*(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:ddp|dd\\+)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))[\\s\\S]+))(?![\\s\\S]*(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))[\\s\\S]+))(?![\\s\\S]*(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))[\\s\\S]+))[\\s\\S]+",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/combo-atmos-ddplus.png",
-      "tagColor": "#00000000",
-      "borderColor": "#00000000",
-      "textColor": "#00000000",
-      "tagStyle": "filled",
-      "isEnabled": true,
-      "type": "filter"
-    },
-    {
-      "id": "ly9-combo-dtsx-dtshd",
-      "groupId": "audio-tech",
-      "name": "DTS:X + HD MA · 沉浸音频 · MASTER AUDIO",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[:\\s._-]*x)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[\\s._-]*hd[\\s._-]*(?:ma|master(?:[\\s._-]*audio)?)|dts[\\s._-]*ma|dts[\\s._-]*xll)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))[\\s\\S]+))(?![\\s\\S]*(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:ddp|dd\\+)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))[\\s\\S]+))(?![\\s\\S]*(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:ddp|dd\\+)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))[\\s\\S]+))(?![\\s\\S]*(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))[\\s\\S]+))(?![\\s\\S]*(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))[\\s\\S]+))(?![\\s\\S]*(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:ddp|dd\\+)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))[\\s\\S]+))[\\s\\S]+",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/combo-dtsx-dtshd.png",
-      "tagColor": "#00000000",
-      "borderColor": "#00000000",
-      "textColor": "#00000000",
-      "tagStyle": "filled",
-      "isEnabled": true,
-      "type": "filter"
-    },
-    {
-      "id": "ly9-4k",
+      "id": "ly9fix-01-良友4k",
       "groupId": "resolution",
       "name": "良友4K",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|(?:3840|4096)\\s*[x×*]\\s*\\d{3,4})(?![A-Za-z0-9])|超高清|\\A(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:uhd|ultra[\\s._-]*hd)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:1080[pi]?|fhd|full[\\s._-]*hd|1920\\s*[x×*]\\s*(?:1080|[89]\\d{2}))(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:720[pi]?|1280\\s*[x×*]\\s*720)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:576[pi]?|720\\s*[x×*]\\s*576)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:480[pi]?|(?:720|640)\\s*[x×*]\\s*480)(?![A-Za-z0-9]))))[\\s\\S]+)))[\\s\\S]+",
+      "pattern": "(?i)(?:\\b(?:4k|2160[pi]?|uhd|ultra[\\s._-]*hd)\\b|(?:3840|4096)\\s*[x×*]\\s*\\d{3,4}|超高清)",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/4k.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -105,10 +14,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-1080p",
+      "id": "ly9fix-02-1080p",
       "groupId": "resolution",
       "name": "1080P",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:1080[pi]?|fhd|full[\\s._-]*hd|1920\\s*[x×*]\\s*(?:1080|[89]\\d{2}))(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|(?:3840|4096)\\s*[x×*]\\s*\\d{3,4})(?![A-Za-z0-9])|超高清|\\A(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:uhd|ultra[\\s._-]*hd)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:1080[pi]?|fhd|full[\\s._-]*hd|1920\\s*[x×*]\\s*(?:1080|[89]\\d{2}))(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:720[pi]?|1280\\s*[x×*]\\s*720)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:576[pi]?|720\\s*[x×*]\\s*576)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:480[pi]?|(?:720|640)\\s*[x×*]\\s*480)(?![A-Za-z0-9]))))[\\s\\S]+)))[\\s\\S]+",
+      "pattern": "(?i)(?:\\b(?:1080[pi]?|fhd|full[\\s._-]*hd)\\b|1920\\s*[x×*]\\s*\\d{3,4})",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/1080p.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -118,10 +27,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-720p",
+      "id": "ly9fix-03-720p",
       "groupId": "resolution",
       "name": "720P",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:720[pi]?|1280\\s*[x×*]\\s*720)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|(?:3840|4096)\\s*[x×*]\\s*\\d{3,4})(?![A-Za-z0-9])|超高清|\\A(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:uhd|ultra[\\s._-]*hd)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:1080[pi]?|fhd|full[\\s._-]*hd|1920\\s*[x×*]\\s*(?:1080|[89]\\d{2}))(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:720[pi]?|1280\\s*[x×*]\\s*720)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:576[pi]?|720\\s*[x×*]\\s*576)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:480[pi]?|(?:720|640)\\s*[x×*]\\s*480)(?![A-Za-z0-9]))))[\\s\\S]+)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:1080[pi]?|fhd|full[\\s._-]*hd|1920\\s*[x×*]\\s*(?:1080|[89]\\d{2}))(?![A-Za-z0-9])))[\\s\\S]+",
+      "pattern": "(?i)(?:\\b720[pi]?\\b|1280\\s*[x×*]\\s*720)",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/720p.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -131,10 +40,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-576p",
+      "id": "ly9fix-04-576p",
       "groupId": "resolution",
       "name": "576P",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:576[pi]?|720\\s*[x×*]\\s*576)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|(?:3840|4096)\\s*[x×*]\\s*\\d{3,4})(?![A-Za-z0-9])|超高清|\\A(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:uhd|ultra[\\s._-]*hd)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:1080[pi]?|fhd|full[\\s._-]*hd|1920\\s*[x×*]\\s*(?:1080|[89]\\d{2}))(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:720[pi]?|1280\\s*[x×*]\\s*720)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:576[pi]?|720\\s*[x×*]\\s*576)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:480[pi]?|(?:720|640)\\s*[x×*]\\s*480)(?![A-Za-z0-9]))))[\\s\\S]+)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:1080[pi]?|fhd|full[\\s._-]*hd|1920\\s*[x×*]\\s*(?:1080|[89]\\d{2}))(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:720[pi]?|1280\\s*[x×*]\\s*720)(?![A-Za-z0-9])))[\\s\\S]+",
+      "pattern": "(?i)(?:\\b576[pi]?\\b|720\\s*[x×*]\\s*576)",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/576p.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -144,10 +53,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-480p",
+      "id": "ly9fix-05-480p",
       "groupId": "resolution",
       "name": "480P",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:480[pi]?|(?:720|640)\\s*[x×*]\\s*480)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|(?:3840|4096)\\s*[x×*]\\s*\\d{3,4})(?![A-Za-z0-9])|超高清|\\A(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:uhd|ultra[\\s._-]*hd)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:1080[pi]?|fhd|full[\\s._-]*hd|1920\\s*[x×*]\\s*(?:1080|[89]\\d{2}))(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:720[pi]?|1280\\s*[x×*]\\s*720)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:576[pi]?|720\\s*[x×*]\\s*576)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:480[pi]?|(?:720|640)\\s*[x×*]\\s*480)(?![A-Za-z0-9]))))[\\s\\S]+)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:1080[pi]?|fhd|full[\\s._-]*hd|1920\\s*[x×*]\\s*(?:1080|[89]\\d{2}))(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:720[pi]?|1280\\s*[x×*]\\s*720)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:576[pi]?|720\\s*[x×*]\\s*576)(?![A-Za-z0-9])))[\\s\\S]+",
+      "pattern": "(?i)(?:\\b480[pi]?\\b|(?:720|640)\\s*[x×*]\\s*480)",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/480p.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -157,10 +66,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-remux",
+      "id": "ly9fix-06-remux",
       "groupId": "source",
       "name": "REMUX",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:(?:(?:bd|uhd|blu[\\s._-]*ray)[\\s._-]*)?remux)(?![A-Za-z0-9])))[\\s\\S]+",
+      "pattern": "(?i)\\b(?:(?:bd|uhd|blu[\\s._-]*ray)[\\s._-]*)?remux\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/remux.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -170,24 +79,11 @@
       "type": "filter"
     },
     {
-      "id": "ly9-uhd-bluray",
-      "groupId": "source",
-      "name": "UHD BLU-RAY",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|(?:3840|4096)\\s*[x×*]\\s*\\d{3,4})(?![A-Za-z0-9])|超高清|\\A(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:uhd|ultra[\\s._-]*hd)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:1080[pi]?|fhd|full[\\s._-]*hd|1920\\s*[x×*]\\s*(?:1080|[89]\\d{2}))(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:720[pi]?|1280\\s*[x×*]\\s*720)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:576[pi]?|720\\s*[x×*]\\s*576)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:480[pi]?|(?:720|640)\\s*[x×*]\\s*480)(?![A-Za-z0-9]))))[\\s\\S]+)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:blu[\\s._-]*ray|bluray|bdrip|brrip|bdmv|bd25|bd50|bd66|bd100|bdmux)(?![A-Za-z0-9])))[\\s\\S]+))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:(?:(?:bd|uhd|blu[\\s._-]*ray)[\\s._-]*)?remux)(?![A-Za-z0-9])))[\\s\\S]+",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/uhd-bluray.png",
-      "tagColor": "#00000000",
-      "borderColor": "#00000000",
-      "textColor": "#00000000",
-      "tagStyle": "filled",
-      "isEnabled": true,
-      "type": "filter"
-    },
-    {
-      "id": "ly9-dv-p7",
+      "id": "ly9fix-07-dv-atmos",
       "groupId": "video-tech",
-      "name": "DOLBY VISION · PROFILE 7",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dvhe|dvh1)\\.0?7(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dovi|dv|dolby[\\s._-]*vision)[\\s._-]*(?:(?:p|profile)[\\s._:-]*)?0?7(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dv[\\s._-]*profile|dovi[\\s._-]*profile)[\\s._:=]*0?7)(?![A-Za-z0-9])|杜比视界[\\s._-]*(?:P|Profile)?0?7(?!\\d))))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dvhe|dvh1)\\.0?5(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dovi|dv|dolby[\\s._-]*vision)[\\s._-]*(?:(?:p|profile)[\\s._:-]*)?0?5(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dv[\\s._-]*profile|dovi[\\s._-]*profile)[\\s._:=]*0?5)(?![A-Za-z0-9])|杜比视界[\\s._-]*(?:P|Profile)?0?5(?!\\d))))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dvhe|dvh1)\\.0?8(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dovi|dv|dolby[\\s._-]*vision)[\\s._-]*(?:(?:p|profile)[\\s._:-]*)?0?8(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dv[\\s._-]*profile|dovi[\\s._-]*profile)[\\s._:=]*0?8)(?![A-Za-z0-9])|杜比视界[\\s._-]*(?:P|Profile)?0?8(?!\\d))))(?![\\s\\S]*(?:(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)|(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))[\\s\\S]+",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/dv-p7.png",
+      "name": "DV+ATMOS · 杜比视界+全景声",
+      "pattern": "(?i)^(?=[\\s\\S]*(?:dolby[\\s._-]*vision|dolbyvision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?|杜比视界|\\u2063))(?=[\\s\\S]*(?:dolby[\\s._-]*atmos|atmos|joc|e-?ac-?3[\\s._-]*joc|eac3[\\s._-]*joc|ddp[\\s._-]*joc|杜比全景声|全景声))[\\s\\S]+$",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/combo-dv-atmos.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
@@ -196,36 +92,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-dv-p8",
-      "groupId": "video-tech",
-      "name": "DOLBY VISION · PROFILE 8",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dvhe|dvh1)\\.0?8(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dovi|dv|dolby[\\s._-]*vision)[\\s._-]*(?:(?:p|profile)[\\s._:-]*)?0?8(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dv[\\s._-]*profile|dovi[\\s._-]*profile)[\\s._:=]*0?8)(?![A-Za-z0-9])|杜比视界[\\s._-]*(?:P|Profile)?0?8(?!\\d))))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dvhe|dvh1)\\.0?5(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dovi|dv|dolby[\\s._-]*vision)[\\s._-]*(?:(?:p|profile)[\\s._:-]*)?0?5(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dv[\\s._-]*profile|dovi[\\s._-]*profile)[\\s._:=]*0?5)(?![A-Za-z0-9])|杜比视界[\\s._-]*(?:P|Profile)?0?5(?!\\d))))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dvhe|dvh1)\\.0?7(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dovi|dv|dolby[\\s._-]*vision)[\\s._-]*(?:(?:p|profile)[\\s._:-]*)?0?7(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dv[\\s._-]*profile|dovi[\\s._-]*profile)[\\s._:=]*0?7)(?![A-Za-z0-9])|杜比视界[\\s._-]*(?:P|Profile)?0?7(?!\\d))))(?![\\s\\S]*(?:(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)|(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))[\\s\\S]+",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/dv-p8.png",
-      "tagColor": "#00000000",
-      "borderColor": "#00000000",
-      "textColor": "#00000000",
-      "tagStyle": "filled",
-      "isEnabled": true,
-      "type": "filter"
-    },
-    {
-      "id": "ly9-dv-p5",
-      "groupId": "video-tech",
-      "name": "DOLBY VISION · PROFILE 5",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dvhe|dvh1)\\.0?5(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dovi|dv|dolby[\\s._-]*vision)[\\s._-]*(?:(?:p|profile)[\\s._:-]*)?0?5(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dv[\\s._-]*profile|dovi[\\s._-]*profile)[\\s._:=]*0?5)(?![A-Za-z0-9])|杜比视界[\\s._-]*(?:P|Profile)?0?5(?!\\d))))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dvhe|dvh1)\\.0?7(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dovi|dv|dolby[\\s._-]*vision)[\\s._-]*(?:(?:p|profile)[\\s._:-]*)?0?7(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dv[\\s._-]*profile|dovi[\\s._-]*profile)[\\s._:=]*0?7)(?![A-Za-z0-9])|杜比视界[\\s._-]*(?:P|Profile)?0?7(?!\\d))))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dvhe|dvh1)\\.0?8(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dovi|dv|dolby[\\s._-]*vision)[\\s._-]*(?:(?:p|profile)[\\s._:-]*)?0?8(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dv[\\s._-]*profile|dovi[\\s._-]*profile)[\\s._:=]*0?8)(?![A-Za-z0-9])|杜比视界[\\s._-]*(?:P|Profile)?0?8(?!\\d))))(?![\\s\\S]*(?:(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)|(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))[\\s\\S]+",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/dv-p5.png",
-      "tagColor": "#00000000",
-      "borderColor": "#00000000",
-      "textColor": "#00000000",
-      "tagStyle": "filled",
-      "isEnabled": true,
-      "type": "filter"
-    },
-    {
-      "id": "ly9-dolby-vision",
+      "id": "ly9fix-08-dolby-vision",
       "groupId": "video-tech",
       "name": "DOLBY VISION",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?![\\s\\S]*(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dvhe|dvh1)\\.0?5(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dovi|dv|dolby[\\s._-]*vision)[\\s._-]*(?:(?:p|profile)[\\s._:-]*)?0?5(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dv[\\s._-]*profile|dovi[\\s._-]*profile)[\\s._:=]*0?5)(?![A-Za-z0-9])|杜比视界[\\s._-]*(?:P|Profile)?0?5(?!\\d))))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dvhe|dvh1)\\.0?7(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dovi|dv|dolby[\\s._-]*vision)[\\s._-]*(?:(?:p|profile)[\\s._:-]*)?0?7(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dv[\\s._-]*profile|dovi[\\s._-]*profile)[\\s._:=]*0?7)(?![A-Za-z0-9])|杜比视界[\\s._-]*(?:P|Profile)?0?7(?!\\d))))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dvhe|dvh1)\\.0?8(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dovi|dv|dolby[\\s._-]*vision)[\\s._-]*(?:(?:p|profile)[\\s._:-]*)?0?8(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dv[\\s._-]*profile|dovi[\\s._-]*profile)[\\s._:=]*0?8)(?![A-Za-z0-9])|杜比视界[\\s._-]*(?:P|Profile)?0?8(?!\\d))))[\\s\\S]+))(?![\\s\\S]*(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dvhe|dvh1)\\.0?7(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dovi|dv|dolby[\\s._-]*vision)[\\s._-]*(?:(?:p|profile)[\\s._:-]*)?0?7(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dv[\\s._-]*profile|dovi[\\s._-]*profile)[\\s._:=]*0?7)(?![A-Za-z0-9])|杜比视界[\\s._-]*(?:P|Profile)?0?7(?!\\d))))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dvhe|dvh1)\\.0?5(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dovi|dv|dolby[\\s._-]*vision)[\\s._-]*(?:(?:p|profile)[\\s._:-]*)?0?5(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dv[\\s._-]*profile|dovi[\\s._-]*profile)[\\s._:=]*0?5)(?![A-Za-z0-9])|杜比视界[\\s._-]*(?:P|Profile)?0?5(?!\\d))))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dvhe|dvh1)\\.0?8(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dovi|dv|dolby[\\s._-]*vision)[\\s._-]*(?:(?:p|profile)[\\s._:-]*)?0?8(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dv[\\s._-]*profile|dovi[\\s._-]*profile)[\\s._:=]*0?8)(?![A-Za-z0-9])|杜比视界[\\s._-]*(?:P|Profile)?0?8(?!\\d))))[\\s\\S]+))(?![\\s\\S]*(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dvhe|dvh1)\\.0?8(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dovi|dv|dolby[\\s._-]*vision)[\\s._-]*(?:(?:p|profile)[\\s._:-]*)?0?8(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dv[\\s._-]*profile|dovi[\\s._-]*profile)[\\s._:=]*0?8)(?![A-Za-z0-9])|杜比视界[\\s._-]*(?:P|Profile)?0?8(?!\\d))))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dvhe|dvh1)\\.0?5(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dovi|dv|dolby[\\s._-]*vision)[\\s._-]*(?:(?:p|profile)[\\s._:-]*)?0?5(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dv[\\s._-]*profile|dovi[\\s._-]*profile)[\\s._:=]*0?5)(?![A-Za-z0-9])|杜比视界[\\s._-]*(?:P|Profile)?0?5(?!\\d))))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dvhe|dvh1)\\.0?7(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dovi|dv|dolby[\\s._-]*vision)[\\s._-]*(?:(?:p|profile)[\\s._:-]*)?0?7(?:\\.\\d+)?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:(?:dv[\\s._-]*profile|dovi[\\s._-]*profile)[\\s._:=]*0?7)(?![A-Za-z0-9])|杜比视界[\\s._-]*(?:P|Profile)?0?7(?!\\d))))[\\s\\S]+))(?![\\s\\S]*(?:(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)|(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))[\\s\\S]+",
+      "pattern": "(?i)^(?![\\s\\S]*(?:dolby[\\s._-]*atmos|atmos|joc|e-?ac-?3[\\s._-]*joc|eac3[\\s._-]*joc|ddp[\\s._-]*joc|杜比全景声|全景声))(?=[\\s\\S]*(?:dolby[\\s._-]*vision|dolbyvision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?|杜比视界|\\u2063))[\\s\\S]+$",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/dolby-vision.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -235,10 +105,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-atmos",
+      "id": "ly9fix-09-dolby-atmos",
       "groupId": "audio-tech",
       "name": "DOLBY ATMOS",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?![\\s\\S]*(?:(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)|(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))[\\s\\S]+|\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:ddp|dd\\+)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))))[\\s\\S]+|\\A(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[:\\s._-]*x)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[\\s._-]*hd[\\s._-]*(?:ma|master(?:[\\s._-]*audio)?)|dts[\\s._-]*ma|dts[\\s._-]*xll)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))[\\s\\S]+)))[\\s\\S]+",
+      "pattern": "(?i)^(?![\\s\\S]*(?:dolby[\\s._-]*vision|dolbyvision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?|杜比视界|\\u2063))(?=[\\s\\S]*(?:dolby[\\s._-]*atmos|atmos|joc|e-?ac-?3[\\s._-]*joc|eac3[\\s._-]*joc|ddp[\\s._-]*joc|杜比全景声|全景声))[\\s\\S]+$",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/atmos.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -248,10 +118,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-truehd",
+      "id": "ly9fix-10-truehd",
       "groupId": "audio-tech",
       "name": "TRUEHD",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?![\\s\\S]*(?:(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)|(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))[\\s\\S]+|\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:ddp|dd\\+)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))))[\\s\\S]+|\\A(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[:\\s._-]*x)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[\\s._-]*hd[\\s._-]*(?:ma|master(?:[\\s._-]*audio)?)|dts[\\s._-]*ma|dts[\\s._-]*xll)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))[\\s\\S]+)))[\\s\\S]+",
+      "pattern": "(?i)\\b(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/truehd.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -261,10 +131,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-dtsx",
+      "id": "ly9fix-11-dts-x",
       "groupId": "audio-tech",
       "name": "DTS:X",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[:\\s._-]*x)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)|(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))[\\s\\S]+|\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:ddp|dd\\+)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))))[\\s\\S]+|\\A(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[:\\s._-]*x)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[\\s._-]*hd[\\s._-]*(?:ma|master(?:[\\s._-]*audio)?)|dts[\\s._-]*ma|dts[\\s._-]*xll)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))[\\s\\S]+)))[\\s\\S]+",
+      "pattern": "(?i)\\bdts[:\\s._-]*x\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/dtsx.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -274,10 +144,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-dtshd",
+      "id": "ly9fix-12-dts-hd-master-audio",
       "groupId": "audio-tech",
       "name": "DTS-HD · MASTER AUDIO",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[\\s._-]*hd[\\s._-]*(?:ma|master(?:[\\s._-]*audio)?)|dts[\\s._-]*ma|dts[\\s._-]*xll)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[:\\s._-]*x)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)|(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))[\\s\\S]+|\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:ddp|dd\\+)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))))[\\s\\S]+|\\A(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[:\\s._-]*x)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[\\s._-]*hd[\\s._-]*(?:ma|master(?:[\\s._-]*audio)?)|dts[\\s._-]*ma|dts[\\s._-]*xll)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))[\\s\\S]+)))[\\s\\S]+",
+      "pattern": "(?i)\\b(?:dts[\\s._-]*hd[\\s._-]*(?:ma|master(?:[\\s._-]*audio)?)|dtshd[\\s._-]*ma|dts[\\s._-]*ma|dts[\\s._-]*xll)\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/dtshd.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -287,10 +157,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-dtshd-core",
+      "id": "ly9fix-13-dts-hd-hd-audio",
       "groupId": "audio-tech",
       "name": "DTS-HD · HD AUDIO",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[\\s._-]*hd(?:[\\s._-]*hra)?)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[:\\s._-]*x)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[\\s._-]*hd[\\s._-]*(?:ma|master(?:[\\s._-]*audio)?)|dts[\\s._-]*ma|dts[\\s._-]*xll)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)|(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))[\\s\\S]+|\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:ddp|dd\\+)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))))[\\s\\S]+|\\A(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[:\\s._-]*x)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[\\s._-]*hd[\\s._-]*(?:ma|master(?:[\\s._-]*audio)?)|dts[\\s._-]*ma|dts[\\s._-]*xll)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))[\\s\\S]+)))[\\s\\S]+",
+      "pattern": "(?i)\\b(?:dts[\\s._-]*hd|dtshd)\\b(?![\\s._-]*(?:ma|master|xll))",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/dtshd-core.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -300,10 +170,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-ddplus",
+      "id": "ly9fix-14-dd",
       "groupId": "audio-tech",
       "name": "DD+",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:ddp|dd\\+)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[:\\s._-]*x)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[\\s._-]*hd[\\s._-]*(?:ma|master(?:[\\s._-]*audio)?)|dts[\\s._-]*ma|dts[\\s._-]*xll)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[\\s._-]*hd(?:[\\s._-]*hra)?)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:flac)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)|(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))[\\s\\S]+|\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:ddp|dd\\+)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))))[\\s\\S]+|\\A(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[:\\s._-]*x)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[\\s._-]*hd[\\s._-]*(?:ma|master(?:[\\s._-]*audio)?)|dts[\\s._-]*ma|dts[\\s._-]*xll)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))[\\s\\S]+)))[\\s\\S]+",
+      "pattern": "(?i)\\b(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3|eac3|ddp|dd\\+)\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/ddplus.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -313,10 +183,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-dd",
+      "id": "ly9fix-15-dd",
       "groupId": "audio-tech",
       "name": "DD",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital|dd)(?![A-Za-z]|[\\s._-]*(?:\\+|plus))(?=$|[^A-Za-z0-9]|[12567][.]\\d))))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[:\\s._-]*x)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[\\s._-]*hd[\\s._-]*(?:ma|master(?:[\\s._-]*audio)?)|dts[\\s._-]*ma|dts[\\s._-]*xll)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[\\s._-]*hd(?:[\\s._-]*hra)?)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:flac)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:ddp|dd\\+)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)|(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))[\\s\\S]+|\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:ddp|dd\\+)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))))[\\s\\S]+|\\A(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[:\\s._-]*x)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[\\s._-]*hd[\\s._-]*(?:ma|master(?:[\\s._-]*audio)?)|dts[\\s._-]*ma|dts[\\s._-]*xll)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))[\\s\\S]+)))[\\s\\S]+",
+      "pattern": "(?i)\\b(?:dolby[\\s._-]*digital|ac[\\s._-]*3|ac3)\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/dd.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -326,10 +196,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-hdr10plus",
+      "id": "ly9fix-16-hdr10",
       "groupId": "video-tech",
       "name": "HDR10+",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])hdr[\\s._-]*10[\\s._-]*(?:\\+|plus|p)(?![A-Za-z0-9])|\\u2064)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))[\\s\\S]+",
+      "pattern": "(?i)\\b(?:hdr10\\+|hdr10[\\s._-]*plus|hdr[\\s._-]*10[\\s._-]*\\+)\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/hdr10plus.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -339,10 +209,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-hdr10",
+      "id": "ly9fix-17-hdr10",
       "groupId": "video-tech",
       "name": "HDR10",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:hdr[\\s._-]*10)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])hdr[\\s._-]*10[\\s._-]*(?:\\+|plus|p)(?![A-Za-z0-9])|\\u2064)))[\\s\\S]+",
+      "pattern": "(?i)\\b(?:hdr10|hdr[\\s._-]*10)\\b(?![\\s._-]*(?:\\+|plus))",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/hdr10.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -352,10 +222,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-hlg",
+      "id": "ly9fix-18-hlg",
       "groupId": "video-tech",
       "name": "HLG",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:hlg|hybrid[\\s._-]*log[\\s._-]*gamma)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])hdr[\\s._-]*10[\\s._-]*(?:\\+|plus|p)(?![A-Za-z0-9])|\\u2064)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:hdr[\\s._-]*10)(?![A-Za-z0-9])))[\\s\\S]+",
+      "pattern": "(?i)\\b(?:hlg|hybrid[\\s._-]*log[\\s._-]*gamma)\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/hlg.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -365,10 +235,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-hdr",
+      "id": "ly9fix-19-hdr",
       "groupId": "video-tech",
       "name": "HDR",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:hdr|high[\\s._-]*dynamic[\\s._-]*range|smpte[\\s._-]*2084)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])hdr[\\s._-]*10[\\s._-]*(?:\\+|plus|p)(?![A-Za-z0-9])|\\u2064)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:hdr[\\s._-]*10)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:hlg|hybrid[\\s._-]*log[\\s._-]*gamma)(?![A-Za-z0-9])))[\\s\\S]+",
+      "pattern": "(?i)\\bhdr\\b(?![\\s._-]*10|\\+)",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/hdr.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -378,10 +248,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-sdr",
+      "id": "ly9fix-20-sdr",
       "groupId": "video-tech",
       "name": "SDR",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:sdr|standard[\\s._-]*dynamic[\\s._-]*range)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])hdr[\\s._-]*10[\\s._-]*(?:\\+|plus|p)(?![A-Za-z0-9])|\\u2064)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:hdr[\\s._-]*10)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:hlg|hybrid[\\s._-]*log[\\s._-]*gamma)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:hdr|high[\\s._-]*dynamic[\\s._-]*range|smpte[\\s._-]*2084)(?![A-Za-z0-9])))[\\s\\S]+",
+      "pattern": "(?i)\\bsdr\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/sdr.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -391,10 +261,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-imax-enhanced",
+      "id": "ly9fix-21-imax-enhanced",
       "groupId": "video-tech",
       "name": "IMAX · ENHANCED",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:imax[\\s._-]*enhanced)(?![A-Za-z0-9])))[\\s\\S]+",
+      "pattern": "(?i)\\bimax[\\s._-]*enhanced\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/imax-enhanced.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -404,10 +274,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-imax",
+      "id": "ly9fix-22-imax",
       "groupId": "video-tech",
       "name": "IMAX",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:imax)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:imax[\\s._-]*enhanced)(?![A-Za-z0-9])))[\\s\\S]+",
+      "pattern": "(?i)\\bimax\\b(?![\\s._-]*enhanced)",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/imax.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -417,75 +287,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-71",
-      "groupId": "audio-channels",
-      "name": "7.1",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|atmos|ddp|dd\\+|e[\\s._-]*ac[\\s._-]*3|ac[\\s._-]*3|dts(?:[\\s._-]*hd(?:[\\s._-]*ma)?)?|aac|flac|opus|l?pcm)[\\s._:-]*7[ ._-]?1(?!\\d)|(?:audio[\\s._-]*channels?|channel[\\s._-]*layout|音频声道|声道)[\\s:=\"\\']*7[ ._-]?1(?!\\d)|(?:^|[^A-Za-z0-9])7[ ._-]?1[\\s._-]*(?:ch(?:annels?)?|声道)(?![A-Za-z0-9])|\\A\\s*7\\.1\\s*\\Z)|(?<![A-Za-z0-9])(?<!level[ .:_-])(?<!level:[ ])(?<!profile[ .:_-])(?<!profile:[ ])7\\.1(?![\\d.]\\d))))[\\s\\S]+",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/71.png",
-      "tagColor": "#00000000",
-      "borderColor": "#00000000",
-      "textColor": "#00000000",
-      "tagStyle": "filled",
-      "isEnabled": true,
-      "type": "filter"
-    },
-    {
-      "id": "ly9-61",
-      "groupId": "audio-channels",
-      "name": "6.1",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|atmos|ddp|dd\\+|e[\\s._-]*ac[\\s._-]*3|ac[\\s._-]*3|dts(?:[\\s._-]*hd(?:[\\s._-]*ma)?)?|aac|flac|opus|l?pcm)[\\s._:-]*6[ ._-]?1(?!\\d)|(?:audio[\\s._-]*channels?|channel[\\s._-]*layout|音频声道|声道)[\\s:=\"\\']*6[ ._-]?1(?!\\d)|(?:^|[^A-Za-z0-9])6[ ._-]?1[\\s._-]*(?:ch(?:annels?)?|声道)(?![A-Za-z0-9])|\\A\\s*6\\.1\\s*\\Z)|(?<![A-Za-z0-9])(?<!level[ .:_-])(?<!level:[ ])(?<!profile[ .:_-])(?<!profile:[ ])6\\.1(?![\\d.]\\d))))(?![\\s\\S]*(?:(?:(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|atmos|ddp|dd\\+|e[\\s._-]*ac[\\s._-]*3|ac[\\s._-]*3|dts(?:[\\s._-]*hd(?:[\\s._-]*ma)?)?|aac|flac|opus|l?pcm)[\\s._:-]*7[ ._-]?1(?!\\d)|(?:audio[\\s._-]*channels?|channel[\\s._-]*layout|音频声道|声道)[\\s:=\"\\']*7[ ._-]?1(?!\\d)|(?:^|[^A-Za-z0-9])7[ ._-]?1[\\s._-]*(?:ch(?:annels?)?|声道)(?![A-Za-z0-9])|\\A\\s*7\\.1\\s*\\Z)|(?<![A-Za-z0-9])(?<!level[ .:_-])(?<!level:[ ])(?<!profile[ .:_-])(?<!profile:[ ])7\\.1(?![\\d.]\\d))))[\\s\\S]+",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/61.png",
-      "tagColor": "#00000000",
-      "borderColor": "#00000000",
-      "textColor": "#00000000",
-      "tagStyle": "filled",
-      "isEnabled": true,
-      "type": "filter"
-    },
-    {
-      "id": "ly9-51",
-      "groupId": "audio-channels",
-      "name": "5.1",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|atmos|ddp|dd\\+|e[\\s._-]*ac[\\s._-]*3|ac[\\s._-]*3|dts(?:[\\s._-]*hd(?:[\\s._-]*ma)?)?|aac|flac|opus|l?pcm)[\\s._:-]*5[ ._-]?1(?!\\d)|(?:audio[\\s._-]*channels?|channel[\\s._-]*layout|音频声道|声道)[\\s:=\"\\']*5[ ._-]?1(?!\\d)|(?:^|[^A-Za-z0-9])5[ ._-]?1[\\s._-]*(?:ch(?:annels?)?|声道)(?![A-Za-z0-9])|\\A\\s*5\\.1\\s*\\Z)|(?<![A-Za-z0-9])(?<!level[ .:_-])(?<!level:[ ])(?<!profile[ .:_-])(?<!profile:[ ])5\\.1(?![\\d.]\\d))))(?![\\s\\S]*(?:(?:(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|atmos|ddp|dd\\+|e[\\s._-]*ac[\\s._-]*3|ac[\\s._-]*3|dts(?:[\\s._-]*hd(?:[\\s._-]*ma)?)?|aac|flac|opus|l?pcm)[\\s._:-]*7[ ._-]?1(?!\\d)|(?:audio[\\s._-]*channels?|channel[\\s._-]*layout|音频声道|声道)[\\s:=\"\\']*7[ ._-]?1(?!\\d)|(?:^|[^A-Za-z0-9])7[ ._-]?1[\\s._-]*(?:ch(?:annels?)?|声道)(?![A-Za-z0-9])|\\A\\s*7\\.1\\s*\\Z)|(?<![A-Za-z0-9])(?<!level[ .:_-])(?<!level:[ ])(?<!profile[ .:_-])(?<!profile:[ ])7\\.1(?![\\d.]\\d))))(?![\\s\\S]*(?:(?:(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|atmos|ddp|dd\\+|e[\\s._-]*ac[\\s._-]*3|ac[\\s._-]*3|dts(?:[\\s._-]*hd(?:[\\s._-]*ma)?)?|aac|flac|opus|l?pcm)[\\s._:-]*6[ ._-]?1(?!\\d)|(?:audio[\\s._-]*channels?|channel[\\s._-]*layout|音频声道|声道)[\\s:=\"\\']*6[ ._-]?1(?!\\d)|(?:^|[^A-Za-z0-9])6[ ._-]?1[\\s._-]*(?:ch(?:annels?)?|声道)(?![A-Za-z0-9])|\\A\\s*6\\.1\\s*\\Z)|(?<![A-Za-z0-9])(?<!level[ .:_-])(?<!level:[ ])(?<!profile[ .:_-])(?<!profile:[ ])6\\.1(?![\\d.]\\d))))[\\s\\S]+",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/51.png",
-      "tagColor": "#00000000",
-      "borderColor": "#00000000",
-      "textColor": "#00000000",
-      "tagStyle": "filled",
-      "isEnabled": true,
-      "type": "filter"
-    },
-    {
-      "id": "ly9-20",
-      "groupId": "audio-channels",
-      "name": "2.0",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|atmos|ddp|dd\\+|e[\\s._-]*ac[\\s._-]*3|ac[\\s._-]*3|dts(?:[\\s._-]*hd(?:[\\s._-]*ma)?)?|aac|flac|opus|l?pcm)[\\s._:-]*2[ ._-]?0(?!\\d)|(?:audio[\\s._-]*channels?|channel[\\s._-]*layout|音频声道|声道)[\\s:=\"\\']*2[ ._-]?0(?!\\d)|(?:^|[^A-Za-z0-9])2[ ._-]?0[\\s._-]*(?:ch(?:annels?)?|声道)(?![A-Za-z0-9])|\\A\\s*2\\.0\\s*\\Z)|(?:audio|音轨|声道)[\\s:._-]*stereo(?![A-Za-z])|(?:^|[^A-Za-z0-9])stereo[\\s._-]*(?:audio|声道)(?![A-Za-z])|\\A\\s*stereo\\s*\\Z)))(?![\\s\\S]*(?:(?:(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|atmos|ddp|dd\\+|e[\\s._-]*ac[\\s._-]*3|ac[\\s._-]*3|dts(?:[\\s._-]*hd(?:[\\s._-]*ma)?)?|aac|flac|opus|l?pcm)[\\s._:-]*7[ ._-]?1(?!\\d)|(?:audio[\\s._-]*channels?|channel[\\s._-]*layout|音频声道|声道)[\\s:=\"\\']*7[ ._-]?1(?!\\d)|(?:^|[^A-Za-z0-9])7[ ._-]?1[\\s._-]*(?:ch(?:annels?)?|声道)(?![A-Za-z0-9])|\\A\\s*7\\.1\\s*\\Z)|(?<![A-Za-z0-9])(?<!level[ .:_-])(?<!level:[ ])(?<!profile[ .:_-])(?<!profile:[ ])7\\.1(?![\\d.]\\d))))(?![\\s\\S]*(?:(?:(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|atmos|ddp|dd\\+|e[\\s._-]*ac[\\s._-]*3|ac[\\s._-]*3|dts(?:[\\s._-]*hd(?:[\\s._-]*ma)?)?|aac|flac|opus|l?pcm)[\\s._:-]*6[ ._-]?1(?!\\d)|(?:audio[\\s._-]*channels?|channel[\\s._-]*layout|音频声道|声道)[\\s:=\"\\']*6[ ._-]?1(?!\\d)|(?:^|[^A-Za-z0-9])6[ ._-]?1[\\s._-]*(?:ch(?:annels?)?|声道)(?![A-Za-z0-9])|\\A\\s*6\\.1\\s*\\Z)|(?<![A-Za-z0-9])(?<!level[ .:_-])(?<!level:[ ])(?<!profile[ .:_-])(?<!profile:[ ])6\\.1(?![\\d.]\\d))))(?![\\s\\S]*(?:(?:(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|atmos|ddp|dd\\+|e[\\s._-]*ac[\\s._-]*3|ac[\\s._-]*3|dts(?:[\\s._-]*hd(?:[\\s._-]*ma)?)?|aac|flac|opus|l?pcm)[\\s._:-]*5[ ._-]?1(?!\\d)|(?:audio[\\s._-]*channels?|channel[\\s._-]*layout|音频声道|声道)[\\s:=\"\\']*5[ ._-]?1(?!\\d)|(?:^|[^A-Za-z0-9])5[ ._-]?1[\\s._-]*(?:ch(?:annels?)?|声道)(?![A-Za-z0-9])|\\A\\s*5\\.1\\s*\\Z)|(?<![A-Za-z0-9])(?<!level[ .:_-])(?<!level:[ ])(?<!profile[ .:_-])(?<!profile:[ ])5\\.1(?![\\d.]\\d))))[\\s\\S]+",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/20.png",
-      "tagColor": "#00000000",
-      "borderColor": "#00000000",
-      "textColor": "#00000000",
-      "tagStyle": "filled",
-      "isEnabled": true,
-      "type": "filter"
-    },
-    {
-      "id": "ly9-10",
-      "groupId": "audio-channels",
-      "name": "1.0",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|atmos|ddp|dd\\+|e[\\s._-]*ac[\\s._-]*3|ac[\\s._-]*3|dts(?:[\\s._-]*hd(?:[\\s._-]*ma)?)?|aac|flac|opus|l?pcm)[\\s._:-]*1[ ._-]?0(?!\\d)|(?:audio[\\s._-]*channels?|channel[\\s._-]*layout|音频声道|声道)[\\s:=\"\\']*1[ ._-]?0(?!\\d)|(?:^|[^A-Za-z0-9])1[ ._-]?0[\\s._-]*(?:ch(?:annels?)?|声道)(?![A-Za-z0-9])|\\A\\s*1\\.0\\s*\\Z)|(?:audio|音轨|声道)[\\s:._-]*mono(?![A-Za-z])|(?:^|[^A-Za-z0-9])mono[\\s._-]*(?:audio|声道)(?![A-Za-z])|\\A\\s*mono\\s*\\Z)))(?![\\s\\S]*(?:(?:(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|atmos|ddp|dd\\+|e[\\s._-]*ac[\\s._-]*3|ac[\\s._-]*3|dts(?:[\\s._-]*hd(?:[\\s._-]*ma)?)?|aac|flac|opus|l?pcm)[\\s._:-]*7[ ._-]?1(?!\\d)|(?:audio[\\s._-]*channels?|channel[\\s._-]*layout|音频声道|声道)[\\s:=\"\\']*7[ ._-]?1(?!\\d)|(?:^|[^A-Za-z0-9])7[ ._-]?1[\\s._-]*(?:ch(?:annels?)?|声道)(?![A-Za-z0-9])|\\A\\s*7\\.1\\s*\\Z)|(?<![A-Za-z0-9])(?<!level[ .:_-])(?<!level:[ ])(?<!profile[ .:_-])(?<!profile:[ ])7\\.1(?![\\d.]\\d))))(?![\\s\\S]*(?:(?:(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|atmos|ddp|dd\\+|e[\\s._-]*ac[\\s._-]*3|ac[\\s._-]*3|dts(?:[\\s._-]*hd(?:[\\s._-]*ma)?)?|aac|flac|opus|l?pcm)[\\s._:-]*6[ ._-]?1(?!\\d)|(?:audio[\\s._-]*channels?|channel[\\s._-]*layout|音频声道|声道)[\\s:=\"\\']*6[ ._-]?1(?!\\d)|(?:^|[^A-Za-z0-9])6[ ._-]?1[\\s._-]*(?:ch(?:annels?)?|声道)(?![A-Za-z0-9])|\\A\\s*6\\.1\\s*\\Z)|(?<![A-Za-z0-9])(?<!level[ .:_-])(?<!level:[ ])(?<!profile[ .:_-])(?<!profile:[ ])6\\.1(?![\\d.]\\d))))(?![\\s\\S]*(?:(?:(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|atmos|ddp|dd\\+|e[\\s._-]*ac[\\s._-]*3|ac[\\s._-]*3|dts(?:[\\s._-]*hd(?:[\\s._-]*ma)?)?|aac|flac|opus|l?pcm)[\\s._:-]*5[ ._-]?1(?!\\d)|(?:audio[\\s._-]*channels?|channel[\\s._-]*layout|音频声道|声道)[\\s:=\"\\']*5[ ._-]?1(?!\\d)|(?:^|[^A-Za-z0-9])5[ ._-]?1[\\s._-]*(?:ch(?:annels?)?|声道)(?![A-Za-z0-9])|\\A\\s*5\\.1\\s*\\Z)|(?<![A-Za-z0-9])(?<!level[ .:_-])(?<!level:[ ])(?<!profile[ .:_-])(?<!profile:[ ])5\\.1(?![\\d.]\\d))))(?![\\s\\S]*(?:(?:(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|atmos|ddp|dd\\+|e[\\s._-]*ac[\\s._-]*3|ac[\\s._-]*3|dts(?:[\\s._-]*hd(?:[\\s._-]*ma)?)?|aac|flac|opus|l?pcm)[\\s._:-]*2[ ._-]?0(?!\\d)|(?:audio[\\s._-]*channels?|channel[\\s._-]*layout|音频声道|声道)[\\s:=\"\\']*2[ ._-]?0(?!\\d)|(?:^|[^A-Za-z0-9])2[ ._-]?0[\\s._-]*(?:ch(?:annels?)?|声道)(?![A-Za-z0-9])|\\A\\s*2\\.0\\s*\\Z)|(?:audio|音轨|声道)[\\s:._-]*stereo(?![A-Za-z])|(?:^|[^A-Za-z0-9])stereo[\\s._-]*(?:audio|声道)(?![A-Za-z])|\\A\\s*stereo\\s*\\Z)))[\\s\\S]+",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/10.png",
-      "tagColor": "#00000000",
-      "borderColor": "#00000000",
-      "textColor": "#00000000",
-      "tagStyle": "filled",
-      "isEnabled": true,
-      "type": "filter"
-    },
-    {
-      "id": "ly9-10bit",
+      "id": "ly9fix-23-10-bit",
       "groupId": "video-tech",
       "name": "10 BIT",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:10[\\s._-]*bits?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:yuv\\d+p10(?:le|be)?|p010(?:le|be))(?![A-Za-z0-9])|(?:video[\\s._-]*(?:bit[\\s._-]*depth)|视频位深)[\\s:=\"\\']*10(?!\\d))))[\\s\\S]+",
+      "pattern": "(?i)\\b(?:10[\\s._-]*bit|10bit|p010|yuv420p10(?:le|be)?)\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/10bit.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -495,10 +300,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-8bit",
+      "id": "ly9fix-24-8-bit",
       "groupId": "video-tech",
       "name": "8 BIT",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:8[\\s._-]*bits?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:yuv\\d+p8(?:le|be)?|p08(?:le|be))(?![A-Za-z0-9])|(?:video[\\s._-]*(?:bit[\\s._-]*depth)|视频位深)[\\s:=\"\\']*8(?!\\d))))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:10[\\s._-]*bits?)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:yuv\\d+p10(?:le|be)?|p010(?:le|be))(?![A-Za-z0-9])|(?:video[\\s._-]*(?:bit[\\s._-]*depth)|视频位深)[\\s:=\"\\']*10(?!\\d))))[\\s\\S]+",
+      "pattern": "(?i)\\b(?:8[\\s._-]*bit|8bit|yuv420p)\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/8bit.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -508,11 +313,11 @@
       "type": "filter"
     },
     {
-      "id": "ly9-av1",
-      "groupId": "video-codec",
-      "name": "AV1",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:av1|av01)(?![A-Za-z0-9])))[\\s\\S]+",
-      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/av1.png",
+      "id": "ly9fix-25-7-1",
+      "groupId": "audio-channels",
+      "name": "7.1",
+      "pattern": "(?i)(?:\\b(?:truehd|atmos|ddp|dd\\+|eac3|ac3|dts(?:[\\s._-]*hd(?:[\\s._-]*ma)?)?|aac|flac|opus|pcm)[\\s._:-]*7[ ._-]?1\\b|\\b7[ ._-]?1[\\s._-]*(?:ch(?:annels?)?|audio|surround|声道)\\b)",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/71.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#00000000",
@@ -521,10 +326,62 @@
       "type": "filter"
     },
     {
-      "id": "ly9-hevc",
+      "id": "ly9fix-26-6-1",
+      "groupId": "audio-channels",
+      "name": "6.1",
+      "pattern": "(?i)(?:\\b(?:dts(?:[\\s._-]*es)?|aac|flac|opus|pcm)[\\s._:-]*6[ ._-]?1\\b|\\b6[ ._-]?1[\\s._-]*(?:ch(?:annels?)?|audio|surround|声道)\\b)",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/61.png",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "textColor": "#00000000",
+      "tagStyle": "filled",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "ly9fix-27-5-1",
+      "groupId": "audio-channels",
+      "name": "5.1",
+      "pattern": "(?i)(?:\\b(?:truehd|atmos|ddp|dd\\+|eac3|ac3|dts(?:[\\s._-]*hd(?:[\\s._-]*ma)?)?|aac|flac|opus|pcm)[\\s._:-]*5[ ._-]?1\\b|\\b5[ ._-]?1[\\s._-]*(?:ch(?:annels?)?|audio|surround|声道)\\b)",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/51.png",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "textColor": "#00000000",
+      "tagStyle": "filled",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "ly9fix-28-2-0",
+      "groupId": "audio-channels",
+      "name": "2.0",
+      "pattern": "(?i)(?:\\b(?:aac|flac|opus|pcm|ac3|eac3|ddp)[\\s._:-]*2[ ._-]?0\\b|\\b2[ ._-]?0[\\s._-]*(?:ch(?:annels?)?|audio|stereo|声道)\\b|\\bstereo\\b)",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/20.png",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "textColor": "#00000000",
+      "tagStyle": "filled",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "ly9fix-29-1-0",
+      "groupId": "audio-channels",
+      "name": "1.0",
+      "pattern": "(?i)(?:\\b(?:aac|flac|opus|pcm|ac3)[\\s._:-]*1[ ._-]?0\\b|\\b1[ ._-]?0[\\s._-]*(?:ch(?:annels?)?|audio|mono|声道)\\b|\\bmono\\b)",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/10.png",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "textColor": "#00000000",
+      "tagStyle": "filled",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "ly9fix-30-hevc",
       "groupId": "video-codec",
       "name": "HEVC",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:hevc|h[\\s._-]*265|x265|hvc1|hev1|mpeg[\\s._-]*h[\\s._-]*part[\\s._-]*2)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:av1|av01)(?![A-Za-z0-9])))[\\s\\S]+",
+      "pattern": "(?i)\\b(?:hevc|h[\\s._-]*265|h265|x265|hvc1|hev1|main[\\s._-]*10|main10)\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/hevc.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -534,10 +391,23 @@
       "type": "filter"
     },
     {
-      "id": "ly9-avc",
+      "id": "ly9fix-31-av1",
+      "groupId": "video-codec",
+      "name": "AV1",
+      "pattern": "(?i)\\b(?:av1|av01)\\b",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/av1.png",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "textColor": "#00000000",
+      "tagStyle": "filled",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "ly9fix-32-avc",
       "groupId": "video-codec",
       "name": "AVC",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:avc|h[\\s._-]*264|x264|avc1|mpeg[\\s._-]*4[\\s._-]*(?:avc|part[\\s._-]*10))(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:av1|av01)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:hevc|h[\\s._-]*265|x265|hvc1|hev1|mpeg[\\s._-]*h[\\s._-]*part[\\s._-]*2)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:vp9|vp09)(?![A-Za-z0-9])))[\\s\\S]+",
+      "pattern": "(?i)\\b(?:avc|h[\\s._-]*264|h264|x264|avc1)\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/avc.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -547,10 +417,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-vp9",
+      "id": "ly9fix-33-vp9",
       "groupId": "video-codec",
       "name": "VP9",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:vp9|vp09)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:av1|av01)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:hevc|h[\\s._-]*265|x265|hvc1|hev1|mpeg[\\s._-]*h[\\s._-]*part[\\s._-]*2)(?![A-Za-z0-9])))[\\s\\S]+",
+      "pattern": "(?i)\\b(?:vp9|vp09)\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/vp9.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -560,10 +430,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-flac",
+      "id": "ly9fix-34-flac",
       "groupId": "audio-tech",
       "name": "FLAC",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:flac)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[:\\s._-]*x)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[\\s._-]*hd[\\s._-]*(?:ma|master(?:[\\s._-]*audio)?)|dts[\\s._-]*ma|dts[\\s._-]*xll)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[\\s._-]*hd(?:[\\s._-]*hra)?)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)|(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))[\\s\\S]+|\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:ddp|dd\\+)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))))[\\s\\S]+|\\A(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[:\\s._-]*x)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[\\s._-]*hd[\\s._-]*(?:ma|master(?:[\\s._-]*audio)?)|dts[\\s._-]*ma|dts[\\s._-]*xll)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))[\\s\\S]+)))[\\s\\S]+",
+      "pattern": "(?i)\\bflac\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/flac.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -573,10 +443,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-pcm",
+      "id": "ly9fix-35-pcm",
       "groupId": "audio-tech",
       "name": "PCM",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[:\\s._-]*x)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[\\s._-]*hd[\\s._-]*(?:ma|master(?:[\\s._-]*audio)?)|dts[\\s._-]*ma|dts[\\s._-]*xll)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[\\s._-]*hd(?:[\\s._-]*hra)?)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:flac)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)|(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))[\\s\\S]+|\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:ddp|dd\\+)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))))[\\s\\S]+|\\A(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[:\\s._-]*x)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[\\s._-]*hd[\\s._-]*(?:ma|master(?:[\\s._-]*audio)?)|dts[\\s._-]*ma|dts[\\s._-]*xll)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))[\\s\\S]+)))[\\s\\S]+",
+      "pattern": "(?i)\\b(?:l?pcm|pcm_s\\d+le|pcm_s\\d+be)\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/pcm.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -586,10 +456,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-opus",
+      "id": "ly9fix-36-opus",
       "groupId": "audio-tech",
       "name": "OPUS",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:opus)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[:\\s._-]*x)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[\\s._-]*hd[\\s._-]*(?:ma|master(?:[\\s._-]*audio)?)|dts[\\s._-]*ma|dts[\\s._-]*xll)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[\\s._-]*hd(?:[\\s._-]*hra)?)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:flac)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:ddp|dd\\+)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital|dd)(?![A-Za-z]|[\\s._-]*(?:\\+|plus))(?=$|[^A-Za-z0-9]|[12567][.]\\d))))(?![\\s\\S]*(?:(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)|(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))[\\s\\S]+|\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:ddp|dd\\+)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))))[\\s\\S]+|\\A(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[:\\s._-]*x)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[\\s._-]*hd[\\s._-]*(?:ma|master(?:[\\s._-]*audio)?)|dts[\\s._-]*ma|dts[\\s._-]*xll)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))[\\s\\S]+)))[\\s\\S]+",
+      "pattern": "(?i)\\bopus\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/opus.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -599,10 +469,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-aac",
+      "id": "ly9fix-37-aac",
       "groupId": "audio-tech",
       "name": "AAC",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[:\\s._-]*x)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[\\s._-]*hd[\\s._-]*(?:ma|master(?:[\\s._-]*audio)?)|dts[\\s._-]*ma|dts[\\s._-]*xll)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[\\s._-]*hd(?:[\\s._-]*hra)?)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:flac)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:ddp|dd\\+)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital|dd)(?![A-Za-z]|[\\s._-]*(?:\\+|plus))(?=$|[^A-Za-z0-9]|[12567][.]\\d))))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:opus)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)|(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))[\\s\\S]+|\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:ddp|dd\\+)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))))[\\s\\S]+|\\A(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[:\\s._-]*x)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[\\s._-]*hd[\\s._-]*(?:ma|master(?:[\\s._-]*audio)?)|dts[\\s._-]*ma|dts[\\s._-]*xll)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))[\\s\\S]+)))[\\s\\S]+",
+      "pattern": "(?i)\\b(?:aac|aac_latm|mp4a)\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/aac.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -612,10 +482,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-mp3",
+      "id": "ly9fix-38-mp3",
       "groupId": "audio-tech",
       "name": "MP3",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[:\\s._-]*x)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[\\s._-]*hd[\\s._-]*(?:ma|master(?:[\\s._-]*audio)?)|dts[\\s._-]*ma|dts[\\s._-]*xll)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[\\s._-]*hd(?:[\\s._-]*hra)?)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:flac)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:ddp|dd\\+)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital|dd)(?![A-Za-z]|[\\s._-]*(?:\\+|plus))(?=$|[^A-Za-z0-9]|[12567][.]\\d))))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:opus)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)|(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))[\\s\\S]+|\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:ddp|dd\\+)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))))[\\s\\S]+|\\A(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[:\\s._-]*x)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[\\s._-]*hd[\\s._-]*(?:ma|master(?:[\\s._-]*audio)?)|dts[\\s._-]*ma|dts[\\s._-]*xll)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))[\\s\\S]+)))[\\s\\S]+",
+      "pattern": "(?i)\\bmp3\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/mp3.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -625,10 +495,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-dts",
+      "id": "ly9fix-39-dts",
       "groupId": "audio-tech",
       "name": "DTS",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[:\\s._-]*x)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[\\s._-]*hd[\\s._-]*(?:ma|master(?:[\\s._-]*audio)?)|dts[\\s._-]*ma|dts[\\s._-]*xll)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[\\s._-]*hd(?:[\\s._-]*hra)?)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:flac)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:ddp|dd\\+)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))(?![\\s\\S]*(?:(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*vision|dovi|dv(?:[578])?|dvhe(?:\\.\\d+(?:\\.\\d+)?)?|dvh1(?:\\.\\d+(?:\\.\\d+)?)?)(?![A-Za-z0-9])|杜比视界|\\u2063)))(?=[\\s\\S]*(?:(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)|(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d))))[\\s\\S]+|\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*atmos|atmos|joc)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:true[\\s._-]*hd|dolby[\\s._-]*truehd|mlp[\\s._-]*fba)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:(?:^|[^A-Za-z0-9])(?:dolby[\\s._-]*digital[\\s._-]*plus|e[\\s._-]*ac[\\s._-]*3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|(?:^|[^A-Za-z0-9])(?:ddp|dd\\+)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))))[\\s\\S]+|\\A(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[:\\s._-]*x)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dts[\\s._-]*hd[\\s._-]*(?:ma|master(?:[\\s._-]*audio)?)|dts[\\s._-]*ma|dts[\\s._-]*xll)(?=$|[^A-Za-z0-9]|[12567][.]\\d)))[\\s\\S]+)))[\\s\\S]+",
+      "pattern": "(?i)\\bdts\\b(?![\\s._:-]*(?:x|hd|ma|xll))",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/dts.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -638,10 +508,23 @@
       "type": "filter"
     },
     {
-      "id": "ly9-bluray",
+      "id": "ly9fix-40-uhd-blu-ray",
+      "groupId": "source",
+      "name": "UHD BLU-RAY",
+      "pattern": "(?i)\\b(?:uhd[\\s._-]*(?:blu[\\s._-]*ray|bd)|ultra[\\s._-]*hd[\\s._-]*(?:blu[\\s._-]*ray|bd)|bd(?:66|100))\\b",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/uhd-bluray.png",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "textColor": "#00000000",
+      "tagStyle": "filled",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "ly9fix-41-blu-ray",
       "groupId": "source",
       "name": "BLU-RAY",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:blu[\\s._-]*ray|bluray|bdrip|brrip|bdmv|bd25|bd50|bd66|bd100|bdmux)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:(?:(?:bd|uhd|blu[\\s._-]*ray)[\\s._-]*)?remux)(?![A-Za-z0-9])))(?![\\s\\S]*(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|(?:3840|4096)\\s*[x×*]\\s*\\d{3,4})(?![A-Za-z0-9])|超高清|\\A(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:uhd|ultra[\\s._-]*hd)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:1080[pi]?|fhd|full[\\s._-]*hd|1920\\s*[x×*]\\s*(?:1080|[89]\\d{2}))(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:720[pi]?|1280\\s*[x×*]\\s*720)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:576[pi]?|720\\s*[x×*]\\s*576)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:480[pi]?|(?:720|640)\\s*[x×*]\\s*480)(?![A-Za-z0-9]))))[\\s\\S]+)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:blu[\\s._-]*ray|bluray|bdrip|brrip|bdmv|bd25|bd50|bd66|bd100|bdmux)(?![A-Za-z0-9])))[\\s\\S]+))[\\s\\S]+",
+      "pattern": "(?i)\\b(?:blu[\\s._-]*ray|bluray|bdrip|brrip|bdmv|bd25|bd50|bd66|bd100|bdmux)\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/bluray.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -651,10 +534,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-web-dl",
+      "id": "ly9fix-42-web-dl",
       "groupId": "source",
       "name": "WEB-DL",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:web[\\s._-]*(?:dl|download))(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:(?:(?:bd|uhd|blu[\\s._-]*ray)[\\s._-]*)?remux)(?![A-Za-z0-9])))(?![\\s\\S]*(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|(?:3840|4096)\\s*[x×*]\\s*\\d{3,4})(?![A-Za-z0-9])|超高清|\\A(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:uhd|ultra[\\s._-]*hd)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:1080[pi]?|fhd|full[\\s._-]*hd|1920\\s*[x×*]\\s*(?:1080|[89]\\d{2}))(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:720[pi]?|1280\\s*[x×*]\\s*720)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:576[pi]?|720\\s*[x×*]\\s*576)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:480[pi]?|(?:720|640)\\s*[x×*]\\s*480)(?![A-Za-z0-9]))))[\\s\\S]+)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:blu[\\s._-]*ray|bluray|bdrip|brrip|bdmv|bd25|bd50|bd66|bd100|bdmux)(?![A-Za-z0-9])))[\\s\\S]+))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:blu[\\s._-]*ray|bluray|bdrip|brrip|bdmv|bd25|bd50|bd66|bd100|bdmux)(?![A-Za-z0-9])))[\\s\\S]+",
+      "pattern": "(?i)\\b(?:web[\\s._-]*(?:dl|download)|webdl)\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/web-dl.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -664,10 +547,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-webrip",
+      "id": "ly9fix-43-webrip",
       "groupId": "source",
       "name": "WEBRip",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:web[\\s._-]*rip)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:(?:(?:bd|uhd|blu[\\s._-]*ray)[\\s._-]*)?remux)(?![A-Za-z0-9])))(?![\\s\\S]*(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|(?:3840|4096)\\s*[x×*]\\s*\\d{3,4})(?![A-Za-z0-9])|超高清|\\A(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:uhd|ultra[\\s._-]*hd)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:1080[pi]?|fhd|full[\\s._-]*hd|1920\\s*[x×*]\\s*(?:1080|[89]\\d{2}))(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:720[pi]?|1280\\s*[x×*]\\s*720)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:576[pi]?|720\\s*[x×*]\\s*576)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:480[pi]?|(?:720|640)\\s*[x×*]\\s*480)(?![A-Za-z0-9]))))[\\s\\S]+)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:blu[\\s._-]*ray|bluray|bdrip|brrip|bdmv|bd25|bd50|bd66|bd100|bdmux)(?![A-Za-z0-9])))[\\s\\S]+))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:blu[\\s._-]*ray|bluray|bdrip|brrip|bdmv|bd25|bd50|bd66|bd100|bdmux)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:web[\\s._-]*(?:dl|download))(?![A-Za-z0-9])))[\\s\\S]+",
+      "pattern": "(?i)\\b(?:web[\\s._-]*rip|webrip)\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/webrip.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -677,10 +560,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-hdtv",
+      "id": "ly9fix-44-hdtv",
       "groupId": "source",
       "name": "HDTV",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:hdtv)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:(?:(?:bd|uhd|blu[\\s._-]*ray)[\\s._-]*)?remux)(?![A-Za-z0-9])))(?![\\s\\S]*(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|(?:3840|4096)\\s*[x×*]\\s*\\d{3,4})(?![A-Za-z0-9])|超高清|\\A(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:uhd|ultra[\\s._-]*hd)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:1080[pi]?|fhd|full[\\s._-]*hd|1920\\s*[x×*]\\s*(?:1080|[89]\\d{2}))(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:720[pi]?|1280\\s*[x×*]\\s*720)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:576[pi]?|720\\s*[x×*]\\s*576)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:480[pi]?|(?:720|640)\\s*[x×*]\\s*480)(?![A-Za-z0-9]))))[\\s\\S]+)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:blu[\\s._-]*ray|bluray|bdrip|brrip|bdmv|bd25|bd50|bd66|bd100|bdmux)(?![A-Za-z0-9])))[\\s\\S]+))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:blu[\\s._-]*ray|bluray|bdrip|brrip|bdmv|bd25|bd50|bd66|bd100|bdmux)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:web[\\s._-]*(?:dl|download))(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:web[\\s._-]*rip)(?![A-Za-z0-9])))[\\s\\S]+",
+      "pattern": "(?i)\\bhdtv\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/hdtv.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -690,10 +573,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-dvdrip",
+      "id": "ly9fix-45-dvdrip",
       "groupId": "source",
       "name": "DVDRip",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:dvd[\\s._-]*rip)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:(?:(?:bd|uhd|blu[\\s._-]*ray)[\\s._-]*)?remux)(?![A-Za-z0-9])))(?![\\s\\S]*(?:\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|(?:3840|4096)\\s*[x×*]\\s*\\d{3,4})(?![A-Za-z0-9])|超高清|\\A(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:uhd|ultra[\\s._-]*hd)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:1080[pi]?|fhd|full[\\s._-]*hd|1920\\s*[x×*]\\s*(?:1080|[89]\\d{2}))(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:720[pi]?|1280\\s*[x×*]\\s*720)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:576[pi]?|720\\s*[x×*]\\s*576)(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:480[pi]?|(?:720|640)\\s*[x×*]\\s*480)(?![A-Za-z0-9]))))[\\s\\S]+)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:blu[\\s._-]*ray|bluray|bdrip|brrip|bdmv|bd25|bd50|bd66|bd100|bdmux)(?![A-Za-z0-9])))[\\s\\S]+))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:blu[\\s._-]*ray|bluray|bdrip|brrip|bdmv|bd25|bd50|bd66|bd100|bdmux)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:web[\\s._-]*(?:dl|download))(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:web[\\s._-]*rip)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:hdtv)(?![A-Za-z0-9])))[\\s\\S]+",
+      "pattern": "(?i)\\b(?:dvdrip|dvd[\\s._-]*rip)\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/dvdrip.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -703,10 +586,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-3d",
+      "id": "ly9fix-46-3d",
       "groupId": "video-tech",
       "name": "3D",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:3d|hsbs|htab|half[\\s._-]*sbs|full[\\s._-]*sbs)(?![A-Za-z0-9])))[\\s\\S]+",
+      "pattern": "(?i)\\b(?:3d|sbs|hsbs|tab|half[\\s._-]*sbs|half[\\s._-]*(?:ou|over[\\s._-]*under))\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/3d.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -716,10 +599,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-xvid",
+      "id": "ly9fix-47-xvid",
       "groupId": "video-codec",
       "name": "XviD",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:xvid)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:av1|av01)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:hevc|h[\\s._-]*265|x265|hvc1|hev1|mpeg[\\s._-]*h[\\s._-]*part[\\s._-]*2)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:vp9|vp09)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:avc|h[\\s._-]*264|x264|avc1|mpeg[\\s._-]*4[\\s._-]*(?:avc|part[\\s._-]*10))(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:vc[\\s._-]*1|wmv3)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:mpeg[\\s._-]*2(?:video)?)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:divx)(?![A-Za-z0-9])))[\\s\\S]+",
+      "pattern": "(?i)\\bxvid\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/xvid.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -729,10 +612,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-divx",
+      "id": "ly9fix-48-divx",
       "groupId": "video-codec",
       "name": "DivX",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:divx)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:av1|av01)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:hevc|h[\\s._-]*265|x265|hvc1|hev1|mpeg[\\s._-]*h[\\s._-]*part[\\s._-]*2)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:vp9|vp09)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:avc|h[\\s._-]*264|x264|avc1|mpeg[\\s._-]*4[\\s._-]*(?:avc|part[\\s._-]*10))(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:vc[\\s._-]*1|wmv3)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:mpeg[\\s._-]*2(?:video)?)(?![A-Za-z0-9])))[\\s\\S]+",
+      "pattern": "(?i)\\bdivx\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/divx.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -742,10 +625,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-mpeg2",
+      "id": "ly9fix-49-mpeg-2",
       "groupId": "video-codec",
       "name": "MPEG-2",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:mpeg[\\s._-]*2(?:video)?)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:av1|av01)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:hevc|h[\\s._-]*265|x265|hvc1|hev1|mpeg[\\s._-]*h[\\s._-]*part[\\s._-]*2)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:vp9|vp09)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:avc|h[\\s._-]*264|x264|avc1|mpeg[\\s._-]*4[\\s._-]*(?:avc|part[\\s._-]*10))(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:vc[\\s._-]*1|wmv3)(?![A-Za-z0-9])))[\\s\\S]+",
+      "pattern": "(?i)\\b(?:mpeg[\\s._-]*2|mpeg2)\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/mpeg2.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -755,10 +638,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-vc1",
+      "id": "ly9fix-50-vc-1",
       "groupId": "video-codec",
       "name": "VC-1",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:vc[\\s._-]*1|wmv3)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:av1|av01)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:hevc|h[\\s._-]*265|x265|hvc1|hev1|mpeg[\\s._-]*h[\\s._-]*part[\\s._-]*2)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:vp9|vp09)(?![A-Za-z0-9])))(?![\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:avc|h[\\s._-]*264|x264|avc1|mpeg[\\s._-]*4[\\s._-]*(?:avc|part[\\s._-]*10))(?![A-Za-z0-9])))[\\s\\S]+",
+      "pattern": "(?i)\\b(?:vc[\\s._-]*1|vc1|wmv3)\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/vc1.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -768,10 +651,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-50fps",
+      "id": "ly9fix-51-50-fps",
       "groupId": "video-tech",
       "name": "50 FPS",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:50(?:\\.0+)?[\\s._-]*fps)(?![A-Za-z0-9])|(?:frame[\\s._-]*rate|帧率)[\\s:=\"\\']*50(?:\\.0+)?(?![\\d.]))))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:120(?:\\.0+)?[\\s._-]*fps)(?![A-Za-z0-9])|(?:frame[\\s._-]*rate|帧率)[\\s:=\"\\']*120(?:\\.0+)?(?![\\d.]))))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:60(?:\\.0+)?[\\s._-]*fps)(?![A-Za-z0-9])|(?:frame[\\s._-]*rate|帧率)[\\s:=\"\\']*60(?:\\.0+)?(?![\\d.]))))[\\s\\S]+",
+      "pattern": "(?i)\\b50(?:\\.0+)?[\\s._-]*fps\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/50fps.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -781,10 +664,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-60fps",
+      "id": "ly9fix-52-60-fps",
       "groupId": "video-tech",
       "name": "60 FPS",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:60(?:\\.0+)?[\\s._-]*fps)(?![A-Za-z0-9])|(?:frame[\\s._-]*rate|帧率)[\\s:=\"\\']*60(?:\\.0+)?(?![\\d.]))))(?![\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:120(?:\\.0+)?[\\s._-]*fps)(?![A-Za-z0-9])|(?:frame[\\s._-]*rate|帧率)[\\s:=\"\\']*120(?:\\.0+)?(?![\\d.]))))[\\s\\S]+",
+      "pattern": "(?i)\\b60(?:\\.0+)?[\\s._-]*fps\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/60fps.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -794,10 +677,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-120fps",
+      "id": "ly9fix-53-120-fps",
       "groupId": "video-tech",
       "name": "120 FPS",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:120(?:\\.0+)?[\\s._-]*fps)(?![A-Za-z0-9])|(?:frame[\\s._-]*rate|帧率)[\\s:=\"\\']*120(?:\\.0+)?(?![\\d.]))))[\\s\\S]+",
+      "pattern": "(?i)\\b120(?:\\.0+)?[\\s._-]*fps\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/120fps.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -807,10 +690,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-netflix",
+      "id": "ly9fix-54-netflix",
       "groupId": "source",
       "name": "NETFLIX",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:platform|service|来源|平台)[\\s:=\"\\']*(?:netflix|nf)(?![A-Za-z0-9])|\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:web[\\s._-]*(?:dl|download))(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:web[\\s._-]*rip)(?![A-Za-z0-9]))))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:netflix|nf)(?![A-Za-z0-9])))[\\s\\S]+)))[\\s\\S]+",
+      "pattern": "(?i)\\b(?:netflix|nf)\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/netflix.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -820,10 +703,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-prime-video",
+      "id": "ly9fix-55-prime-video",
       "groupId": "source",
       "name": "PRIME VIDEO",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:platform|service|来源|平台)[\\s:=\"\\']*(?:prime[\\s._-]*video|amzn)(?![A-Za-z0-9])|\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:web[\\s._-]*(?:dl|download))(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:web[\\s._-]*rip)(?![A-Za-z0-9]))))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:prime[\\s._-]*video|amzn)(?![A-Za-z0-9])))[\\s\\S]+)))[\\s\\S]+",
+      "pattern": "(?i)\\b(?:prime[\\s._-]*video|amazon[\\s._-]*prime|amzn)\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/prime-video.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -833,10 +716,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-apple-tv",
+      "id": "ly9fix-56-apple-tv",
       "groupId": "source",
       "name": "Apple TV+",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:platform|service|来源|平台)[\\s:=\"\\']*(?:apple[\\s._-]*tv\\+|atvp)(?![A-Za-z0-9])|\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:web[\\s._-]*(?:dl|download))(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:web[\\s._-]*rip)(?![A-Za-z0-9]))))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:apple[\\s._-]*tv\\+|atvp)(?![A-Za-z0-9])))[\\s\\S]+)))[\\s\\S]+",
+      "pattern": "(?i)(?:\\b(?:atvp|apple[\\s._-]*tv)\\b|apple[\\s._-]*tv\\+)",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/apple-tv.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -846,10 +729,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-disney-plus",
+      "id": "ly9fix-57-disney",
       "groupId": "source",
       "name": "Disney+",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:platform|service|来源|平台)[\\s:=\"\\']*(?:disney\\+|dsnp)(?![A-Za-z0-9])|\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:web[\\s._-]*(?:dl|download))(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:web[\\s._-]*rip)(?![A-Za-z0-9]))))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:disney\\+|dsnp)(?![A-Za-z0-9])))[\\s\\S]+)))[\\s\\S]+",
+      "pattern": "(?i)(?:\\b(?:dsnp|disney[\\s._-]*plus)\\b|disney\\+)",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/disney-plus.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -859,10 +742,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-max",
+      "id": "ly9fix-58-max",
       "groupId": "source",
       "name": "MAX",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:platform|service|来源|平台)[\\s:=\"\\']*(?:hbo[\\s._-]*max|hmax)(?![A-Za-z0-9])|\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:web[\\s._-]*(?:dl|download))(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:web[\\s._-]*rip)(?![A-Za-z0-9]))))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:hbo[\\s._-]*max|hmax)(?![A-Za-z0-9])))[\\s\\S]+)))[\\s\\S]+",
+      "pattern": "(?i)\\b(?:hmax|hbomax|hbo[\\s._-]*max|max)\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/max.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -872,10 +755,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-hulu",
+      "id": "ly9fix-59-hulu",
       "groupId": "source",
       "name": "hulu",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:platform|service|来源|平台)[\\s:=\"\\']*(?:hulu)(?![A-Za-z0-9])|\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:web[\\s._-]*(?:dl|download))(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:web[\\s._-]*rip)(?![A-Za-z0-9]))))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:hulu)(?![A-Za-z0-9])))[\\s\\S]+)))[\\s\\S]+",
+      "pattern": "(?i)\\bhulu\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/hulu.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -885,10 +768,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-peacock",
+      "id": "ly9fix-60-peacock",
       "groupId": "source",
       "name": "Peacock",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:platform|service|来源|平台)[\\s:=\"\\']*(?:peacock|pcok)(?![A-Za-z0-9])|\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:web[\\s._-]*(?:dl|download))(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:web[\\s._-]*rip)(?![A-Za-z0-9]))))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:peacock|pcok)(?![A-Za-z0-9])))[\\s\\S]+)))[\\s\\S]+",
+      "pattern": "(?i)\\b(?:peacock|pcok)\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/peacock.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -898,10 +781,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-paramount-plus",
+      "id": "ly9fix-61-paramount",
       "groupId": "source",
       "name": "Paramount+",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:platform|service|来源|平台)[\\s:=\"\\']*(?:paramount\\+|pmtp)(?![A-Za-z0-9])|\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:web[\\s._-]*(?:dl|download))(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:web[\\s._-]*rip)(?![A-Za-z0-9]))))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:paramount\\+|pmtp)(?![A-Za-z0-9])))[\\s\\S]+)))[\\s\\S]+",
+      "pattern": "(?i)(?:\\b(?:pmtp|paramount[\\s._-]*plus)\\b|paramount\\+)",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/paramount-plus.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -911,10 +794,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-crunchyroll",
+      "id": "ly9fix-62-crunchyroll",
       "groupId": "source",
       "name": "Crunchyroll",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:platform|service|来源|平台)[\\s:=\"\\']*(?:crunchyroll)(?![A-Za-z0-9])|\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:web[\\s._-]*(?:dl|download))(?![A-Za-z0-9])|(?:^|[^A-Za-z0-9])(?:web[\\s._-]*rip)(?![A-Za-z0-9]))))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:crunchyroll)(?![A-Za-z0-9])))[\\s\\S]+)))[\\s\\S]+",
+      "pattern": "(?i)\\b(?:crunchyroll|croll)\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/crunchyroll.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -924,10 +807,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-directors-cut",
+      "id": "ly9fix-63-director-s-cut",
       "groupId": "source",
       "name": "DIRECTOR'S CUT",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:director[\\s._-]*[\\x27’]?s?[\\s._-]*cut)(?![A-Za-z0-9])))[\\s\\S]+",
+      "pattern": "(?i)\\bdirector[\\s._-]*['’]?s?[\\s._-]*cut\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/directors-cut.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -937,10 +820,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-extended",
+      "id": "ly9fix-64-extended",
       "groupId": "source",
       "name": "EXTENDED",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:extended(?:[\\s._-]*cut)?)(?![A-Za-z0-9])))[\\s\\S]+",
+      "pattern": "(?i)\\bextended(?:[\\s._-]*cut)?\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/extended.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -950,10 +833,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-remastered",
+      "id": "ly9fix-65-remastered",
       "groupId": "source",
       "name": "REMASTERED",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:remastered)(?![A-Za-z0-9])))[\\s\\S]+",
+      "pattern": "(?i)\\bremastered\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/remastered.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -963,10 +846,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-open-matte",
+      "id": "ly9fix-66-open-matte",
       "groupId": "source",
       "name": "OPEN MATTE",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:open[\\s._-]*matte)(?![A-Za-z0-9])))[\\s\\S]+",
+      "pattern": "(?i)\\bopen[\\s._-]*matte\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/open-matte.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -976,10 +859,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-repack",
+      "id": "ly9fix-67-repack",
       "groupId": "source",
       "name": "REPACK",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:repack(?:\\d+)?)(?![A-Za-z0-9])))[\\s\\S]+",
+      "pattern": "(?i)\\brepack\\d*\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/repack.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -989,10 +872,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-proper",
+      "id": "ly9fix-68-proper",
       "groupId": "source",
       "name": "PROPER",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:proper)(?![A-Za-z0-9])))[\\s\\S]+",
+      "pattern": "(?i)\\bproper\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/proper.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -1002,10 +885,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-criterion",
+      "id": "ly9fix-69-criterion",
       "groupId": "source",
       "name": "CRITERION",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:criterion)(?![A-Za-z0-9])))[\\s\\S]+",
+      "pattern": "(?i)\\bcriterion\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/criterion.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -1015,10 +898,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-hybrid",
+      "id": "ly9fix-70-hybrid",
       "groupId": "source",
       "name": "HYBRID",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:hybrid(?![\\s._-]*log[\\s._-]*gamma))(?![A-Za-z0-9])))[\\s\\S]+",
+      "pattern": "(?i)\\bhybrid\\b(?![\\s._-]*log[\\s._-]*gamma)",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/hybrid.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -1028,10 +911,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-black-white",
+      "id": "ly9fix-71-black-white",
       "groupId": "source",
       "name": "BLACK & WHITE",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:black[\\s._-]*(?:and|&)[\\s._-]*white|b&w)(?![A-Za-z0-9])))[\\s\\S]+",
+      "pattern": "(?i)(?:\\bblack[\\s._-]*(?:and|&)[\\s._-]*white\\b|\\bb&w\\b)",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/black-white.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -1041,10 +924,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-theatrical",
+      "id": "ly9fix-72-theatrical",
       "groupId": "source",
       "name": "THEATRICAL",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:^|[^A-Za-z0-9])(?:theatrical(?:[\\s._-]*cut)?)(?![A-Za-z0-9])))[\\s\\S]+",
+      "pattern": "(?i)\\btheatrical(?:[\\s._-]*cut)?\\b",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/theatrical.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -1054,10 +937,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-chinese",
+      "id": "ly9fix-73-中文音轨",
       "groupId": "audio-tech",
       "name": "中文音轨",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:audio(?:[\\s._-]*language)?|音轨|配音)[\\s:=\"\\']*(?:chi|zho|zh(?:[-_]cn)?|chinese|中文|国语|普通话)(?![A-Za-z])|(?:中文|国语|普通话)(?:音轨|配音)|(?:chi|zho|zh(?:[-_]cn)?|chinese)[\\s._-]*audio(?![A-Za-z]))))[\\s\\S]+",
+      "pattern": "(?i)(?:中文(?:音轨|配音)?|国语|普通话|\\b(?:chi|zho|zh(?:[-_]cn)?|chinese)[\\s._-]*(?:audio|track)\\b)",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/chinese.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -1067,10 +950,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-english",
+      "id": "ly9fix-74-英语音轨",
       "groupId": "audio-tech",
       "name": "英语音轨",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:audio(?:[\\s._-]*language)?|音轨|配音)[\\s:=\"\\']*(?:eng|en|english|英语|英文)(?![A-Za-z])|(?:英语|英文)(?:音轨|配音)|(?:eng|en|english)[\\s._-]*audio(?![A-Za-z]))))[\\s\\S]+",
+      "pattern": "(?i)(?:英语(?:音轨|配音)?|英文(?:音轨|配音)?|\\b(?:eng|en|english)[\\s._-]*(?:audio|track)\\b)",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/english.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -1080,10 +963,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-japanese",
+      "id": "ly9fix-75-日语音轨",
       "groupId": "audio-tech",
       "name": "日语音轨",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:audio(?:[\\s._-]*language)?|音轨|配音)[\\s:=\"\\']*(?:jpn|ja|japanese|日语|日文)(?![A-Za-z])|(?:日语|日文)(?:音轨|配音)|(?:jpn|ja|japanese)[\\s._-]*audio(?![A-Za-z]))))[\\s\\S]+",
+      "pattern": "(?i)(?:日语(?:音轨|配音)?|日文(?:音轨|配音)?|\\b(?:jpn|ja|japanese)[\\s._-]*(?:audio|track)\\b)",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/japanese.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -1093,10 +976,10 @@
       "type": "filter"
     },
     {
-      "id": "ly9-korean",
+      "id": "ly9fix-76-韩语音轨",
       "groupId": "audio-tech",
       "name": "韩语音轨",
-      "pattern": "(?i)\\A(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:2160[pi]?|4k|uhd|ultra[\\s._-]*hd|1080[pi]?|fhd|full[\\s._-]*hd|720[pi]?|576[pi]?|480[pi]?|\\d{3,4}\\s*[x×*]\\s*\\d{3,4}|hevc|h[\\s._-]*26[45]|x26[45]|hvc1|hev1|avc1?|av1|av01|vp9|vp09|mpeg[\\s._-]*(?:2(?:video)?|4[\\s._-]*avc|h[\\s._-]*part[\\s._-]*2)|vc[\\s._-]*1|wmv3|xvid|divx)(?![A-Za-z0-9])|超高清)))(?=[\\s\\S]*(?:(?:(?:^|[^A-Za-z0-9])(?:(?:dolby[\\s._-]*)?(?:atmos|true[\\s._-]*hd|digital(?:[\\s._-]*plus)?)|joc|mlp[\\s._-]*fba|e?[\\s._-]*ac[\\s._-]*3|ddp|dd\\+|dd|dts(?:hd(?:ma)?|x)?|aac(?:[\\s._-]*(?:latm|lc|he))?|mp4a|flac|l?pcm(?:[_-](?:s|u|f)\\d+(?:le|be)?)?|opus|mp3)(?=$|[^A-Za-z0-9]|[12567][.]\\d)|杜比全景声|全景声)))(?=[\\s\\S]*(?:(?:(?:audio(?:[\\s._-]*language)?|音轨|配音)[\\s:=\"\\']*(?:kor|ko|korean|韩语|韩文)(?![A-Za-z])|(?:韩语|韩文)(?:音轨|配音)|(?:kor|ko|korean)[\\s._-]*audio(?![A-Za-z]))))[\\s\\S]+",
+      "pattern": "(?i)(?:韩语(?:音轨|配音)?|韩文(?:音轨|配音)?|\\b(?:kor|ko|korean)[\\s._-]*(?:audio|track)\\b)",
       "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-v9/all/png/korean.png",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -1108,20 +991,6 @@
   ],
   "groups": [
     {
-      "id": "video-tech",
-      "name": "Video Tech",
-      "color": "#00000000",
-      "borderColor": "#00000000",
-      "isExpanded": true
-    },
-    {
-      "id": "audio-tech",
-      "name": "Audio Tech",
-      "color": "#00000000",
-      "borderColor": "#00000000",
-      "isExpanded": true
-    },
-    {
       "id": "resolution",
       "name": "Resolution",
       "color": "#00000000",
@@ -1131,6 +1000,20 @@
     {
       "id": "source",
       "name": "Source",
+      "color": "#00000000",
+      "borderColor": "#00000000",
+      "isExpanded": true
+    },
+    {
+      "id": "video-tech",
+      "name": "Video Tech",
+      "color": "#00000000",
+      "borderColor": "#00000000",
+      "isExpanded": true
+    },
+    {
+      "id": "audio-tech",
+      "name": "Audio Tech",
       "color": "#00000000",
       "borderColor": "#00000000",
       "isExpanded": true
