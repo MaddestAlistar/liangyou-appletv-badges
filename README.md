@@ -87,3 +87,20 @@ python tools/check_assets.py
 536 个场景在 Python、ICU 74、Java 17 中完成 1,608 次断言，涵盖宽松和正式严格规则。另有 4 个字段集合测试（包括仍会重复的反例和低信息不显示的代价），以及 133 份 SVG / 133 份 PNG 的尺寸、透明度和深浅背景合成验证。测试并非 EplayerX / CapyPlayer 实机认证，也没有访问用户服务器。
 
 [规则验证](reports/validation-v9.json) · [图片验证](reports/assets-validation-v9.json)
+
+## V9 资料卡 / 播放页一致性检查
+
+已对 EPX9 与 Ver.all9 的核心徽章规则做一致性检查和统一：
+
+- 分辨率：4K > 1080P > 720P > 576P > 480P，避免同一条文本重复命中多个分辨率。
+- Dolby：DV+Atmos 最高；Dolby Vision / Atmos 单独回退；TrueHD 始终独立。
+- Atmos 兜底：当缺少明确 Atmos 文本，但同时存在 Dolby Vision + TrueHD 7.1 + 4K/UHD/REMUX 等高规格线索时，允许推断 DV+Atmos。
+- DD+ / DD：遇到 Atmos / TrueHD / 更高 Dolby 条件时降低重复显示；DD 在 Dolby Vision 出现时不显示。
+- HDR：Dolby Vision > HDR10+ > HDR10 > HLG > HDR；SDR 与 HDR/DV 互斥。
+- IMAX：IMAX Enhanced 优先于普通 IMAX。
+- 位深：10 BIT 优先于 8 BIT。
+- 声道：7.1 > 6.1 > 5.1 > 2.0 > 1.0；不再用 8ch/6ch 粗暴推断，避免 L7.1 / L5.1 等 Profile 误判。
+- HEVC：保留 HEVC/H.265/x265/hvc1/hev1；播放页缺 codec 时使用 Main10、DV、UHD Blu-ray、4K REMUX 做保守兜底，并排除明确 AV1/VP9/AVC。
+- Source：REMUX 优先，UHD Blu-ray / Blu-ray 做互斥，WEB-DL / WEBRip / HDTV 保持直接匹配。
+- DTS 系列维持当前规则，不再调整，因为实测重复问题已经解决。
+- 平台 / Edition / 语言类徽章主要依赖文件名或资源标题；如果播放器播放页没有继续传这些字段，JSON 无法强制做到与资料卡完全一致。
