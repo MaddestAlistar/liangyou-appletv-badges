@@ -1,4 +1,4 @@
-"""Historical V9 metadata/rules. The CLI writes the current shared V11 packs.
+"""Historical V9 metadata/rules. The CLI writes the current shared V12 packs.
 
 Java Pattern and ICU syntax. No custom JSON fields with unverified client support.
 Whole-input anchors and [\\s\\S] make exclusions work across line breaks.

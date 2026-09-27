@@ -1,0 +1,498 @@
+[
+  {
+    "text": "TrueHDAtmos",
+    "expected": "atmos truehd"
+  },
+  {
+    "text": "THDAtmos",
+    "expected": "atmos truehd"
+  },
+  {
+    "text": "MLPFBAAtmos",
+    "expected": "atmos truehd"
+  },
+  {
+    "text": "AtmosTrueHD",
+    "expected": "atmos truehd"
+  },
+  {
+    "text": "TrueHD with Atmos",
+    "expected": "atmos truehd"
+  },
+  {
+    "text": "TrueHD7.1Atmos",
+    "expected": "atmos truehd 71"
+  },
+  {
+    "text": "TrueHDAtmos7.1",
+    "expected": "atmos truehd 71"
+  },
+  {
+    "text": "THD7.1Atmos",
+    "expected": "atmos truehd 71"
+  },
+  {
+    "text": "DDP5.1Atmos",
+    "expected": "atmos 51"
+  },
+  {
+    "text": "EAC3JOC5.1",
+    "expected": "atmos 51"
+  },
+  {
+    "text": "DDPAtmos5.1",
+    "expected": "atmos 51"
+  },
+  {
+    "text": "EAC3JOC",
+    "expected": "atmos"
+  },
+  {
+    "text": "DDPAtmos",
+    "expected": "atmos"
+  },
+  {
+    "text": "DDPJOC",
+    "expected": "atmos"
+  },
+  {
+    "text": "AtmosDDP",
+    "expected": "atmos"
+  },
+  {
+    "text": "E-AC-3-JOC",
+    "expected": "atmos"
+  },
+  {
+    "text": "Joint Object Coding",
+    "expected": "atmos"
+  },
+  {
+    "text": "DolbyAtmos",
+    "expected": "atmos"
+  },
+  {
+    "text": "全景聲",
+    "expected": "atmos"
+  },
+  {
+    "text": "杜比全景音",
+    "expected": "atmos"
+  },
+  {
+    "text": "IsAtmos=true",
+    "expected": "atmos"
+  },
+  {
+    "text": "hasAtmos=1",
+    "expected": "atmos"
+  },
+  {
+    "text": "has_atmos=yes",
+    "expected": "atmos"
+  },
+  {
+    "text": "{\"IsAtmos\":true}",
+    "expected": "atmos"
+  },
+  {
+    "text": "MLP FBA 16-ch",
+    "expected": "atmos truehd"
+  },
+  {
+    "text": "TrueHD Format_AdditionalFeatures: 16-ch",
+    "expected": "atmos truehd"
+  },
+  {
+    "text": "TrueHD profile=16ch",
+    "expected": "atmos truehd"
+  },
+  {
+    "text": "A_TRUEHD NumberOfDynamicObjects=11",
+    "expected": "atmos truehd"
+  },
+  {
+    "text": "MLP FBA dynamic_object_count=1",
+    "expected": "atmos truehd"
+  },
+  {
+    "text": "EAC3 NumberOfDynamicObjects=12",
+    "expected": "atmos"
+  },
+  {
+    "text": "MLP FBA NumberOfDynamicObjects=0",
+    "expected": "truehd"
+  },
+  {
+    "text": "PCM 16ch",
+    "expected": "pcm"
+  },
+  {
+    "text": "DTS:X 16ch",
+    "expected": "dtsx"
+  },
+  {
+    "text": "16ch",
+    "expected": ""
+  },
+  {
+    "text": "TrueHD",
+    "expected": "truehd"
+  },
+  {
+    "text": "TrueHD 7.1",
+    "expected": "truehd 71"
+  },
+  {
+    "text": "4K REMUX TrueHD7.1",
+    "expected": "4k combo-remux-truehd 71 hevc"
+  },
+  {
+    "text": "DDP5.1",
+    "expected": "ddplus 51"
+  },
+  {
+    "text": "DDP7.1",
+    "expected": "ddplus 71"
+  },
+  {
+    "text": "4K DDP5.1",
+    "expected": "4k ddplus 51"
+  },
+  {
+    "text": "Atmosphere",
+    "expected": ""
+  },
+  {
+    "text": "Atmospheric",
+    "expected": ""
+  },
+  {
+    "text": "Jockey",
+    "expected": ""
+  },
+  {
+    "text": "has_atmos=false",
+    "expected": ""
+  },
+  {
+    "text": "Atmos: false",
+    "expected": ""
+  },
+  {
+    "text": "{\"HasAtmos\":false}",
+    "expected": ""
+  },
+  {
+    "text": "{\"Atmos\":false}",
+    "expected": ""
+  },
+  {
+    "text": "No Atmos",
+    "expected": ""
+  },
+  {
+    "text": "Not Atmos",
+    "expected": ""
+  },
+  {
+    "text": "non-atmos",
+    "expected": ""
+  },
+  {
+    "text": "IsAtmos=0",
+    "expected": ""
+  },
+  {
+    "text": "UHD BluRay REMUX DV TrueHD7.1Atmos English audio",
+    "expected": "4k combo-uhd-remux-truehd combo-dv-atmos 71 hevc english"
+  },
+  {
+    "text": "DV WEB-DL EAC3JOC5.1 AudioLanguage=en-US",
+    "expected": "web-dl combo-dv-atmos 51 hevc english"
+  },
+  {
+    "text": "DV TrueHD Format_AdditionalFeatures=16-ch",
+    "expected": "combo-dv-atmos truehd hevc"
+  },
+  {
+    "text": "language=eng",
+    "expected": "english"
+  },
+  {
+    "text": "Language: English",
+    "expected": "english"
+  },
+  {
+    "text": "{\"language\":\"en\"}",
+    "expected": "english"
+  },
+  {
+    "text": "AudioLanguage=en-US",
+    "expected": "english"
+  },
+  {
+    "text": "AudioTrack #1: English",
+    "expected": "english"
+  },
+  {
+    "text": "LocalizedLanguage: English",
+    "expected": "english"
+  },
+  {
+    "text": "English - TrueHD - 7.1",
+    "expected": "truehd 71 english"
+  },
+  {
+    "text": "英语 / TrueHD / 7.1",
+    "expected": "truehd 71 english"
+  },
+  {
+    "text": "zh-Hans",
+    "expected": "chinese"
+  },
+  {
+    "text": "zh_Hant_TW",
+    "expected": "chinese"
+  },
+  {
+    "text": "yue-Hant-HK",
+    "expected": "chinese"
+  },
+  {
+    "text": "cmn",
+    "expected": "chinese"
+  },
+  {
+    "text": "Cantonese",
+    "expected": "chinese"
+  },
+  {
+    "text": "粤语",
+    "expected": "chinese"
+  },
+  {
+    "text": "粵語",
+    "expected": "chinese"
+  },
+  {
+    "text": "国语版",
+    "expected": "chinese"
+  },
+  {
+    "text": "国配版",
+    "expected": "chinese"
+  },
+  {
+    "text": "音频语言：中文",
+    "expected": "chinese"
+  },
+  {
+    "text": "音訊語言：國語",
+    "expected": "chinese"
+  },
+  {
+    "text": "Audio: Cantonese",
+    "expected": "chinese"
+  },
+  {
+    "text": "Audio: chs",
+    "expected": "chinese"
+  },
+  {
+    "text": "Audio: cht",
+    "expected": "chinese"
+  },
+  {
+    "text": "ja-JP",
+    "expected": "japanese"
+  },
+  {
+    "text": "日語",
+    "expected": "japanese"
+  },
+  {
+    "text": "Audio: jpn",
+    "expected": "japanese"
+  },
+  {
+    "text": "ko-KR",
+    "expected": "korean"
+  },
+  {
+    "text": "韓語",
+    "expected": "korean"
+  },
+  {
+    "text": "Audio: kor",
+    "expected": "korean"
+  },
+  {
+    "text": "中文 / English",
+    "expected": "audio-chinese-english"
+  },
+  {
+    "text": "国语 英语",
+    "expected": "audio-chinese-english"
+  },
+  {
+    "text": "CHS&ENG",
+    "expected": "audio-chinese-english"
+  },
+  {
+    "text": "[\"chi\",\"eng\"]",
+    "expected": "audio-chinese-english"
+  },
+  {
+    "text": "中英双语",
+    "expected": "audio-chinese-english"
+  },
+  {
+    "text": "中英雙語",
+    "expected": "audio-chinese-english"
+  },
+  {
+    "text": "中英双音轨",
+    "expected": "audio-chinese-english"
+  },
+  {
+    "text": "AudioLanguage: yue-Hant-HK / en-US",
+    "expected": "audio-chinese-english"
+  },
+  {
+    "text": "中文 / English / 中文",
+    "expected": "audio-chinese-english"
+  },
+  {
+    "text": "中英日多语",
+    "expected": "audio-chinese-english-japanese"
+  },
+  {
+    "text": "Audio: zh-Hans,en-US,ja-JP,ko-KR",
+    "expected": "audio-chinese-english-japanese-korean"
+  },
+  {
+    "text": "English - AAC - Stereo - Default",
+    "expected": "aac 20 english"
+  },
+  {
+    "text": "Chinese / English - DTS-HD MA - 5.1",
+    "expected": "dtshd 51 audio-chinese-english"
+  },
+  {
+    "text": "{\"DisplayTitle\":\"English - TrueHD - 7.1 - Default\"}",
+    "expected": "truehd 71 english"
+  },
+  {
+    "text": "{\"Type\":\"Audio\",\"Language\":\"eng\",\"Codec\":\"eac3\"}",
+    "expected": "ddplus english"
+  },
+  {
+    "text": "{\"MediaStreams\":[{\"Type\":\"Audio\",\"Language\":\"eng\"},{\"Type\":\"Subtitle\",\"Language\":\"jpn\"}]}",
+    "expected": "english"
+  },
+  {
+    "text": "{\"MediaStreams\":[{\"Language\":\"chi\",\"Type\":\"Audio\"},{\"Language\":\"eng\",\"Type\":\"Audio\"},{\"Type\":\"Subtitle\",\"Language\":\"kor\"}]}",
+    "expected": "audio-chinese-english"
+  },
+  {
+    "text": "Audio\nFormat: TrueHD\nLanguage: en\nText\nLanguage: ja",
+    "expected": "truehd english"
+  },
+  {
+    "text": "Audio #1\nFormat: AAC\nLanguage: cmn\nAudio #2\nFormat: AAC\nLanguage: eng\nText #1\nLanguage: ko",
+    "expected": "aac audio-chinese-english"
+  },
+  {
+    "text": "Audio: eng; subtitles: jpn",
+    "expected": "english"
+  },
+  {
+    "text": "Audio Languages: chi,eng\nSubtitle Language: kor",
+    "expected": "audio-chinese-english"
+  },
+  {
+    "text": "Subtitle Language: eng",
+    "expected": ""
+  },
+  {
+    "text": "{\"Type\":\"Subtitle\",\"Language\":\"eng\"}",
+    "expected": ""
+  },
+  {
+    "text": "{\"@type\":\"Text\",\"Language\":\"ja\"}",
+    "expected": ""
+  },
+  {
+    "text": "Text\nLanguage: ja",
+    "expected": ""
+  },
+  {
+    "text": "中英双语字幕",
+    "expected": ""
+  },
+  {
+    "text": "中英雙語字幕",
+    "expected": ""
+  },
+  {
+    "text": "中英双语 subs",
+    "expected": ""
+  },
+  {
+    "text": "字幕：中文 / English",
+    "expected": ""
+  },
+  {
+    "text": "English - SRT",
+    "expected": ""
+  },
+  {
+    "text": "中文字幕 英文字幕",
+    "expected": ""
+  },
+  {
+    "text": "English subtitles Japanese subtitles",
+    "expected": ""
+  },
+  {
+    "text": "Language: und",
+    "expected": ""
+  },
+  {
+    "text": "The.English.Patient.1996.1080p.BluRay.AAC",
+    "expected": "1080p combo-bluray-aac"
+  },
+  {
+    "text": "Movie.2160p.BluRay.TrueHD.7.1.ENG.CHS.mkv",
+    "expected": "4k combo-uhd-bluray-truehd 71 hevc"
+  },
+  {
+    "text": "中文音轨 日语字幕",
+    "expected": "chinese"
+  },
+  {
+    "text": "中英音轨 日语字幕",
+    "expected": "audio-chinese-english"
+  },
+  {
+    "text": "English audio Japanese subtitles",
+    "expected": "english"
+  },
+  {
+    "text": "English (US) - EAC3 - 5.1",
+    "expected": "ddplus 51 english"
+  },
+  {
+    "text": "Audio Codec: TrueHD\nLanguage: en\nSubtitle Language: ja",
+    "expected": "truehd english"
+  },
+  {
+    "text": "Audio: eng subtitles: jpn",
+    "expected": "english"
+  },
+  {
+    "text": "DV DDP5.1 HasAtmos=false",
+    "expected": "dolby-vision ddplus 51 hevc"
+  }
+]

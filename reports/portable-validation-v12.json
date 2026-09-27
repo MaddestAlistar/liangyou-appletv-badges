@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "cases": 479,
+  "delivered_variants": 4,
+  "comparisons": 5748,
+  "engines": [
+    "Python re",
+    "ICU",
+    "Node ECMAScript (leading (?i) mapped to i flag)"
+  ],
+  "filters": {
+    "all": 161,
+    "epx": 41,
+    "all-single": 76,
+    "epx-png": 41
+  },
+  "max_pattern_characters": {
+    "all": 12337,
+    "epx": 4687,
+    "all-single": 4687,
+    "epx-png": 4687
+  },
+  "source_aliases_synchronized": true,
+  "group_and_filter_order_verified": true,
+  "scalar_playback_fields_verified": true,
+  "joined_metadata_equivalence_verified": true,
+  "image_urls_checked_locally": 245,
+  "asset_decode_and_svg_checks_passed": true,
+  "elapsed_seconds": 11.108,
+  "noise_icu_seconds": 1.634,
+  "noise_ecmascript_ms": 36,
+  "split_candidate_union_example": [
+    "4k",
+    "audio-chinese-english",
+    "chinese",
+    "combo-hevc-10bit",
+    "combo-uhd-remux-truehd",
+    "english",
+    "hevc",
+    "truehd"
+  ],
+  "global_exclusion_guaranteed": false,
+  "device_tested": false
+}

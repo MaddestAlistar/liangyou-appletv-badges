@@ -9,7 +9,7 @@
   },
   {
     "text": "Movie.2160p.WEB-DL.DV.DDP5.1.H265.10bit Audio: chi,eng",
-    "expected": "4k web-dl combo-dv-atmos 51 combo-hevc-10bit audio-chinese-english"
+    "expected": "combo-4k-web-dl combo-dv-atmos 51 combo-hevc-10bit audio-chinese-english"
   },
   {
     "text": "Movie.720p.WEBRip.AAC2.0.H264.8bit",
@@ -121,7 +121,7 @@
   },
   {
     "text": "DV TrueHD 5.1",
-    "expected": "dolby-vision truehd 51 hevc"
+    "expected": "51 hevc combo-dv-truehd"
   },
   {
     "text": "DTS-HD MA",
@@ -549,7 +549,7 @@
   },
   {
     "text": "4K DV TrueHD7.1",
-    "expected": "4k dolby-vision truehd 71 hevc"
+    "expected": "4k 71 hevc combo-dv-truehd"
   },
   {
     "text": "WEB-DL EAC3 JOC 5.1",
@@ -701,7 +701,7 @@
   },
   {
     "text": "Show.NF.1080p.WEB-DL",
-    "expected": "1080p web-dl netflix"
+    "expected": "combo-1080p-web-dl netflix"
   },
   {
     "text": "Dolby Vision HDR10+ HDR10 HLG SDR",

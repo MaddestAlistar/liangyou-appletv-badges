@@ -1,7 +1,7 @@
-"""V11 shared rules for the complex and EplayerX packs.
+"""V12 shared rules for the complex and EplayerX packs.
 
 Only common ICU/ECMAScript regex features; no \\A/\\Z, atomic groups or
-recursively embedded complete regexes. All combinations reuse existing assets.
+recursively embedded complete regexes. New combinations extend the existing SVG style.
 """
 from __future__ import annotations
 import argparse
@@ -10,6 +10,7 @@ import functools
 import itertools
 import json
 from pathlib import Path
+from v12_badges import COMBOS as EXTRA_ASSETS, ASSET_URL as EXTRA_ASSET_URL, PLATFORMS
 
 ROOT = Path(__file__).resolve().parents[1]
 TRUE, FALSE = ('true',), ('false',)
@@ -62,7 +63,7 @@ def pattern(x):
 
 
 def token(s): return r'(?:^|[^a-z0-9])(?:' + s + r')(?![a-z0-9])'
-def audio(s): return r'(?:^|[^a-z0-9])(?:' + s + r')(?=$|[^a-z0-9]|[12567][.]\d)'
+def audio(s): return r'(?:^|[^a-z0-9])(?:' + s + r')(?=$|[^a-z0-9]|[12567][.]\d|(?:atmos|joc)(?![a-z]))'
 def T(s): return fact(token(s))
 def A(s): return fact(audio(s))
 
@@ -106,7 +107,7 @@ SOURCE = priority(SOURCE_RAW)
 
 
 def channels():
-    codec = r'(?:true[\s._-]*hd|atmos|ddp|dd\+|e[\s._-]*ac[\s._-]*3|ec3|ac[\s._-]*3|dts(?:[\s._-]*(?:hd|ma|hra|x|hd[\s._-]*ma))*|dca|aac|flac|opus|l?pcm)'
+    codec = r'(?:true[\s._-]*hd|thd|mlp[\s._-]*fba|atmos|ddp|dd\+|e[\s._-]*ac[\s._-]*3|ec3|ac[\s._-]*3|dts(?:[:\s._-]*(?:hd|ma|hra|x|hd[\s._-]*ma))*|dca|aac|flac|opus|l?pcm)(?:[\s._-]*(?:atmos|joc))?'
     raw = {}
     for slug, number in [('71', '7.1'), ('61', '6.1'), ('51', '5.1'), ('20', '2.0'), ('10', '1.0')]:
         n = number.replace('.', r'[ ._-]?')
@@ -135,14 +136,29 @@ CHANNEL_RAW = channels()
 CHANNELS = priority(CHANNEL_RAW)
 
 DV = OR(T(r'dolby[\s._-]*vision|dovi|dv[578]?|dvhe(?:\.\d+(?:\.\d+)?)?|dvh1(?:\.\d+(?:\.\d+)?)?'), fact(r'杜比视界|\u2063'))
-ATMOS = OR(A(r'dolby[\s._-]*atmos|atmos|joc'), fact('杜比全景声|全景声'))
 DDPLUS = A(r'dolby[\s._-]*digital[\s._-]*plus|e[\s._-]*ac[\s._-]*3|ec[\s._-]*3|ddp|dd\+')
+TRUEHD = A(r'(?:atmos[\s._-]*)?(?:(?:dolby[\s._-]*)?true[\s._-]*hd|mlp[\s._-]*fba|a[\s._-]*truehd|thd)')
+# Commercial labels, codec-tag concatenation, and positive metadata flags.
+# Plain 5.1/7.1, TrueHD, E-AC-3, or 4K alone still do not establish Atmos.
+DOLBY_CARRIER = r'(?:true[\s._-]*hd|thd|mlp[\s._-]*fba|ddp|dd\+|e[\s._-]*ac[\s._-]*3|ec3)'
+FALSE_VALUE = r'[\s"\x27:=_-]*(?:false|no|off|0)(?![a-z0-9])'
+ATMOS_DENIED = fact(r'(?:^|[^a-z0-9])(?:is[\s._-]*|has[\s._-]*)?atmos' + FALSE_VALUE)
+ATMOS_LABEL = r'(?<!no[ ._-])(?<!not[ ._-])(?<!non[ ._-])(?:dolby[\s._-]*)?(?:atmos|joc)(?!' + FALSE_VALUE + ')'
+ATMOS = OR(A(ATMOS_LABEL), T(r'joint[\s._-]*object[\s._-]*coding'),
+    A(DOLBY_CARRIER + r'[\s._-]*(?:[57][.]1[\s._-]*)?(?:atmos|joc)'),
+    A(r'(?:atmos|joc)[\s._-]*' + DOLBY_CARRIER),
+    fact(r'(?:^|[^a-z0-9])(?:is[\s._-]*|has[\s._-]*)?atmos[\s"\x27:=_-]+(?:true|yes|1)(?![a-z0-9])'),
+    fact(r'杜比全景[声音聲]|全景[声音聲]'))
+# MediaInfo's maintainer identifies TrueHD + AdditionalFeatures=16-ch as
+# Atmos. The 16-ch presentation feature is not a 16-speaker layout badge.
+ATMOS_FEATURE = OR(AND(TRUEHD, T(r'16[\s._-]*ch(?:annels?)?')),
+    AND(OR(TRUEHD, DDPLUS), fact(r'(?:number[\s._-]*of[\s._-]*dynamic[\s._-]*objects|dynamic[\s._-]*object[\s._-]*count)[\s"\x27:=]*[1-9]\d*(?!\d)')))
 DD_MULTI = fact(r'(?:^|[^a-z0-9])(?:ddp|dd\+|e[\s._-]*ac[\s._-]*3|ec3)[\s._:-]*[57][ ._-]?1(?!\d)')
 CH_MULTI = OR(CHANNEL_RAW['71'], CHANNEL_RAW['51'])
 # Requested compatibility heuristic: DV + DD+ 5.1/7.1. Ordinary DD+ 5.1,
 # 4K DD+ 5.1, and plain DD+ 7.1 never imply Atmos without DV or Atmos/JOC.
-DV_DDP_HINT = AND(DV, DDPLUS, OR(DD_MULTI, CH_MULTI))
-ATMOS_DISPLAY = OR(ATMOS, DV_DDP_HINT)
+DV_DDP_HINT = AND(DV, DDPLUS, OR(DD_MULTI, CH_MULTI), NOT(ATMOS_DENIED))
+ATMOS_DISPLAY = OR(ATMOS, ATMOS_FEATURE, DV_DDP_HINT)
 DV_ATMOS = AND(DV, ATMOS_DISPLAY)
 
 
@@ -151,7 +167,7 @@ def dca_profile(rx):
 
 
 AUDIO_RAW = {
-    'truehd': A(r'(?:dolby[\s._-]*)?true[\s._-]*hd|mlp[\s._-]*fba|a[\s._-]*truehd'),
+    'truehd': TRUEHD,
     'dtsx': OR(A(r'dts[:\s._-]*x|dtsx|dca[\s._-]*(?:x|dtsx)'), dca_profile(r'dts[:\s._-]*x|x')),
     'dtshd': OR(A(r'dts[\s._-]*(?:hd[\s._-]*)?(?:ma|master(?:[\s._-]*audio)?|xll)|xll|dca[\s._-]*(?:ma|xll|hdma)'), dca_profile(r'ma|hdma|xll|dts[\s._-]*hd[\s._-]*ma|master[\s._-]*audio')),
     'dtshd-core': OR(A(r'dts[\s._-]*(?:hd(?:[\s._-]*hra)?|hra)|dca[\s._-]*(?:hra|hdhra)'), dca_profile(r'hra|hdhra|high[\s._-]*resolution(?:[\s._-]*audio)?')),
@@ -205,20 +221,40 @@ DEPTH_RAW = {
 DEPTHS = priority(DEPTH_RAW)
 
 
-LANG_DATA = [('chinese', '中', r'chi|zho|zh(?:[-_]cn)?|chinese|mandarin', '中文|国语|普通话'),
-    ('english', '英', 'eng|en|english', '英文|英语'), ('japanese', '日', 'jpn|ja|japanese', '日文|日语'),
-    ('korean', '韩', 'kor|ko|korean', '韩文|韩语')]
+LANG_DATA = [('chinese', '中', r'(?:chi|zho|zh|cmn|yue)(?:[-_](?:hans|hant))?(?:[-_](?:cn|tw|hk|sg|mo))?|chs|cht|chinese|mandarin|cantonese', '中文|国语|國語|普通话|普通話|粤语|粵語|国配|國配'),
+    ('english', '英', r'eng|en(?:[-_](?:us|gb|au|ca))?|english', '英文|英语|英語'),
+    ('japanese', '日', r'jpn|ja(?:[-_]jp)?|japanese', '日文|日语|日語'),
+    ('korean', '韩', r'kor|ko(?:[-_]kr)?|korean', '韩文|韩语|韓文|韓語')]
 LANG_NAMES = '(?:' + '|'.join(x[2] + '|' + x[3] for x in LANG_DATA) + ')'
-LANG_GAP = r'[\s:：=\[\]"\x27,，;/+&、.()_-]*'
+LANG_GAP = r'[\s:：=\[\]"\x27,，;/+&、.()_·•-]*'
+LANG_KEY = r'(?:languages?|langs?|localized[\s._-]*language|语言|語言)'
+SUBTITLE_CUE = OR(T(r'subtitles?|subs?|srt|ass|ssa|pgs|vobsub'), fact('字幕'),
+    fact(r'["\x27]@?type["\x27]\s*:\s*["\x27]text["\x27]'),
+    fact(r'(?:^|\n)[ \t]*text(?:[ \t]*#?\d+)?[ \t]*(?:\r?\n|$)'))
+LANG_QUALIFIED = r'(?:^|[^a-z0-9])(?:audio(?:[\s._-]*(?:languages?|langs?|tracks?))?|音[轨軌](?:[语語]言)?|音[频頻訊][语語]言|配音)(?:[ \t]*#?\d+)?' + LANG_GAP
+# A Language key belongs to this flat Audio stream object, not another
+# Subtitle/Text object elsewhere in a serialized MediaStreams array.
+LANG_JSON_AUDIO = r'\{(?=[^{}]*["\x27](?:@?type|codec_type)["\x27]\s*:\s*["\x27]audio["\x27])[^{}]*?["\x27]' + LANG_KEY + r'["\x27]\s*:' + LANG_GAP
+LANG_MEDIAINFO = r'(?:^|\n)[ \t]*Audio(?:[ \t]*#?\d+)?(?:[ \t._-]*(?:codec|format|channels?|track|stream)[^\r\n]*)?[ \t]*\r?\n(?:(?![ \t]*(?:Text|Subtitle|Video|Menu|General|Audio)\b)[^\r\n]*\r?\n){0,60}?[ \t]*' + LANG_KEY + LANG_GAP
+# Accept a language-only field/list and an audio track display title. Bare
+# CHS/CHT/ENG in arbitrary release filenames remain ambiguous subtitle tags.
+LANG_PURE = r'^' + LANG_GAP + r'(?=(?:' + LANG_NAMES + LANG_GAP + r'){1,8}$)'
+DISPLAY_CODEC = r'(?:' + DOLBY_CARRIER + r'|dolby[\s._-]*(?:digital(?:[\s._-]*plus)?|truehd|atmos)|dts(?:[\s._:-]*(?:hd|ma|hra|x))*|dca|aac|flac|l?pcm|opus|mp3|ac[\s._-]*3)'
+LANG_CAPTION = r'(?:^|[\r\n;]|["\x27]display[ _-]*title["\x27]\s*:\s*["\x27])' + LANG_GAP + r'(?=(?:' + LANG_NAMES + LANG_GAP + r'){1,8}(?:\([a-z ]{2,30}\)[ \t]*[-·•/:]?[ \t]*)?' + DISPLAY_CODEC + r'(?=$|[^a-z0-9]|[12567][.]\d))'
+LANG_PREFIX = '(?:' + '|'.join([LANG_QUALIFIED, LANG_JSON_AUDIO, LANG_MEDIAINFO, LANG_PURE, LANG_CAPTION]) + ')'
 LANG = {}
 for s, short, codes, names in LANG_DATA:
     term = f'(?:{codes}|{names})'
-    LANG[s] = fact('(?:' + '|'.join([
-        r'(?:audio(?:[\s._-]*(?:languages?|tracks?))?|音轨(?:语言)?|配音)' + LANG_GAP + '(?:' + LANG_NAMES + LANG_GAP + '){0,7}' + term + r'(?![a-z])',
-        term + r'[\s._-]*(?:audio|track|音轨|配音)(?![a-z])',
-        r'^\s*' + term + r'\s*$',
-        r'[中英日韩]{0,3}' + short + r'[中英日韩]{0,3}(?:双语)?(?:音轨|配音)',
+    value = '(?:' + LANG_NAMES + LANG_GAP + '){0,7}' + term + r'(?![a-z0-9])(?![ \t._-]*(?:字幕|subtitles?)(?!(?:[a-z]|[ \t]*[:=：])))'
+    explicit = fact('(?:' + '|'.join([
+        LANG_PREFIX + value,
+        r'(?:^|[^a-z0-9])' + term + r'[\s._-]*(?:audio|track|音[轨軌]|配音)(?![a-z])',
+        r'[中英日韩韓]{0,3}' + short + r'[中英日韩韓]{0,3}(?:双音轨|雙音軌|音[轨軌]|配音)(?![ \t._-]*(?:字幕|subs?))',
+        (r'(?:国语|國語|粤语|粵語|国配|國配)(?:版|配音)' if s == 'chinese' else r'(?!)'),
     ]) + ')')
+    generic = fact(r'(?:^|[^a-z0-9])' + LANG_KEY + r'["\x27]*[ \t]*[:=：]' + LANG_GAP + value)
+    bilingual = fact(r'[中英日韩韓]{0,3}' + short + r'[中英日韩韓]{0,3}(?:双语|雙語|多语|多語)')
+    LANG[s] = OR(explicit, AND(OR(generic, bilingual), NOT(SUBTITLE_CUE)))
 
 ALL_BASE = {Path(f['imageURL']).stem: f for f in json.loads((ROOT / 'tools/fixtures/complex-before-compact.json').read_text())['filters']}
 EPX_BASE = {Path(f['imageURL']).stem: f for f in json.loads((ROOT / 'tools/fixtures/epx-before-portable.json').read_text())['filters']}
@@ -228,25 +264,38 @@ CODEC_DEPTHS = {}
 for b in ASSETS:
     if b['family'] == 'source-audio': SOURCE_AUDIO.setdefault(b['source'], []).append(b['audio'])
     if b['family'] == 'codec-depth': CODEC_DEPTHS.setdefault(b['codec'], []).append(b['depth'])
-ASSET_BY = {b['slug']: b for b in ASSETS}
+ASSET_BY = {b['slug']: b for b in ASSETS + EXTRA_ASSETS}
+EXTRA_BY = {b['slug']: b for b in EXTRA_ASSETS}
 ASSET_BASE = 'https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-compact-v10/all/png/'
 GROUPS = [('resolution', 'Resolution'), ('master-source', 'Master Source'), ('source', 'Source'),
     ('video-tech', 'Video Tech'), ('audio-tech', 'Audio Tech'), ('edition', 'Edition'),
-    ('platform', 'Platform'), ('audio-channels', 'Audio Channels'), ('video-codec', 'Video Codec'),
-    ('audio-language', 'Audio Language')]
+    ('audio-channels', 'Audio Channels'), ('video-codec', 'Video Codec'),
+    ('platform', 'Platform'), ('audio-language', 'Audio Language')]
+
+WEB_FOR_RES = AND(SOURCE['web-dl'], NOT(REMUX))
+WEB_IN_RES = AND(WEB_FOR_RES, OR(RES_RAW['4k'], RES_RAW['1080p']))
+RES_WEB = {s: AND(RES[s], WEB_FOR_RES) for s in ['4k', '1080p']}
+RES_SDR = {'1080p': AND(RES['1080p'], RANGES['sdr'], NOT(WEB_FOR_RES)),
+           '720p': AND(RES['720p'], RANGES['sdr'])}
 
 
 def source_condition(s):
     if s == 'uhd-remux': return AND(REMUX, UHD)
     if s == 'remux': return AND(REMUX, NOT(UHD))
-    return AND(SOURCE[s], NOT(REMUX))
+    result = AND(SOURCE[s], NOT(REMUX))
+    return AND(result, NOT(WEB_IN_RES)) if s == 'web-dl' else result
 
 
 def source_covers_audio(a):
     eligible = {s for s, allowed in SOURCE_AUDIO.items() if a in allowed}
     masters = [s for s in ['uhd-remux', 'remux'] if s in eligible]
     master = REMUX if len(masters) == 2 else OR(*(source_condition(s) for s in masters))
-    return OR(master, AND(NOT(REMUX), selected_in(SOURCE_RAW, eligible)))
+    return AND(OR(master, AND(NOT(REMUX), selected_in(SOURCE_RAW, eligible))), NOT(WEB_IN_RES))
+
+
+FREE_TRUEHD = AND(AUDIO['truehd'], NOT(source_covers_audio('truehd')))
+DV_TRUEHD = AND(DV, NOT(ATMOS_DISPLAY), FREE_TRUEHD)
+HDR_TRUEHD = AND(RANGES['hdr10'], FREE_TRUEHD)
 
 
 def build(version='all', combos=True, png=False):
@@ -258,15 +307,22 @@ def build(version='all', combos=True, png=False):
         if asset:
             b = ASSET_BY[s]
             template = next(iter(base.values()))
-            f = dict(template, imageURL=ASSET_BASE + s + '.png', name=b['title'] + ' · ' + b['subtitle'])
+            f = dict(template, imageURL=(EXTRA_ASSET_URL if s in EXTRA_BY else ASSET_BASE) + s + '.png', name=b['title'] + ' · ' + b['subtitle'])
         else:
             if s not in base: return
             f = copy.deepcopy(base[s])
-        f.update(id='ly11-' + s, groupId=group, pattern=pattern(condition))
+            if version == 'all' and s in PLATFORMS: f['imageURL'] = EXTRA_ASSET_URL + s + '.png'
+        f.update(id='ly12-' + s, groupId=group, pattern=pattern(condition))
         if png and version == 'epx': f['imageURL'] = f['imageURL'].replace('/svg/', '/png/').removesuffix('.svg') + '.png'
         out.append(f)
 
-    for s, cond in RES.items(): add(s, 'resolution', cond)
+    for s, cond in RES.items():
+        if compact:
+            if s in RES_WEB: add(f'combo-{s}-web-dl', 'resolution', RES_WEB[s], True)
+            if s in RES_SDR: add(f'combo-{s}-sdr', 'resolution', RES_SDR[s], True)
+            if s in RES_WEB: cond = AND(cond, NOT(WEB_FOR_RES))
+            if s in RES_SDR: cond = AND(cond, NOT(RANGES['sdr']))
+        add(s, 'resolution', cond)
     if compact:
         for source in SOURCE_AUDIO:
             group = 'master-source' if source in ['uhd-remux', 'remux'] else 'source'
@@ -281,14 +337,22 @@ def build(version='all', combos=True, png=False):
                 # UHD REMUX image already carries UHD Blu-ray information.
                 covered = AND(NOT(REMUX), selected_audio_in(SOURCE_AUDIO[source]))
                 if source == 'uhd-bluray': covered = OR(covered, REMUX)
+                if source == 'web-dl': covered = OR(covered, WEB_IN_RES)
                 add(source, group, AND(SOURCE[source], NOT(covered)))
     else:
         add('remux', 'master-source', REMUX)
         for s, cond in SOURCE.items(): add(s, 'source', cond)
 
     add('combo-dv-atmos', 'video-tech', DV_ATMOS)
-    add('dolby-vision', 'video-tech', AND(DV, NOT(ATMOS_DISPLAY)))
-    for s, cond in RANGES.items(): add(s, 'video-tech', cond)
+    if compact:
+        add('combo-dv-truehd', 'video-tech', DV_TRUEHD, True)
+        add('combo-hdr10-truehd', 'video-tech', HDR_TRUEHD, True)
+    dv_single = AND(DV, NOT(ATMOS_DISPLAY))
+    add('dolby-vision', 'video-tech', AND(dv_single, NOT(FREE_TRUEHD)) if compact else dv_single)
+    for s, cond in RANGES.items():
+        if compact and s == 'hdr10': cond = AND(cond, NOT(FREE_TRUEHD))
+        if compact and s == 'sdr': cond = AND(cond, NOT(OR(*RES_SDR.values())))
+        add(s, 'video-tech', cond)
     add('imax-enhanced', 'video-tech', IMAX_ENH)
     add('imax', 'video-tech', AND(T('imax'), NOT(IMAX_ENH)))
     add('3d', 'video-tech', T(r'3d|hsbs|htab|half[\s._-]*sbs|full[\s._-]*sbs'))
@@ -296,6 +360,7 @@ def build(version='all', combos=True, png=False):
     for a, cond in AUDIO.items():
         if compact:
             cond = AND(cond, NOT(source_covers_audio(a)))
+            if a == 'truehd': cond = AND(cond, NOT(OR(AND(DV, NOT(ATMOS_DISPLAY)), RANGES['hdr10'])))
         add(a, 'audio-tech', cond)
 
     # Existing labels/styles are preserved; scoped platform rules avoid the
@@ -303,9 +368,6 @@ def build(version='all', combos=True, png=False):
     from badge_rules import P
     for s in ['directors-cut', 'extended', 'remastered', 'open-matte', 'repack', 'proper', 'criterion', 'hybrid', 'black-white', 'theatrical']:
         add(s, 'edition', fact(P[s]))
-    for s in ['netflix', 'prime-video', 'apple-tv', 'disney-plus', 'max', 'hulu', 'peacock', 'paramount-plus', 'crunchyroll']:
-        p = P[s].replace(r'\A', '^').replace(r'\Z', '$')
-        add(s, 'platform', fact(p))
     for s, cond in CHANNELS.items(): add(s, 'audio-channels', cond)
     for codec, cond in CODECS.items():
         if compact:
@@ -320,6 +382,9 @@ def build(version='all', combos=True, png=False):
         add(depth, 'video-codec', cond)
     fps = priority({s: fact(P[s]) for s in ['120fps', '60fps', '50fps']})
     for s, cond in fps.items(): add(s, 'video-codec', cond)
+    for s in PLATFORMS:
+        p = P[s].replace(r'\A', '^').replace(r'\Z', '$')
+        add(s, 'platform', fact(p))
     if version == 'all':
         if compact:
             for n in [4, 3, 2]:
@@ -332,8 +397,8 @@ def build(version='all', combos=True, png=False):
 
 
 ALIASES = {
-    'all': ['Badge LiangYou Ver.all.json', 'Badge LiangYou Ver.all9.json', 'Badge LiangYou Ver.all10.json', 'Badge LiangYou Ver.all11.json', 'Badge LiangYou Ver.all.Relaxed.json'],
-    'epx': ['Badge LiangYou Ver.EPX.json', 'Badge LiangYou Ver.EPX9.json', 'Badge LiangYou Ver.EPX10.themefix.json', 'Badge LiangYou Ver.EPX11.json', 'Badge LiangYou Ver.EPX.Relaxed.json'],
+    'all': ['Badge LiangYou Ver.all.json', 'Badge LiangYou Ver.all9.json', 'Badge LiangYou Ver.all10.json', 'Badge LiangYou Ver.all11.json', 'Badge LiangYou Ver.all12.json', 'Badge LiangYou Ver.all.Relaxed.json'],
+    'epx': ['Badge LiangYou Ver.EPX.json', 'Badge LiangYou Ver.EPX9.json', 'Badge LiangYou Ver.EPX10.themefix.json', 'Badge LiangYou Ver.EPX11.json', 'Badge LiangYou Ver.EPX12.json', 'Badge LiangYou Ver.EPX.Relaxed.json'],
     'all-single': ['Badge LiangYou Ver.all.Single.json'],
     'epx-png': ['Badge LiangYou Ver.EPX.PNG.json'],
 }

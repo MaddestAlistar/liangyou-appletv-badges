@@ -1,4 +1,4 @@
-"""V10 asset renderer and historical rule snapshot; config writes use V11.
+"""V10 asset renderer and historical rule snapshot; config writes use V12.
 
 The input fixture is the deployed all9 at commit 3b7745e, including playback
 fallbacks. Do not reconstruct this pack from the older v9 catalogue generator.

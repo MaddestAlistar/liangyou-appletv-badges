@@ -1,4 +1,4 @@
-"""Validate delivered V11 JSON, including Node semantics and image resources.
+"""Validate delivered V12 JSON, including Node semantics and image resources.
 
 The JS adapter maps the pack's leading (?i) to RegExp's i flag. It checks the
 portable pattern body; it is not a claim about a particular player's importer.
@@ -14,6 +14,8 @@ import portable_badges as p
 from test_badges import ICU
 
 CASES = json.loads((p.ROOT / 'tools/fixtures/portable-cases.json').read_text())
+CASES += json.loads((p.ROOT / 'tools/fixtures/audio-metadata-cases.json').read_text())
+CASES += json.loads((p.ROOT / 'tools/fixtures/display-combo-cases.json').read_text())
 
 
 def expand(slugs):
@@ -29,6 +31,7 @@ def expand(slugs):
                 result.update(['remux', 'uhd-bluray'] if meta['source'] == 'uhd-remux' else [meta['source']])
             elif meta['family'] == 'codec-depth': result.update([meta['codec'], meta['depth']])
             elif meta['family'] == 'language': result.update(meta['languages'])
+            elif meta['family'] == 'display-combo': result.update(meta['facts'])
             else: result.add(slug)
     return result
 
@@ -46,15 +49,20 @@ def run():
     patterns = {}
     for name, config in configs.items():
         fs = config['filters']
-        assert fs[0]['id'] == 'ly11-4k'
+        assert fs[0]['id'] == ('ly12-combo-4k-web-dl' if name == 'all' else 'ly12-4k')
         ids = [f['id'] for f in fs]
         assert len(ids) == len(set(ids))
         groups = {g['id']: n for n, g in enumerate(config['groups'])}
         assert [groups[f['groupId']] for f in fs] == sorted(groups[f['groupId']] for f in fs)
         assert groups['audio-channels'] < groups['video-codec']
         assert groups['master-source'] < groups['source']
+        if 'audio-language' in groups:
+            assert groups['audio-language'] == max(groups.values())
+            assert groups['platform'] + 1 == groups['audio-language']
         assert all(r'\A' not in f['pattern'] and r'\Z' not in f['pattern'] for f in fs)
-        assert max(len(f['pattern']) for f in fs) < 6000
+        # Four independently scoped language detectors must be repeated by a
+        # stateless combination regex. Keep their size bounded separately.
+        assert all(len(f['pattern']) < (14000 if f['groupId'] == 'audio-language' else 10000) for f in fs)
         patterns[name] = [(f['id'][5:], re.compile(f['pattern']), f['pattern']) for f in fs]
     failures = []
     comparisons = 0
@@ -113,6 +121,16 @@ def run():
         path = p.ROOT / 'assets/2026-09-25-compact-v10/all/svg' / (asset['slug'] + '.svg')
         root = etree.parse(str(path)).getroot()
         assert not root.xpath('//*[local-name()="text"]'), path
+    from v12_badges import ASSET_DIR, COMBOS, PLATFORMS
+    for asset in COMBOS:
+        root = etree.parse(str(ASSET_DIR / 'svg' / (asset['slug'] + '.svg'))).getroot()
+        labels = root.xpath('//@aria-label')
+        assert asset['title'] in labels and asset['subtitle'] in labels
+        assert not root.xpath('//*[local-name()="text"]')
+    for slug in PLATFORMS:
+        root = etree.parse(str(ASSET_DIR / 'svg' / (slug + '.svg'))).getroot()
+        colors = root.xpath('//*[local-name()="linearGradient" and @id="edge"]/*/@stop-color')
+        assert colors == ['#080808', '#171717', '#3B3B3B', '#171717', '#080808']
 
     perf_started = time.monotonic()
     for text in request['noise']:
@@ -128,7 +146,7 @@ def run():
         elapsed_seconds=round(time.monotonic() - started, 3),
         noise_icu_seconds=round(time.monotonic() - perf_started, 3), noise_ecmascript_ms=node['noise_ms'],
         split_candidate_union_example=union, global_exclusion_guaranteed=False, device_tested=False)
-    (p.ROOT / 'reports/portable-validation-v11.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n')
+    (p.ROOT / 'reports/portable-validation-v12.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n')
     print(json.dumps(report, ensure_ascii=False, indent=2))
 
 

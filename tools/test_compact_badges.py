@@ -1,4 +1,4 @@
-"""Historical V10 corpus. The CLI validates the current V11 delivery."""
+"""Historical V10 corpus. The CLI validates the current V12 delivery."""
 import itertools
 import json
 import re

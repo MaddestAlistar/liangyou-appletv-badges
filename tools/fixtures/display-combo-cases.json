@@ -1,0 +1,134 @@
+[
+  {
+    "text": "1080p WEB-DL",
+    "expected": "combo-1080p-web-dl"
+  },
+  {
+    "text": "4K WEB-DL",
+    "expected": "combo-4k-web-dl"
+  },
+  {
+    "text": "1080p SDR",
+    "expected": "combo-1080p-sdr"
+  },
+  {
+    "text": "720p SDR",
+    "expected": "combo-720p-sdr"
+  },
+  {
+    "text": "DV TrueHD",
+    "expected": "combo-dv-truehd hevc"
+  },
+  {
+    "text": "HDR10 TrueHD",
+    "expected": "combo-hdr10-truehd"
+  },
+  {
+    "text": "1080p WEB-DL SDR",
+    "expected": "combo-1080p-web-dl sdr"
+  },
+  {
+    "text": "720p WEB-DL SDR",
+    "expected": "combo-720p-sdr web-dl"
+  },
+  {
+    "text": "4K WEB-DL SDR",
+    "expected": "combo-4k-web-dl sdr"
+  },
+  {
+    "text": "1080p WEB-DL DDP5.1 HEVC 10bit",
+    "expected": "combo-1080p-web-dl ddplus 51 combo-hevc-10bit"
+  },
+  {
+    "text": "4K WEB-DL AAC2.0 HEVC 10bit",
+    "expected": "combo-4k-web-dl aac 20 combo-hevc-10bit"
+  },
+  {
+    "text": "1080p WEBRip SDR AAC2.0 AVC 8bit",
+    "expected": "combo-1080p-sdr combo-webrip-aac 20 combo-avc-8bit"
+  },
+  {
+    "text": "720p WEB-DL SDR AAC2.0 AVC 8bit",
+    "expected": "combo-720p-sdr combo-web-dl-aac 20 combo-avc-8bit"
+  },
+  {
+    "text": "1080p BluRay SDR DTS-HD MA",
+    "expected": "combo-1080p-sdr combo-bluray-dtshd"
+  },
+  {
+    "text": "BluRay DV TrueHD",
+    "expected": "combo-bluray-truehd dolby-vision hevc"
+  },
+  {
+    "text": "BluRay HDR10 TrueHD",
+    "expected": "combo-bluray-truehd hdr10"
+  },
+  {
+    "text": "REMUX DV TrueHD",
+    "expected": "combo-remux-truehd dolby-vision hevc"
+  },
+  {
+    "text": "REMUX HDR10 TrueHD",
+    "expected": "combo-remux-truehd hdr10"
+  },
+  {
+    "text": "WEB-DL DV TrueHD",
+    "expected": "web-dl combo-dv-truehd hevc"
+  },
+  {
+    "text": "WEB-DL HDR10 TrueHD",
+    "expected": "web-dl combo-hdr10-truehd"
+  },
+  {
+    "text": "1080p WEB-DL DV TrueHD",
+    "expected": "combo-1080p-web-dl combo-dv-truehd hevc"
+  },
+  {
+    "text": "4K WEB-DL HDR10 TrueHD HEVC 10bit",
+    "expected": "combo-4k-web-dl combo-hdr10-truehd combo-hevc-10bit"
+  },
+  {
+    "text": "DV HDR10 TrueHD",
+    "expected": "combo-dv-truehd hevc"
+  },
+  {
+    "text": "DV Atmos TrueHD",
+    "expected": "combo-dv-atmos truehd hevc"
+  },
+  {
+    "text": "HDR10 Atmos TrueHD",
+    "expected": "combo-hdr10-truehd atmos"
+  },
+  {
+    "text": "HDR10+ TrueHD",
+    "expected": "hdr10plus truehd"
+  },
+  {
+    "text": "1080p HDR10 SDR WEB-DL",
+    "expected": "combo-1080p-web-dl hdr10"
+  },
+  {
+    "text": "720p HDR10 SDR",
+    "expected": "720p hdr10"
+  },
+  {
+    "text": "4K 1080p WEB-DL",
+    "expected": "combo-4k-web-dl"
+  },
+  {
+    "text": "1080p WEB-DL REMUX TrueHD",
+    "expected": "1080p combo-remux-truehd web-dl"
+  },
+  {
+    "text": "4K NF WEB-DL DV TrueHD 7.1 HEVC 10bit 中英双语",
+    "expected": "combo-4k-web-dl combo-dv-truehd 71 combo-hevc-10bit netflix audio-chinese-english"
+  },
+  {
+    "text": "1080p NF WEB-DL SDR DDP5.1 HEVC 8bit English audio",
+    "expected": "combo-1080p-web-dl sdr ddplus 51 combo-hevc-8bit netflix english"
+  },
+  {
+    "text": "WEB-DL NF Audio: eng",
+    "expected": "web-dl netflix english"
+  }
+]
