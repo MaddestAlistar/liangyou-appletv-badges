@@ -1,0 +1,219 @@
+{
+  "filters": [
+    {
+      "id": "oops-diag-loaded",
+      "groupId": "resolution",
+      "name": "D5",
+      "pattern": "[\\s\\S]+",
+      "imageURL": "",
+      "tagColor": "#CC163640",
+      "borderColor": "#FF4ECDC4",
+      "textColor": "#FFFFFFFF",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "oops-diag-filename",
+      "groupId": "master-source",
+      "name": "RAW",
+      "pattern": "Example[.]2160p[.]BluRay[.]Remux[.]DV[.]TrueHD[.]Atmos[.]7[.]1[.]mkv",
+      "imageURL": "",
+      "tagColor": "#CC163640",
+      "borderColor": "#FF4ECDC4",
+      "textColor": "#FFFFFFFF",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "oops-diag-text",
+      "groupId": "source",
+      "name": "TEXT",
+      "pattern": "(?i)2160p|BluRay|Remux|TrueHD|Atmos|7[.]1|Dolby[ ._-]*Vision|\\bDV\\b",
+      "imageURL": "",
+      "tagColor": "#CC163640",
+      "borderColor": "#FF4ECDC4",
+      "textColor": "#FFFFFFFF",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "oops-diag-framed",
+      "groupId": "video-tech",
+      "name": "BF",
+      "pattern": "\\u2063[\\u200b\\u200d]{7}\\u2063",
+      "imageURL": "",
+      "tagColor": "#CC163640",
+      "borderColor": "#FF4ECDC4",
+      "textColor": "#FFFFFFFF",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "oops-diag-u2063",
+      "groupId": "video-tech",
+      "name": "U63",
+      "pattern": "\\u2063",
+      "imageURL": "",
+      "tagColor": "#CC163640",
+      "borderColor": "#FF4ECDC4",
+      "textColor": "#FFFFFFFF",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "oops-diag-lookahead",
+      "groupId": "audio-tech",
+      "name": "LOOK",
+      "pattern": "(?=[\\s\\S])[\\s\\S]+",
+      "imageURL": "",
+      "tagColor": "#CC163640",
+      "borderColor": "#FF4ECDC4",
+      "textColor": "#FFFFFFFF",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "oops-diag-capture",
+      "groupId": "edition",
+      "name": "CAP",
+      "pattern": "^(?=((?=[\\s\\S]))?)\\1[\\s\\S]*$",
+      "imageURL": "",
+      "tagColor": "#CC163640",
+      "borderColor": "#FF4ECDC4",
+      "textColor": "#FFFFFFFF",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "oops-diag-unset",
+      "groupId": "audio-channels",
+      "name": "UNSET",
+      "pattern": "^(?=((?!))?)\\1[\\s\\S]*$",
+      "imageURL": "",
+      "tagColor": "#CC163640",
+      "borderColor": "#FF4ECDC4",
+      "textColor": "#FFFFFFFF",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "oops-diag-marker-facts",
+      "groupId": "video-codec",
+      "name": "B7",
+      "pattern": "^(?=[\\s\\S]*\\u2063\\u200b\\u200b\\u200b\\u200b\\u200b\\u200b\\u200b\\u2063)(?=[\\s\\S]*\\u2063\\u200b\\u200b\\u200b\\u200b\\u200b\\u200b\\u200d\\u2063)(?=[\\s\\S]*\\u2063\\u200b\\u200b\\u200b\\u200d\\u200d\\u200b\\u200b\\u2063)(?=[\\s\\S]*\\u2063\\u200b\\u200b\\u200d\\u200b\\u200b\\u200d\\u200d\\u2063)(?=[\\s\\S]*\\u2063\\u200b\\u200b\\u200d\\u200b\\u200d\\u200d\\u200b\\u2063)(?=[\\s\\S]*\\u2063\\u200b\\u200b\\u200d\\u200b\\u200d\\u200d\\u200d\\u2063)(?=[\\s\\S]*\\u2063\\u200b\\u200d\\u200b\\u200b\\u200b\\u200b\\u200b\\u2063)[\\s\\S]*$",
+      "imageURL": "",
+      "tagColor": "#CC163640",
+      "borderColor": "#FF4ECDC4",
+      "textColor": "#FFFFFFFF",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "oops-diag-original-4k",
+      "groupId": "platform",
+      "name": "RULE4K",
+      "pattern": "(?i)^(?:(?=[\\s\\S]*(?:(?:^|[^a-z0-9])(?:4k|2160[pi]?|(?:3840|4096)\\s*[x×*]\\s*\\d{3,4})(?![a-z0-9])|超高清|(?:video[\\s._-]*)?width[\\s:=\"'_-]*(?:3840|4096)(?!\\d)))|(?![\\s\\S]*(?:^|[^a-z0-9])(?:(?:1080|720|576|480)[pi]?|fhd)(?![a-z0-9]))(?=[\\s\\S]*(?:^|[^a-z0-9])u(?:ltra[\\s._-]*)?hd(?![a-z0-9])))(?:(?=[\\s\\S]*(?:^|[^a-z0-9])(?:(?:(?:uhd|ultra[\\s._-]*hd|4k|2160[pi]?)[\\s._-]*b(?:lu[\\s._-]*ray|d)|b(?:lu[\\s._-]*ray|d)[\\s._-]*(?:4k|2160[pi]?)|bd(?:66|100)|uhdbd|4kbd)|(?:(?<!pcm[_ -])blu[\\s._-]*ray|b[dr]rip|bdmv|bd(?:25|50|66|100)|bd(?:re)?mux)|(?:(?:(?:bd|uhd|blu[\\s._-]*ray)[\\s._-]*)?remu|rm)x)(?![a-z0-9]))|(?![\\s\\S]*(?:^|[^a-z0-9])w(?:eb[\\s._-]*d(?:l(?:mux)?|ownload)|d)(?![a-z0-9]))(?:(?=[\\s\\S]*(?:^|[^a-z0-9])web[\\s._-]*rip(?![a-z0-9]))|(?![\\s\\S]*(?:^|[^a-z0-9])(?:web|(?:nf|netflix|amzn|amazon|dsnp|disney\\+?|atvp|apple[\\s._-]*tv\\+?|hmax|hbomax|hulu|pmtp|paramount\\+?))(?![a-z0-9]))))[\\s\\S]*$",
+      "imageURL": "",
+      "tagColor": "#CC163640",
+      "borderColor": "#FF4ECDC4",
+      "textColor": "#FFFFFFFF",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "oops-diag-image",
+      "groupId": "audio-language",
+      "name": "IMG",
+      "pattern": "[\\s\\S]+",
+      "imageURL": "https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/assets/2026-09-25-compact-v10/all/png/combo-uhd-remux-truehd.png",
+      "tagColor": "#CC163640",
+      "borderColor": "#FF4ECDC4",
+      "textColor": "#FFFFFFFF",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
+    }
+  ],
+  "groups": [
+    {
+      "id": "resolution",
+      "name": "OopsPlayer diagnostic",
+      "color": "#4ECDC4",
+      "borderColor": "#00000000",
+      "isExpanded": true
+    },
+    {
+      "id": "master-source",
+      "name": "OopsPlayer diagnostic",
+      "color": "#4ECDC4",
+      "borderColor": "#00000000",
+      "isExpanded": true
+    },
+    {
+      "id": "source",
+      "name": "OopsPlayer diagnostic",
+      "color": "#4ECDC4",
+      "borderColor": "#00000000",
+      "isExpanded": true
+    },
+    {
+      "id": "video-tech",
+      "name": "OopsPlayer diagnostic",
+      "color": "#4ECDC4",
+      "borderColor": "#00000000",
+      "isExpanded": true
+    },
+    {
+      "id": "audio-tech",
+      "name": "OopsPlayer diagnostic",
+      "color": "#4ECDC4",
+      "borderColor": "#00000000",
+      "isExpanded": true
+    },
+    {
+      "id": "edition",
+      "name": "OopsPlayer diagnostic",
+      "color": "#4ECDC4",
+      "borderColor": "#00000000",
+      "isExpanded": true
+    },
+    {
+      "id": "audio-channels",
+      "name": "OopsPlayer diagnostic",
+      "color": "#4ECDC4",
+      "borderColor": "#00000000",
+      "isExpanded": true
+    },
+    {
+      "id": "video-codec",
+      "name": "OopsPlayer diagnostic",
+      "color": "#4ECDC4",
+      "borderColor": "#00000000",
+      "isExpanded": true
+    },
+    {
+      "id": "platform",
+      "name": "OopsPlayer diagnostic",
+      "color": "#4ECDC4",
+      "borderColor": "#00000000",
+      "isExpanded": true
+    },
+    {
+      "id": "audio-language",
+      "name": "OopsPlayer diagnostic",
+      "color": "#4ECDC4",
+      "borderColor": "#00000000",
+      "isExpanded": true
+    }
+  ]
+}

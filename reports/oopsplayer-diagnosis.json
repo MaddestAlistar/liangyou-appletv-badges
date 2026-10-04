@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-05",
+  "status": "awaiting_device_diagnostic",
+  "device_tested": false,
+  "cause_confirmed": false,
+  "sample": "Example.2160p.BluRay.Remux.DV.TrueHD.Atmos.7.1.mkv",
+  "expected_badges": [
+    "ly12-4k",
+    "ly12-combo-uhd-remux-truehd",
+    "ly12-combo-dv-atmos",
+    "ly12-71",
+    "ly12-hevc"
+  ],
+  "original_result": [
+    "ly12-4k",
+    "ly12-combo-uhd-remux-truehd",
+    "ly12-combo-dv-atmos",
+    "ly12-71",
+    "ly12-hevc"
+  ],
+  "optimized_result": [
+    "ly12-4k",
+    "ly12-combo-uhd-remux-truehd",
+    "ly12-combo-dv-atmos",
+    "ly12-71",
+    "ly12-hevc"
+  ],
+  "encoded_simulation_result": [
+    "ly12-dolby-vision",
+    "ly12-hevc"
+  ],
+  "individual_marker_simulations": 78,
+  "upstream_protocol_commit": "34591035590d1aed4cf564c145056b0aa864ebd3",
+  "raw_diagnostic_labels": [
+    "D5",
+    "RAW",
+    "TEXT",
+    "LOOK",
+    "CAP",
+    "RULE4K",
+    "IMG"
+  ],
+  "encoded_diagnostic_labels": [
+    "D5",
+    "BF",
+    "U63",
+    "LOOK",
+    "CAP",
+    "B7",
+    "IMG"
+  ],
+  "dv_only_diagnostic_labels": [
+    "D5",
+    "TEXT",
+    "LOOK",
+    "CAP",
+    "IMG"
+  ],
+  "max_diagnostic_pattern_utf8_bytes": 895,
+  "protected_files": {
+    "Badge LiangYou Ver.all12.json": "34ce5d0536f87ff9a5a90ffa1aeeb76e232534ce6c13ab4a8a1ede7bfdbf5bc7",
+    "Badge LiangYou Ver.OopsPlayer.json": "e832416e9a9c939547239726d30b76d64b9f5d449ff2d9ba0844040d0d26afb7"
+  },
+  "limitations": [
+    "Encoded input is a simulation; no OopsPlayer input was captured.",
+    "The probe image is forced and must not be interpreted as a media fact.",
+    "The client may truncate, wrap, scroll, or limit tags per group.",
+    "MKV is supplied by the player and is absent from this configuration."
+  ]
+}

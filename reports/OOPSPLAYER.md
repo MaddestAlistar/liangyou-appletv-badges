@@ -2,6 +2,8 @@
 
 2026-10-04
 
+**2026-10-05 状态更新：实机兼容排查中。** 用户反馈默认示例只显示 DV、HEVC 两枚自定义徽章，另有播放器自带 MKV。下面的规则级等价性测试仍成立，但不足以证明播放器实际导入链路兼容。已增加独立[诊断配置与排查说明](OOPSPLAYER-DIAGNOSIS.md)，尚未确认设备端根因，也未修改原版或独立版的合成规则。
+
 导入地址：
 
 https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.OopsPlayer.json
@@ -39,7 +41,7 @@ https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Ba
 
 具体数量与结果见 [验证报告](oopsplayer-validation.json)。
 
-这是配置和 ICU 引擎级验证，尚未在 OopsPlayer 实机导入测试。若客户端另有正则语法白名单、输入字段拆分或导入器限制，需要依据实际报错继续适配。播放器未传入的音轨／Atmos 信息也无法由正则恢复；原版的跨字段合成边界继续保留。
+这是配置和 ICU 引擎级验证。用户已经提供 OopsPlayer 实机漏显示截图，但尚未取得真实匹配输入、编译错误或导入后的规则，不能将本地通过等同于实机可用。若客户端另有正则语法白名单、输入字段拆分或导入器限制，需要依据诊断结果继续适配。播放器未传入的音轨／Atmos 信息也无法由正则恢复；原版的跨字段合成边界继续保留。
 
 ## 重新生成
 
