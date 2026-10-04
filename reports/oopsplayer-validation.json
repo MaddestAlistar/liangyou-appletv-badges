@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "target": "ICU regex",
+  "date": "2026-10-04",
+  "filters": 161,
+  "source_git_blob": "71a5eb00cab3aa88d6d70656aa087f31b516e036",
+  "source_sha256": "34ce5d0536f87ff9a5a90ffa1aeeb76e232534ce6c13ab4a8a1ede7bfdbf5bc7",
+  "original_max_characters": 12337,
+  "optimized_max_characters": 4041,
+  "optimized_max_utf16_units": 4041,
+  "optimized_max_utf8_bytes": 4083,
+  "original_patterns_over_4096": 45,
+  "optimized_patterns_over_4096": 0,
+  "original_file_bytes": 704562,
+  "optimized_file_bytes": 343289,
+  "cases": 5205,
+  "cases_by_category": {
+    "curated": 456,
+    "unicode-fold": 32,
+    "newlines": 54,
+    "mixed": 3500,
+    "language": 1088,
+    "language-order": 64,
+    "language-boundary": 8,
+    "mediainfo-boundary": 3
+  },
+  "ordered_result_comparisons": 5205,
+  "individual_pattern_comparisons": 838005,
+  "mismatches": 0,
+  "metadata_images_order_preserved": true,
+  "original_file_unchanged": true,
+  "device_tested": false,
+  "noise_seconds": {
+    "original": 1.33,
+    "oopsplayer": 2.499
+  },
+  "elapsed_seconds": 133.853
+}
