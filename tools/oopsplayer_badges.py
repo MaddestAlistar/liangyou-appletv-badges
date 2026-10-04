@@ -13,6 +13,7 @@ from re import _parser as parser, _constants as C
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / 'Badge LiangYou Ver.all12.json'
 DEST = ROOT / 'Badge LiangYou Ver.OopsPlayer.json'
+FIXED = ROOT / 'Badge LiangYou Ver.OopsPlayer.BF1.json'
 ANY = r'[\s\S]'
 
 
@@ -168,7 +169,14 @@ def normalize(node):
                 pass
             else:
                 return normalize(('fact', inside))
-        return ('fact', render(parser.parse(rx)))
+        rx = render(parser.parse(rx))
+        # Facts only ask whether a match exists. At the beginning of a fact,
+        # a consumed start/non-ASCII-alphanumeric delimiter can therefore be
+        # expressed as a zero-width left boundary without changing its truth.
+        boundary = r'(?:^|[^a-z0-9])'
+        if rx.startswith(boundary):
+            rx = r'(?<![a-z0-9])' + rx[len(boundary):]
+        return ('fact', rx)
     if kind in ('true', 'false'): return node
     return simplify(kind, *(normalize(n) for n in node[1:]))
 
@@ -326,7 +334,7 @@ def language_pattern(required):
     return '(?i)^' + subtitle + collect + check + ANY + '*$'
 
 
-def build():
+def source_conditions():
     import portable_badges as p
     data = json.loads(SOURCE.read_text())
     conditions = []
@@ -339,6 +347,12 @@ def build():
         assert p.build() == data, 'Source generator drift: review new rules before rebuilding'
     finally:
         p.pattern = original
+    return data, conditions
+
+
+def build_text():
+    import portable_badges as p
+    data, conditions = source_conditions()
     out = copy.deepcopy(data)
     for f, condition in zip(out['filters'], conditions):
         simple = compact(f['pattern'])
@@ -354,8 +368,16 @@ def build():
     return out
 
 
+def build():
+    from oopsplayer_markers import adapt
+    data, conditions = source_conditions()
+    return adapt(build_text(), conditions)
+
+
 if __name__ == '__main__':
     data = build()
-    DEST.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
+    serialized = json.dumps(data, ensure_ascii=False, indent=2) + '\n'
+    DEST.write_text(serialized)
+    FIXED.write_text(serialized)
     print(json.dumps(dict(filters=len(data['filters']), max_characters=max(len(f['pattern']) for f in data['filters']),
                          max_utf8_bytes=max(len(f['pattern'].encode()) for f in data['filters'])), ensure_ascii=False))

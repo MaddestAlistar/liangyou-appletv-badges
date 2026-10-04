@@ -11,6 +11,7 @@ import json
 from pathlib import Path
 
 from test_badges import ICU
+from oopsplayer_badges import compact
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / 'Badge LiangYou Ver.all12.json'
@@ -22,8 +23,8 @@ EXPECTED = [
     'ly12-combo-dv-atmos', 'ly12-71', 'ly12-hevc',
 ]
 # Upstream src/protocol.mjs, commit 34591035590d1aed4cf564c145056b0aa864ebd3.
-# These IDs describe BetterFormatter; whether OopsPlayer supplies them is the
-# question this pack is intended to answer, not an established device fact.
+# The device screenshot confirmed framed input. Individual IDs were not
+# captured; these seven facts remain a protocol simulation, not a device dump.
 MARKER_IDS = {'Remux': 0, 'BluRay': 1, '4K': 12, 'DV': 19,
               'Atmos': 22, 'TrueHD': 23, '7.1': 32}
 
@@ -35,6 +36,8 @@ def marker(number):
 
 def build(original, optimized):
     by_id = {f['id']: f for f in optimized['filters']}
+    # Keep this a TEXT-only probe after the production pack gains markers.
+    raw_4k = compact(next(f['pattern'] for f in original['filters'] if f['id'] == 'ly12-4k'))
     escaped = lambda value: ''.join(r'\u%04x' % ord(c) for c in value)
     marker_sample = ''.join(marker(i) for i in MARKER_IDS.values())
     marker_checks = ''.join(r'(?=[\s\S]*' + escaped(marker(i)) + ')'
@@ -53,7 +56,7 @@ def build(original, optimized):
         # not participate. ECMAScript instead treats this reference as empty.
         ('unset', 'UNSET', r'^(?=((?!))?)\1[\s\S]*$', 6, None),
         ('marker-facts', 'B7', '^' + marker_checks + r'[\s\S]*$', 7, None),
-        ('original-4k', 'RULE4K', by_id['ly12-4k']['pattern'], 8, None),
+        ('original-4k', 'RULE4K', raw_4k, 8, None),
         # Forced image, deliberately independent of media facts. Its presence
         # proves this previously missing image can load; it is not a real badge.
         ('image', 'IMG', r'[\s\S]+', 9, by_id['ly12-combo-uhd-remux-truehd']['imageURL']),
@@ -75,15 +78,17 @@ def run():
     original, optimized = (json.loads(before[p]) for p in [SOURCE, OOPS])
     config, encoded = build(original, optimized)
     icu = ICU()
-    match_ids = lambda cfg, value: [f['id'] for f in cfg['filters'] if icu.matches(f['pattern'], value)]
+    match_ids = lambda cfg, value: [f['id'].removesuffix('-bf') for f in cfg['filters'] if icu.matches(f['pattern'], value)]
     labels = lambda value: [f['name'] for f in config['filters'] if icu.matches(f['pattern'], value)]
 
     original_ids, optimized_ids = (match_ids(c, SAMPLE) for c in [original, optimized])
     assert original_ids == optimized_ids == EXPECTED
-    marker_ids = match_ids(optimized, encoded)
+    marker_ids = match_ids(original, encoded)
     assert marker_ids == ['ly12-dolby-vision', 'ly12-hevc']
+    fixed_marker_ids = match_ids(optimized, encoded)
+    assert fixed_marker_ids == EXPECTED
     # A lone 4K marker, with no DV marker at all, reproduces the false DV pair.
-    all_marker_results = {str(i): match_ids(optimized, marker(i)) for i in range(78)}
+    all_marker_results = {str(i): match_ids(original, marker(i)) for i in range(78)}
     assert all(ids == marker_ids for ids in all_marker_results.values())
     assert labels(SAMPLE) == ['D5', 'RAW', 'TEXT', 'LOOK', 'CAP', 'RULE4K', 'IMG']
     assert labels(encoded) == ['D5', 'BF', 'U63', 'LOOK', 'CAP', 'B7', 'IMG']
@@ -93,11 +98,14 @@ def run():
     assert all(len(f['pattern'].encode()) <= 4096 for f in config['filters'])
     assert all(p.read_bytes() == content for p, content in before.items())
     report = dict(
-        date='2026-10-05', status='awaiting_device_diagnostic',
-        device_tested=False, cause_confirmed=False,
+        date='2026-10-05', status='framed_input_confirmed_fix_awaiting_device_verification',
+        device_tested=True, cause_confirmed=True, fixed_pack_device_tested=False,
+        observed_labels=['D5','BF','U63','LOOK','CAP','IMG'],
+        absent_labels=['RAW','TEXT','UNSET','B7','RULE4K'],
         sample=SAMPLE, expected_badges=EXPECTED,
         original_result=original_ids, optimized_result=optimized_ids,
         encoded_simulation_result=marker_ids,
+        fixed_encoded_simulation_result=fixed_marker_ids,
         individual_marker_simulations=78,
         upstream_protocol_commit='34591035590d1aed4cf564c145056b0aa864ebd3',
         raw_diagnostic_labels=labels(SAMPLE),
@@ -106,7 +114,8 @@ def run():
         max_diagnostic_pattern_utf8_bytes=max(len(f['pattern'].encode()) for f in config['filters']),
         protected_files={p.name: hashlib.sha256(b).hexdigest() for p, b in before.items()},
         limitations=[
-            'Encoded input is a simulation; no OopsPlayer input was captured.',
+            'The framed format is confirmed by the user screenshot; individual marker IDs were not captured.',
+            'B7 was absent; not all seven simulated facts were present together on the device.',
             'The probe image is forced and must not be interpreted as a media fact.',
             'The client may truncate, wrap, scroll, or limit tags per group.',
             'MKV is supplied by the player and is absent from this configuration.',

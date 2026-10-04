@@ -1,20 +1,28 @@
 {
   "passed": true,
-  "target": "ICU regex",
-  "date": "2026-10-04",
-  "filters": 161,
+  "target": "ICU regex / BetterFormatter 7-bit markers",
+  "date": "2026-10-05",
+  "badges": 161,
+  "filters": 165,
+  "split_marker_routes": [
+    "ly12-uhd-remux-bf",
+    "ly12-bluray-bf",
+    "ly12-web-dl-bf",
+    "ly12-ddplus-bf"
+  ],
   "source_git_blob": "71a5eb00cab3aa88d6d70656aa087f31b516e036",
   "source_sha256": "34ce5d0536f87ff9a5a90ffa1aeeb76e232534ce6c13ab4a8a1ede7bfdbf5bc7",
   "original_max_characters": 12337,
-  "optimized_max_characters": 4041,
-  "optimized_max_utf16_units": 4041,
-  "optimized_max_utf8_bytes": 4083,
+  "optimized_max_characters": 4043,
+  "optimized_max_utf16_units": 4043,
+  "optimized_max_utf8_bytes": 4095,
   "original_patterns_over_4096": 45,
   "optimized_patterns_over_4096": 0,
   "original_file_bytes": 704562,
-  "optimized_file_bytes": 343289,
-  "cases": 5205,
+  "optimized_file_bytes": 373031,
+  "cases": 5206,
   "cases_by_category": {
+    "device-preview": 1,
     "curated": 456,
     "unicode-fold": 32,
     "newlines": 54,
@@ -24,15 +32,47 @@
     "language-boundary": 8,
     "mediainfo-boundary": 3
   },
-  "ordered_result_comparisons": 5205,
-  "individual_pattern_comparisons": 838005,
+  "marker_cases": 2241,
+  "marker_cases_by_category": {
+    "device-preview-protocol": 1,
+    "single-marker": 128,
+    "marker-pair": 378,
+    "preview-subset": 98,
+    "marker-language": 37,
+    "mixed-markers": 1599
+  },
+  "ordered_result_comparisons": 7447,
   "mismatches": 0,
   "metadata_images_order_preserved": true,
+  "device_diagnostic_observed": [
+    "D5",
+    "BF",
+    "U63",
+    "LOOK",
+    "CAP",
+    "forced_image"
+  ],
+  "example_marker_ids": [
+    0,
+    12,
+    19,
+    22,
+    23,
+    32
+  ],
+  "example_expected_badges": [
+    "ly12-4k",
+    "ly12-combo-uhd-remux-truehd",
+    "ly12-combo-dv-atmos",
+    "ly12-71",
+    "ly12-hevc"
+  ],
   "original_file_unchanged": true,
   "device_tested": false,
+  "device_test_note": "User tested the diagnostic pack; the newly adapted pack still needs device verification.",
   "noise_seconds": {
-    "original": 1.33,
-    "oopsplayer": 2.499
+    "original": 0.992,
+    "oopsplayer": 2.674
   },
-  "elapsed_seconds": 133.853
+  "elapsed_seconds": 134.93
 }

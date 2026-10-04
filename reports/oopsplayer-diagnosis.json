@@ -1,8 +1,24 @@
 {
   "date": "2026-10-05",
-  "status": "awaiting_device_diagnostic",
-  "device_tested": false,
-  "cause_confirmed": false,
+  "status": "framed_input_confirmed_fix_awaiting_device_verification",
+  "device_tested": true,
+  "cause_confirmed": true,
+  "fixed_pack_device_tested": false,
+  "observed_labels": [
+    "D5",
+    "BF",
+    "U63",
+    "LOOK",
+    "CAP",
+    "IMG"
+  ],
+  "absent_labels": [
+    "RAW",
+    "TEXT",
+    "UNSET",
+    "B7",
+    "RULE4K"
+  ],
   "sample": "Example.2160p.BluRay.Remux.DV.TrueHD.Atmos.7.1.mkv",
   "expected_badges": [
     "ly12-4k",
@@ -27,6 +43,13 @@
   ],
   "encoded_simulation_result": [
     "ly12-dolby-vision",
+    "ly12-hevc"
+  ],
+  "fixed_encoded_simulation_result": [
+    "ly12-4k",
+    "ly12-combo-uhd-remux-truehd",
+    "ly12-combo-dv-atmos",
+    "ly12-71",
     "ly12-hevc"
   ],
   "individual_marker_simulations": 78,
@@ -56,13 +79,14 @@
     "CAP",
     "IMG"
   ],
-  "max_diagnostic_pattern_utf8_bytes": 895,
+  "max_diagnostic_pattern_utf8_bytes": 1299,
   "protected_files": {
     "Badge LiangYou Ver.all12.json": "34ce5d0536f87ff9a5a90ffa1aeeb76e232534ce6c13ab4a8a1ede7bfdbf5bc7",
-    "Badge LiangYou Ver.OopsPlayer.json": "e832416e9a9c939547239726d30b76d64b9f5d449ff2d9ba0844040d0d26afb7"
+    "Badge LiangYou Ver.OopsPlayer.json": "5f9ac881598f48ada64569d892e84bbd6300f1fb89a5ab96415c3f255f1e5bc2"
   },
   "limitations": [
-    "Encoded input is a simulation; no OopsPlayer input was captured.",
+    "The framed format is confirmed by the user screenshot; individual marker IDs were not captured.",
+    "B7 was absent; not all seven simulated facts were present together on the device.",
     "The probe image is forced and must not be interpreted as a media fact.",
     "The client may truncate, wrap, scroll, or limit tags per group.",
     "MKV is supplied by the player and is absent from this configuration."

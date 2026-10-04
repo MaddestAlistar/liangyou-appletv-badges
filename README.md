@@ -9,16 +9,16 @@ V12 · 2026-09-26 · 良哥看未来
 | 版本 | 新导入地址 | 内容 |
 | --- | --- | --- |
 | 复杂版 | [all12.json](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.all12.json) | 161 条候选规则，PNG，含组合徽章 |
-| OopsPlayer 独立版（实机兼容排查中） | [OopsPlayer.json](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.OopsPlayer.json) | 原复杂版的 161 个徽章，单条正则 ≤4096；收到预览漏显示反馈，尚未完成实机适配 |
+| OopsPlayer 独立版 BF1 | [OopsPlayer.BF1.json](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.OopsPlayer.BF1.json) | 161 枚原徽章及组合规则；适配隐藏标记，165 条互斥入口，单条正则 ≤4096，待重新导入实测 |
 | EplayerX | [EPX12.json](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.EPX12.json) | 41 条候选规则，SVG，简洁造型 |
 | EplayerX PNG 备用 | [EPX.PNG.json](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.EPX.PNG.json) | 与 EplayerX 相同规则，完整 PNG 图片 |
 | 复杂版单项备用 | [all.Single.json](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.all.Single.json) | 76 条规则，保留 DV+Atmos，其余以单项显示 |
 
 替换原徽章包并重新加载，使用所选版本的一条地址即可。新地址便于绕过旧配置缓存；同时启用多个包可能重复显示。
 
-OopsPlayer 版为 2026-10-04 单独新增，未改动原版 JSON。最长正则 4,041 字符／4,083 UTF-8 字节，采用 ICU 正则优化；通过规则级对照测试，但 2026-10-05 收到实机预览仅显示 DV 与 HEVC 的反馈。完整文件名在本地仍命中 5 枚徽章，设备实际匹配输入和处理方式待确认。[适配说明与验证报告](reports/OOPSPLAYER.md)。
+OopsPlayer 版为独立配置，原版 JSON 不修改。2026-10-05 通过用户诊断截图确认：实时预览传入隐藏标记，可见文件名探针未命中；旧规则把标记边框误当 DV，因而只显示 DV 与 HEVC。BF1 按 BetterFormatter 七位协议接入原有组合判断，并保留普通文本入口。最长正则 4,043 字符／4,095 UTF-8 字节。原 [OopsPlayer.json](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.OopsPlayer.json) 同步为 BF1；新文件名用于绕过缓存并方便辨认。[适配说明与验证报告](reports/OOPSPLAYER.md)。
 
-排查这个问题可单独导入 [OopsPlayer 诊断配置](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.OopsPlayer.Diagnostic.json)，保持预览文件名不变并截图。它显示检测标签和一张强制加载的测试图片，**不是正式徽章包**。[诊断说明](reports/OOPSPLAYER-DIAGNOSIS.md)。
+已经导入诊断包的用户，可删除 `OopsPlayer.Diagnostic` 测试配置，腾出一个名额，再导入并选中 `OopsPlayer.BF1`。诊断包中的字母标签和强制图片不属于正式徽章。[诊断过程与截图结论](reports/OOPSPLAYER-DIAGNOSIS.md)。
 
 旧地址也已同步：复杂版 `all`、`all9`、`all10`、`all11`、`all.Relaxed` 与 `all12` 完全相同；EplayerX 的 `EPX`、`EPX9`、`EPX10.themefix`、`EPX11`、`EPX.Relaxed` 与 `EPX12` 完全相同。编号地址在本仓库是兼容入口；历史快照请使用 Git 提交链接。
 
