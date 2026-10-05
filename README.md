@@ -9,7 +9,7 @@ V12 · 2026-09-26 · 良哥看未来
 | 版本 | 新导入地址 | 内容 |
 | --- | --- | --- |
 | 复杂版 | [all12.json](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.all12.json) | 161 条候选规则，PNG，含组合徽章 |
-| OopsPlayer 独立版 BF1 | [OopsPlayer.BF1.json](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.OopsPlayer.BF1.json) | 161 枚原徽章及组合规则；适配隐藏标记，165 条互斥入口，单条正则 ≤4096，待重新导入实测 |
+| OopsPlayer 独立版 BF1 | [OopsPlayer.BF1.json](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.OopsPlayer.BF1.json) | 161 枚原徽章及组合规则；单条正则 ≤4096，示例五枚徽章已实机确认；间距问题待客户端调整 |
 | EplayerX | [EPX12.json](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.EPX12.json) | 41 条候选规则，SVG，简洁造型 |
 | EplayerX PNG 备用 | [EPX.PNG.json](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.EPX.PNG.json) | 与 EplayerX 相同规则，完整 PNG 图片 |
 | 复杂版单项备用 | [all.Single.json](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.all.Single.json) | 76 条规则，保留 DV+Atmos，其余以单项显示 |
@@ -19,6 +19,8 @@ V12 · 2026-09-26 · 良哥看未来
 OopsPlayer 版为独立配置，原版 JSON 不修改。2026-10-05 通过用户诊断截图确认：实时预览传入隐藏标记，可见文件名探针未命中；旧规则把标记边框误当 DV，因而只显示 DV 与 HEVC。BF1 按 BetterFormatter 七位协议接入原有组合判断，并保留普通文本入口。最长正则 4,043 字符／4,095 UTF-8 字节。原 [OopsPlayer.json](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.OopsPlayer.json) 同步为 BF1；新文件名用于绕过缓存并方便辨认。[适配说明与验证报告](reports/OOPSPLAYER.md)。
 
 已经导入诊断包的用户，可删除 `OopsPlayer.Diagnostic` 测试配置，腾出一个名额，再导入并选中 `OopsPlayer.BF1`。诊断包中的字母标签和强制图片不属于正式徽章。[诊断过程与截图结论](reports/OOPSPLAYER-DIAGNOSIS.md)。
+
+后续截图已确认 BF1 正常识别示例中的五枚徽章。目前仍有外框占位明显宽于可见图片的间距问题，抽查图片几乎没有可裁掉的透明边缘。本次保持图片与规则不变，已整理 [间距排查及开发者调整建议](reports/OOPSPLAYER-LAYOUT.md)。
 
 旧地址也已同步：复杂版 `all`、`all9`、`all10`、`all11`、`all.Relaxed` 与 `all12` 完全相同；EplayerX 的 `EPX`、`EPX9`、`EPX10.themefix`、`EPX11`、`EPX.Relaxed` 与 `EPX12` 完全相同。编号地址在本仓库是兼容入口；历史快照请使用 Git 提交链接。
 

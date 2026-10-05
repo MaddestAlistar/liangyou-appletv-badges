@@ -1,0 +1,171 @@
+{
+  "date": "2026-10-05",
+  "bf1_device_preview_confirmed": true,
+  "bf1_preview_badges": [
+    "4K",
+    "UHD REMUX + TrueHD",
+    "DV + Atmos",
+    "7.1",
+    "HEVC"
+  ],
+  "bf1_layout_fixed": false,
+  "screenshots_uploaded_to_repository": false,
+  "png_measurements": [
+    {
+      "label": "ours-4k",
+      "repository": "MaddestAlistar/liangyou-appletv-badges",
+      "path": "assets/2026-09-25-v9/all/png/4k.png",
+      "git_blob": "25463732f17deab2ee01659985513834c09411df",
+      "size_pixels": [
+        960,
+        288
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        960,
+        288
+      ],
+      "alpha_32_bbox": [
+        2,
+        2,
+        958,
+        286
+      ],
+      "alpha_128_bbox": [
+        3,
+        3,
+        957,
+        285
+      ]
+    },
+    {
+      "label": "ours-ddplus",
+      "repository": "MaddestAlistar/liangyou-appletv-badges",
+      "path": "assets/2026-09-25-v9/all/png/ddplus.png",
+      "git_blob": "0e021c9d95ad23e2d8e29362299fb4597c3ecf0c",
+      "size_pixels": [
+        960,
+        288
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        960,
+        288
+      ],
+      "alpha_32_bbox": [
+        2,
+        2,
+        958,
+        286
+      ],
+      "alpha_128_bbox": [
+        3,
+        3,
+        957,
+        285
+      ]
+    },
+    {
+      "label": "ours-uhd-remux",
+      "repository": "MaddestAlistar/liangyou-appletv-badges",
+      "path": "assets/2026-09-25-compact-v10/all/png/combo-uhd-remux-truehd.png",
+      "git_blob": "43df91b25b92caa7f801d0720f9df4b47b5552af",
+      "size_pixels": [
+        960,
+        288
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        960,
+        288
+      ],
+      "alpha_32_bbox": [
+        2,
+        2,
+        958,
+        286
+      ],
+      "alpha_128_bbox": [
+        3,
+        3,
+        957,
+        285
+      ]
+    },
+    {
+      "label": "default-4k",
+      "repository": "9mousaa/BetterFormatter",
+      "path": "images/4k.png",
+      "git_blob": "60a324a7652fa51a40a9c57743d3e4b13aecedc8",
+      "size_pixels": [
+        272,
+        320
+      ],
+      "alpha_bbox": [
+        0,
+        64,
+        267,
+        256
+      ],
+      "alpha_32_bbox": [
+        0,
+        64,
+        267,
+        256
+      ],
+      "alpha_128_bbox": [
+        0,
+        64,
+        267,
+        256
+      ]
+    },
+    {
+      "label": "default-remux",
+      "repository": "9mousaa/BetterFormatter",
+      "path": "images/mono-remux.png",
+      "git_blob": "8f1101fdba2295408a0e0d42da2a860a3edcbe00",
+      "size_pixels": [
+        1200,
+        320
+      ],
+      "alpha_bbox": [
+        0,
+        32,
+        1165,
+        288
+      ],
+      "alpha_32_bbox": [
+        0,
+        32,
+        1165,
+        288
+      ],
+      "alpha_128_bbox": [
+        0,
+        32,
+        1165,
+        288
+      ]
+    }
+  ],
+  "diagnostic_screenshot_approx_pixels": {
+    "image_container_width": 215,
+    "visible_badge_width": 104
+  },
+  "layout_conclusion": "Oversized external image allocation is visible; exact client implementation requires OopsPlayer layout source. No supported JSON spacing field was found in inspected public exports.",
+  "limits": [
+    "Measurements cover three LiangYou PNG samples, not every asset.",
+    "Screenshot dimensions are approximate screenshot pixels, not iOS points.",
+    "Different detail-page movies do not form a controlled comparison.",
+    "No OopsPlayer client source or on-device layout debugger was available."
+  ],
+  "unchanged_files": {
+    "Badge LiangYou Ver.all12.json": "34ce5d0536f87ff9a5a90ffa1aeeb76e232534ce6c13ab4a8a1ede7bfdbf5bc7",
+    "Badge LiangYou Ver.OopsPlayer.json": "5f9ac881598f48ada64569d892e84bbd6300f1fb89a5ab96415c3f255f1e5bc2",
+    "Badge LiangYou Ver.OopsPlayer.BF1.json": "5f9ac881598f48ada64569d892e84bbd6300f1fb89a5ab96415c3f255f1e5bc2"
+  }
+}
