@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "date": "2026-10-08",
+  "assertions": 287,
+  "engine": "ICU",
+  "screenshot_observed": [
+    "1080P SDR combination",
+    "standalone SDR"
+  ],
+  "screenshot_input_captured": false,
+  "original_reproduction": [
+    "ly12-combo-1080p-sdr",
+    "ly12-aac",
+    "ly12-20",
+    "ly12-hevc",
+    "ly12-audio-chinese-english-japanese-korean",
+    "ly12-sdr"
+  ],
+  "candidate_union_cases": [
+    {
+      "name": "1080p-screenshot-facts",
+      "partial_candidates": 9,
+      "base_badges": [
+        "ly12-combo-1080p-sdr",
+        "ly12-aac",
+        "ly12-20",
+        "ly12-hevc",
+        "ly12-audio-chinese-english-japanese-korean"
+      ],
+      "standalone_sdr": false
+    },
+    {
+      "name": "720p-text",
+      "partial_candidates": 9,
+      "base_badges": [
+        "ly12-combo-720p-sdr"
+      ],
+      "standalone_sdr": false
+    },
+    {
+      "name": "1080p-markers",
+      "partial_candidates": 9,
+      "base_badges": [
+        "ly12-combo-1080p-sdr"
+      ],
+      "standalone_sdr": false
+    },
+    {
+      "name": "720p-markers",
+      "partial_candidates": 9,
+      "base_badges": [
+        "ly12-combo-720p-sdr"
+      ],
+      "standalone_sdr": false
+    }
+  ],
+  "sparse_candidate_policy": "Standalone SDR requires resolution in the same candidate.",
+  "legitimate_sdr_singles_preserved": [
+    "4K SDR",
+    "1080P WEB-DL SDR",
+    "4K WEB-DL SDR",
+    "576P SDR",
+    "480P SDR"
+  ],
+  "all_combination_rules_unchanged": true,
+  "remaining_limit": "Stateless JSON cannot resolve arbitrary conflicting metadata across independent candidates.",
+  "device_tested": false
+}

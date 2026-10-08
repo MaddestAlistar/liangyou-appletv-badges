@@ -15,6 +15,7 @@ SOURCE = ROOT / 'Badge LiangYou Ver.all12.json'
 DEST = ROOT / 'Badge LiangYou Ver.OopsPlayer.json'
 FIXED = ROOT / 'Badge LiangYou Ver.OopsPlayer.BF1.json'
 WEBDL_FIXED = ROOT / 'Badge LiangYou Ver.OopsPlayer.BF2.json'
+SDR_FIXED = ROOT / 'Badge LiangYou Ver.OopsPlayer.BF3.json'
 ANY = r'[\s\S]'
 
 
@@ -372,8 +373,10 @@ def build_text():
 def build():
     from oopsplayer_markers import adapt
     from oopsplayer_webdl import apply_webdl_fallback
+    from oopsplayer_sdr import apply_sdr_fallback
     data, conditions = source_conditions()
-    return apply_webdl_fallback(adapt(build_text(), conditions), data, conditions)
+    webdl_fixed = apply_webdl_fallback(adapt(build_text(), conditions), data, conditions)
+    return apply_sdr_fallback(webdl_fixed, data, conditions)
 
 
 if __name__ == '__main__':
@@ -382,5 +385,6 @@ if __name__ == '__main__':
     DEST.write_text(serialized)
     FIXED.write_text(serialized)
     WEBDL_FIXED.write_text(serialized)
+    SDR_FIXED.write_text(serialized)
     print(json.dumps(dict(filters=len(data['filters']), max_characters=max(len(f['pattern']) for f in data['filters']),
                          max_utf8_bytes=max(len(f['pattern'].encode()) for f in data['filters'])), ensure_ascii=False))

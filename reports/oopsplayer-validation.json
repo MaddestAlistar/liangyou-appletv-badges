@@ -19,7 +19,7 @@
   "original_patterns_over_4096": 45,
   "optimized_patterns_over_4096": 0,
   "original_file_bytes": 704562,
-  "optimized_file_bytes": 374490,
+  "optimized_file_bytes": 374712,
   "cases": 5206,
   "cases_by_category": {
     "device-preview": 1,
@@ -44,10 +44,14 @@
   "ordered_result_comparisons": 7447,
   "mismatches": 0,
   "metadata_images_order_preserved": true,
-  "comparison_policy": "Original all12 results, except standalone WEB-DL requires a resolution badge in the same candidate.",
+  "comparison_policy": "Original all12 results, except standalone WEB-DL and SDR require a resolution badge in the same candidate.",
   "intentional_webdl_suppressions": {
     "text": 67,
     "markers": 104
+  },
+  "intentional_sdr_suppressions": {
+    "text": 31,
+    "markers": 57
   },
   "device_diagnostic_observed": [
     "D5",
@@ -74,10 +78,10 @@
   ],
   "original_file_unchanged": true,
   "device_tested": false,
-  "device_test_note": "BF1 preview was confirmed by user screenshots. The BF2 WEB-DL fallback change needs device verification after reimport.",
+  "device_test_note": "BF1 preview was confirmed by user screenshots. BF3 adds the SDR fallback change and needs device verification after reimport; it preserves the BF2 WEB-DL rules.",
   "noise_seconds": {
-    "original": 0.971,
-    "oopsplayer": 2.605
+    "original": 1.036,
+    "oopsplayer": 2.516
   },
-  "elapsed_seconds": 136.94
+  "elapsed_seconds": 136.437
 }

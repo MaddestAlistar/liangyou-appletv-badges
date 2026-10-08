@@ -9,20 +9,22 @@ V12 · 2026-09-26 · 良哥看未来
 | 版本 | 新导入地址 | 内容 |
 | --- | --- | --- |
 | 复杂版 | [all12.json](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.all12.json) | 161 条候选规则，PNG，含组合徽章 |
-| OopsPlayer 独立版 BF2 | [OopsPlayer.BF2.json](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.OopsPlayer.BF2.json) | 161 枚原徽章；单条正则 ≤4096，收紧 WEB-DL 单项回退，避免孤立来源字段重复补出单项 |
+| OopsPlayer 独立版 BF3 | [OopsPlayer.BF3.json](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.OopsPlayer.BF3.json) | 161 枚原徽章；单条正则 ≤4096，收紧 WEB-DL／SDR 单项回退，避免孤立字段重复补出单项 |
 | EplayerX | [EPX12.json](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.EPX12.json) | 41 条候选规则，SVG，简洁造型 |
 | EplayerX PNG 备用 | [EPX.PNG.json](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.EPX.PNG.json) | 与 EplayerX 相同规则，完整 PNG 图片 |
 | 复杂版单项备用 | [all.Single.json](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.all.Single.json) | 76 条规则，保留 DV+Atmos，其余以单项显示 |
 
 替换原徽章包并重新加载，使用所选版本的一条地址即可。新地址便于绕过旧配置缓存；同时启用多个包可能重复显示。
 
-OopsPlayer 版为独立配置，原版 JSON 不修改。2026-10-08 发布 BF2：保留全部组合条件，仅让单独 WEB-DL 要求同条输入带分辨率，避免完整信息合成后又被孤立 WEB-DL 字段补回。只有 WEB-DL、没有分辨率的输入不再显示单项；720P／576P／480P 等完整输入仍可显示单项。此为 OopsPlayer 专用回退调整，未改变 all12。详见 [WEB-DL 重复显示修复与边界](reports/OOPSPLAYER-WEBDL.md)。
+OopsPlayer 版为独立配置，原版 JSON 不修改。2026-10-08 发布 BF3：保留 BF2 的 WEB-DL 修复，并让独立 SDR 也要求同条输入带分辨率，避免「1080P SDR／720P SDR」合成后又被孤立 SDR 字段补回。4K SDR、1080P WEB-DL＋SDR 等应保留的独立 SDR 仍可显示。只有 SDR、没有分辨率的输入不再显示 SDR 单项。详见 [SDR 重复显示修复与边界](reports/OOPSPLAYER-SDR.md)。
 
-当前最长正则为 3,963 字符／4,095 UTF-8 字节。[OopsPlayer.json](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.OopsPlayer.json) 和 [OopsPlayer.BF1.json](https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.OopsPlayer.BF1.json) 已同步为 BF2 内容；重新导入上表 BF2 地址并选中它，可通过新名称辨认配置。[适配说明与验证报告](reports/OOPSPLAYER.md)。
+BF2 的 WEB-DL 策略继续生效：独立 WEB-DL 也要求同条输入带分辨率；只有 WEB-DL、没有分辨率时不显示单项，720P／576P／480P 等完整输入仍可显示单项。所有组合条件保留。详见 [WEB-DL 修复说明](reports/OOPSPLAYER-WEBDL.md)。
 
-已经导入诊断包的用户，可删除 `OopsPlayer.Diagnostic` 测试配置，腾出一个名额，再导入并选中 `OopsPlayer.BF2`。诊断包中的字母标签和强制图片不属于正式徽章。[诊断过程与截图结论](reports/OOPSPLAYER-DIAGNOSIS.md)。
+当前最长正则为 3,963 字符／4,095 UTF-8 字节。`OopsPlayer.json`、`OopsPlayer.BF1.json` 和 `OopsPlayer.BF2.json` 已同步为 BF3 内容；重新导入上表 BF3 地址并选中它，可通过新名称辨认配置。[适配说明与验证报告](reports/OOPSPLAYER.md)。
 
-2026-10-05 的截图已确认 BF1 正常识别示例中的五枚徽章；当时还观察到图片外框偏宽，已整理 [间距排查及开发者调整建议](reports/OOPSPLAYER-LAYOUT.md)。BF2 针对 WEB-DL 重复显示，不调整图片或客户端布局。
+已经导入诊断包的用户，可删除 `OopsPlayer.Diagnostic` 测试配置，腾出一个名额，再导入并选中 `OopsPlayer.BF3`。诊断包中的字母标签和强制图片不属于正式徽章。[诊断过程与截图结论](reports/OOPSPLAYER-DIAGNOSIS.md)。
+
+2026-10-05 的截图已确认 BF1 正常识别示例中的五枚徽章；当时还观察到图片外框偏宽，已整理 [间距排查及开发者调整建议](reports/OOPSPLAYER-LAYOUT.md)。BF2／BF3 针对单项重复显示，不调整图片或客户端布局。
 
 旧地址也已同步：复杂版 `all`、`all9`、`all10`、`all11`、`all.Relaxed` 与 `all12` 完全相同；EplayerX 的 `EPX`、`EPX9`、`EPX10.themefix`、`EPX11`、`EPX.Relaxed` 与 `EPX12` 完全相同。编号地址在本仓库是兼容入口；历史快照请使用 Git 提交链接。
 

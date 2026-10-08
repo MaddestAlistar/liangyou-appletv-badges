@@ -12,9 +12,10 @@ import time
 from pathlib import Path
 
 from test_badges import ICU
-from oopsplayer_badges import ROOT, SOURCE, DEST, FIXED, WEBDL_FIXED, build
+from oopsplayer_badges import ROOT, SOURCE, DEST, FIXED, WEBDL_FIXED, SDR_FIXED, build
 from oopsplayer_markers import CANONICAL, encoded, decoded
 from oopsplayer_webdl import WEB_ID, logical_id
+from oopsplayer_sdr import SDR_ID
 
 
 def cases():
@@ -107,6 +108,7 @@ def run():
     new = json.loads(DEST.read_text())
     assert FIXED.read_bytes() == DEST.read_bytes(), 'BF1 alias differs from the primary OopsPlayer entry'
     assert WEBDL_FIXED.read_bytes() == DEST.read_bytes(), 'BF2 alias differs from the primary OopsPlayer entry'
+    assert SDR_FIXED.read_bytes() == DEST.read_bytes(), 'BF3 alias differs from the primary OopsPlayer entry'
     assert new == build(), 'Generated file differs from generator'
     assert old['groups'] == new['groups']
     assert len(old['filters']) == 161
@@ -123,12 +125,14 @@ def run():
     icu = ICU()
     failures = []
     counts = {}
-    policy_changes = {'text': 0, 'markers': 0}
+    policy_changes = {i: {'text': 0, 'markers': 0} for i in (WEB_ID, SDR_ID)}
     resolution_ids = {f['id'] for f in old['filters'] if f['groupId'] == 'resolution'}
     def expected_with_policy(ids, kind):
-        if WEB_ID in ids and not resolution_ids.intersection(ids):
-            policy_changes[kind] += 1
-            return [i for i in ids if i != WEB_ID]
+        if not resolution_ids.intersection(ids):
+            for badge_id in policy_changes:
+                if badge_id in ids:
+                    policy_changes[badge_id][kind] += 1
+            return [i for i in ids if i not in policy_changes]
         return ids
     unique = set()
     def matched(cfg, text):
@@ -193,12 +197,13 @@ def run():
         marker_cases=len(marker_unique), marker_cases_by_category=marker_counts,
         ordered_result_comparisons=len(unique)+len(marker_unique),
         mismatches=0, metadata_images_order_preserved=True,
-        comparison_policy='Original all12 results, except standalone WEB-DL requires a resolution badge in the same candidate.',
-        intentional_webdl_suppressions=policy_changes,
+        comparison_policy='Original all12 results, except standalone WEB-DL and SDR require a resolution badge in the same candidate.',
+        intentional_webdl_suppressions=policy_changes[WEB_ID],
+        intentional_sdr_suppressions=policy_changes[SDR_ID],
         device_diagnostic_observed=['D5','BF','U63','LOOK','CAP','forced_image'],
         example_marker_ids=[0,12,19,22,23,32], example_expected_badges=expected_preview,
         original_file_unchanged=True, device_tested=False,
-        device_test_note='BF1 preview was confirmed by user screenshots. The BF2 WEB-DL fallback change needs device verification after reimport.',
+        device_test_note='BF1 preview was confirmed by user screenshots. BF3 adds the SDR fallback change and needs device verification after reimport; it preserves the BF2 WEB-DL rules.',
         noise_seconds=noise_time,
         elapsed_seconds=round(time.monotonic()-started,3))
     (ROOT/'reports').mkdir(exist_ok=True)
