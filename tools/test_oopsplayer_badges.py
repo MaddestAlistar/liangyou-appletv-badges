@@ -1,4 +1,4 @@
-"""Compare complete ordered badge results against the untouched all12 pack.
+"""Compare ordered badges against all12 plus the explicit OopsPlayer policy.
 
 ICU is the target regex dialect. Empty-capture backreferences deliberately
 rely on ICU semantics, so this is not an ECMAScript compatibility test.
@@ -12,8 +12,9 @@ import time
 from pathlib import Path
 
 from test_badges import ICU
-from oopsplayer_badges import ROOT, SOURCE, DEST, FIXED, build
+from oopsplayer_badges import ROOT, SOURCE, DEST, FIXED, WEBDL_FIXED, build
 from oopsplayer_markers import CANONICAL, encoded, decoded
+from oopsplayer_webdl import WEB_ID, logical_id
 
 
 def cases():
@@ -105,15 +106,16 @@ def run():
     old = json.loads(source_bytes)
     new = json.loads(DEST.read_text())
     assert FIXED.read_bytes() == DEST.read_bytes(), 'BF1 alias differs from the primary OopsPlayer entry'
+    assert WEBDL_FIXED.read_bytes() == DEST.read_bytes(), 'BF2 alias differs from the primary OopsPlayer entry'
     assert new == build(), 'Generated file differs from generator'
     assert old['groups'] == new['groups']
     assert len(old['filters']) == 161
     originals = {f['id']: f for f in old['filters']}
-    logical_order = list(dict.fromkeys(f['id'].removesuffix('-bf') for f in new['filters']))
+    logical_order = list(dict.fromkeys(logical_id(f['id']) for f in new['filters']))
     assert logical_order == list(originals)
     assert len({f['id'] for f in new['filters']}) == len(new['filters'])
     for b in new['filters']:
-        a = originals[b['id'].removesuffix('-bf')]
+        a = originals[logical_id(b['id'])]
         assert {k:v for k,v in a.items() if k not in ('pattern', 'id')} == {k:v for k,v in b.items() if k not in ('pattern', 'id')}
         assert len(b['pattern']) <= 4096
         assert len(b['pattern'].encode('utf-8')) <= 4096
@@ -121,9 +123,16 @@ def run():
     icu = ICU()
     failures = []
     counts = {}
+    policy_changes = {'text': 0, 'markers': 0}
+    resolution_ids = {f['id'] for f in old['filters'] if f['groupId'] == 'resolution'}
+    def expected_with_policy(ids, kind):
+        if WEB_ID in ids and not resolution_ids.intersection(ids):
+            policy_changes[kind] += 1
+            return [i for i in ids if i != WEB_ID]
+        return ids
     unique = set()
     def matched(cfg, text):
-        ids = [f['id'].removesuffix('-bf') for f in cfg['filters'] if icu.matches(f['pattern'], text)]
+        ids = [logical_id(f['id']) for f in cfg['filters'] if icu.matches(f['pattern'], text)]
         assert len(ids) == len(set(ids)), ('duplicate badge', text, ids)
         return ids
     for kind, text in cases():
@@ -131,9 +140,10 @@ def run():
         unique.add(text)
         counts[kind] = counts.get(kind,0)+1
         a = matched(old, text)
+        expected = expected_with_policy(a, 'text')
         b = matched(new, text)
-        if a != b:
-            failures.append(dict(kind=kind,text=text,original=a,optimized=b))
+        if expected != b:
+            failures.append(dict(kind=kind,text=text,original=a,expected=expected,optimized=b))
             if len(failures)==10: break
     marker_unique, marker_counts = set(), {}
     for kind, ns in marker_cases():
@@ -142,10 +152,11 @@ def run():
             continue
         marker_unique.add(key)
         marker_counts[kind] = marker_counts.get(kind, 0) + 1
-        expected = matched(old, decoded(ns))
+        original = matched(old, decoded(ns))
+        expected = expected_with_policy(original, 'markers')
         got = matched(new, encoded(ns))
         if expected != got:
-            failures.append(dict(kind=kind, marker_ids=ns, canonical=decoded(ns), original=expected, optimized=got))
+            failures.append(dict(kind=kind, marker_ids=ns, canonical=decoded(ns), original=original, expected=expected, optimized=got))
             if len(failures) == 10:
                 break
     # Metadata absent from the marker protocol must not become DV or HEVC.
@@ -167,7 +178,7 @@ def run():
         for t in noise:
             for f in cfg['filters']: icu.matches(f['pattern'],t)
         noise_time[name] = round(time.monotonic()-start,3)
-    report = dict(passed=True, target='ICU regex / BetterFormatter 7-bit markers', date='2026-10-05',
+    report = dict(passed=True, target='ICU regex / BetterFormatter 7-bit markers', date='2026-10-08',
         badges=161, filters=len(new['filters']),
         split_marker_routes=[f['id'] for f in new['filters'] if f['id'].endswith('-bf')],
         source_git_blob=hashlib.sha1(b'blob '+str(len(source_bytes)).encode()+b'\0'+source_bytes).hexdigest(),
@@ -182,10 +193,12 @@ def run():
         marker_cases=len(marker_unique), marker_cases_by_category=marker_counts,
         ordered_result_comparisons=len(unique)+len(marker_unique),
         mismatches=0, metadata_images_order_preserved=True,
+        comparison_policy='Original all12 results, except standalone WEB-DL requires a resolution badge in the same candidate.',
+        intentional_webdl_suppressions=policy_changes,
         device_diagnostic_observed=['D5','BF','U63','LOOK','CAP','forced_image'],
         example_marker_ids=[0,12,19,22,23,32], example_expected_badges=expected_preview,
         original_file_unchanged=True, device_tested=False,
-        device_test_note='User tested the diagnostic pack; the newly adapted pack still needs device verification.',
+        device_test_note='BF1 preview was confirmed by user screenshots. The BF2 WEB-DL fallback change needs device verification after reimport.',
         noise_seconds=noise_time,
         elapsed_seconds=round(time.monotonic()-started,3))
     (ROOT/'reports').mkdir(exist_ok=True)

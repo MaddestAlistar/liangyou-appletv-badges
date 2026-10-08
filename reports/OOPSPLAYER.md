@@ -1,12 +1,18 @@
-# OopsPlayer 独立版 BF1
+# OopsPlayer 独立版 BF2
 
-2026-10-05
+2026-10-08
 
 新导入地址：
 
-https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.OopsPlayer.BF1.json
+https://raw.githubusercontent.com/MaddestAlistar/liangyou-appletv-badges/main/Badge%20LiangYou%20Ver.OopsPlayer.BF2.json
 
-原 `OopsPlayer.json` 入口同步为同一份内容。BF1 使用新文件名，方便避开旧配置缓存并确认选中了修正版。若已导入诊断包，可删除 `OopsPlayer.Diagnostic` 腾出一个配置名额，再导入 BF1。
+`OopsPlayer.json` 和 `OopsPlayer.BF1.json` 入口同步为同一份内容。BF2 使用新文件名，方便确认选中了本次修正版。若已导入诊断包，可删除 `OopsPlayer.Diagnostic` 腾出一个配置名额，再导入 BF2。
+
+## BF2：WEB-DL 单项重复
+
+本次仅收紧 OopsPlayer 中独立 WEB-DL 的回退条件：要求同一条匹配输入带有分辨率。完整信息产生 4K／1080P WEB-DL 或 WEB-DL＋音频组合后，孤立的 `WEB-DL`、来源缩写、Web 隐藏标记不再额外补出单项。组合条件、其他徽章、图片与原版 all12 保留。
+
+这项适配有明确取舍：只有 WEB-DL、没有分辨率的输入不再显示独立 WEB-DL；720P／576P／480P 等有分辨率、又未合入来源组合的输入仍保留单项。截图没有提供实际候选字段抓包，跨字段合并是本地复现机制，尚需重新导入后的实机验证。详见 [专项修复、测试与边界](OOPSPLAYER-WEBDL.md)。
 
 ## 两枚徽章的原因
 
@@ -20,20 +26,20 @@ BF1 直接识别每种标记对应的事实，再执行原版 Boolean 条件树�
 
 - 原 `all12.json`、其他旧版 JSON 和全部图片不修改。
 - 161 枚徽章的名称、图片、颜色、分组及相对顺序保留。
-- 片源＋音频、编码＋位深、分辨率＋WEB-DL／SDR、DV＋Atmos／TrueHD、HDR10＋TrueHD、多语言音轨的原有组合条件、互斥和回退逻辑保留。
+- 片源＋音频、编码＋位深、分辨率＋WEB-DL／SDR、DV＋Atmos／TrueHD、HDR10＋TrueHD、多语言音轨的原有组合条件保留。只有独立 WEB-DL 回退按上面的 BF2 策略收紧。
 - 没有结构化标记时继续使用原有普通文件名／元数据识别，包括旧式单独 U+2063。
 
-| 指标 | 原 all12 | BF1 |
+| 指标 | 原 all12 | BF2 |
 | --- | ---: | ---: |
 | 徽章图案 | 161 | 161 |
-| JSON 过滤条目 | 161 | 165 |
-| 最长正则字符数 | 12,337 | 4,043 |
+| JSON 过滤条目 | 161 | 166 |
+| 最长正则字符数 | 12,337 | 3,963 |
 | 最长正则 UTF-8 字节数 | — | 4,095 |
 | 超过 4096 的正则 | 45 | 0 |
 
-四条较长规则（UHD REMUX 回退、BluRay 回退、WEB-DL 回退、DD+）把文本入口与隐藏标记入口拆开。同一输入只会进入其中一个，使用同一枚图片，未增加新的徽章或改变合成条件。新增入口 ID 以 `-bf` 结尾，紧接对应的原 ID。
+四条较长规则（UHD REMUX 回退、BluRay 回退、WEB-DL 回退、DD+）把文本入口与隐藏标记入口拆开。BF2 的 WEB-DL 文本入口再按有／无 REMUX 拆成两个互斥入口，以满足长度限制。因此共 166 条物理过滤项、161 枚逻辑徽章。同一输入只会进入同一徽章的一个入口；图片、名称和相对顺序保留。
 
-文本优化沿用公共前后缀提取、布尔化简与 ICU 零长度捕获复用；存在性检测的起始分隔符改为等价左边界，给长度限制留出空间。保留 `[\s\S]`，避免 ICU DOTALL 对 CRLF 的特殊处理改变边界行为。
+文本优化沿用公共前后缀提取、布尔化简与 ICU 零长度捕获复用；存在性检测的起始分隔符改为等价左边界。BF2 仅在 WEB-DL 两条格式存在性检测中使用 DOTALL 来节省长度，并针对 CRLF 和其他换行符验证；语言收集器及其余规则继续保留 `[\s\S]`。
 
 ## 协议映射及无法恢复的信息
 
@@ -47,7 +53,9 @@ BF1 直接识别每种标记对应的事实，再执行原版 Boolean 条件树�
 
 ## 验证与实机边界
 
-以原版在同一 ICU 引擎下的完整、有序结果为对照，分别测试普通文本，以及隐藏标记解码后的规范事实。**5,206 组普通文本、2,241 组标记输入，共 7,447 组对照通过，零差异。** 同时检查元数据与顺序、互斥入口不重复显示、未知标记不误报、长度和原文件哈希。
+以原版在同一 ICU 引擎下的完整、有序结果为对照，分别测试普通文本，以及隐藏标记解码后的规范事实。BF1 的 **5,206 组普通文本、2,241 组标记输入，共 7,447 组对照**曾全部与原版相同。BF2 沿用这些对照，并明确从期望结果中移除缺少分辨率时的独立 WEB-DL，单独统计这些预期差异，不将其称为与 all12 完全等价。
+
+BF2 的上述 **7,447 组对照全部通过，非预期差异为 0**；其中 67 组文本、104 组标记按新策略移除了无分辨率 WEB-DL 单项。另增加 **473 项专项检查**，覆盖来源独立字段与完整输入取并集、普通文本和隐藏标记混用、4K／1080P／音频组合、低分辨率单项、分辨率尺寸写法和不同换行符。具体结果见 [自动化报告](oopsplayer-validation.json) 和 [WEB-DL 专项报告](oopsplayer-webdl-validation.json)。
 
 例如，Remux、4K、DV、TrueHD、Atmos、7.1 六种协议标记应得到：
 
@@ -55,16 +63,17 @@ BF1 直接识别每种标记对应的事实，再执行原版 Boolean 条件树�
 
 用户后续实机截图已确认 **BF1 在同一示例中显示上述五枚徽章**；详情页也已出现分辨率／SDR、DD+、5.1、英语音轨。验证范围限于提供的截图，未声称所有媒体和全部规则都已实机测试。诊断里的 B7 未出现，也没有取得完整设备输入抓包。
 
-当前仍有图片占位过宽、间距偏大的布局问题，详见 [间距排查与客户端调整建议](OOPSPLAYER-LAYOUT.md)。三个代表性 PNG 几乎铺满画布，原图裁边不足以解决截图中的宽空隙；带边框诊断样式也显示出外框明显宽于图案。需要客户端布局代码或开发者确认的尺寸字段才能进一步修正，BF1 的规则和图片保持原样。
+2026-10-05 另有图片占位过宽的观察，详见 [间距排查与客户端调整建议](OOPSPLAYER-LAYOUT.md)。三个代表性 PNG 几乎铺满画布，原图裁边不足以解决当时截图中的宽空隙。BF2 仅调整 WEB-DL 单项规则，不涉及该布局问题。
 
-具体用例数量、长度与结果见 [自动化验证报告](oopsplayer-validation.json)。其中 `device_tested: false` 记录的是生成报告时的状态；后续用户实机结果单独记录在 [布局与设备观察](oopsplayer-layout-observations.json)。[诊断记录](OOPSPLAYER-DIAGNOSIS.md) 保留最初的排查阶段。
+`device_tested: false` 表示尚未在用户设备验证 BF2；BF1 的后续实机结果记录在 [布局与设备观察](oopsplayer-layout-observations.json)。[诊断记录](OOPSPLAYER-DIAGNOSIS.md) 保留最初的排查阶段。
 
 ## 重新生成
 
 ```sh
 python tools/oopsplayer_badges.py
 python tools/test_oopsplayer_badges.py
+python tools/test_oopsplayer_webdl.py
 python tools/diagnose_oopsplayer.py
 ```
 
-正式生成器只写 `OopsPlayer.json` 与 `OopsPlayer.BF1.json`，不写原版。诊断脚本只写独立诊断包及报告。
+正式生成器只写 `OopsPlayer.json`、`OopsPlayer.BF1.json` 与 `OopsPlayer.BF2.json`，不写原版。诊断脚本只写独立诊断包及报告。

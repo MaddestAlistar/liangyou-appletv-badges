@@ -1,9 +1,9 @@
 {
   "passed": true,
   "target": "ICU regex / BetterFormatter 7-bit markers",
-  "date": "2026-10-05",
+  "date": "2026-10-08",
   "badges": 161,
-  "filters": 165,
+  "filters": 166,
   "split_marker_routes": [
     "ly12-uhd-remux-bf",
     "ly12-bluray-bf",
@@ -13,13 +13,13 @@
   "source_git_blob": "71a5eb00cab3aa88d6d70656aa087f31b516e036",
   "source_sha256": "34ce5d0536f87ff9a5a90ffa1aeeb76e232534ce6c13ab4a8a1ede7bfdbf5bc7",
   "original_max_characters": 12337,
-  "optimized_max_characters": 4043,
-  "optimized_max_utf16_units": 4043,
+  "optimized_max_characters": 3963,
+  "optimized_max_utf16_units": 3963,
   "optimized_max_utf8_bytes": 4095,
   "original_patterns_over_4096": 45,
   "optimized_patterns_over_4096": 0,
   "original_file_bytes": 704562,
-  "optimized_file_bytes": 373031,
+  "optimized_file_bytes": 374490,
   "cases": 5206,
   "cases_by_category": {
     "device-preview": 1,
@@ -44,6 +44,11 @@
   "ordered_result_comparisons": 7447,
   "mismatches": 0,
   "metadata_images_order_preserved": true,
+  "comparison_policy": "Original all12 results, except standalone WEB-DL requires a resolution badge in the same candidate.",
+  "intentional_webdl_suppressions": {
+    "text": 67,
+    "markers": 104
+  },
   "device_diagnostic_observed": [
     "D5",
     "BF",
@@ -69,10 +74,10 @@
   ],
   "original_file_unchanged": true,
   "device_tested": false,
-  "device_test_note": "User tested the diagnostic pack; the newly adapted pack still needs device verification.",
+  "device_test_note": "BF1 preview was confirmed by user screenshots. The BF2 WEB-DL fallback change needs device verification after reimport.",
   "noise_seconds": {
-    "original": 0.992,
-    "oopsplayer": 2.674
+    "original": 0.971,
+    "oopsplayer": 2.605
   },
-  "elapsed_seconds": 134.93
+  "elapsed_seconds": 136.94
 }

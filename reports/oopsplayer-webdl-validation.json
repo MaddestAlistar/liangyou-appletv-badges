@@ -1,0 +1,91 @@
+{
+  "passed": true,
+  "date": "2026-10-08",
+  "assertions": 473,
+  "screenshot_observed": [
+    "4K WEB-DL combination",
+    "standalone WEB-DL"
+  ],
+  "screenshot_input_captured": false,
+  "engine": "ICU",
+  "original_reproduction": [
+    "ly12-combo-4k-web-dl",
+    "ly12-combo-dv-atmos",
+    "ly12-51",
+    "ly12-hevc",
+    "ly12-disney-plus",
+    "ly12-english",
+    "ly12-web-dl"
+  ],
+  "candidate_union_cases": [
+    {
+      "name": "4k-playback-screenshot-facts",
+      "source_fragments": 10,
+      "base_badges": [
+        "ly12-combo-4k-web-dl",
+        "ly12-combo-dv-atmos",
+        "ly12-51",
+        "ly12-hevc",
+        "ly12-disney-plus",
+        "ly12-english"
+      ],
+      "standalone_webdl": false
+    },
+    {
+      "name": "1080p-text",
+      "source_fragments": 10,
+      "base_badges": [
+        "ly12-combo-1080p-web-dl"
+      ],
+      "standalone_webdl": false
+    },
+    {
+      "name": "web-aac-text",
+      "source_fragments": 10,
+      "base_badges": [
+        "ly12-720p",
+        "ly12-combo-web-dl-aac"
+      ],
+      "standalone_webdl": false
+    },
+    {
+      "name": "web-ddplus-text",
+      "source_fragments": 10,
+      "base_badges": [
+        "ly12-combo-web-dl-ddplus"
+      ],
+      "standalone_webdl": false
+    },
+    {
+      "name": "4k-markers",
+      "source_fragments": 10,
+      "base_badges": [
+        "ly12-combo-4k-web-dl",
+        "ly12-combo-dv-atmos",
+        "ly12-51",
+        "ly12-hevc"
+      ],
+      "standalone_webdl": false
+    },
+    {
+      "name": "1080p-markers",
+      "source_fragments": 10,
+      "base_badges": [
+        "ly12-combo-1080p-web-dl"
+      ],
+      "standalone_webdl": false
+    },
+    {
+      "name": "web-ddplus-markers",
+      "source_fragments": 10,
+      "base_badges": [
+        "ly12-combo-web-dl-ddplus"
+      ],
+      "standalone_webdl": false
+    }
+  ],
+  "sparse_candidate_policy": "Standalone WEB-DL requires resolution in the same candidate.",
+  "all_combination_rules_unchanged": true,
+  "remaining_limit": "Stateless JSON cannot resolve arbitrary conflicting metadata across independent candidates.",
+  "device_tested": false
+}
