@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="118" viewBox="0 0 420 118">
+<defs>
+<linearGradient id="fill" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#48505E" offset="0"/><stop stop-color="#080B11" offset=".28"/><stop stop-color="#080B11" offset=".70"/><stop stop-color="#48505E" offset="1"/></linearGradient>
+<linearGradient id="edge" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#D7E2F3"/><stop offset=".33" stop-color="#BCC6D4"/><stop offset=".57" stop-color="#FFFFFF"/><stop offset=".78" stop-color="#48505E"/><stop offset="1" stop-color="#BCC6D4"/></linearGradient>
+<linearGradient id="type" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFFFFF"/><stop offset=".38" stop-color="#F6F9FF"/><stop offset="1" stop-color="#BCC6D4"/></linearGradient>
+<filter id="light" x="-25%" y="-50%" width="150%" height="200%"><feGaussianBlur stdDeviation="2" result="g"/><feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<path d="M28 9H392L411 29V88L392 109H28L9 88V29Z" fill="#080B11" stroke="#48505E" stroke-width="5"/>
+<path d="M30 13H390L406 31V86L390 105H30L14 86V31Z" fill="url(#fill)" stroke="url(#edge)" stroke-width="5"/>
+<path d="M33 21H387L398 34V83L387 97H33L22 83V34Z" fill="none" stroke="#BCC6D4" stroke-opacity=".7" stroke-width="1.5"/>
+<path d="M38 25H380" stroke="#D7E2F3" stroke-opacity=".48" stroke-width="1.5"/>
+<path d="M38 93H380" stroke="#48505E" stroke-opacity=".9" stroke-width="2"/>
+<path d="M94 33V83" stroke="#BCC6D4" stroke-opacity=".48" stroke-width="2"/>
+<path d="M31 47H39 M31 71H39 M381 47H389 M381 71H389" stroke="#BCC6D4" stroke-width="2.5"/>
+<g filter="url(#light)"><rect x="28" y="45" width="53" height="36" rx="4" fill="none" stroke="#F6F9FF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M27 45l47-18 6 13-47 18z" fill="none" stroke="#F6F9FF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M39 40l7 9 M54 34l7 9 M67 30l7 9" fill="none" stroke="#F6F9FF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M49 54l17 10-17 10z" fill="#F6F9FF"/></g>
+<text x="109" y="75" font-family="PingFang SC,Microsoft YaHei,Noto Sans CJK SC,Arial,sans-serif" font-size="39" font-weight="900" letter-spacing=".3" fill="url(#type)" stroke="#48505E" stroke-opacity=".4" stroke-width=".5" paint-order="stroke">AI 短剧</text>
+</svg>
